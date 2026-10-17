@@ -1,0 +1,293 @@
+{
+  "environment": {
+    "g++": "13.3.0",
+    "numpy": "2.3.5",
+    "optional_figure_tools": "Installed TeX and Poppler; both declared figure tasks passed.",
+    "platform": "Linux x86_64",
+    "python": "3.12.14",
+    "scipy": "1.17.0"
+  },
+  "executed_source_sha256": {
+    "config/tasks.json": "aea21fae2ceb5c3310ccaf6b8317db7f84c0b221b983812f858bc5c73d44c1ef",
+    "tests/test_runner.py": "c30dbc4d52b884689cab01304942830439cea9599378c63e19702d81d1fb6e51",
+    "tools/build_manifest.py": "55a0167492dc8fba38f90726c4f0d81fbc34d8fd46efcb1c708aab0e8a5ec80f",
+    "tools/reproduce.py": "ee39dcbfed80d6e71fa945e0fe3e56995c35f5ac4d0c9055f0050688c29ab741",
+    "workflows/bernoulli/figures/build_bernoulli_figures.py": "d4ed55d94cf2b1f63d793e5c59e4855ddfdacf29d45d89493d1732811f203987",
+    "workflows/bernoulli/figures/verify_bernoulli_plot_data.py": "347d927c9eeecb1cdf4f3508ddc0152c6ca9eced62e4006e40d97c8c90952364",
+    "workflows/bernoulli/simulation/legacy/simulation/analyze_results.py": "5125439b5e20deb5324218e70dbfbdd0aeca7fb888d99e9f6b7e0a44028e713f",
+    "workflows/bernoulli/simulation/legacy/simulation/build_core.py": "aefda2677d23cda9293e400662eca1e0ba57bea0185d80630bd2813fef5fed31",
+    "workflows/bernoulli/simulation/legacy/simulation/build_figures.py": "7c4f48d05edfd0964dde7f355aa727e86c3ee584e9a8b8d2fac336039ac8b433",
+    "workflows/bernoulli/simulation/legacy/simulation/engine.py": "d3f0969c75bad2cfe45c55922a2e20916f91bd90f1885aed5364da16b05d97e3",
+    "workflows/bernoulli/simulation/legacy/simulation/engine_core.cpp": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d",
+    "workflows/bernoulli/simulation/legacy/simulation/pilot_timing.py": "b9c4fe84bef03873a7d7da9392f89f944d6b8bacb5fd36b15763f8c21f60fcf8",
+    "workflows/bernoulli/simulation/legacy/simulation/refine_control.py": "7dea3566f2302907df6e83822a31a6ff0f4df8c0b6c2d9eb41e01f3a67a233d7",
+    "workflows/bernoulli/simulation/legacy/simulation/refine_results.py": "0d360df7254d50d9d7235760fe3795db365982e466ec6fd0655ee4212cf3911d",
+    "workflows/bernoulli/simulation/legacy/simulation/reproduce.py": "5a4f36612b4541760c1bd5faa7b6253b5f31c791f89426dc792075359c61d3c4",
+    "workflows/bernoulli/simulation/legacy/simulation/run_experiments.py": "f5db59e5c795311e31a7afbd74fba65af5369c225f93de7dcd008ac02960f795",
+    "workflows/bernoulli/simulation/legacy/simulation/validate_engine.py": "1bf3c0e019d2154c1b53cd3e04a7e306af53ad69e5293464a1d2a46a7b6e8ddf",
+    "workflows/bernoulli/simulation/legacy/simulation/validate_refined_bounds.py": "73469b0aabb35688f0d3b7cde7798a196c8da9b10ba43c00832ec113ac1b2e2c",
+    "workflows/bernoulli/simulation/reproduce.py": "10ff9bac2c5b00e4a7a9e62b060e2d37896d48ccad10fd095fcf88e2b0c34000",
+    "workflows/bernoulli/simulation/src/replay_scc.py": "aa86adb4aab6a455d82e52a1115481e4270ceb193bd8d4418f6bef23d01508c1",
+    "workflows/bernoulli/simulation/vendor/engine.py": "d3f0969c75bad2cfe45c55922a2e20916f91bd90f1885aed5364da16b05d97e3",
+    "workflows/bernoulli/simulation/vendor/engine_core.cpp": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d",
+    "workflows/bernoulli/simulation/vendor/scc_control.py": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd",
+    "workflows/bernoulli/verification/bernoulli_stats.py": "0105790060be7db80cfabff0c4ff56970f24124aa17e48857ce638c050d21942",
+    "workflows/bernoulli/verification/independent_network_oracle.py": "3928d2ddf098aa515a3c25f2bdff8ead6ab0b67c0b9eb7b993dcb926de33c371",
+    "workflows/bernoulli/verification/independent_statistics.py": "bfea1700ab1e42b0f553282980fe70c22773a118c5228cd2260d9e9199072dac",
+    "workflows/bernoulli/verification/targeted_component_check.py": "234d866fc078ca43aa2e42ccdd7ce991ddb968a3a7426ed166173df7ef99a734",
+    "workflows/bernoulli/verification/validate_bernoulli_networks.py": "3af64d626b536a64212ec830b734adf604969282af948d441d97bf163aee55be",
+    "workflows/biological/biological/provenance/independent_export_audit.py": "4b4a8ea4493af65e59e144e9f1f4f7431593807a286c1eaf29c50b02eede596e",
+    "workflows/biological/biological/provenance/source_files/17nodeQL.py": "be2aca286b7989cccd390809bf4880c301f983f4ccd7ac50917bb7ba888cd3f4",
+    "workflows/biological/biological/provenance/source_files/29nodeQL.py": "22d2e8cc8d058d6e2c391838d521331bad218a777bc65b1c1670836be6dc7b25",
+    "workflows/biological/biological/provenance/source_files/44nodeQL.py": "d161697c5b440a7f201eb232e2cf92d12d0a5e2aabd334c1d1472f5dfd2c7898",
+    "workflows/biological/biological/provenance/source_files/tlgl_topology_rewiring_test.py": "1f6ae48680cff8ebab3953e3fb9c5c64cf337b7fc90154f7375b9988520629f5",
+    "workflows/biological/biological/src/boolean_certificates.py": "9a1a204288173f187fdce3348fddf1f7b624ab3f2cb967acd00b9c8a4c325bec",
+    "workflows/biological/biological/src/extract_models.py": "f9f4d24dfb5149a59686279c8acf9e6f9fd991c4a39bfa90348d21f6a2ecd5b9",
+    "workflows/biological/biological/src/reproduce.py": "4a26c4c48d9ac45902af27400c4d486ede893f0fb6aac6491762de32ec69d885",
+    "workflows/biological/biological/tests/independent_oracle.py": "e692f72f3028619dff659b2fa1df3c93c30157cb71cabb2acd397a5144a3743f",
+    "workflows/biological/biological/tests/validate_engine.py": "b9c6e7646142ab48bce71ae941b0132b3f9a019e2c2701659d5eff9e14bf17bc",
+    "workflows/biological/figures/fig6_build.py": "1c84414dffca276b8aa596f922b95b0e5c581893f2d781db85712a7a2db36782",
+    "workflows/biological/larger_networks/src/benchmark.py": "e547408c1cdef686e422b5d1312a3ff8ef3d8e5a35a52b2b0c0d5aced7b014c3",
+    "workflows/biological/larger_networks/src/boolean_certificates.py": "9a1a204288173f187fdce3348fddf1f7b624ab3f2cb967acd00b9c8a4c325bec",
+    "workflows/biological/larger_networks/src/test_runner.py": "681e9fd9c444a787a2597317a5534db25ce0f351f184c1e73b9313b3474159c2",
+    "workflows/biological/larger_networks/verification/independent_core.py": "b2f6ff5aef1a587fdd58fc24100e61660d7ea885122e647389362712442c55a1",
+    "workflows/biological/larger_networks/verification/verify_results.py": "2351718d38b66dc86ba7d9ea5bf39d8e4f5f467e5a66d2381537b24fdef57a46",
+    "workflows/biological/scripts/build_larger_figure.py": "effad6baa338d8a54a86624ce218ce2cc550f3b849d11c2742a0ffd9cc77ba95",
+    "workflows/biological/src/biology_core.py": "e430a1d62a803e9dcefa7fc2acfd2db60e85b7f6a03057f31226ac08b3e63ba0",
+    "workflows/biological/src/run_all_targets.py": "d3e9a2228b2de446fccb8437ec579eb3b6ae7a4486c2931c81116d8a1d45e509",
+    "workflows/biological/vendor/scc_control.py": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd",
+    "workflows/biological/verification/async_memory_check.py": "ab82195b2ae610739f11840863ed729e0585e7c04754839df5a0e5e650a88092",
+    "workflows/biological/verification/independent_core.py": "b2f6ff5aef1a587fdd58fc24100e61660d7ea885122e647389362712442c55a1",
+    "workflows/biological/verification/verify_all_targets.py": "50e50503936ff6082a012220cce544b9b429165b2a9f3d2cc046343c447df918",
+    "workflows/j1_followup/representation.py": "b84ae74898a635a3e10d6bbeaa71d51d404255c32a7bea8b3a82badd39920d76",
+    "workflows/j1_followup/src/joint_validation.py": "3ad75ab1ded16c449160f96b9d4e8cccb965d295b6a612d7449d6d3d6fc9517d",
+    "workflows/j1_followup/src/run_followup.py": "707d9f2483c24d7010cb3f43190c4e2066d0d794f8ed1c857ea3dc21f985dca6",
+    "workflows/j1_followup/vendor/engine.py": "d3f0969c75bad2cfe45c55922a2e20916f91bd90f1885aed5364da16b05d97e3",
+    "workflows/j1_followup/vendor/engine_core.cpp": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d",
+    "workflows/j1_followup/vendor/scc_control.py": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd",
+    "workflows/j1_followup/verification/independent_followup_statistics.py": "9aa104c6ca66755d01cad87e925cfffea9b5ebd777ea5e1fc035d88d18dd44b1",
+    "workflows/j1_followup/verification/independent_network_oracle.py": "0ce3f4f143a1516fd5c6d8c6171d993eeee388725c0f9f03a60daf2e3688bdcd",
+    "workflows/j1_followup/verification/preflight_followup_oracle.py": "11242b89c68081dc08b2ede50b04d184f6c3d867d4604649ebc64c23beea0d88",
+    "workflows/j1_followup/verification/test_production_no_refit.py": "fa423d93bef2173ff5556d2836f06d5d8dd39ed7ad41c2b3b588ca1dcd86eee6",
+    "workflows/j1_followup/verification/validate_followup_simulations.py": "926e2eab6a8c0a07dd7cb8f00bf6aa34dd3d96710eb9a9de68b88131d4330132",
+    "workflows/j1_followup/verify_reproduction.py": "cc523362477fb43c15952190158595b886d832930f6ee75e08763e9635f3ef3a",
+    "workflows/joint_rules/validation/reproduce.py": "3a0453d3339c40e765f865ffc1f026df75b6ec9573109552d9e292b2cad0344b",
+    "workflows/joint_rules/validation/src/joint_validation.py": "3ad75ab1ded16c449160f96b9d4e8cccb965d295b6a612d7449d6d3d6fc9517d",
+    "workflows/joint_rules/validation/vendor/engine.py": "d3f0969c75bad2cfe45c55922a2e20916f91bd90f1885aed5364da16b05d97e3",
+    "workflows/joint_rules/validation/vendor/engine_core.cpp": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d",
+    "workflows/joint_rules/validation/vendor/scc_control.py": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd",
+    "workflows/joint_rules/verification/independent_exact_checks.py": "35d45e9086ba5a3bb96a499ee81a210219f5b95296c394d5d8aa7b67d91e4090",
+    "workflows/joint_rules/verification/independent_joint_statistics.py": "961aee8ee8696a380908fd6c6af22e90ee14020842fc5885ad325181c21715b7",
+    "workflows/joint_rules/verification/independent_network_oracle.py": "0ce3f4f143a1516fd5c6d8c6171d993eeee388725c0f9f03a60daf2e3688bdcd",
+    "workflows/joint_rules/verification/validate_exact_exports.py": "7dee2b58b160d8acd954f8dc4a04ee98d0e8ecae8b4bd906b5640e993e39fa7d",
+    "workflows/joint_rules/verification/validate_joint_simulations.py": "3c84b4d2862b1140572d6bfed2d6e6407dd94c20e90f45cc88fffdd3b5600898",
+    "workflows/scc/scc_control.py": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd",
+    "workflows/scc/verification/independent_oracle.py": "c41e11ff8c3e9e854b6a72fbec2d8a4ee0cdaea4642b18553351b1b66e7fec19",
+    "workflows/scc/verification/independent_theorem_check.py": "60ef28934b7eb05782932ce25a5e06c3f889b1a9960f87dabf6dbdcf1a3fda91",
+    "workflows/scc/verification/targeted_cap_check.py": "425fbf3d849646840f1d6129fa41ab59d061029de3d06e2ea1fd388b2a9fdb5e",
+    "workflows/scc/verification/validate_scc_solver.py": "40af284a5bfd70b8acf08b9f11c8d2f0d849b9f9a6d4c8a7bd339533100d3bff"
+  },
+  "integration_tests": {
+    "status": "PASS",
+    "tests": 16
+  },
+  "limitations": [
+    "Producer replays reuse all original frozen seed identities; they are not additional observations.",
+    "Full independent numerical network and dynamical search suites retain archived reports and optional rerun commands.",
+    "No hosted GitHub Actions run, clean dependency install, or cross-platform execution is claimed.",
+    "Integrity records are not digital signatures or license grants."
+  ],
+  "python_ast_parse": {
+    "files": 73,
+    "status": "PASS"
+  },
+  "reproduction_checks": {
+    "bernoulli": {
+      "compared_files": 52,
+      "report": "provenance/reproduction_checks/bernoulli.json",
+      "sha256": "60f3ef7d54537b07dcb4f1942bd04520192e475575f8de0ae5ed139f2e8b120e",
+      "status": "PASS"
+    },
+    "j1_followup": {
+      "compared_files": 5,
+      "report": "provenance/reproduction_checks/j1_followup.json",
+      "sha256": "3d53bf1add96769f5fb5052a76ee8f597786825d1380479f1cc62cb610e81ba4",
+      "status": "PASS"
+    },
+    "joint_rules": {
+      "compared_files": 23,
+      "report": "provenance/reproduction_checks/joint_rules.json",
+      "sha256": "b9be73afe16e5cec92d74f5bfadb787115d8c61960d661f3f8866dd5ffe4c466",
+      "status": "PASS"
+    }
+  },
+  "schema": 1,
+  "scientific_preservation": {
+    "checked": {
+      "bnet_model_files": 4,
+      "csv_files": 89,
+      "csv_numeric_cells": 455056,
+      "gzip_streams": 172,
+      "json_numeric_fields": 599352,
+      "json_scientific_files": 65,
+      "upstream_python_sources": 4
+    },
+    "failures": [],
+    "status": "PASS"
+  },
+  "scope": "Declared command completion, frozen producer replay, statistical checks, selected independent biological/SCC checks and file integrity. The complete independent numerical dynamical search suites were not rerun.",
+  "status": "PASS",
+  "task_definitions_sha256": "aea21fae2ceb5c3310ccaf6b8317db7f84c0b221b983812f858bc5c73d44c1ef",
+  "task_results": [
+    {
+      "baseline_intact": true,
+      "commands": 5,
+      "runtime_seconds": 4.378,
+      "status": "PASS",
+      "task": "scc-validation",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 3,
+      "runtime_seconds": 1.298,
+      "status": "PASS",
+      "task": "biological-small-checks",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 3,
+      "runtime_seconds": 9.799,
+      "status": "PASS",
+      "task": "biological-census",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 1,
+      "runtime_seconds": 90.722,
+      "status": "PASS",
+      "task": "biological-original-audit",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 2,
+      "runtime_seconds": 144.545,
+      "status": "PASS",
+      "task": "biological-original-replay",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 2,
+      "runtime_seconds": 0.513,
+      "status": "PASS",
+      "task": "bernoulli-quick",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 2,
+      "runtime_seconds": 17.875,
+      "status": "PASS",
+      "task": "bernoulli-statistics",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 2,
+      "runtime_seconds": 39.647,
+      "status": "PASS",
+      "task": "bernoulli-boundary",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 1,
+      "runtime_seconds": 4.85,
+      "status": "PASS",
+      "task": "bernoulli-pilot",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 1,
+      "runtime_seconds": 248.285,
+      "status": "PASS",
+      "task": "bernoulli-reproduce",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 3,
+      "runtime_seconds": 3.066,
+      "status": "PASS",
+      "task": "joint_rules-exact",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 1,
+      "runtime_seconds": 0.859,
+      "status": "PASS",
+      "task": "joint_rules-statistics",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 1,
+      "runtime_seconds": 11.977,
+      "status": "PASS",
+      "task": "joint_rules-reproduce",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 2,
+      "runtime_seconds": 2.745,
+      "status": "PASS",
+      "task": "j1-preflight",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 1,
+      "runtime_seconds": 3.051,
+      "status": "PASS",
+      "task": "j1-statistics",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 2,
+      "runtime_seconds": 28.851,
+      "status": "PASS",
+      "task": "j1-reproduce",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 2,
+      "runtime_seconds": 2.74,
+      "status": "PASS",
+      "task": "biological-figures",
+      "workspace_verified": true
+    },
+    {
+      "baseline_intact": true,
+      "commands": 1,
+      "runtime_seconds": 11.657,
+      "status": "PASS",
+      "task": "bernoulli-figures",
+      "workspace_verified": true
+    }
+  ],
+  "terminology_scan": {
+    "scan_errors": 0,
+    "scope": "Relative filenames, text, decoded compressed data and visible/hidden PDF strings. Genuine scientific variables, external source identifiers and standards URIs retain their meaning.",
+    "status": "PASS",
+    "unapproved_matches": 0
+  }
+}

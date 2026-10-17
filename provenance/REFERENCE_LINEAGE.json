@@ -1,0 +1,40 @@
+{
+  "files": {
+    "docs/computational_details/README.md": {
+      "bytes": 1069,
+      "origin": "New representation or explanatory file; no original byte commitment is claimed.",
+      "sha256": "06cade660e082a8fa75302b5d471ae2f000d12dfd0e43804123194971c4decec"
+    },
+    "docs/computational_details/biological_extended_details.tex": {
+      "bytes": 45230,
+      "content_unchanged": false,
+      "original_bytes": 45750,
+      "original_sha256": "2837c714b8cd7c1fbaa35036ea2fc28bdb36da40954e9fa16c0a9e668e2296fa",
+      "sha256": "faf6ac055983b00205c2950d5df953f6e05e9d613fa2f41a051ed19ff88ab627"
+    },
+    "docs/computational_details/biological_reproduction.txt": {
+      "bytes": 15926,
+      "content_unchanged": false,
+      "original_bytes": 17589,
+      "original_sha256": "69f8f01b02bce3057151e6911cfda4d22ffa748e714f0451aa2177d3e10b2072",
+      "sha256": "5a7792375c0bfe60bdc7e00fe4d6e8afeedef7e24f8867326530e2f7f3ba91f8"
+    },
+    "docs/computational_details/biological_tables.tex": {
+      "bytes": 11631,
+      "content_unchanged": false,
+      "original_bytes": 12109,
+      "original_sha256": "aad8e89e26965918bcbfaf24c6eedf563652aa35086a4371fdc4e88467314c58",
+      "sha256": "6b11a53b3ae4242461bd63a15ad0c34d2d1a136cbbd97a445b2f9c79011c872a"
+    },
+    "docs/computational_details/numerical_reproduction.txt": {
+      "bytes": 35250,
+      "content_unchanged": false,
+      "original_bytes": 35896,
+      "original_sha256": "65e11d30aa7f4419c286624e0147bafa9c8027f81fbdb62ba3c58f78b85b1f74",
+      "sha256": "88e9865ac6a4e08469a2eca3384eaf1b94cfe0c281b1050080c297d6d8f25588"
+    }
+  },
+  "original_package_sha256": "c43f522c078979ffdb63cd5c5f412c16e17240952981838c791415bb87b80ff1",
+  "schema": 1,
+  "scope": "Computational reference documentation represented with descriptive names. Current bytes and hashes identify distributed files. Original fields refer to the retained input package, without claiming that rewritten bytes were frozen before the experiments. Earlier design and gate commitments are recorded separately in COMMITMENTS.json."
+}

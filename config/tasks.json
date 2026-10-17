@@ -1,0 +1,547 @@
+{
+  "schema": 1,
+  "tasks": {
+    "scc-validation": {
+      "workflow": "scc",
+      "description": "Examples, cap behavior, exhaustive small solver and independent finite theorem checks.",
+      "tier": "quick",
+      "requirements": [],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "scc_control.py",
+            "example_network.json"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "scc_control.py",
+            "example_two_slot.json"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/validate_scc_solver.py"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/targeted_cap_check.py"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/independent_theorem_check.py"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "biological-small-checks": {
+      "workflow": "biological",
+      "description": "Small biological certificates, source export audit and larger-engine tests.",
+      "tier": "quick",
+      "requirements": [
+        "resource"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "biological/src/reproduce.py",
+            "--output",
+            "reproduced_small"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "biological/provenance/independent_export_audit.py"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "larger_networks/src/test_runner.py"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "biological-census": {
+      "workflow": "biological",
+      "description": "Regenerate 50-target census and independently validate it; check selected fair-schedule certificates.",
+      "tier": "reproduction",
+      "requirements": [
+        "numpy"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "src/run_all_targets.py",
+            "--output",
+            "reproduced_census"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/verify_all_targets.py",
+            "--production",
+            "reproduced_census/all_targets.json",
+            "--output",
+            "reproduced_census/independent_biological_validation.json"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/async_memory_check.py",
+            "--output",
+            "reproduced_census/async_memory_check.json"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "biological-original-audit": {
+      "workflow": "biological",
+      "description": "Independently audit the original capped biological benchmark records.",
+      "tier": "extended",
+      "requirements": [],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "larger_networks/verification/verify_results.py",
+            "--protocol",
+            "larger_networks/protocol/contexts.json",
+            "--results",
+            "larger_networks/results",
+            "--output",
+            "reproduced_original_audit.json"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "biological-original-replay": {
+      "workflow": "biological",
+      "description": "Replay the frozen original benchmark budgets and independently audit fresh records.",
+      "tier": "full-replay",
+      "requirements": [
+        "resource"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "larger_networks/src/benchmark.py",
+            "--protocol",
+            "larger_networks/protocol/contexts.json",
+            "--output",
+            "reproduced_original_benchmark"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "larger_networks/verification/verify_results.py",
+            "--protocol",
+            "larger_networks/protocol/contexts.json",
+            "--results",
+            "reproduced_original_benchmark",
+            "--output",
+            "reproduced_original_audit.json"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "bernoulli-quick": {
+      "workflow": "bernoulli",
+      "description": "Independent tiny-network oracle and archived figure-data checks.",
+      "tier": "quick",
+      "requirements": [],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/independent_network_oracle.py"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "figures/verify_bernoulli_plot_data.py"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "bernoulli-statistics": {
+      "workflow": "bernoulli",
+      "description": "Recompute archived statistics and independently verify all 250000 unique draws across three stages.",
+      "tier": "validation",
+      "requirements": [
+        "numpy",
+        "scipy"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/bernoulli_stats.py",
+            "--output",
+            "results/bernoulli_statistics"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/independent_statistics.py",
+            "--output",
+            "results/reproduced_independent_statistics.json"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "bernoulli-boundary": {
+      "workflow": "bernoulli",
+      "description": "Regenerate binomial and chi-square boundary exports and independently validate them with archived statistics.",
+      "tier": "extended",
+      "requirements": [
+        "numpy",
+        "scipy"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/bernoulli_stats.py",
+            "--special-function-checks-only",
+            "--output",
+            "results/bernoulli_statistics"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/independent_statistics.py",
+            "--output",
+            "results/reproduced_boundary_validation.json"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "bernoulli-pilot": {
+      "workflow": "bernoulli",
+      "description": "Reproduce 2500 overlapping frozen pilot draws and compare scientific files.",
+      "tier": "reproduction",
+      "requirements": [
+        "numpy",
+        "g++"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "simulation/reproduce.py",
+            "--pilot",
+            "--workers",
+            "{workers}",
+            "--out",
+            "simulation/results/reproduced_pilot"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "bernoulli-reproduce": {
+      "workflow": "bernoulli",
+      "description": "Reproduce all 250000 frozen Bernoulli draws and compare scientific files.",
+      "tier": "full-replay",
+      "requirements": [
+        "numpy",
+        "g++"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "simulation/reproduce.py",
+            "--workers",
+            "{workers}",
+            "--out",
+            "simulation/results/reproduced_full"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "joint_rules-exact": {
+      "workflow": "joint_rules",
+      "description": "Rerun independent exact checks and reproduce the bounded exact exports.",
+      "tier": "quick",
+      "requirements": [
+        "numpy",
+        "scipy"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/independent_exact_checks.py",
+            "--output",
+            "qa/reproduced_exact_checks.json"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/validate_exact_exports.py"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "validation/reproduce.py",
+            "--exact-only",
+            "--out",
+            "validation/results/reproduced_exact"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "joint_rules-statistics": {
+      "workflow": "joint_rules",
+      "description": "Independently verify the nine archived joint-rule cells.",
+      "tier": "validation",
+      "requirements": [
+        "numpy",
+        "scipy"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/independent_joint_statistics.py",
+            "--output",
+            "qa/reproduced_joint_statistics.json"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "joint_rules-reproduce": {
+      "workflow": "joint_rules",
+      "description": "Reproduce exact exports and all 18000 frozen joint-rule draws; compare scientific files.",
+      "tier": "full-replay",
+      "requirements": [
+        "numpy",
+        "scipy",
+        "g++"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "validation/reproduce.py",
+            "--workers",
+            "{workers}",
+            "--out",
+            "validation/results/reproduced_full"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "j1-preflight": {
+      "workflow": "j1_followup",
+      "description": "Rerun independent J1 preflight and no-refit regression; preserve original freeze receipts.",
+      "tier": "quick",
+      "requirements": [
+        "numpy",
+        "scipy"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/preflight_followup_oracle.py",
+            "--output",
+            "qa/reproduced_preflight.json"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/test_production_no_refit.py",
+            "--output",
+            "qa/reproduced_no_refit.json"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "j1-statistics": {
+      "workflow": "j1_followup",
+      "description": "Independently verify the separate 20000-draw J1 follow-up and regenerate its statistics.",
+      "tier": "validation",
+      "requirements": [
+        "numpy",
+        "scipy"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verification/independent_followup_statistics.py",
+            "--output",
+            "qa/reproduced_statistics.json"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "j1-reproduce": {
+      "workflow": "j1_followup",
+      "description": "Reproduce all 20000 frozen J1 follow-up draws and compare scientific files and identities.",
+      "tier": "full-replay",
+      "requirements": [
+        "numpy",
+        "scipy",
+        "g++"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "src/run_followup.py",
+            "run",
+            "--workers",
+            "{workers}",
+            "--output",
+            "results/reproduced_full"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "verify_reproduction.py",
+            "--candidate",
+            "results/reproduced_full",
+            "--output",
+            "results/reproduced_full/reproduction_comparison.json"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "biological-figures": {
+      "workflow": "biological",
+      "description": "Rebuild current census and original benchmark figures from archived validated plotting inputs.",
+      "tier": "optional-figure",
+      "requirements": [
+        "pdflatex",
+        "pdftoppm"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "figures/fig6_build.py"
+          ],
+          "cwd": "."
+        },
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "scripts/build_larger_figure.py",
+            "--results",
+            "larger_networks/results"
+          ],
+          "cwd": "."
+        }
+      ]
+    },
+    "bernoulli-figures": {
+      "workflow": "bernoulli",
+      "description": "Rebuild numerical figures from archived validated results and plotting inputs.",
+      "tier": "optional-figure",
+      "requirements": [
+        "pdflatex",
+        "pdftoppm"
+      ],
+      "commands": [
+        {
+          "argv": [
+            "{python}",
+            "-B",
+            "figures/build_bernoulli_figures.py"
+          ],
+          "cwd": "."
+        }
+      ]
+    }
+  }
+}
