@@ -1,0 +1,13 @@
+{
+  "all_delivered_raw_hashes_match": true,
+  "analysis_self_test_passed": true,
+  "cli_help": true,
+  "copied_small_network_validators_passed": true,
+  "delivered_raw_hash_checks": 50,
+  "full_reproduction_wrapper_not_run": true,
+  "isolated_staging": true,
+  "main_draws_generated_by_reproducer_test": 0,
+  "nonempty_destination_refused": true,
+  "reproducer_sha256": "5a4f36612b4541760c1bd5faa7b6253b5f31c791f89426dc792075359c61d3c4",
+  "status": "passed"
+}

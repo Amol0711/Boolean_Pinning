@@ -1,0 +1,137 @@
+{
+  "certified_cases": "exact optimum from residual cycle hitting",
+  "control": "static permanent zero pins from time zero, all vertices eligible, unit cost, eventual convergence from every compatible initial state",
+  "fixed_before_main_run": true,
+  "loops_and_repeated_parents": "retained",
+  "main_run_rule": "run only after independent engine validation passes; retain every draw and any adverse outcome",
+  "master_seed": 2026101301,
+  "matching": "uniform permutation of labeled output stubs into two ordered receiver slots; implementation may shuffle source-label multiset since every source sequence has the same labeled-stub multiplicity",
+  "mixture_ids": {
+    "A": 1,
+    "B": 2,
+    "C": 3,
+    "D": 4,
+    "E": 5
+  },
+  "mixtures": {
+    "A": {
+      "degrees": [
+        1,
+        3
+      ],
+      "fractions": [
+        0.5,
+        0.5
+      ],
+      "lambda": 0.4,
+      "probabilities": [
+        0.5,
+        0.1
+      ]
+    },
+    "B": {
+      "degrees": [
+        1,
+        3
+      ],
+      "fractions": [
+        0.5,
+        0.5
+      ],
+      "lambda": 0.8,
+      "probabilities": [
+        0.1,
+        0.5
+      ]
+    },
+    "C": {
+      "degrees": [
+        1,
+        3
+      ],
+      "fractions": [
+        0.5,
+        0.5
+      ],
+      "lambda": 0.7,
+      "probabilities": [
+        0.8,
+        0.2
+      ]
+    },
+    "D": {
+      "degrees": [
+        1,
+        3
+      ],
+      "fractions": [
+        0.5,
+        0.5
+      ],
+      "lambda": 0.7,
+      "probabilities": [
+        0.35,
+        0.35
+      ]
+    },
+    "E": {
+      "degrees": [
+        0,
+        4
+      ],
+      "fractions": [
+        0.5,
+        0.5
+      ],
+      "lambda": 0.6,
+      "probabilities": [
+        0.8,
+        0.3
+      ]
+    }
+  },
+  "pilot": "timing only, separate seed namespace, at most 20 draws per representative size; no scientific outcomes used to change this protocol",
+  "planned_figures": [
+    "cost distributions at the largest size, including degree-rule association contrasts",
+    "certificate failure probabilities versus size with binomial intervals",
+    "residual survival functions and first/second cost moments versus size"
+  ],
+  "planned_validation": "independent literal support iteration and full original-state exact control on small networks, repeated parents, zero output degree, seed replay, and work-cap handling",
+  "primary_observables": [
+    "residual size",
+    "number of residual two-slot rows",
+    "certificate status",
+    "minimum-cost lower and upper bounds",
+    "returned pin set"
+  ],
+  "protocol_version": 1,
+  "replicate_index": "0 through 9999 inclusive in each cell",
+  "replicates_per_cell": 10000,
+  "seed_scheme": "numpy.random.PCG64(SeedSequence([master_seed, mixture_id, n, replicate]))",
+  "sizes": [
+    100,
+    400,
+    1600,
+    6400,
+    25600
+  ],
+  "study": "BooleanPinning Baseline configuration-model finite-size illustration",
+  "total_cells": 25,
+  "total_networks": 250000,
+  "truth_tables": "g00=0; g10,g01,g11 mutually independent conditional on fixed receiver types",
+  "uncertainty": {
+    "cost_distribution": "all-draw empirical CDF bounds; pointwise empirical PMF bounds where plotted",
+    "failure_probability": "pointwise two-sided 95% Clopper-Pearson intervals including zero counts",
+    "interpretation": "partial-identification intervals are distinct from sampling uncertainty; no finite-sample Poisson convergence rate is inferred",
+    "moments": "all-draw raw first and second moment bounds; ordinary Monte Carlo standard errors only when all costs are resolved"
+  },
+  "uncertified_cases": {
+    "maximum_residual_size": 12,
+    "maximum_work_units_per_draw": 2000000,
+    "physical_residual_exact_fallback": true,
+    "search": "pin subsets in increasing cardinality, exact finite functional graph",
+    "timing": "no wall-time cutoff; deterministic budget and seed replay",
+    "unresolved": "retain cost interval [0,residual_size], never discard",
+    "work_unit_definition": "one residual-row evaluation in successor-table construction or one controlled successor-edge traversal"
+  }
+}

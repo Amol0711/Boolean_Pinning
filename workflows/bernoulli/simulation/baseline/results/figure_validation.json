@@ -1,0 +1,38 @@
+{
+  "all_draws_retained": true,
+  "figure_count": 3,
+  "input_hashes_verified": true,
+  "pdfs": [
+    {
+      "bytes": 79380,
+      "file": "figures/fig1_cost_distribution.pdf",
+      "latex_warning_count": 0,
+      "pages": 1,
+      "render_review": "passed",
+      "repaired": false,
+      "sha256": "01b0fdf512d566b0ab026a1e1e33c0b0a94170f40a23967f5fcfac6f3d1a22e6"
+    },
+    {
+      "bytes": 89057,
+      "file": "figures/fig2_certificate_failure.pdf",
+      "latex_warning_count": 0,
+      "pages": 1,
+      "render_review": "passed",
+      "repaired": false,
+      "sha256": "32464beb012b4f36b24390f7456e7f6b1838e02d4b5d0c120863687636ef6032"
+    },
+    {
+      "bytes": 103182,
+      "file": "figures/fig3_residual_and_moments.pdf",
+      "latex_warning_count": 0,
+      "pages": 1,
+      "render_review": "passed",
+      "repaired": false,
+      "sha256": "0b5db4015c3093d3521abcb2e79cba74ba57b12a5593d171acccb1fc17f4acd9"
+    }
+  ],
+  "presentation_scope": "Notation and presentation; raw observations and plotted data preserved",
+  "source_analysis": "results/refined",
+  "status": "passed",
+  "visual_review": "All three archived figures passed visual inspection; numerical data and reference curves were preserved."
+}

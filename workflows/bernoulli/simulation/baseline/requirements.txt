@@ -1,0 +1,4 @@
+# Exact Python package versions used for the delivered simulation and analysis.
+# Reference interpreter: Python 3.12.14.  Build the accelerator with g++ (C++17).
+numpy==2.3.5
+scipy==1.17.0

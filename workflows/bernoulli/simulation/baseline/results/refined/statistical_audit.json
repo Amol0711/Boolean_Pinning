@@ -1,0 +1,119 @@
+{
+  "all_protocol_cells_present": true,
+  "all_replicates_present_once": true,
+  "bounds_interpretation": "All-draw partial-identification bounds for the observed empirical law, not population confidence intervals.",
+  "cdf_discrepancy_interpretation": "Valid conservative bounds for the supremum discrepancy between any compatible completed empirical CDF and the specified Poisson CDF over all integer thresholds. These are not population-distance confidence intervals.",
+  "cp_interpretation": "Pointwise two-sided 95% Clopper-Pearson intervals for each certificate-failure probability; no simultaneous coverage claim.",
+  "exclusions": 0,
+  "mc_se_interpretation": "Endpoint SE columns are standard errors of the named lower/upper sample-moment estimators only. A cost-moment SE is populated only when every draw in the cell is resolved.",
+  "protocol_sha256": "3eafdf64a41256575721e816498972f1c21307f3de95a3dbdb3da1ae8ff5f81b",
+  "raw_file_sha256": [
+    {
+      "file": "A_n100.csv.gz",
+      "sha256": "7cc9ebe6a43bb249f1989df8752e039787c6fdeee9f8f54fcfcdd34079ff408f"
+    },
+    {
+      "file": "A_n1600.csv.gz",
+      "sha256": "311475bee2de0bc5ea50048097d2e73a3980dc7639b6c856ae49c7d878209d84"
+    },
+    {
+      "file": "A_n25600.csv.gz",
+      "sha256": "a8cad51d8099e788218cae1116465af55d0f946a7cd7d70bc360e61ea66b2c9b"
+    },
+    {
+      "file": "A_n400.csv.gz",
+      "sha256": "9e5cb4439cac0a30bd5e5822b723688caf78638ce1cd32c2a1db461713ae7ddb"
+    },
+    {
+      "file": "A_n6400.csv.gz",
+      "sha256": "0d69e25c6afc161ff829d2c979acb86124771e24d42f9ecad5efe30862abc9a9"
+    },
+    {
+      "file": "B_n100.csv.gz",
+      "sha256": "1f33d42fc0f7d1ae579984ff4014b1c7def61f7e28b2e2cd4be17f9531c94a59"
+    },
+    {
+      "file": "B_n1600.csv.gz",
+      "sha256": "8cfe571e2d2d71e2c802ef5e22b96e4c0aee5ffffccbc2ecc56c866fb2ef9388"
+    },
+    {
+      "file": "B_n25600.csv.gz",
+      "sha256": "e42f82be20ca8c2a52d4f8b8d212df9f6db4088df3b13385653ce3b39d743c83"
+    },
+    {
+      "file": "B_n400.csv.gz",
+      "sha256": "af5f29c6b83dc057daf9bd5b93f22c659c150135863d1cac79026ec9e4d04bec"
+    },
+    {
+      "file": "B_n6400.csv.gz",
+      "sha256": "5cec0c40bbc8118f2fa2f2103a5f8379ed9c9042216904089b9ecf482d0f74f2"
+    },
+    {
+      "file": "C_n100.csv.gz",
+      "sha256": "2aeb44099b09270c71888e1db8278e164f78dc954b8cf63afd4025d1f588f8d3"
+    },
+    {
+      "file": "C_n1600.csv.gz",
+      "sha256": "7c456bd3d81de5392a209226e2642786bb481ace3f1f690d92cae0477b45a06d"
+    },
+    {
+      "file": "C_n25600.csv.gz",
+      "sha256": "1982db1c0a1fd48ffd276ebfeceb3dadfa589a35752962d867eab49d08ce8f4d"
+    },
+    {
+      "file": "C_n400.csv.gz",
+      "sha256": "a9b9d41751a8ae34df84c0c42c6dc374cb435817c8c654f954eda32763167596"
+    },
+    {
+      "file": "C_n6400.csv.gz",
+      "sha256": "225bdf65af1c7c99b8c0b1e4b3228daf94365bf7dd6de734fd5ae39015b1db93"
+    },
+    {
+      "file": "D_n100.csv.gz",
+      "sha256": "84db873d0d8f8d9e8f1b93b3d0a5c4b950dcc76f8f7517cf2b643094bd74cc00"
+    },
+    {
+      "file": "D_n1600.csv.gz",
+      "sha256": "8750105f009943f2fd561e0cf6b5bda860b2afb53025a3af185fa1250ed0879d"
+    },
+    {
+      "file": "D_n25600.csv.gz",
+      "sha256": "f265c7aa311fa5f8167266728871bd19452b7236f61a560e3e5e7c2e3b38ba60"
+    },
+    {
+      "file": "D_n400.csv.gz",
+      "sha256": "5ff105241bdb7e32d53da3f49fe5c507712d02fca5a3dbcd83e4545fec7d7672"
+    },
+    {
+      "file": "D_n6400.csv.gz",
+      "sha256": "47d4745e527e2f6f752d725447c3b37f4da9bee2c877066efb45940a8d931a0f"
+    },
+    {
+      "file": "E_n100.csv.gz",
+      "sha256": "3d753cc4765b1c8f153f2bbc8f72e1a70d24b0d2497c0bb5b2aa02c8289d7fb3"
+    },
+    {
+      "file": "E_n1600.csv.gz",
+      "sha256": "a9082ffa10d95e8f4cf0607178fbac4118fdb9a08d7f426d8a53f6d3505cec5b"
+    },
+    {
+      "file": "E_n25600.csv.gz",
+      "sha256": "1dc676e0c46b2cc79786685629f19b975e7e3ce864f0a82341f5b8830db1d1a9"
+    },
+    {
+      "file": "E_n400.csv.gz",
+      "sha256": "5bddefa13f25af151289c71b7c5dcbcad618172d93e4534df230d813cd27b0ba"
+    },
+    {
+      "file": "E_n6400.csv.gz",
+      "sha256": "5e4767a7b61027bca771e695272e5ebb1def37b055e4de53db5a2cc6693e8148"
+    }
+  ],
+  "status": "PASS",
+  "total_cells": 25,
+  "total_certified": 226972,
+  "total_draws": 250000,
+  "total_exact_fallback": 6108,
+  "total_uncertified": 23028,
+  "total_unresolved": 16920
+}

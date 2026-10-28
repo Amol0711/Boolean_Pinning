@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "total_draws": 250000,
+  "refined_unresolved": 16920,
+  "exact_rows_identical": 233080,
+  "all_intervals_nested": true,
+  "all_raw_hashes_match_manifest": true,
+  "all_refined_interval_widths_equal_original_double_rows": true,
+  "independent_integer_moment_endpoints_checked": 100,
+  "new_random_draws": 0,
+  "exclusions": 0
+}

@@ -1,0 +1,20 @@
+{
+  "analysis": "post-run deterministic analysis refinement",
+  "bound": "Force residual vertices with two residual incoming slots to zero, recompute support, count remaining cycles, and record lower and upper cost endpoints with the feasible pin set.",
+  "data_locations": {
+    "original_raw": "results/raw",
+    "original_summaries": "results",
+    "refined_raw": "results/refined/raw",
+    "refined_summaries": "results/refined"
+  },
+  "fixed_thresholds": "Original residual cap, work cap, cell sizes, replicate counts and confidence conventions are unchanged.",
+  "interpretation": "This is an explicitly post-run computational refinement, not a preregistered analysis. Nonzero-width cost intervals remain unresolved and are never represented as exact optima or imputed midpoint costs.",
+  "method_status": "Implementation checked by independent exhaustive finite-state validation.",
+  "new_random_draws": 0,
+  "original_unresolved_count": 16920,
+  "outcome_exclusions": 0,
+  "preserves_original_protocol": true,
+  "preserves_original_raw_results": true,
+  "reason": "The fixed residual-size fallback budget left wide moment bounds when the initial unresolved upper bound was the entire residual size.",
+  "scope": "Apply the same deterministic calculation to every originally unresolved draw using its original seed; retain every originally exact result."
+}
