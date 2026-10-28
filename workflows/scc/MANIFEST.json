@@ -1,0 +1,64 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 1910,
+      "sha256": "00cf6085a9a7e71e52796bb7bdddd4ce01baaa36f3e7a47b1d2640981805bcc6"
+    },
+    "README.txt": {
+      "bytes": 9107,
+      "sha256": "eb4b60019b1a62f74a36b7dcc9a44973c1c8832e2c0e7e7bae03f9a050e45bec"
+    },
+    "example_network.json": {
+      "bytes": 255,
+      "sha256": "08bf27f9726b8f00257531e99586b3e077dcf383c4180cea9ca18eb18e3fb241"
+    },
+    "example_two_slot.json": {
+      "bytes": 260,
+      "sha256": "ed91803d7a930b5c907134cdddcd2688b7ac1ff19e2a91571d74c961ce483a32"
+    },
+    "input_schema.json": {
+      "bytes": 1335,
+      "sha256": "6db696b77b8eb61a30e6d76a19baf7dc5c3cd5182dceec247631c82c1bb5f670"
+    },
+    "results/reduction_validation.json": {
+      "bytes": 959,
+      "sha256": "23e4f8c0e704d3ee75f6e8d258e568aa87d782d07c920021d28132639c47cc8a"
+    },
+    "results/solver_validation.json": {
+      "bytes": 8227,
+      "sha256": "10bed152c8b7e232e11cf867910c8881aa08b1711c22db6235861d459f484882"
+    },
+    "results/targeted_cap_check.json": {
+      "bytes": 2860,
+      "sha256": "60f085866453af6edf458f62f63f8bdf3b0cdb49bd2d5a25457ba0c1b8c97db6"
+    },
+    "scc_control.py": {
+      "bytes": 19617,
+      "sha256": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd"
+    },
+    "verification/README.txt": {
+      "bytes": 4510,
+      "sha256": "a0032e7038a06a5f93bd20305db4657135422d96607d367b3da26cab677a3801"
+    },
+    "verification/fixtures.json": {
+      "bytes": 7333,
+      "sha256": "51261060be1b8c4e7081db31e93d377603e05723020480a10a82571bb4f69cbc"
+    },
+    "verification/independent_oracle.py": {
+      "bytes": 6474,
+      "sha256": "c41e11ff8c3e9e854b6a72fbec2d8a4ee0cdaea4642b18553351b1b66e7fec19"
+    },
+    "verification/targeted_cap_check.py": {
+      "bytes": 5786,
+      "sha256": "425fbf3d849646840f1d6129fa41ab59d061029de3d06e2ea1fd388b2a9fdb5e"
+    },
+    "verification/validate_reduction.py": {
+      "bytes": 8849,
+      "sha256": "2217d2350215ff80485ac8104c092ec03540a563ad007aba9de6c9015253f187"
+    },
+    "verification/validate_scc_solver.py": {
+      "bytes": 11511,
+      "sha256": "40af284a5bfd70b8acf08b9f11c8d2f0d849b9f9a6d4c8a7bd339533100d3bff"
+    }
+  }
+}

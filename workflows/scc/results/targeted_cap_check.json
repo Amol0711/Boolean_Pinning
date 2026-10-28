@@ -1,0 +1,115 @@
+{
+  "checks": [
+    "lower <= exact optimum <= upper",
+    "every returned full pin witness succeeds",
+    "every exact solver answer equals the oracle optimum",
+    "each component respects its finite charged-work cap"
+  ],
+  "component_reason_counts": {
+    "all_pinned_witness": 54,
+    "component_size_cap": 264,
+    "exact_from_bounds": 30,
+    "exact_search": 54,
+    "pin_count_cap": 6,
+    "work_cap_candidate_search": 24,
+    "work_cap_successor_construction": 72
+  },
+  "fixtures": [
+    {
+      "baseline": [],
+      "component_reason_counts": {
+        "component_size_cap": 24,
+        "exact_search": 36,
+        "work_cap_successor_construction": 12
+      },
+      "n": 1,
+      "name": "repeated_xor",
+      "oracle_exact_additional_cost": 0,
+      "solver_calls": 144,
+      "stopped_after_completed_rejected_cardinality": 0
+    },
+    {
+      "baseline": [],
+      "component_reason_counts": {
+        "all_pinned_witness": 48,
+        "component_size_cap": 48,
+        "exact_from_bounds": 24,
+        "work_cap_successor_construction": 24
+      },
+      "n": 1,
+      "name": "repeated_or",
+      "oracle_exact_additional_cost": 1,
+      "solver_calls": 144,
+      "stopped_after_completed_rejected_cardinality": 0
+    },
+    {
+      "baseline": [],
+      "component_reason_counts": {
+        "all_pinned_witness": 6,
+        "component_size_cap": 96,
+        "exact_from_bounds": 6,
+        "pin_count_cap": 6,
+        "work_cap_candidate_search": 12,
+        "work_cap_successor_construction": 18
+      },
+      "n": 2,
+      "name": "or_complex",
+      "oracle_exact_additional_cost": 2,
+      "solver_calls": 144,
+      "stopped_after_completed_rejected_cardinality": 6
+    },
+    {
+      "baseline": [],
+      "component_reason_counts": {
+        "component_size_cap": 96,
+        "exact_search": 18,
+        "work_cap_candidate_search": 12,
+        "work_cap_successor_construction": 18
+      },
+      "n": 2,
+      "name": "pinning_nonmonotone",
+      "oracle_exact_additional_cost": 0,
+      "solver_calls": 144,
+      "stopped_after_completed_rejected_cardinality": 0
+    },
+    {
+      "baseline": [
+        2
+      ],
+      "component_reason_counts": {},
+      "n": 3,
+      "name": "mixed_target_baseline",
+      "oracle_exact_additional_cost": 0,
+      "solver_calls": 144,
+      "stopped_after_completed_rejected_cardinality": 0
+    }
+  ],
+  "max_component_size_values": [
+    0,
+    1,
+    null
+  ],
+  "max_pins_values": [
+    0,
+    1,
+    null
+  ],
+  "max_work_values": [
+    0,
+    1,
+    7,
+    8,
+    9,
+    12,
+    100,
+    null
+  ],
+  "oracle": "Direct original-physical-table trajectories from every compatible state",
+  "scope": "Targeted finite checks; no replay of the original 250000-network experiment",
+  "status": "PASS",
+  "support_modes": [
+    "slot",
+    "physical"
+  ],
+  "targeted_cap_mode_cases": 720
+}

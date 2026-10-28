@@ -1,0 +1,314 @@
+{
+  "certificate": "Original conservative nominal-slot residual; G requires exactly one residual slot per residual row. G_prime requires every cyclic SCC to have exactly one internal marked nominal slot per node. Keep duplicate physical-parent slots distinct in certificates.",
+  "component_caps": {
+    "max_component_size": 18,
+    "max_pins": 18,
+    "max_work": 10000000
+  },
+  "control": "Permanent zero pins, all vertices eligible, synchronous update, convergence from every compatible physical initial state.",
+  "corner_code": "c=B1+2*B2+4*B12; B1=g(1,0),B2=g(0,1),B12=g(1,1); g(0,0)=0",
+  "corner_names": {
+    "0": "ZERO",
+    "1": "x1 AND NOT x2",
+    "2": "NOT x1 AND x2",
+    "3": "XOR",
+    "4": "AND",
+    "5": "COPY1",
+    "6": "COPY2",
+    "7": "OR"
+  },
+  "exact_validation": {
+    "boundaries": "ConstantZERO; lambda0 with positive AND mass; deterministic allAND haslambda0,rho1 outside strict contraction, nonzero all-one fixedpoint, and positive controlcost despite zero marked-singletoncycles.",
+    "enumeration": "All distinct source-label matching sequences, equiprobable, and all positive-probability local corner assignments with exact rational weights.",
+    "families": "All three declared laws atn2 plus homogeneous degree2 mixtures ZERO/AND (weights40/60), constantZERO, and constantAND.",
+    "identities": [
+      "Nominal support probabilities on active-slot masks0,1,2,3 are0,q1,q2,Pr(anycorner1).",
+      "E C1=sum_v d_v*(q1_v+q2_v)/(2n).",
+      "E C2=sum_v!=w d_v*a_v*d_w*a_w/[2*(2n)*(2n-1)],a=q1+q2.",
+      "E(C1)_2=[sum_v!=w d_v*a_v*d_w*a_w+2*sum_v d_v*(d_v-1)*Pr(B1=B2=1)]/[(2n)*(2n-1)]."
+    ],
+    "main_gate": "Independent exact small-network checks must pass before simulation begins.",
+    "physical_checks": "Every tiny realized network has independently checked residual certificates, exact optimum, and feasible pins."
+  },
+  "families": {
+    "J1": {
+      "description": "Asymmetric copy/AND degree association",
+      "id": 1,
+      "parameters_rational": {
+        "contraction_coefficient": [
+          19,
+          40
+        ],
+        "lambda": [
+          29,
+          80
+        ],
+        "rho": [
+          19,
+          40
+        ]
+      },
+      "reference_mu": 0.4502010019495558,
+      "types": [
+        {
+          "degree": 1,
+          "derived_rational": {
+            "nonzero_row_probability": [
+              7,
+              10
+            ],
+            "q1": [
+              9,
+              20
+            ],
+            "q12": [
+              0,
+              1
+            ],
+            "q2": [
+              1,
+              10
+            ]
+          },
+          "fraction": [
+            1,
+            2
+          ],
+          "probability_denominator": 100,
+          "weights": [
+            30,
+            0,
+            0,
+            0,
+            15,
+            45,
+            10,
+            0
+          ]
+        },
+        {
+          "degree": 3,
+          "derived_rational": {
+            "nonzero_row_probability": [
+              2,
+              5
+            ],
+            "q1": [
+              1,
+              10
+            ],
+            "q12": [
+              0,
+              1
+            ],
+            "q2": [
+              1,
+              5
+            ]
+          },
+          "fraction": [
+            1,
+            2
+          ],
+          "probability_denominator": 100,
+          "weights": [
+            60,
+            0,
+            0,
+            0,
+            10,
+            10,
+            20,
+            0
+          ]
+        }
+      ]
+    },
+    "J2": {
+      "description": "Correlated OR/XOR/AND law",
+      "id": 2,
+      "parameters_rational": {
+        "contraction_coefficient": [
+          1,
+          2
+        ],
+        "lambda": [
+          1,
+          2
+        ],
+        "rho": [
+          9,
+          20
+        ]
+      },
+      "reference_mu": 0.6931471805599453,
+      "types": [
+        {
+          "degree": 2,
+          "derived_rational": {
+            "nonzero_row_probability": [
+              9,
+              20
+            ],
+            "q1": [
+              1,
+              4
+            ],
+            "q12": [
+              1,
+              4
+            ],
+            "q2": [
+              1,
+              4
+            ]
+          },
+          "fraction": [
+            1,
+            1
+          ],
+          "probability_denominator": 100,
+          "weights": [
+            55,
+            0,
+            0,
+            10,
+            20,
+            0,
+            0,
+            15
+          ]
+        }
+      ]
+    },
+    "J3": {
+      "description": "High-degree zero-singleton type",
+      "id": 3,
+      "parameters_rational": {
+        "contraction_coefficient": [
+          5,
+          8
+        ],
+        "lambda": [
+          1,
+          5
+        ],
+        "rho": [
+          5,
+          8
+        ]
+      },
+      "reference_mu": 0.22314355131420976,
+      "types": [
+        {
+          "degree": 1,
+          "derived_rational": {
+            "nonzero_row_probability": [
+              7,
+              10
+            ],
+            "q1": [
+              11,
+              20
+            ],
+            "q12": [
+              1,
+              10
+            ],
+            "q2": [
+              1,
+              4
+            ]
+          },
+          "fraction": [
+            1,
+            2
+          ],
+          "probability_denominator": 100,
+          "weights": [
+            30,
+            0,
+            0,
+            0,
+            0,
+            45,
+            15,
+            10
+          ]
+        },
+        {
+          "degree": 3,
+          "derived_rational": {
+            "nonzero_row_probability": [
+              3,
+              5
+            ],
+            "q1": [
+              0,
+              1
+            ],
+            "q12": [
+              0,
+              1
+            ],
+            "q2": [
+              0,
+              1
+            ]
+          },
+          "fraction": [
+            1,
+            2
+          ],
+          "probability_denominator": 100,
+          "weights": [
+            40,
+            0,
+            0,
+            0,
+            60,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "fixed_design": true,
+  "master_seed": 2026101504,
+  "matching": "Uniform labeled-output-stub matching into two ordered input slots; source-label permutations have equal labeled-stub multiplicity. Self-loops and repeated parents are retained.",
+  "outputs": "One compressed CSV and JSON detail record per draw, including full regenerated-network hash, residual nominal rows and SCC records, plus9cell CSV/JSON summaries.",
+  "parameter_definition": "lambda=sum_type fraction*degree*(q1+q2)/2; rho=sum_type fraction*degree*Pr(B1 OR B2 OR B12)/2; psi(u)=lambda*u*(1-u)+rho*u*u; contraction coefficient=max(lambda,rho). All declared mean degrees are exactly2.",
+  "replicates": "0 through 1999 inclusive",
+  "replicates_per_cell": 2000,
+  "rng_call_sequence": [
+    "Build deterministic type blocks in declared type order, exact integer counts n*fraction, vertex labels increasing within blocks.",
+    "Build output source-label multiset with the declared degrees; call rng.permutation(output_sources), reshape row-major to (n,2).",
+    "For each type block in declared order call rng.choice(8,size=type_count,p=np.asarray(weights,dtype=float64)/probability_denominator); expand code bit0/bit1/bit2 to [B1,B2,B12]."
+  ],
+  "scope": "Independent 18,000-network joint-rule sample with fixed model probabilities and separate finite-size summaries.",
+  "seed_scheme": "numpy.random.Generator(numpy.random.PCG64(numpy.random.SeedSequence([master_seed, family_id, n, replicate])))",
+  "sizes": [
+    100,
+    1600,
+    25600
+  ],
+  "solver": "Unchanged SCC SCC solver; isolated component dynamics identify repeated physical slots, hold all exterior errors at zero, enumerate candidate pinsets directly without monotonicity assumptions.",
+  "source_sha256": {
+    "vendor/engine.py": "d3f0969c75bad2cfe45c55922a2e20916f91bd90f1885aed5364da16b05d97e3",
+    "vendor/engine_core.cpp": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d",
+    "vendor/scc_control.py": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd"
+  },
+  "statistics": {
+    "G_and_G_prime": "Exact observed failure counts and pointwise two-sided95% Clopper-Pearson intervals.",
+    "P0": "Definite zero count=uppercost0; possible zero count=lowercost0. Pointwise conservative95% Clopper-Pearson envelope from lower endpoint count to upper endpoint count.",
+    "fixed_benchmark": "mu=-log(1-lambda), Poisson meanmu, rawsecondmomentmu+mu\u00b2, P0=1-lambda. No fittedparameters, additional hypothesis tests, or convergence-rate inference.",
+    "mean_and_raw_second_moment": "Complete-sample lower/upper endpoint averages; endpoint SE from unbiased sample variances divided byN; 95% pointwise normal envelope [max(0,lower_mean-z*SE_lower),upper_mean+z*SE_upper]. Endpoint SEs are attached to endpoint variables, not a point estimate of an unresolved cost."
+  },
+  "study": "JointRules focused validation of general joint two-input planted rule laws",
+  "total_draws": 18000,
+  "unresolved": "Retain all cost intervals and feasible upper witnesses. No discarding or imputation. No pre-existing-cost intersection applies to this new sample.",
+  "version": 1,
+  "work_unit": "One local-row evaluation constructing component successors or one controlled successor-edge traversal; budget per complex SCC, no wall-time cutoff."
+}

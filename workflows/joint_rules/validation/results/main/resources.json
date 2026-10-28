@@ -1,0 +1,51 @@
+{
+  "cells": [
+    {
+      "elapsed_seconds": 0.6846730769993883,
+      "family": "J1",
+      "n": 100
+    },
+    {
+      "elapsed_seconds": 1.0653219899995747,
+      "family": "J1",
+      "n": 1600
+    },
+    {
+      "elapsed_seconds": 6.493533564000245,
+      "family": "J1",
+      "n": 25600
+    },
+    {
+      "elapsed_seconds": 0.6056706729996222,
+      "family": "J2",
+      "n": 100
+    },
+    {
+      "elapsed_seconds": 0.8271296809998603,
+      "family": "J2",
+      "n": 1600
+    },
+    {
+      "elapsed_seconds": 5.896170296000491,
+      "family": "J2",
+      "n": 25600
+    },
+    {
+      "elapsed_seconds": 0.4307889379997505,
+      "family": "J3",
+      "n": 100
+    },
+    {
+      "elapsed_seconds": 0.799725483999282,
+      "family": "J3",
+      "n": 1600
+    },
+    {
+      "elapsed_seconds": 6.051060147001408,
+      "family": "J3",
+      "n": 25600
+    }
+  ],
+  "total_elapsed_seconds": 7.700606204998621,
+  "workers": 4
+}

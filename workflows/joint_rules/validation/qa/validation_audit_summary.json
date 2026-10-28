@@ -1,0 +1,34 @@
+{
+  "G_failures": 139,
+  "G_prime_failures": 105,
+  "all_costs_exact": true,
+  "fresh_reproduction_scientific_files_byte_identical": 23,
+  "fresh_reproduction_workers": 2,
+  "independent_complex_SCC_optima": 106,
+  "independent_full_seeded_replays": 18000,
+  "independent_global_nonG_residual_optima": 133,
+  "main_cells": 9,
+  "main_draws_per_cell": 2000,
+  "main_elapsed_seconds": 7.700606204998621,
+  "main_gzip_integrity_streams": 18,
+  "main_workers": 4,
+  "numpy": "2.3.5",
+  "pre_main_gate_hash_unchanged": true,
+  "production_exact_realizations": 228,
+  "production_support_patterns": 32,
+  "protocol_hash_unchanged": true,
+  "python": "3.12.14",
+  "remaining_limitations": [
+    "Finite-size illustrative sample; no convergence rate or exact finite-n Poisson null asserted.",
+    "J1 largest-n raw second moment sampling interval excludes its limiting benchmark and remains explicitly reported.",
+    "Normal sampling envelopes are pointwise approximations; no simultaneous coverage assertion."
+  ],
+  "scipy": "1.17.0",
+  "status": "PASS",
+  "unique_main_draws": 18000,
+  "vendor_byte_preservation": {
+    "engine.py": true,
+    "engine_core.cpp": true,
+    "scc_control.py": true
+  }
+}

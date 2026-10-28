@@ -1,0 +1,19 @@
+{
+  "backend": {
+    "backend": "cpp",
+    "compiler_error": null,
+    "cpp_sha256": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d"
+  },
+  "independent_gate_sha256": "2ec88cfc68d8ae7e4629b7a5b0e8be4419206e59efdfe532c98f3a0f64e82681",
+  "numpy": "2.3.5",
+  "protocol_sha256": "676f63437dc7aea118782ef427ac604012d7d2f0bc596ab2aaf063a61554fa64",
+  "source_sha256": {
+    "src/joint_validation.py": "25f9555a5eb9ef33ab704208c55dfb7fc7fe039217352dc5a03fd7448cda8d3b",
+    "vendor/engine.py": "d3f0969c75bad2cfe45c55922a2e20916f91bd90f1885aed5364da16b05d97e3",
+    "vendor/engine_core.cpp": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d",
+    "vendor/scc_control.py": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd"
+  },
+  "status": "completed",
+  "total_draws": 18000,
+  "unresolved": 0
+}

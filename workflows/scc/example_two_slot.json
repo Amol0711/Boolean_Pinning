@@ -1,0 +1,12 @@
+{
+  "parents": [[0, 2], [0, 2], [2, 2]],
+  "tables": [[0, 1, 0, 1], [0, 1, 0, 1], [0, 0, 0, 0]],
+  "target": [0, 0, 0],
+  "baseline": [],
+  "options": {
+    "support_mode": "slot",
+    "max_component_size": 18,
+    "max_pins": 8,
+    "max_work": 2000000
+  }
+}

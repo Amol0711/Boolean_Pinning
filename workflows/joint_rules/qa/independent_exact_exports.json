@@ -1,0 +1,28 @@
+{
+  "all_AND_boundary": "Every enumerated n=2 matching has positive physical cost and no marked singleton cycle.",
+  "all_exported_networks_checked": true,
+  "all_optima_and_witnesses_checked": true,
+  "all_support_patterns_checked": 32,
+  "exact_probability_mass_per_family": "1",
+  "family_realizations": {
+    "ALL_AND": 6,
+    "J1": 64,
+    "J2": 96,
+    "J3": 32,
+    "ZERO": 6,
+    "ZERO_AND": 24
+  },
+  "gate_sha256": "2ec88cfc68d8ae7e4629b7a5b0e8be4419206e59efdfe532c98f3a0f64e82681",
+  "input_sha256": {
+    "outcomes.jsonl": "5bf4ae8e5418a9ca99591433b54db037cb4e0326d1a70d9d4e6da6d959720776",
+    "summary.json": "c4a27a681e9c4085915a41bb827f7a02a7f9e02c71d031bb26e72832f49c6ebe",
+    "support_patterns.json": "b60a7fcb9dd947311d6af699b3c53cfe8adfb5cf0844ab3d8623019778097c54"
+  },
+  "realizations": 228,
+  "status": "PASS",
+  "verification_source_sha256": {
+    "independent_exact_checks.py": "9b17553c3138b5f331b900dc078a15db4f53f1d841a3718963ad91ad2072785c",
+    "independent_network_oracle.py": "8ffcf94f4fae290e7df94f603da555febff1bad4af2ccc56a026394b8a035ec9",
+    "validate_exact_exports.py": "70c4a3ded228e326e29a5d8c97eda7e25bbf5c03719cdcfbd172d427dbba49b8"
+  }
+}

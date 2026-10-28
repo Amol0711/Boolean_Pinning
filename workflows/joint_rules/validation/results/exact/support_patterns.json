@@ -1,0 +1,114 @@
+[
+  {
+    "active_mask_support": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "corner_code": 0,
+    "corners": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "active_mask_support": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "corner_code": 1,
+    "corners": [
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "active_mask_support": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "corner_code": 2,
+    "corners": [
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "active_mask_support": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "corner_code": 3,
+    "corners": [
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "active_mask_support": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "corner_code": 4,
+    "corners": [
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "active_mask_support": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "corner_code": 5,
+    "corners": [
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "active_mask_support": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "corner_code": 6,
+    "corners": [
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "active_mask_support": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "corner_code": 7,
+    "corners": [
+      1,
+      1,
+      1
+    ]
+  }
+]

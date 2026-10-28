@@ -1,0 +1,368 @@
+{
+  "fixtures": [
+    {
+      "cost_distribution_rational": {
+        "0": [
+          111,
+          200
+        ],
+        "1": [
+          39,
+          100
+        ],
+        "2": [
+          11,
+          200
+        ]
+      },
+      "enumerated_rational": {
+        "C1": [
+          29,
+          80
+        ],
+        "C1_factorial2": [
+          33,
+          400
+        ],
+        "C2": [
+          33,
+          800
+        ],
+        "G": [
+          33,
+          50
+        ],
+        "G_prime": [
+          33,
+          50
+        ],
+        "cost": [
+          1,
+          2
+        ],
+        "weight": [
+          1,
+          1
+        ]
+      },
+      "expected_rational": {
+        "C1": [
+          29,
+          80
+        ],
+        "C1_factorial2": [
+          33,
+          400
+        ],
+        "C2": [
+          33,
+          800
+        ]
+      },
+      "family": "J1",
+      "realizations": 64
+    },
+    {
+      "cost_distribution_rational": {
+        "0": [
+          343,
+          600
+        ],
+        "1": [
+          179,
+          480
+        ],
+        "2": [
+          133,
+          2400
+        ]
+      },
+      "enumerated_rational": {
+        "C1": [
+          1,
+          2
+        ],
+        "C1_factorial2": [
+          1,
+          3
+        ],
+        "C2": [
+          1,
+          12
+        ],
+        "G": [
+          143,
+          200
+        ],
+        "G_prime": [
+          143,
+          200
+        ],
+        "cost": [
+          387,
+          800
+        ],
+        "weight": [
+          1,
+          1
+        ]
+      },
+      "expected_rational": {
+        "C1": [
+          1,
+          2
+        ],
+        "C1_factorial2": [
+          1,
+          3
+        ],
+        "C2": [
+          1,
+          12
+        ]
+      },
+      "family": "J2",
+      "realizations": 96
+    },
+    {
+      "cost_distribution_rational": {
+        "0": [
+          41,
+          100
+        ],
+        "1": [
+          47,
+          100
+        ],
+        "2": [
+          3,
+          25
+        ]
+      },
+      "enumerated_rational": {
+        "C1": [
+          1,
+          5
+        ],
+        "C1_factorial2": [
+          0,
+          1
+        ],
+        "C2": [
+          0,
+          1
+        ],
+        "G": [
+          49,
+          100
+        ],
+        "G_prime": [
+          49,
+          100
+        ],
+        "cost": [
+          71,
+          100
+        ],
+        "weight": [
+          1,
+          1
+        ]
+      },
+      "expected_rational": {
+        "C1": [
+          1,
+          5
+        ],
+        "C1_factorial2": [
+          0,
+          1
+        ],
+        "C2": [
+          0,
+          1
+        ]
+      },
+      "family": "J3",
+      "realizations": 32
+    },
+    {
+      "cost_distribution_rational": {
+        "0": [
+          14,
+          25
+        ],
+        "1": [
+          19,
+          50
+        ],
+        "2": [
+          3,
+          50
+        ]
+      },
+      "enumerated_rational": {
+        "C1": [
+          0,
+          1
+        ],
+        "C1_factorial2": [
+          0,
+          1
+        ],
+        "C2": [
+          0,
+          1
+        ],
+        "G": [
+          14,
+          25
+        ],
+        "G_prime": [
+          14,
+          25
+        ],
+        "cost": [
+          1,
+          2
+        ],
+        "weight": [
+          1,
+          1
+        ]
+      },
+      "expected_rational": {
+        "C1": [
+          0,
+          1
+        ],
+        "C1_factorial2": [
+          0,
+          1
+        ],
+        "C2": [
+          0,
+          1
+        ]
+      },
+      "family": "ZERO_AND",
+      "realizations": 24
+    },
+    {
+      "cost_distribution_rational": {
+        "0": [
+          1,
+          1
+        ]
+      },
+      "enumerated_rational": {
+        "C1": [
+          0,
+          1
+        ],
+        "C1_factorial2": [
+          0,
+          1
+        ],
+        "C2": [
+          0,
+          1
+        ],
+        "G": [
+          1,
+          1
+        ],
+        "G_prime": [
+          1,
+          1
+        ],
+        "cost": [
+          0,
+          1
+        ],
+        "weight": [
+          1,
+          1
+        ]
+      },
+      "expected_rational": {
+        "C1": [
+          0,
+          1
+        ],
+        "C1_factorial2": [
+          0,
+          1
+        ],
+        "C2": [
+          0,
+          1
+        ]
+      },
+      "family": "ZERO",
+      "realizations": 6
+    },
+    {
+      "cost_distribution_rational": {
+        "1": [
+          5,
+          6
+        ],
+        "2": [
+          1,
+          6
+        ]
+      },
+      "enumerated_rational": {
+        "C1": [
+          0,
+          1
+        ],
+        "C1_factorial2": [
+          0,
+          1
+        ],
+        "C2": [
+          0,
+          1
+        ],
+        "G": [
+          0,
+          1
+        ],
+        "G_prime": [
+          0,
+          1
+        ],
+        "cost": [
+          7,
+          6
+        ],
+        "weight": [
+          1,
+          1
+        ]
+      },
+      "expected_rational": {
+        "C1": [
+          0,
+          1
+        ],
+        "C1_factorial2": [
+          0,
+          1
+        ],
+        "C2": [
+          0,
+          1
+        ]
+      },
+      "family": "ALL_AND",
+      "realizations": 6
+    }
+  ],
+  "protocol_sha256": "676f63437dc7aea118782ef427ac604012d7d2f0bc596ab2aaf063a61554fa64",
+  "realizations": 228,
+  "source_sha256": "25f9555a5eb9ef33ab704208c55dfb7fc7fe039217352dc5a03fd7448cda8d3b",
+  "status": "PASS"
+}

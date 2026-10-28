@@ -1,0 +1,713 @@
+{
+  "fixtures": [
+    {
+      "cycle_and_factorial_moment_checks": 2,
+      "degrees": [
+        2
+      ],
+      "distinct_parent_assignments": 1,
+      "distinguished_row_incidence_checks": 1,
+      "fixed_set_coefficient_checks": 2,
+      "labeled_matchings": 2,
+      "lambda": {
+        "denominator": 2,
+        "numerator": 1
+      },
+      "law_weights": [
+        {
+          "0": 2,
+          "3": 1,
+          "4": 1
+        }
+      ],
+      "n": 1,
+      "name": "one_vertex_dependent",
+      "physical_rule_realizations": 3,
+      "repeated_parent_realizations": 3,
+      "rho": {
+        "denominator": 2,
+        "numerator": 1
+      },
+      "strict_condition": true,
+      "zero_safe_incidence_bound_checks": [
+        {
+          "bound": 3.399445359200479,
+          "exact_expectation": {
+            "denominator": 2,
+            "numerator": 1
+          },
+          "k": 1
+        }
+      ]
+    },
+    {
+      "cycle_and_factorial_moment_checks": 4,
+      "degrees": [
+        1,
+        3
+      ],
+      "distinct_parent_assignments": 4,
+      "distinguished_row_incidence_checks": 4,
+      "fixed_set_coefficient_checks": 4,
+      "labeled_matchings": 24,
+      "lambda": {
+        "denominator": 16,
+        "numerator": 11
+      },
+      "law_weights": [
+        {
+          "0": 2,
+          "4": 2,
+          "5": 3,
+          "6": 1
+        },
+        {
+          "0": 3,
+          "3": 2,
+          "4": 2,
+          "7": 1
+        }
+      ],
+      "n": 2,
+      "name": "asymmetric_degree_correlated",
+      "physical_rule_realizations": 64,
+      "repeated_parent_realizations": 64,
+      "rho": {
+        "denominator": 32,
+        "numerator": 21
+      },
+      "strict_condition": true,
+      "zero_safe_incidence_bound_checks": [
+        {
+          "bound": 11.945527862149875,
+          "exact_expectation": {
+            "denominator": 64,
+            "numerator": 15
+          },
+          "k": 1
+        },
+        {
+          "bound": 94.3842914449762,
+          "exact_expectation": {
+            "denominator": 16,
+            "numerator": 15
+          },
+          "k": 2
+        }
+      ]
+    },
+    {
+      "cycle_and_factorial_moment_checks": 4,
+      "degrees": [
+        1,
+        3
+      ],
+      "distinct_parent_assignments": 4,
+      "distinguished_row_incidence_checks": 4,
+      "fixed_set_coefficient_checks": 4,
+      "labeled_matchings": 24,
+      "lambda": {
+        "denominator": 8,
+        "numerator": 1
+      },
+      "law_weights": [
+        {
+          "0": 1,
+          "5": 1
+        },
+        {
+          "0": 2,
+          "4": 3
+        }
+      ],
+      "n": 2,
+      "name": "zero_singleton_type",
+      "physical_rule_realizations": 16,
+      "repeated_parent_realizations": 16,
+      "rho": {
+        "denominator": 40,
+        "numerator": 23
+      },
+      "strict_condition": true,
+      "zero_safe_incidence_bound_checks": [
+        {
+          "bound": 10.195624597186454,
+          "exact_expectation": {
+            "denominator": 40,
+            "numerator": 9
+          },
+          "k": 1
+        },
+        {
+          "bound": 80.21645975236824,
+          "exact_expectation": {
+            "denominator": 5,
+            "numerator": 3
+          },
+          "k": 2
+        }
+      ]
+    },
+    {
+      "cycle_and_factorial_moment_checks": 7,
+      "degrees": [
+        0,
+        2,
+        4
+      ],
+      "distinct_parent_assignments": 15,
+      "distinguished_row_incidence_checks": 12,
+      "fixed_set_coefficient_checks": 8,
+      "labeled_matchings": 720,
+      "lambda": {
+        "denominator": 4,
+        "numerator": 1
+      },
+      "law_weights": [
+        {
+          "0": 4,
+          "5": 3,
+          "6": 1
+        },
+        {
+          "0": 5,
+          "3": 2,
+          "7": 1
+        },
+        {
+          "0": 1,
+          "4": 1
+        }
+      ],
+      "n": 3,
+      "name": "zero_degree_three_types",
+      "physical_rule_realizations": 270,
+      "repeated_parent_realizations": 270,
+      "rho": {
+        "denominator": 24,
+        "numerator": 11
+      },
+      "strict_condition": true,
+      "zero_safe_incidence_bound_checks": [
+        {
+          "bound": 18.193719840800537,
+          "exact_expectation": {
+            "denominator": 8,
+            "numerator": 1
+          },
+          "k": 1
+        },
+        {
+          "bound": 193.09000762656444,
+          "exact_expectation": {
+            "denominator": 120,
+            "numerator": 29
+          },
+          "k": 2
+        },
+        {
+          "bound": 860.5052932305856,
+          "exact_expectation": {
+            "denominator": 32,
+            "numerator": 9
+          },
+          "k": 3
+        }
+      ]
+    },
+    {
+      "cycle_and_factorial_moment_checks": 7,
+      "degrees": [
+        2,
+        2,
+        2
+      ],
+      "distinct_parent_assignments": 90,
+      "distinguished_row_incidence_checks": 12,
+      "fixed_set_coefficient_checks": 8,
+      "labeled_matchings": 720,
+      "lambda": {
+        "denominator": 18,
+        "numerator": 17
+      },
+      "law_weights": [
+        {
+          "0": 8,
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "6": 6,
+          "7": 7
+        },
+        {
+          "0": 8,
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "6": 6,
+          "7": 7
+        },
+        {
+          "0": 8,
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "6": 6,
+          "7": 7
+        }
+      ],
+      "n": 3,
+      "name": "all_eight_dependent_corners",
+      "physical_rule_realizations": 46080,
+      "repeated_parent_realizations": 21504,
+      "rho": {
+        "denominator": 9,
+        "numerator": 7
+      },
+      "strict_condition": true,
+      "zero_safe_incidence_bound_checks": [
+        {
+          "bound": 1.3853683257111569,
+          "exact_expectation": {
+            "denominator": 45,
+            "numerator": 7
+          },
+          "k": 1
+        },
+        {
+          "bound": 7.152605291952765,
+          "exact_expectation": {
+            "denominator": 1458,
+            "numerator": 805
+          },
+          "k": 2
+        },
+        {
+          "bound": 19.0381802895176,
+          "exact_expectation": {
+            "denominator": 243,
+            "numerator": 343
+          },
+          "k": 3
+        }
+      ]
+    },
+    {
+      "cycle_and_factorial_moment_checks": 7,
+      "degrees": [
+        2,
+        2,
+        2
+      ],
+      "distinct_parent_assignments": 90,
+      "distinguished_row_incidence_checks": 12,
+      "fixed_set_coefficient_checks": 8,
+      "labeled_matchings": 720,
+      "lambda": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "law_weights": [
+        {
+          "0": 1,
+          "4": 1
+        },
+        {
+          "0": 1,
+          "4": 1
+        },
+        {
+          "0": 1,
+          "4": 1
+        }
+      ],
+      "n": 3,
+      "name": "lambda_zero_admissible",
+      "physical_rule_realizations": 720,
+      "repeated_parent_realizations": 336,
+      "rho": {
+        "denominator": 2,
+        "numerator": 1
+      },
+      "strict_condition": true,
+      "zero_safe_incidence_bound_checks": [
+        {
+          "bound": 1.1331484530668263,
+          "exact_expectation": {
+            "denominator": 10,
+            "numerator": 1
+          },
+          "k": 1
+        },
+        {
+          "bound": 5.7423362331025665,
+          "exact_expectation": {
+            "denominator": 10,
+            "numerator": 1
+          },
+          "k": 2
+        },
+        {
+          "bound": 15.002118659247268,
+          "exact_expectation": {
+            "denominator": 8,
+            "numerator": 3
+          },
+          "k": 3
+        }
+      ]
+    },
+    {
+      "cycle_and_factorial_moment_checks": 7,
+      "degrees": [
+        1,
+        2,
+        3
+      ],
+      "distinct_parent_assignments": 60,
+      "distinguished_row_incidence_checks": 12,
+      "fixed_set_coefficient_checks": 8,
+      "labeled_matchings": 720,
+      "lambda": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "law_weights": [
+        {
+          "0": 1
+        },
+        {
+          "0": 1
+        },
+        {
+          "0": 1
+        }
+      ],
+      "n": 3,
+      "name": "constant_zero",
+      "physical_rule_realizations": 60,
+      "repeated_parent_realizations": 36,
+      "rho": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "strict_condition": true,
+      "zero_safe_incidence_bound_checks": [
+        {
+          "bound": 0.0,
+          "exact_expectation": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "k": 1
+        },
+        {
+          "bound": 0.0,
+          "exact_expectation": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "k": 2
+        },
+        {
+          "bound": 0.0,
+          "exact_expectation": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "k": 3
+        }
+      ]
+    },
+    {
+      "cycle_and_factorial_moment_checks": 7,
+      "degrees": [
+        2,
+        2,
+        2
+      ],
+      "distinct_parent_assignments": 90,
+      "distinguished_row_incidence_checks": 12,
+      "fixed_set_coefficient_checks": 8,
+      "labeled_matchings": 720,
+      "lambda": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "law_weights": [
+        {
+          "4": 1
+        },
+        {
+          "4": 1
+        },
+        {
+          "4": 1
+        }
+      ],
+      "n": 3,
+      "name": "all_AND_negative_condition",
+      "physical_rule_realizations": 90,
+      "repeated_parent_realizations": 42,
+      "rho": {
+        "denominator": 1,
+        "numerator": 1
+      },
+      "strict_condition": false,
+      "zero_safe_incidence_bound_checks": []
+    },
+    {
+      "cycle_and_factorial_moment_checks": 4,
+      "degrees": [
+        1,
+        3
+      ],
+      "distinct_parent_assignments": 4,
+      "distinguished_row_incidence_checks": 4,
+      "fixed_set_coefficient_checks": 4,
+      "labeled_matchings": 24,
+      "lambda": {
+        "denominator": 2,
+        "numerator": 1
+      },
+      "law_weights": [
+        {
+          "0": 27,
+          "1": 9,
+          "2": 9,
+          "3": 3,
+          "4": 9,
+          "5": 3,
+          "6": 3,
+          "7": 1
+        },
+        {
+          "0": 27,
+          "1": 9,
+          "2": 9,
+          "3": 3,
+          "4": 9,
+          "5": 3,
+          "6": 3,
+          "7": 1
+        }
+      ],
+      "n": 2,
+      "name": "independent_Bernoulli_quarter",
+      "physical_rule_realizations": 256,
+      "repeated_parent_realizations": 256,
+      "rho": {
+        "denominator": 64,
+        "numerator": 37
+      },
+      "strict_condition": true,
+      "zero_safe_incidence_bound_checks": [
+        {
+          "bound": 9.805827444213133,
+          "exact_expectation": {
+            "denominator": 512,
+            "numerator": 111
+          },
+          "k": 1
+        },
+        {
+          "bound": 77.16043252776203,
+          "exact_expectation": {
+            "denominator": 2048,
+            "numerator": 1369
+          },
+          "k": 2
+        }
+      ]
+    },
+    {
+      "cycle_and_factorial_moment_checks": 4,
+      "degrees": [
+        1,
+        3
+      ],
+      "distinct_parent_assignments": 4,
+      "distinguished_row_incidence_checks": 4,
+      "fixed_set_coefficient_checks": 4,
+      "labeled_matchings": 24,
+      "lambda": {
+        "denominator": 80,
+        "numerator": 29
+      },
+      "law_weights": [
+        {
+          "0": 30,
+          "4": 15,
+          "5": 45,
+          "6": 10
+        },
+        {
+          "0": 60,
+          "4": 10,
+          "5": 10,
+          "6": 20
+        }
+      ],
+      "n": 2,
+      "name": "J1",
+      "physical_rule_realizations": 64,
+      "repeated_parent_realizations": 64,
+      "rho": {
+        "denominator": 40,
+        "numerator": 19
+      },
+      "strict_condition": true,
+      "zero_safe_incidence_bound_checks": [
+        {
+          "bound": 12.635464907198628,
+          "exact_expectation": {
+            "denominator": 200,
+            "numerator": 29
+          },
+          "k": 1
+        },
+        {
+          "bound": 98.89696015697022,
+          "exact_expectation": {
+            "denominator": 25,
+            "numerator": 14
+          },
+          "k": 2
+        }
+      ]
+    },
+    {
+      "cycle_and_factorial_moment_checks": 4,
+      "degrees": [
+        2,
+        2
+      ],
+      "distinct_parent_assignments": 6,
+      "distinguished_row_incidence_checks": 4,
+      "fixed_set_coefficient_checks": 4,
+      "labeled_matchings": 24,
+      "lambda": {
+        "denominator": 2,
+        "numerator": 1
+      },
+      "law_weights": [
+        {
+          "0": 55,
+          "3": 10,
+          "4": 20,
+          "7": 15
+        },
+        {
+          "0": 55,
+          "3": 10,
+          "4": 20,
+          "7": 15
+        }
+      ],
+      "n": 2,
+      "name": "J2",
+      "physical_rule_realizations": 96,
+      "repeated_parent_realizations": 32,
+      "rho": {
+        "denominator": 20,
+        "numerator": 9
+      },
+      "strict_condition": true,
+      "zero_safe_incidence_bound_checks": [
+        {
+          "bound": 1.5297504116402159,
+          "exact_expectation": {
+            "denominator": 20,
+            "numerator": 3
+          },
+          "k": 1
+        },
+        {
+          "bound": 7.752153914688466,
+          "exact_expectation": {
+            "denominator": 200,
+            "numerator": 81
+          },
+          "k": 2
+        }
+      ]
+    },
+    {
+      "cycle_and_factorial_moment_checks": 4,
+      "degrees": [
+        1,
+        3
+      ],
+      "distinct_parent_assignments": 4,
+      "distinguished_row_incidence_checks": 4,
+      "fixed_set_coefficient_checks": 4,
+      "labeled_matchings": 24,
+      "lambda": {
+        "denominator": 5,
+        "numerator": 1
+      },
+      "law_weights": [
+        {
+          "0": 30,
+          "5": 45,
+          "6": 15,
+          "7": 10
+        },
+        {
+          "0": 40,
+          "4": 60
+        }
+      ],
+      "n": 2,
+      "name": "J3",
+      "physical_rule_realizations": 32,
+      "repeated_parent_realizations": 32,
+      "rho": {
+        "denominator": 8,
+        "numerator": 5
+      },
+      "strict_condition": true,
+      "zero_safe_incidence_bound_checks": [
+        {
+          "bound": 11.552951953371052,
+          "exact_expectation": {
+            "denominator": 50,
+            "numerator": 9
+          },
+          "k": 1
+        },
+        {
+          "bound": 91.08519035066784,
+          "exact_expectation": {
+            "denominator": 25,
+            "numerator": 21
+          },
+          "k": 2
+        }
+      ]
+    }
+  ],
+  "physical_checks": {
+    "G_prime_cost_equalities": 270,
+    "additional_seeded_networks": 300,
+    "component_optima": 1790,
+    "exhaustive_two_node_networks": 1024,
+    "global_optima": 1324,
+    "literal_compatible_trajectories": 9216,
+    "networks": 1324,
+    "pin_set_capture_equalities": 4096
+  },
+  "protocol_sha256": "676f63437dc7aea118782ef427ac604012d7d2f0bc596ab2aaf063a61554fa64",
+  "scope": "Exact finite-state and rational-arithmetic validation checks.",
+  "source_hashes": {
+    "independent_exact_checks.py": "9b17553c3138b5f331b900dc078a15db4f53f1d841a3718963ad91ad2072785c",
+    "independent_network_oracle.py": "8ffcf94f4fae290e7df94f603da555febff1bad4af2ccc56a026394b8a035ec9"
+  },
+  "status": "PASS"
+}

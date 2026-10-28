@@ -1,0 +1,34 @@
+{
+  "exhaustive_two_variable_maps": {
+    "eligibility_sets": 676,
+    "failures": 0,
+    "map_dependency_supergraph_pairs": 169,
+    "maps": 64,
+    "pin_sets": 676
+  },
+  "exhaustive_two_variable_two_slot_models": {
+    "G_prime_passes": 184,
+    "checks": [
+      "conservative residual cost equivalence",
+      "G-prime implies exact marked-cycle cost"
+    ],
+    "failures": 0,
+    "realizations": 1024
+  },
+  "scope": "finite exhaustive and seeded physical-state, reduction, component and eligibility checks",
+  "seed": 20261015,
+  "seeded_three_four_variable_maps": {
+    "eligibility_sets": 11200,
+    "failures": 0,
+    "four_variable_maps": 200,
+    "pin_sets": 11200,
+    "three_variable_maps": 1000
+  },
+  "seeded_three_variable_two_slot_models": {
+    "G_prime_passes": 204,
+    "failures": 0,
+    "realizations": 1000
+  },
+  "semantics": "synchronous; fixed zero target; permanent zero pins; all compatible initial states",
+  "status": "PASS"
+}

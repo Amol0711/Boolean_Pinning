@@ -1,0 +1,2119 @@
+{
+  "CP_quantile_validation": {
+    "absolute_tail_tolerance": 2e-10,
+    "distinct_count_intervals": 19,
+    "maximum_absolute_tail_error": 9.223524721768683e-14
+  },
+  "additional_statistics": [
+    {
+      "G_prime_rescued_count": 12,
+      "cost_interval_width_histogram": {
+        "0": 2000
+      },
+      "exact_reason_counts": {
+        "SCC_exact": 38,
+        "original_G": 1950,
+        "weaker_G_prime": 12
+      },
+      "family": "J1",
+      "integer_moment_sums": {
+        "m2": {
+          "lower_sum": 1306,
+          "lower_sum_squared_variables": 4594,
+          "upper_sum": 1306,
+          "upper_sum_squared_variables": 4594
+        },
+        "mean": {
+          "lower_sum": 908,
+          "lower_sum_squared_variables": 1306,
+          "upper_sum": 908,
+          "upper_sum_squared_variables": 1306
+        }
+      },
+      "largest_complex_histogram": {
+        "0": 1962,
+        "1": 15,
+        "2": 10,
+        "3": 6,
+        "4": 3,
+        "5": 4
+      },
+      "n": 100,
+      "residual_size_histogram": {
+        "0": 1266,
+        "1": 366,
+        "2": 145,
+        "3": 91,
+        "4": 51,
+        "5": 37,
+        "6": 21,
+        "7": 7,
+        "8": 7,
+        "9": 4,
+        "10": 4,
+        "13": 1
+      },
+      "solver_work_total": 1377,
+      "stop_reason_component_counts": {}
+    },
+    {
+      "G_prime_rescued_count": 0,
+      "cost_interval_width_histogram": {
+        "0": 2000
+      },
+      "exact_reason_counts": {
+        "SCC_exact": 4,
+        "original_G": 1996
+      },
+      "family": "J1",
+      "integer_moment_sums": {
+        "m2": {
+          "lower_sum": 1279,
+          "lower_sum_squared_variables": 4519,
+          "upper_sum": 1279,
+          "upper_sum_squared_variables": 4519
+        },
+        "mean": {
+          "lower_sum": 919,
+          "lower_sum_squared_variables": 1279,
+          "upper_sum": 919,
+          "upper_sum_squared_variables": 1279
+        }
+      },
+      "largest_complex_histogram": {
+        "0": 1996,
+        "1": 2,
+        "2": 1,
+        "4": 1
+      },
+      "n": 1600,
+      "residual_size_histogram": {
+        "0": 1236,
+        "1": 391,
+        "2": 172,
+        "3": 83,
+        "4": 45,
+        "5": 30,
+        "6": 21,
+        "7": 12,
+        "8": 1,
+        "9": 5,
+        "11": 2,
+        "12": 1,
+        "13": 1
+      },
+      "solver_work_total": 92,
+      "stop_reason_component_counts": {}
+    },
+    {
+      "G_prime_rescued_count": 0,
+      "cost_interval_width_histogram": {
+        "0": 2000
+      },
+      "exact_reason_counts": {
+        "original_G": 2000
+      },
+      "family": "J1",
+      "integer_moment_sums": {
+        "m2": {
+          "lower_sum": 1162,
+          "lower_sum_squared_variables": 3742,
+          "upper_sum": 1162,
+          "upper_sum_squared_variables": 3742
+        },
+        "mean": {
+          "lower_sum": 848,
+          "lower_sum_squared_variables": 1162,
+          "upper_sum": 848,
+          "upper_sum_squared_variables": 1162
+        }
+      },
+      "largest_complex_histogram": {
+        "0": 2000
+      },
+      "n": 25600,
+      "residual_size_histogram": {
+        "0": 1293,
+        "1": 379,
+        "2": 153,
+        "3": 81,
+        "4": 42,
+        "5": 20,
+        "6": 12,
+        "7": 7,
+        "8": 2,
+        "9": 8,
+        "11": 2,
+        "12": 1
+      },
+      "solver_work_total": 0,
+      "stop_reason_component_counts": {}
+    },
+    {
+      "G_prime_rescued_count": 19,
+      "cost_interval_width_histogram": {
+        "0": 2000
+      },
+      "exact_reason_counts": {
+        "SCC_exact": 44,
+        "original_G": 1937,
+        "weaker_G_prime": 19
+      },
+      "family": "J2",
+      "integer_moment_sums": {
+        "m2": {
+          "lower_sum": 2172,
+          "lower_sum_squared_variables": 9732,
+          "upper_sum": 2172,
+          "upper_sum_squared_variables": 9732
+        },
+        "mean": {
+          "lower_sum": 1342,
+          "lower_sum_squared_variables": 2172,
+          "upper_sum": 1342,
+          "upper_sum_squared_variables": 2172
+        }
+      },
+      "largest_complex_histogram": {
+        "0": 1956,
+        "1": 9,
+        "2": 13,
+        "3": 5,
+        "4": 6,
+        "5": 3,
+        "6": 3,
+        "7": 3,
+        "8": 1,
+        "9": 1
+      },
+      "n": 100,
+      "residual_size_histogram": {
+        "0": 1007,
+        "1": 405,
+        "2": 206,
+        "3": 118,
+        "4": 82,
+        "5": 50,
+        "6": 41,
+        "7": 31,
+        "8": 17,
+        "9": 17,
+        "10": 9,
+        "11": 8,
+        "12": 6,
+        "13": 2,
+        "15": 1
+      },
+      "solver_work_total": 12910,
+      "stop_reason_component_counts": {}
+    },
+    {
+      "G_prime_rescued_count": 2,
+      "cost_interval_width_histogram": {
+        "0": 2000
+      },
+      "exact_reason_counts": {
+        "SCC_exact": 1,
+        "original_G": 1997,
+        "weaker_G_prime": 2
+      },
+      "family": "J2",
+      "integer_moment_sums": {
+        "m2": {
+          "lower_sum": 2257,
+          "lower_sum_squared_variables": 11269,
+          "upper_sum": 2257,
+          "upper_sum_squared_variables": 11269
+        },
+        "mean": {
+          "lower_sum": 1355,
+          "lower_sum_squared_variables": 2257,
+          "upper_sum": 1355,
+          "upper_sum_squared_variables": 2257
+        }
+      },
+      "largest_complex_histogram": {
+        "0": 1999,
+        "3": 1
+      },
+      "n": 1600,
+      "residual_size_histogram": {
+        "0": 1011,
+        "1": 363,
+        "2": 216,
+        "3": 134,
+        "4": 79,
+        "5": 56,
+        "6": 31,
+        "7": 23,
+        "8": 25,
+        "9": 17,
+        "10": 13,
+        "11": 8,
+        "12": 6,
+        "13": 5,
+        "14": 3,
+        "15": 5,
+        "17": 2,
+        "18": 2,
+        "20": 1
+      },
+      "solver_work_total": 34,
+      "stop_reason_component_counts": {}
+    },
+    {
+      "G_prime_rescued_count": 1,
+      "cost_interval_width_histogram": {
+        "0": 2000
+      },
+      "exact_reason_counts": {
+        "original_G": 1999,
+        "weaker_G_prime": 1
+      },
+      "family": "J2",
+      "integer_moment_sums": {
+        "m2": {
+          "lower_sum": 2341,
+          "lower_sum_squared_variables": 13501,
+          "upper_sum": 2341,
+          "upper_sum_squared_variables": 13501
+        },
+        "mean": {
+          "lower_sum": 1393,
+          "lower_sum_squared_variables": 2341,
+          "upper_sum": 1393,
+          "upper_sum_squared_variables": 2341
+        }
+      },
+      "largest_complex_histogram": {
+        "0": 2000
+      },
+      "n": 25600,
+      "residual_size_histogram": {
+        "0": 988,
+        "1": 382,
+        "2": 226,
+        "3": 124,
+        "4": 84,
+        "5": 62,
+        "6": 41,
+        "7": 25,
+        "8": 13,
+        "9": 15,
+        "10": 14,
+        "11": 6,
+        "12": 6,
+        "13": 5,
+        "14": 3,
+        "15": 2,
+        "17": 1,
+        "19": 2,
+        "22": 1
+      },
+      "solver_work_total": 0,
+      "stop_reason_component_counts": {}
+    },
+    {
+      "G_prime_rescued_count": 0,
+      "cost_interval_width_histogram": {
+        "0": 2000
+      },
+      "exact_reason_counts": {
+        "SCC_exact": 17,
+        "original_G": 1983
+      },
+      "family": "J3",
+      "integer_moment_sums": {
+        "m2": {
+          "lower_sum": 576,
+          "lower_sum_squared_variables": 1212,
+          "upper_sum": 576,
+          "upper_sum_squared_variables": 1212
+        },
+        "mean": {
+          "lower_sum": 482,
+          "lower_sum_squared_variables": 576,
+          "upper_sum": 482,
+          "upper_sum_squared_variables": 576
+        }
+      },
+      "largest_complex_histogram": {
+        "0": 1983,
+        "1": 8,
+        "2": 5,
+        "3": 3,
+        "4": 1
+      },
+      "n": 100,
+      "residual_size_histogram": {
+        "0": 1563,
+        "1": 353,
+        "2": 61,
+        "3": 19,
+        "4": 4
+      },
+      "solver_work_total": 272,
+      "stop_reason_component_counts": {}
+    },
+    {
+      "G_prime_rescued_count": 0,
+      "cost_interval_width_histogram": {
+        "0": 2000
+      },
+      "exact_reason_counts": {
+        "SCC_exact": 1,
+        "original_G": 1999
+      },
+      "family": "J3",
+      "integer_moment_sums": {
+        "m2": {
+          "lower_sum": 502,
+          "lower_sum_squared_variables": 1114,
+          "upper_sum": 502,
+          "upper_sum_squared_variables": 1114
+        },
+        "mean": {
+          "lower_sum": 418,
+          "lower_sum_squared_variables": 502,
+          "upper_sum": 418,
+          "upper_sum_squared_variables": 502
+        }
+      },
+      "largest_complex_histogram": {
+        "0": 1999,
+        "1": 1
+      },
+      "n": 1600,
+      "residual_size_histogram": {
+        "0": 1621,
+        "1": 300,
+        "2": 65,
+        "3": 14
+      },
+      "solver_work_total": 3,
+      "stop_reason_component_counts": {}
+    },
+    {
+      "G_prime_rescued_count": 0,
+      "cost_interval_width_histogram": {
+        "0": 2000
+      },
+      "exact_reason_counts": {
+        "original_G": 2000
+      },
+      "family": "J3",
+      "integer_moment_sums": {
+        "m2": {
+          "lower_sum": 551,
+          "lower_sum_squared_variables": 1247,
+          "upper_sum": 551,
+          "upper_sum_squared_variables": 1247
+        },
+        "mean": {
+          "lower_sum": 453,
+          "lower_sum_squared_variables": 551,
+          "upper_sum": 453,
+          "upper_sum_squared_variables": 551
+        }
+      },
+      "largest_complex_histogram": {
+        "0": 2000
+      },
+      "n": 25600,
+      "residual_size_histogram": {
+        "0": 1593,
+        "1": 325,
+        "2": 65,
+        "3": 13,
+        "4": 3,
+        "5": 1
+      },
+      "solver_work_total": 0,
+      "stop_reason_component_counts": {}
+    }
+  ],
+  "checks": {
+    "CP_binomial_tail_identity": 36,
+    "G_double_row_equivalence": 18000,
+    "SCC_and_work_ranges": 18000,
+    "certificate_cost_identity": 18000,
+    "complete_cell_row_count": 9,
+    "complete_detail_cell_files": 1,
+    "complete_raw_cell_files": 1,
+    "complete_sample_accounting": 1,
+    "complete_unique_replicate_ids": 9,
+    "detail_raw_cycle_count_consistency": 18000,
+    "detail_raw_summary_consistency": 18000,
+    "detail_row_identity": 18000,
+    "detail_stream_record_count": 9,
+    "exact_corner_probability_law": 5,
+    "exact_support_map_identity": 51,
+    "export_array_coverage": 76,
+    "export_exact_integer_comparisons": 277,
+    "export_field_coverage": 99,
+    "export_field_types": 99,
+    "export_float_comparisons": 471,
+    "export_other_comparisons": 18105,
+    "fixed_design": 1,
+    "focused_design_scope": 1,
+    "integer_type_block_sizes": 15,
+    "law_normalization_and_stub_balance": 3,
+    "nested_certificates": 18000,
+    "network_hash_format": 18000,
+    "row_cell_identity": 18000,
+    "source_hash_key_coverage": 3,
+    "stop_count_format": 18000,
+    "strict_contraction": 3,
+    "summary_csv_cell_coverage": 1,
+    "uncertified_cycle_count_representation": 18000,
+    "unique_seed_family_ids": 1,
+    "valid_cost_interval": 18000,
+    "valid_type_fraction_degree": 5,
+    "witness_cardinality_and_labels": 18000
+  },
+  "coverage": {
+    "cells": 9,
+    "detail_rows_read": 18000,
+    "families": 3,
+    "raw_rows_read": 18000,
+    "summary_CSV_cells": 9,
+    "summary_CSV_fields_per_cell": 37,
+    "summary_JSON_cells": 9,
+    "unique_draws": 18000
+  },
+  "expected_summary": [
+    {
+      "G_failures": 50,
+      "G_failures_cp95": [
+        0.018611105676337118,
+        0.03282777114900504
+      ],
+      "G_prime_failures": 38,
+      "G_prime_failures_cp95": [
+        0.013479737835558647,
+        0.025986475638005792
+      ],
+      "P0": {
+        "cp95_envelope": [
+          0.6114436826273422,
+          0.6541656493431736
+        ],
+        "definite_zero_count": 1266,
+        "lower": 0.633,
+        "possible_zero_count": 1266,
+        "upper": 0.633
+      },
+      "contraction_coefficient": 0.475,
+      "draws": 2000,
+      "exact_reason_counts": {
+        "SCC_exact": 38,
+        "original_G": 1950,
+        "weaker_G_prime": 12
+      },
+      "family": "J1",
+      "lambda": 0.3625,
+      "m2": {
+        "lower": 0.653,
+        "normal95_envelope": [
+          0.5930442121502948,
+          0.7129557878497053
+        ],
+        "se_lower": 0.03059024978143927,
+        "se_upper": 0.03059024978143927,
+        "upper": 0.653
+      },
+      "max_complex": 5,
+      "max_residual": 13,
+      "mean": {
+        "lower": 0.454,
+        "normal95_envelope": [
+          0.42469517739129614,
+          0.4833048226087039
+        ],
+        "se_lower": 0.01495171484775055,
+        "se_upper": 0.01495171484775055,
+        "upper": 0.454
+      },
+      "mu": 0.4502010019495558,
+      "n": 100,
+      "reference_m2": 0.6528819441059398,
+      "reference_p0": 0.6375,
+      "rho": 0.475,
+      "stop_reason_counts": {},
+      "stream_sha256": {
+        "details": "781c17f704df11c99eb56c10963e5252e3af7a461e7a1b507c68f086a0860205",
+        "raw": "c85afbdf0c6124fc976dbdd9ad2bec14d6742d040168ca185304bf8b2445aee5"
+      },
+      "total_solver_work": 1377,
+      "unresolved": 0
+    },
+    {
+      "G_failures": 4,
+      "G_failures_cp95": [
+        0.0005451931252109994,
+        0.005112808605346209
+      ],
+      "G_prime_failures": 4,
+      "G_prime_failures_cp95": [
+        0.0005451931252109994,
+        0.005112808605346209
+      ],
+      "P0": {
+        "cp95_envelope": [
+          0.596295467101762,
+          0.6393579674883163
+        ],
+        "definite_zero_count": 1236,
+        "lower": 0.618,
+        "possible_zero_count": 1236,
+        "upper": 0.618
+      },
+      "contraction_coefficient": 0.475,
+      "draws": 2000,
+      "exact_reason_counts": {
+        "SCC_exact": 4,
+        "original_G": 1996
+      },
+      "family": "J1",
+      "lambda": 0.3625,
+      "m2": {
+        "lower": 0.6395,
+        "normal95_envelope": [
+          0.5798664171381278,
+          0.6991335828618721
+        ],
+        "se_lower": 0.030425856460758592,
+        "se_upper": 0.030425856460758592,
+        "upper": 0.6395
+      },
+      "max_complex": 4,
+      "max_residual": 13,
+      "mean": {
+        "lower": 0.4595,
+        "normal95_envelope": [
+          0.43080897775587945,
+          0.4881910222441206
+        ],
+        "se_lower": 0.0146385456418749,
+        "se_upper": 0.0146385456418749,
+        "upper": 0.4595
+      },
+      "mu": 0.4502010019495558,
+      "n": 1600,
+      "reference_m2": 0.6528819441059398,
+      "reference_p0": 0.6375,
+      "rho": 0.475,
+      "stop_reason_counts": {},
+      "stream_sha256": {
+        "details": "0510fed232fb32be31c86d3de65aff1bb47709f2e3c80dbaba12647fd0b930fc",
+        "raw": "96f623c7b223e72980073249b67a6806493b88a78e2744a5c6ccc244c2865746"
+      },
+      "total_solver_work": 92,
+      "unresolved": 0
+    },
+    {
+      "G_failures": 0,
+      "G_failures_cp95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "G_prime_failures": 0,
+      "G_prime_failures_cp95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "P0": {
+        "cp95_envelope": [
+          0.6250958574731245,
+          0.6674737662823103
+        ],
+        "definite_zero_count": 1293,
+        "lower": 0.6465,
+        "possible_zero_count": 1293,
+        "upper": 0.6465
+      },
+      "contraction_coefficient": 0.475,
+      "draws": 2000,
+      "exact_reason_counts": {
+        "original_G": 2000
+      },
+      "family": "J1",
+      "lambda": 0.3625,
+      "m2": {
+        "lower": 0.581,
+        "normal95_envelope": [
+          0.5267156119711659,
+          0.635284388028834
+        ],
+        "se_lower": 0.027696625273230725,
+        "se_upper": 0.027696625273230725,
+        "upper": 0.581
+      },
+      "max_complex": 0,
+      "max_residual": 12,
+      "mean": {
+        "lower": 0.424,
+        "normal95_envelope": [
+          0.3962326045322464,
+          0.4517673954677536
+        ],
+        "se_lower": 0.014167298831396514,
+        "se_upper": 0.014167298831396514,
+        "upper": 0.424
+      },
+      "mu": 0.4502010019495558,
+      "n": 25600,
+      "reference_m2": 0.6528819441059398,
+      "reference_p0": 0.6375,
+      "rho": 0.475,
+      "stop_reason_counts": {},
+      "stream_sha256": {
+        "details": "1bf1f0fe479402584265d0b4c51b9714b0336892130d31f1df29e7cc06f1a65e",
+        "raw": "f6c48ba06869b5fdcddae7a6c3254b5f72f9d328b4b500c240be8a74141b5622"
+      },
+      "total_solver_work": 0,
+      "unresolved": 0
+    },
+    {
+      "G_failures": 63,
+      "G_failures_cp95": [
+        0.024288566203896706,
+        0.040123971659625404
+      ],
+      "G_prime_failures": 44,
+      "G_prime_failures_cp95": [
+        0.016029647169849046,
+        0.029422409482738006
+      ],
+      "P0": {
+        "cp95_envelope": [
+          0.4818453830996693,
+          0.5261428739365067
+        ],
+        "definite_zero_count": 1008,
+        "lower": 0.504,
+        "possible_zero_count": 1008,
+        "upper": 0.504
+      },
+      "contraction_coefficient": 0.5,
+      "draws": 2000,
+      "exact_reason_counts": {
+        "SCC_exact": 44,
+        "original_G": 1937,
+        "weaker_G_prime": 19
+      },
+      "family": "J2",
+      "lambda": 0.5,
+      "m2": {
+        "lower": 1.086,
+        "normal95_envelope": [
+          1.0018304628586185,
+          1.1701695371413816
+        ],
+        "se_lower": 0.04294443051265237,
+        "se_upper": 0.04294443051265237,
+        "upper": 1.086
+      },
+      "max_complex": 9,
+      "max_residual": 15,
+      "mean": {
+        "lower": 0.671,
+        "normal95_envelope": [
+          0.6360467186786362,
+          0.7059532813213639
+        ],
+        "se_lower": 0.01783363449383299,
+        "se_upper": 0.01783363449383299,
+        "upper": 0.671
+      },
+      "mu": 0.6931471805599453,
+      "n": 100,
+      "reference_m2": 1.1736001944781467,
+      "reference_p0": 0.5,
+      "rho": 0.45,
+      "stop_reason_counts": {},
+      "stream_sha256": {
+        "details": "22823418f930be50040138991deed23095d339657253b59f0ecf6ce54d2a3571",
+        "raw": "2dae979c1db5065998bee66fb410ccad70939f34bc18d288e3dfe755dceb0420"
+      },
+      "total_solver_work": 12910,
+      "unresolved": 0
+    },
+    {
+      "G_failures": 3,
+      "G_failures_cp95": [
+        0.00030944294931233306,
+        0.004377320104529616
+      ],
+      "G_prime_failures": 1,
+      "G_prime_failures_cp95": [
+        1.2658823868557889e-05,
+        0.0027826398346589465
+      ],
+      "P0": {
+        "cp95_envelope": [
+          0.4833438050590795,
+          0.5276400483589123
+        ],
+        "definite_zero_count": 1011,
+        "lower": 0.5055,
+        "possible_zero_count": 1011,
+        "upper": 0.5055
+      },
+      "contraction_coefficient": 0.5,
+      "draws": 2000,
+      "exact_reason_counts": {
+        "SCC_exact": 1,
+        "original_G": 1997,
+        "weaker_G_prime": 2
+      },
+      "family": "J2",
+      "lambda": 0.5,
+      "m2": {
+        "lower": 1.1285,
+        "normal95_envelope": [
+          1.0369551057490372,
+          1.220044894250963
+        ],
+        "se_lower": 0.046707436959585645,
+        "se_upper": 0.046707436959585645,
+        "upper": 1.1285
+      },
+      "max_complex": 3,
+      "max_residual": 20,
+      "mean": {
+        "lower": 0.6775,
+        "normal95_envelope": [
+          0.6416313560964972,
+          0.7133686439035027
+        ],
+        "se_lower": 0.01830066480120553,
+        "se_upper": 0.01830066480120553,
+        "upper": 0.6775
+      },
+      "mu": 0.6931471805599453,
+      "n": 1600,
+      "reference_m2": 1.1736001944781467,
+      "reference_p0": 0.5,
+      "rho": 0.45,
+      "stop_reason_counts": {},
+      "stream_sha256": {
+        "details": "1aac915d33b85294dbb60bf7361d24048365fb2ece3dd259b091db77d2baf0f4",
+        "raw": "c6cd5537544fd0c2c57009d73f38d194473f9babe3fcf7b0b1ab2c7204bfdfac"
+      },
+      "total_solver_work": 34,
+      "unresolved": 0
+    },
+    {
+      "G_failures": 1,
+      "G_failures_cp95": [
+        1.2658823868557889e-05,
+        0.0027826398346589465
+      ],
+      "G_prime_failures": 0,
+      "G_prime_failures_cp95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "P0": {
+        "cp95_envelope": [
+          0.4718609372792154,
+          0.5161566771768873
+        ],
+        "definite_zero_count": 988,
+        "lower": 0.494,
+        "possible_zero_count": 988,
+        "upper": 0.494
+      },
+      "contraction_coefficient": 0.5,
+      "draws": 2000,
+      "exact_reason_counts": {
+        "original_G": 1999,
+        "weaker_G_prime": 1
+      },
+      "family": "J2",
+      "lambda": 0.5,
+      "m2": {
+        "lower": 1.1705,
+        "normal95_envelope": [
+          1.0688165725359255,
+          1.2721834274640746
+        ],
+        "se_lower": 0.05188025303839278,
+        "se_upper": 0.05188025303839278,
+        "upper": 1.1705
+      },
+      "max_complex": 0,
+      "max_residual": 22,
+      "mean": {
+        "lower": 0.6965,
+        "normal95_envelope": [
+          0.6602080868457338,
+          0.7327919131542662
+        ],
+        "se_lower": 0.018516622468847468,
+        "se_upper": 0.018516622468847468,
+        "upper": 0.6965
+      },
+      "mu": 0.6931471805599453,
+      "n": 25600,
+      "reference_m2": 1.1736001944781467,
+      "reference_p0": 0.5,
+      "rho": 0.45,
+      "stop_reason_counts": {},
+      "stream_sha256": {
+        "details": "e5a38245bfafb8b76af2f90576075ef060357de827ce126b2461bd10a57a3480",
+        "raw": "7f1aa4cddb62da2cdeb12525a41d49de884f0652236469e0b54267fbeded6847"
+      },
+      "total_solver_work": 0,
+      "unresolved": 0
+    },
+    {
+      "G_failures": 17,
+      "G_failures_cp95": [
+        0.0049591350217812556,
+        0.013574546199731806
+      ],
+      "G_prime_failures": 17,
+      "G_prime_failures_cp95": [
+        0.0049591350217812556,
+        0.013574546199731806
+      ],
+      "P0": {
+        "cp95_envelope": [
+          0.7627339109770874,
+          0.7994371287886841
+        ],
+        "definite_zero_count": 1563,
+        "lower": 0.7815,
+        "possible_zero_count": 1563,
+        "upper": 0.7815
+      },
+      "contraction_coefficient": 0.625,
+      "draws": 2000,
+      "exact_reason_counts": {
+        "SCC_exact": 17,
+        "original_G": 1983
+      },
+      "family": "J3",
+      "lambda": 0.2,
+      "m2": {
+        "lower": 0.288,
+        "normal95_envelope": [
+          0.2562958737974435,
+          0.31970412620255645
+        ],
+        "se_lower": 0.016175871828581833,
+        "se_upper": 0.016175871828581833,
+        "upper": 0.288
+      },
+      "max_complex": 4,
+      "max_residual": 4,
+      "mean": {
+        "lower": 0.241,
+        "normal95_envelope": [
+          0.21998017360089503,
+          0.262019826399105
+        ],
+        "se_lower": 0.010724598291043452,
+        "se_upper": 0.010724598291043452,
+        "upper": 0.241
+      },
+      "mu": 0.22314355131420976,
+      "n": 100,
+      "reference_m2": 0.27293659580732715,
+      "reference_p0": 0.8,
+      "rho": 0.625,
+      "stop_reason_counts": {},
+      "stream_sha256": {
+        "details": "619b6ba67fe4fbb031c48dc8108e934cbb8a078c3fc8c787c4cdc9a60159d749",
+        "raw": "8675d8a8ed2d5b032c30d9d18ec8063330d85cfcfcc9f2eef239074d43372352"
+      },
+      "total_solver_work": 272,
+      "unresolved": 0
+    },
+    {
+      "G_failures": 1,
+      "G_failures_cp95": [
+        1.2658823868557889e-05,
+        0.0027826398346589465
+      ],
+      "G_prime_failures": 1,
+      "G_prime_failures_cp95": [
+        1.2658823868557889e-05,
+        0.0027826398346589465
+      ],
+      "P0": {
+        "cp95_envelope": [
+          0.7926239476973136,
+          0.8274608131032399
+        ],
+        "definite_zero_count": 1621,
+        "lower": 0.8105,
+        "possible_zero_count": 1621,
+        "upper": 0.8105
+      },
+      "contraction_coefficient": 0.625,
+      "draws": 2000,
+      "exact_reason_counts": {
+        "SCC_exact": 1,
+        "original_G": 1999
+      },
+      "family": "J3",
+      "lambda": 0.2,
+      "m2": {
+        "lower": 0.251,
+        "normal95_envelope": [
+          0.22018907556540546,
+          0.28181092443459455
+        ],
+        "se_lower": 0.015720148266818775,
+        "se_upper": 0.015720148266818775,
+        "upper": 0.251
+      },
+      "max_complex": 1,
+      "max_residual": 3,
+      "mean": {
+        "lower": 0.209,
+        "normal95_envelope": [
+          0.18903996738292295,
+          0.22896003261707704
+        ],
+        "se_lower": 0.010183877241887735,
+        "se_upper": 0.010183877241887735,
+        "upper": 0.209
+      },
+      "mu": 0.22314355131420976,
+      "n": 1600,
+      "reference_m2": 0.27293659580732715,
+      "reference_p0": 0.8,
+      "rho": 0.625,
+      "stop_reason_counts": {},
+      "stream_sha256": {
+        "details": "a7ed7a72f1c043462da7511d14ffda91510f98c6a304e944ed48846be813972d",
+        "raw": "8dfc687fb4e83dc83dff20f73e7c3d908f7c055032a973dfadf5e7b9a83ceeb9"
+      },
+      "total_solver_work": 3,
+      "unresolved": 0
+    },
+    {
+      "G_failures": 0,
+      "G_failures_cp95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "G_prime_failures": 0,
+      "G_prime_failures_cp95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "P0": {
+        "cp95_envelope": [
+          0.7781767115040423,
+          0.8139497485914029
+        ],
+        "definite_zero_count": 1593,
+        "lower": 0.7965,
+        "possible_zero_count": 1593,
+        "upper": 0.7965
+      },
+      "contraction_coefficient": 0.625,
+      "draws": 2000,
+      "exact_reason_counts": {
+        "original_G": 2000
+      },
+      "family": "J3",
+      "lambda": 0.2,
+      "m2": {
+        "lower": 0.2755,
+        "normal95_envelope": [
+          0.24306056252837552,
+          0.30793943747162456
+        ],
+        "se_lower": 0.0165510375330887,
+        "se_upper": 0.0165510375330887,
+        "upper": 0.2755
+      },
+      "max_complex": 0,
+      "max_residual": 5,
+      "mean": {
+        "lower": 0.2265,
+        "normal95_envelope": [
+          0.2057433472960023,
+          0.24725665270399771
+        ],
+        "se_lower": 0.010590323530291136,
+        "se_upper": 0.010590323530291136,
+        "upper": 0.2265
+      },
+      "mu": 0.22314355131420976,
+      "n": 25600,
+      "reference_m2": 0.27293659580732715,
+      "reference_p0": 0.8,
+      "rho": 0.625,
+      "stop_reason_counts": {},
+      "stream_sha256": {
+        "details": "fd4bcc9fad92579f987d8beea933458c70c7324c1bd1c7b89e261fe5d0a9b7e3",
+        "raw": "baaf072de4e13c58e72641252fb8ca3fda7a1406d302ddf8b77a06d6f2ab74bc"
+      },
+      "total_solver_work": 0,
+      "unresolved": 0
+    }
+  ],
+  "failure_count": 0,
+  "failures": [],
+  "law_parameters": {
+    "J1": {
+      "mu": 0.4502010019495558,
+      "parameters_rational": {
+        "contraction_coefficient": [
+          19,
+          40
+        ],
+        "lambda": [
+          29,
+          80
+        ],
+        "rho": [
+          19,
+          40
+        ]
+      },
+      "psi_coefficients_u_u2": [
+        [
+          29,
+          80
+        ],
+        [
+          9,
+          80
+        ]
+      ],
+      "psi_rational_grid": [
+        {
+          "psi": [
+            0,
+            1
+          ],
+          "u": [
+            0,
+            1
+          ]
+        },
+        {
+          "psi": [
+            473,
+            20480
+          ],
+          "u": [
+            1,
+            16
+          ]
+        },
+        {
+          "psi": [
+            241,
+            5120
+          ],
+          "u": [
+            1,
+            8
+          ]
+        },
+        {
+          "psi": [
+            1473,
+            20480
+          ],
+          "u": [
+            3,
+            16
+          ]
+        },
+        {
+          "psi": [
+            25,
+            256
+          ],
+          "u": [
+            1,
+            4
+          ]
+        },
+        {
+          "psi": [
+            509,
+            4096
+          ],
+          "u": [
+            5,
+            16
+          ]
+        },
+        {
+          "psi": [
+            777,
+            5120
+          ],
+          "u": [
+            3,
+            8
+          ]
+        },
+        {
+          "psi": [
+            3689,
+            20480
+          ],
+          "u": [
+            7,
+            16
+          ]
+        },
+        {
+          "psi": [
+            67,
+            320
+          ],
+          "u": [
+            1,
+            2
+          ]
+        },
+        {
+          "psi": [
+            981,
+            4096
+          ],
+          "u": [
+            9,
+            16
+          ]
+        },
+        {
+          "psi": [
+            277,
+            1024
+          ],
+          "u": [
+            5,
+            8
+          ]
+        },
+        {
+          "psi": [
+            6193,
+            20480
+          ],
+          "u": [
+            11,
+            16
+          ]
+        },
+        {
+          "psi": [
+            429,
+            1280
+          ],
+          "u": [
+            3,
+            4
+          ]
+        },
+        {
+          "psi": [
+            7553,
+            20480
+          ],
+          "u": [
+            13,
+            16
+          ]
+        },
+        {
+          "psi": [
+            413,
+            1024
+          ],
+          "u": [
+            7,
+            8
+          ]
+        },
+        {
+          "psi": [
+            1797,
+            4096
+          ],
+          "u": [
+            15,
+            16
+          ]
+        },
+        {
+          "psi": [
+            19,
+            40
+          ],
+          "u": [
+            1,
+            1
+          ]
+        }
+      ],
+      "reference_m2": 0.6528819441059398,
+      "reference_p0": 0.6375,
+      "types": [
+        {
+          "corner_probabilities": [
+            [
+              3,
+              10
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              9,
+              20
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "degree": 1,
+          "derived_rational": {
+            "nonzero_row_probability": [
+              7,
+              10
+            ],
+            "q1": [
+              9,
+              20
+            ],
+            "q12": [
+              0,
+              1
+            ],
+            "q2": [
+              1,
+              10
+            ]
+          },
+          "fraction": [
+            1,
+            2
+          ],
+          "support_probabilities_masks_0_1_2_3": [
+            [
+              0,
+              1
+            ],
+            [
+              9,
+              20
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              7,
+              10
+            ]
+          ]
+        },
+        {
+          "corner_probabilities": [
+            [
+              3,
+              5
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "degree": 3,
+          "derived_rational": {
+            "nonzero_row_probability": [
+              2,
+              5
+            ],
+            "q1": [
+              1,
+              10
+            ],
+            "q12": [
+              0,
+              1
+            ],
+            "q2": [
+              1,
+              5
+            ]
+          },
+          "fraction": [
+            1,
+            2
+          ],
+          "support_probabilities_masks_0_1_2_3": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    "J2": {
+      "mu": 0.6931471805599453,
+      "parameters_rational": {
+        "contraction_coefficient": [
+          1,
+          2
+        ],
+        "lambda": [
+          1,
+          2
+        ],
+        "rho": [
+          9,
+          20
+        ]
+      },
+      "psi_coefficients_u_u2": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          20
+        ]
+      ],
+      "psi_rational_grid": [
+        {
+          "psi": [
+            0,
+            1
+          ],
+          "u": [
+            0,
+            1
+          ]
+        },
+        {
+          "psi": [
+            159,
+            5120
+          ],
+          "u": [
+            1,
+            16
+          ]
+        },
+        {
+          "psi": [
+            79,
+            1280
+          ],
+          "u": [
+            1,
+            8
+          ]
+        },
+        {
+          "psi": [
+            471,
+            5120
+          ],
+          "u": [
+            3,
+            16
+          ]
+        },
+        {
+          "psi": [
+            39,
+            320
+          ],
+          "u": [
+            1,
+            4
+          ]
+        },
+        {
+          "psi": [
+            155,
+            1024
+          ],
+          "u": [
+            5,
+            16
+          ]
+        },
+        {
+          "psi": [
+            231,
+            1280
+          ],
+          "u": [
+            3,
+            8
+          ]
+        },
+        {
+          "psi": [
+            1071,
+            5120
+          ],
+          "u": [
+            7,
+            16
+          ]
+        },
+        {
+          "psi": [
+            19,
+            80
+          ],
+          "u": [
+            1,
+            2
+          ]
+        },
+        {
+          "psi": [
+            1359,
+            5120
+          ],
+          "u": [
+            9,
+            16
+          ]
+        },
+        {
+          "psi": [
+            75,
+            256
+          ],
+          "u": [
+            5,
+            8
+          ]
+        },
+        {
+          "psi": [
+            1639,
+            5120
+          ],
+          "u": [
+            11,
+            16
+          ]
+        },
+        {
+          "psi": [
+            111,
+            320
+          ],
+          "u": [
+            3,
+            4
+          ]
+        },
+        {
+          "psi": [
+            1911,
+            5120
+          ],
+          "u": [
+            13,
+            16
+          ]
+        },
+        {
+          "psi": [
+            511,
+            1280
+          ],
+          "u": [
+            7,
+            8
+          ]
+        },
+        {
+          "psi": [
+            435,
+            1024
+          ],
+          "u": [
+            15,
+            16
+          ]
+        },
+        {
+          "psi": [
+            9,
+            20
+          ],
+          "u": [
+            1,
+            1
+          ]
+        }
+      ],
+      "reference_m2": 1.1736001944781467,
+      "reference_p0": 0.5,
+      "types": [
+        {
+          "corner_probabilities": [
+            [
+              11,
+              20
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              20
+            ]
+          ],
+          "degree": 2,
+          "derived_rational": {
+            "nonzero_row_probability": [
+              9,
+              20
+            ],
+            "q1": [
+              1,
+              4
+            ],
+            "q12": [
+              1,
+              4
+            ],
+            "q2": [
+              1,
+              4
+            ]
+          },
+          "fraction": [
+            1,
+            1
+          ],
+          "support_probabilities_masks_0_1_2_3": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              9,
+              20
+            ]
+          ]
+        }
+      ]
+    },
+    "J3": {
+      "mu": 0.22314355131420976,
+      "parameters_rational": {
+        "contraction_coefficient": [
+          5,
+          8
+        ],
+        "lambda": [
+          1,
+          5
+        ],
+        "rho": [
+          5,
+          8
+        ]
+      },
+      "psi_coefficients_u_u2": [
+        [
+          1,
+          5
+        ],
+        [
+          17,
+          40
+        ]
+      ],
+      "psi_rational_grid": [
+        {
+          "psi": [
+            0,
+            1
+          ],
+          "u": [
+            0,
+            1
+          ]
+        },
+        {
+          "psi": [
+            29,
+            2048
+          ],
+          "u": [
+            1,
+            16
+          ]
+        },
+        {
+          "psi": [
+            81,
+            2560
+          ],
+          "u": [
+            1,
+            8
+          ]
+        },
+        {
+          "psi": [
+            537,
+            10240
+          ],
+          "u": [
+            3,
+            16
+          ]
+        },
+        {
+          "psi": [
+            49,
+            640
+          ],
+          "u": [
+            1,
+            4
+          ]
+        },
+        {
+          "psi": [
+            213,
+            2048
+          ],
+          "u": [
+            5,
+            16
+          ]
+        },
+        {
+          "psi": [
+            69,
+            512
+          ],
+          "u": [
+            3,
+            8
+          ]
+        },
+        {
+          "psi": [
+            1729,
+            10240
+          ],
+          "u": [
+            7,
+            16
+          ]
+        },
+        {
+          "psi": [
+            33,
+            160
+          ],
+          "u": [
+            1,
+            2
+          ]
+        },
+        {
+          "psi": [
+            2529,
+            10240
+          ],
+          "u": [
+            9,
+            16
+          ]
+        },
+        {
+          "psi": [
+            149,
+            512
+          ],
+          "u": [
+            5,
+            8
+          ]
+        },
+        {
+          "psi": [
+            693,
+            2048
+          ],
+          "u": [
+            11,
+            16
+          ]
+        },
+        {
+          "psi": [
+            249,
+            640
+          ],
+          "u": [
+            3,
+            4
+          ]
+        },
+        {
+          "psi": [
+            4537,
+            10240
+          ],
+          "u": [
+            13,
+            16
+          ]
+        },
+        {
+          "psi": [
+            1281,
+            2560
+          ],
+          "u": [
+            7,
+            8
+          ]
+        },
+        {
+          "psi": [
+            1149,
+            2048
+          ],
+          "u": [
+            15,
+            16
+          ]
+        },
+        {
+          "psi": [
+            5,
+            8
+          ],
+          "u": [
+            1,
+            1
+          ]
+        }
+      ],
+      "reference_m2": 0.27293659580732715,
+      "reference_p0": 0.8,
+      "types": [
+        {
+          "corner_probabilities": [
+            [
+              3,
+              10
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              9,
+              20
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              1,
+              10
+            ]
+          ],
+          "degree": 1,
+          "derived_rational": {
+            "nonzero_row_probability": [
+              7,
+              10
+            ],
+            "q1": [
+              11,
+              20
+            ],
+            "q12": [
+              1,
+              10
+            ],
+            "q2": [
+              1,
+              4
+            ]
+          },
+          "fraction": [
+            1,
+            2
+          ],
+          "support_probabilities_masks_0_1_2_3": [
+            [
+              0,
+              1
+            ],
+            [
+              11,
+              20
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              7,
+              10
+            ]
+          ]
+        },
+        {
+          "corner_probabilities": [
+            [
+              2,
+              5
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "degree": 3,
+          "derived_rational": {
+            "nonzero_row_probability": [
+              3,
+              5
+            ],
+            "q1": [
+              0,
+              1
+            ],
+            "q12": [
+              0,
+              1
+            ],
+            "q2": [
+              0,
+              1
+            ]
+          },
+          "fraction": [
+            1,
+            2
+          ],
+          "support_probabilities_masks_0_1_2_3": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "maximum_absolute_export_float_error": 2.7755575615628914e-17,
+  "method": {
+    "CP_numerics": "scipy.special.betaincinv, independently checked by direct binomial log-pmf summation at both tails; boundary counts 0 and N included.",
+    "certificate_semantics": "Nominal residual slots, retaining duplicate parents as separate certificate slots.",
+    "moments": "Exact integer first/second/fourth sums before floating division; unbiased sample variance divided by sample count for each endpoint variable.",
+    "normal_quantile": 1.9599639845400536,
+    "numeric_comparison_tolerance": {
+      "absolute": 2e-12,
+      "relative": 2e-10
+    },
+    "sampling_envelopes": "Pointwise approximate normal outer envelopes for raw moments; pointwise Clopper-Pearson outer envelope for zero-cost probability. Computational intervals are separate from sampling uncertainty; no imputation or exclusions.",
+    "seed_identity": "Complete protocol master_seed/family_id/n/replicate tuples; this is record identity, not RNG replay."
+  },
+  "schema_version": 1,
+  "scope": "Independent rational-law derivation, complete-sample arithmetic, raw/detail accounting and provenance; no production imports, network generation, state-graph solver, or dynamic witness validation.",
+  "seed_identity_sha256": "cfba286e3f6253b017b0426e0fc53b9b90ee46343a50fe9376ab0fe9fa4ccac4",
+  "source_sha256": {
+    "qa/independent_exact_checks.json": "2ec88cfc68d8ae7e4629b7a5b0e8be4419206e59efdfe532c98f3a0f64e82681",
+    "validation/Protocol_JointRules.json": "676f63437dc7aea118782ef427ac604012d7d2f0bc596ab2aaf063a61554fa64",
+    "validation/results/main/details/J1_n100.jsonl.gz": "781c17f704df11c99eb56c10963e5252e3af7a461e7a1b507c68f086a0860205",
+    "validation/results/main/details/J1_n1600.jsonl.gz": "0510fed232fb32be31c86d3de65aff1bb47709f2e3c80dbaba12647fd0b930fc",
+    "validation/results/main/details/J1_n25600.jsonl.gz": "1bf1f0fe479402584265d0b4c51b9714b0336892130d31f1df29e7cc06f1a65e",
+    "validation/results/main/details/J2_n100.jsonl.gz": "22823418f930be50040138991deed23095d339657253b59f0ecf6ce54d2a3571",
+    "validation/results/main/details/J2_n1600.jsonl.gz": "1aac915d33b85294dbb60bf7361d24048365fb2ece3dd259b091db77d2baf0f4",
+    "validation/results/main/details/J2_n25600.jsonl.gz": "e5a38245bfafb8b76af2f90576075ef060357de827ce126b2461bd10a57a3480",
+    "validation/results/main/details/J3_n100.jsonl.gz": "619b6ba67fe4fbb031c48dc8108e934cbb8a078c3fc8c787c4cdc9a60159d749",
+    "validation/results/main/details/J3_n1600.jsonl.gz": "a7ed7a72f1c043462da7511d14ffda91510f98c6a304e944ed48846be813972d",
+    "validation/results/main/details/J3_n25600.jsonl.gz": "fd4bcc9fad92579f987d8beea933458c70c7324c1bd1c7b89e261fe5d0a9b7e3",
+    "validation/results/main/io_integrity.json": "7f2784bece6dd6831c32bb2a2bf59a4d2533587c3f2c14a1399aa0d83fb05654",
+    "validation/results/main/manifest.json": "cfcf6805d38e880b90b4e3b2a4e6eb7d01a7b420c722a5a36da5a00da031c4e7",
+    "validation/results/main/raw/J1_n100.csv.gz": "c85afbdf0c6124fc976dbdd9ad2bec14d6742d040168ca185304bf8b2445aee5",
+    "validation/results/main/raw/J1_n1600.csv.gz": "96f623c7b223e72980073249b67a6806493b88a78e2744a5c6ccc244c2865746",
+    "validation/results/main/raw/J1_n25600.csv.gz": "f6c48ba06869b5fdcddae7a6c3254b5f72f9d328b4b500c240be8a74141b5622",
+    "validation/results/main/raw/J2_n100.csv.gz": "2dae979c1db5065998bee66fb410ccad70939f34bc18d288e3dfe755dceb0420",
+    "validation/results/main/raw/J2_n1600.csv.gz": "c6cd5537544fd0c2c57009d73f38d194473f9babe3fcf7b0b1ab2c7204bfdfac",
+    "validation/results/main/raw/J2_n25600.csv.gz": "7f1aa4cddb62da2cdeb12525a41d49de884f0652236469e0b54267fbeded6847",
+    "validation/results/main/raw/J3_n100.csv.gz": "8675d8a8ed2d5b032c30d9d18ec8063330d85cfcfcc9f2eef239074d43372352",
+    "validation/results/main/raw/J3_n1600.csv.gz": "8dfc687fb4e83dc83dff20f73e7c3d908f7c055032a973dfadf5e7b9a83ceeb9",
+    "validation/results/main/raw/J3_n25600.csv.gz": "baaf072de4e13c58e72641252fb8ca3fda7a1406d302ddf8b77a06d6f2ab74bc",
+    "validation/results/main/summary.csv": "4447bee97ffac1ac6043af8f332e874df35bcbc95f4655ce343bed89b673bf78",
+    "validation/results/main/summary.json": "0853fc92a868b810bdb4e149266fbcec03c080ed0007c1867f2cb5a2255308e8",
+    "validation/src/joint_validation.py": "25f9555a5eb9ef33ab704208c55dfb7fc7fe039217352dc5a03fd7448cda8d3b",
+    "validation/vendor/engine.py": "d3f0969c75bad2cfe45c55922a2e20916f91bd90f1885aed5364da16b05d97e3",
+    "validation/vendor/engine_core.cpp": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d",
+    "validation/vendor/scc_control.py": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd",
+    "verification/independent_exact_checks.py": "9b17553c3138b5f331b900dc078a15db4f53f1d841a3718963ad91ad2072785c",
+    "verification/independent_joint_statistics.py": "f658a72a5c4c4bf4ec72366dbeca7eeb6587b6df04b3df855acb9139710775d9",
+    "verification/independent_network_oracle.py": "8ffcf94f4fae290e7df94f603da555febff1bad4af2ccc56a026394b8a035ec9"
+  },
+  "status": "PASS",
+  "totals": {
+    "G_failures": 139,
+    "G_prime_failures": 105,
+    "G_prime_rescued_count": 34,
+    "draws": 18000,
+    "exact": 18000,
+    "unresolved": 0
+  }
+}

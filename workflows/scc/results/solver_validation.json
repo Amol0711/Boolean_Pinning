@@ -1,0 +1,328 @@
+{
+  "oracle": "Independent physical full-state maps and every additional pin subset; independent support/SCC/marked-slot-cycle computations.",
+  "random_seed": 2026101501,
+  "schema_version": "1.0",
+  "scope": "Finite explicitly enumerated validation suite, not an exhaustive verification of arbitrary network sizes.",
+  "status": "PASS",
+  "suites": {
+    "boundary_fixtures": {
+      "cases": [
+        {
+          "name": "repeated_self_xor_physical_zero",
+          "results": [
+            {
+              "G": false,
+              "G_prime": false,
+              "marked_cycles": 2,
+              "mode": "slot",
+              "optimum": 0,
+              "residual": [
+                0
+              ]
+            },
+            {
+              "G": true,
+              "G_prime": true,
+              "marked_cycles": 0,
+              "mode": "physical",
+              "optimum": 0,
+              "residual": []
+            }
+          ]
+        },
+        {
+          "name": "repeated_self_or_parallel_marked_slots",
+          "results": [
+            {
+              "G": false,
+              "G_prime": false,
+              "marked_cycles": 2,
+              "mode": "slot",
+              "optimum": 1,
+              "residual": [
+                0
+              ]
+            },
+            {
+              "G": false,
+              "G_prime": false,
+              "marked_cycles": 2,
+              "mode": "physical",
+              "optimum": 1,
+              "residual": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "repeated_self_and_synergy_unmarked",
+          "results": [
+            {
+              "G": false,
+              "G_prime": false,
+              "marked_cycles": 0,
+              "mode": "slot",
+              "optimum": 1,
+              "residual": [
+                0
+              ]
+            },
+            {
+              "G": false,
+              "G_prime": false,
+              "marked_cycles": 0,
+              "mode": "physical",
+              "optimum": 1,
+              "residual": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "downstream_nonlinear_Gfalse_Gprimetrue",
+          "results": [
+            {
+              "G": false,
+              "G_prime": true,
+              "marked_cycles": 1,
+              "mode": "slot",
+              "optimum": 1,
+              "residual": [
+                0,
+                1
+              ]
+            },
+            {
+              "G": false,
+              "G_prime": true,
+              "marked_cycles": 1,
+              "mode": "physical",
+              "optimum": 1,
+              "residual": [
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ignored_self_slot_then_frozen",
+          "results": [
+            {
+              "G": true,
+              "G_prime": true,
+              "marked_cycles": 0,
+              "mode": "slot",
+              "optimum": 0,
+              "residual": []
+            },
+            {
+              "G": true,
+              "G_prime": true,
+              "marked_cycles": 0,
+              "mode": "physical",
+              "optimum": 0,
+              "residual": []
+            }
+          ]
+        },
+        {
+          "name": "two_node_complex_cost_two_budget_case",
+          "results": [
+            {
+              "G": false,
+              "G_prime": false,
+              "marked_cycles": 3,
+              "mode": "slot",
+              "optimum": 2,
+              "residual": [
+                0,
+                1
+              ]
+            },
+            {
+              "G": false,
+              "G_prime": false,
+              "marked_cycles": 3,
+              "mode": "physical",
+              "optimum": 2,
+              "residual": [
+                0,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mixed_target_baseline_and_constant",
+          "results": [
+            {
+              "G": true,
+              "G_prime": true,
+              "marked_cycles": 0,
+              "mode": "slot",
+              "optimum": 0,
+              "residual": []
+            },
+            {
+              "G": true,
+              "G_prime": true,
+              "marked_cycles": 0,
+              "mode": "physical",
+              "optimum": 0,
+              "residual": []
+            }
+          ]
+        },
+        {
+          "name": "high_arity_eight_slots_mixed_target_baseline",
+          "results": [
+            {
+              "G": false,
+              "G_prime": false,
+              "marked_cycles": 0,
+              "mode": "slot",
+              "optimum": 2,
+              "residual": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "G": false,
+              "G_prime": false,
+              "marked_cycles": 0,
+              "mode": "physical",
+              "optimum": 2,
+              "residual": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "G_prime_cost_cycle_equalities": 51,
+        "bound_checks": 68,
+        "compatible_state_successor_checks": 90,
+        "feasible_witness_checks": 68,
+        "full_pin_subset_oracle_checks": 34,
+        "networks": 8,
+        "raw_physical_state_checks": 46,
+        "solver_calls": 68,
+        "support_and_certificate_checks": 68
+      }
+    },
+    "exhaustive_two_node_two_slot": {
+      "G_prime_cost_cycle_equalities": 2808,
+      "bound_checks": 4096,
+      "compatible_state_successor_checks": 9216,
+      "feasible_witness_checks": 4096,
+      "full_pin_subset_oracle_checks": 4096,
+      "networks": 1024,
+      "raw_physical_state_checks": 4096,
+      "solver_calls": 4096,
+      "support_and_certificate_checks": 4096
+    },
+    "incomplete_budgets": {
+      "cases": [
+        {
+          "case": "component_size",
+          "feasible_pins": [
+            0,
+            1
+          ],
+          "lower": 0,
+          "options": {
+            "max_component_size": 1
+          },
+          "reasons": [
+            "component_size_cap"
+          ],
+          "upper": 2
+        },
+        {
+          "case": "pin_count",
+          "feasible_pins": [
+            0,
+            1
+          ],
+          "lower": 1,
+          "options": {
+            "max_pins": 0
+          },
+          "reasons": [
+            "pin_count_cap"
+          ],
+          "upper": 2
+        },
+        {
+          "case": "work_preflight",
+          "feasible_pins": [
+            0,
+            1
+          ],
+          "lower": 0,
+          "options": {
+            "max_work": 0
+          },
+          "reasons": [
+            "work_cap_successor_construction"
+          ],
+          "upper": 2
+        },
+        {
+          "case": "work_search",
+          "feasible_pins": [
+            0,
+            1
+          ],
+          "lower": 0,
+          "options": {
+            "max_work": 8
+          },
+          "reasons": [
+            "work_cap_candidate_search"
+          ],
+          "upper": 2
+        }
+      ],
+      "coverage": {
+        "G_prime_cost_cycle_equalities": 0,
+        "bound_checks": 4,
+        "compatible_state_successor_checks": 0,
+        "feasible_witness_checks": 4,
+        "full_pin_subset_oracle_checks": 0,
+        "networks": 0,
+        "raw_physical_state_checks": 0,
+        "solver_calls": 4,
+        "support_and_certificate_checks": 4
+      }
+    },
+    "random_arbitrary_rules_and_baselines": {
+      "G_prime_cost_cycle_equalities": 23816,
+      "bound_checks": 27572,
+      "by_network_size": {
+        "3": 50,
+        "4": 50,
+        "5": 50,
+        "6": 50,
+        "7": 50,
+        "8": 50
+      },
+      "case_stream_sha256": "8af41556f680633dd2ce2f9e2acf9097d5051ca311fca67fc7f854970e9616e3",
+      "compatible_state_successor_checks": 209274,
+      "feasible_witness_checks": 27572,
+      "full_pin_subset_oracle_checks": 13786,
+      "networks": 300,
+      "raw_physical_state_checks": 25200,
+      "solver_calls": 27572,
+      "support_and_certificate_checks": 27572
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parents": [[0, 1], [0], [0, 1]],
+  "tables": [[0, 1, 1, 1], [0, 1], [0, 0, 0, 1]],
+  "target": [0, 0, 0],
+  "baseline": [],
+  "options": {
+    "support_mode": "physical",
+    "max_component_size": 18,
+    "max_pins": 8,
+    "max_work": 2000000
+  }
+}
