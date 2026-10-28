@@ -1,0 +1,27 @@
+{
+  "backend": {
+    "backend": "cpp",
+    "compiler_error": null,
+    "cpp_sha256": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d"
+  },
+  "independent_gate_sha256": "82f798a49a6aa6d06d23bda7f57c83f01d7fa46d5107695e685bc901ad834646",
+  "integrity_record_sha256": "0e3eb2c9ca8fb62a1eaf7a12b551464579764fb3dfa063d6e2a9298d1b0c6efb",
+  "protocol_sha256": "eb226cfd79559210d8f56a56ba595b2c7aac034f9d280c634f99dca42bf63144",
+  "software": {
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "python": "3.12.14",
+    "scipy": "1.17.0"
+  },
+  "source_sha256": {
+    "src/joint_validation.py": "25f9555a5eb9ef33ab704208c55dfb7fc7fe039217352dc5a03fd7448cda8d3b",
+    "src/run_replication.py": "5b6d2796e4d04ead0b54704f79403bc00be7d8ca8831b3fe9c0f164a230b1c40",
+    "vendor/engine.py": "d3f0969c75bad2cfe45c55922a2e20916f91bd90f1885aed5364da16b05d97e3",
+    "vendor/engine_core.cpp": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d",
+    "vendor/scc_control.py": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd"
+  },
+  "status": "completed",
+  "total_draws": 20000,
+  "unresolved": 0
+}

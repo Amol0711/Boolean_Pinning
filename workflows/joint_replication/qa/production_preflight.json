@@ -1,0 +1,15 @@
+{
+  "backend": {
+    "backend": "cpp",
+    "compiler_error": null,
+    "cpp_sha256": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d"
+  },
+  "deterministic_two_node_networks": 1024,
+  "original_draws_replayed": [
+    0,
+    999,
+    1999
+  ],
+  "production_seed_draws": 0,
+  "status": "PASS"
+}

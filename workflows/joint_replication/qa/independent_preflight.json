@@ -1,0 +1,144 @@
+{
+  "bounded_exit_fixtures": {
+    "candidate": {
+      "candidates": 1,
+      "complete": false,
+      "lower": 1,
+      "reason": "independent_enumeration_guard",
+      "states": 2
+    },
+    "compatible_state": {
+      "candidates": 1,
+      "complete": false,
+      "lower": 1,
+      "reason": "independent_enumeration_guard",
+      "states": 2
+    },
+    "size": {
+      "candidates": 0,
+      "complete": false,
+      "reason": "independent_size_guard",
+      "states": 0
+    },
+    "witness_size": {
+      "checked": false,
+      "reason": "independent_size_guard",
+      "remaining_dimension": 1
+    }
+  },
+  "edge_fixtures": [
+    {
+      "G": true,
+      "G_prime": true,
+      "cost": 0,
+      "iterations": 2,
+      "name": "constant_zero",
+      "optimum_candidates": 1,
+      "optimum_compatible_states": 1,
+      "physical_duplicate_rows": 1,
+      "residual": []
+    },
+    {
+      "G": false,
+      "G_prime": false,
+      "cost": 0,
+      "iterations": 1,
+      "name": "duplicate_parent_XOR_is_physically_zero",
+      "optimum_candidates": 1,
+      "optimum_compatible_states": 2,
+      "physical_duplicate_rows": 1,
+      "residual": [
+        0
+      ]
+    },
+    {
+      "G": false,
+      "G_prime": false,
+      "cost": 1,
+      "iterations": 1,
+      "name": "duplicate_parent_AND_is_physical_copy",
+      "optimum_candidates": 2,
+      "optimum_compatible_states": 3,
+      "physical_duplicate_rows": 1,
+      "residual": [
+        0
+      ]
+    },
+    {
+      "G": false,
+      "G_prime": false,
+      "cost": 1,
+      "iterations": 1,
+      "name": "duplicate_parent_COPY1",
+      "optimum_candidates": 2,
+      "optimum_compatible_states": 3,
+      "physical_duplicate_rows": 1,
+      "residual": [
+        0
+      ]
+    },
+    {
+      "G": false,
+      "G_prime": false,
+      "cost": 2,
+      "iterations": 1,
+      "name": "nominally_coupled_independent_self_copies",
+      "optimum_candidates": 4,
+      "optimum_compatible_states": 9,
+      "physical_duplicate_rows": 0,
+      "residual": [
+        0,
+        1
+      ]
+    },
+    {
+      "G": false,
+      "G_prime": false,
+      "cost": 1,
+      "iterations": 1,
+      "name": "cooperative_AND_pair",
+      "optimum_candidates": 2,
+      "optimum_compatible_states": 6,
+      "physical_duplicate_rows": 0,
+      "residual": [
+        0,
+        1
+      ]
+    },
+    {
+      "G": true,
+      "G_prime": true,
+      "cost": 1,
+      "iterations": 2,
+      "name": "three_cycle_with_zero_exterior",
+      "optimum_candidates": 2,
+      "optimum_compatible_states": 12,
+      "physical_duplicate_rows": 1,
+      "residual": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "empty_residual": {
+    "candidates": 1,
+    "complete": true,
+    "cost": 0,
+    "pins": [],
+    "states": 1
+  },
+  "exhaustive_physical_oracle_check": {
+    "compatible_states": 9216,
+    "networks": 1024,
+    "pin_sets": 4096,
+    "scope": "All 1024 two-coordinate ordered two-slot zero-target networks; independent literal trajectory evaluator checks all physical pin sets.",
+    "status": "PASS"
+  },
+  "scope": "Independent oracle self-check and physical repeated-parent and search-limit fixtures.",
+  "source_sha256": {
+    "independent_network_oracle.py": "8ffcf94f4fae290e7df94f603da555febff1bad4af2ccc56a026394b8a035ec9",
+    "preflight_replication_oracle.py": "474789328ef728a9ad1ba0689b2f6e41f294f2481b563cfdecb5df07606980ce"
+  },
+  "status": "PASS"
+}

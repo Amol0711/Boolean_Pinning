@@ -1,0 +1,70 @@
+J1 replication independent statistical interpretation
+
+The complete replication contains 20,000 retained J1 networks at n=25,600.
+All cost intervals collapse to exact values. The original 2,000-network cell
+remains separate and unchanged. No external observation enters either
+study sample, and no pooled replacement estimate is used.
+
+Fresh integer sums from the new raw records are
+  sum C = 9040, sum C^2 = 13256, sum C^4 = 50924, number(C=0) = 12779.
+The empirical mean is 0.452000 with SE 0.0047881046665 and pointwise
+approximate 95% normal interval [0.4426154873, 0.4613845127].
+The empirical second raw moment is 0.662800 with SE 0.0102640184871 and
+pointwise approximate 95% normal interval [0.6426828934, 0.6829171066].
+The empirical zero-cost fraction is 0.638950 with pointwise exact
+Clopper-Pearson 95% interval [0.6322486162, 0.6456109703].
+
+The declared probabilities, not the realized rule frequencies, give
+lambda=29/80, rho=19/40, mu=0.4502010019495558,
+mu+mu^2=0.6528819441059398, and exp(-mu)=0.6375.
+Each fixed limiting reference lies inside its new pointwise interval.
+The original second raw moment is 0.581000 with SE 0.0276966252732 and
+pointwise approximate 95% interval [0.5267156120, 0.6352843880].
+
+The appropriate conclusion is that the independent, larger replication does
+not reproduce the original second-moment shortfall and is compatible with
+the fixed limiting references at the stated Monte Carlo precision. This
+comparison does not establish an exact finite-size Poisson law, bound the
+finite-size approximation error, or prove that the original deficit arose
+solely from sampling variation.
+
+New-minus-original differences are exploratory because this J1 cell was
+selected after inspection of the original study. The second-moment contrast
+is 0.0818 with SE 0.0295373175327 and approximate pointwise 95% interval
+[0.0239079214, 0.1396920786]. Its standardized difference is 2.7693781.
+The mean contrast is 0.0280 with SE 0.0149545411991 and interval
+[-0.0013103622, 0.0573103622]. The zero-fraction contrast is -0.00755
+with interval [-0.0295333810, 0.0144333810]. These exploratory contrasts
+should not be used as multiplicity-adjusted confirmatory tests.
+
+The new certificate counts are 19,999 original-G cases and one case rescued
+by G-prime. G failure frequency is 1/20,000, with two-sided 95%
+Clopper-Pearson interval [0.000001265890, 0.000278550332]. G-prime
+failure frequency is zero, with interval [0, 0.000184426964]. The largest
+conservative residual has 18 vertices. No complex cyclic SCC or solver
+stop was encountered. Dynamic correctness of these records is the scope
+of the separate all-network replay validator, not this arithmetic audit.
+
+Each degree class contributes exactly 256,000,000 sampled rules. All
+impossible corner categories have zero counts. The degree-one Pearson
+diagnostic is chi-square=9.4509243 on 3 degrees of freedom, p=0.0238592.
+The degree-three diagnostic is chi-square=2.8697697 on 3 degrees of freedom,
+p=0.4121430. Their joint statistic is 12.3206940 on 6 degrees of freedom,
+p=0.0551852. All eight positive design probabilities lie within the
+prespecified Bonferroni simultaneous 95% Clopper-Pearson intervals.
+Two degree-one pointwise intervals, ZERO and AND, exclude their design
+probabilities. Thus a statement that every pointwise interval covers the
+declared law would be false. The diagnostics remain transparent ordinary
+sampling comparisons and are not correctness gates or reasons to resample.
+
+An in-memory count perturbation changes rule-frequency diagnostics while
+leaving the complete cost summary and fixed reference references unchanged.
+The real input files remain untouched. Production-side no-refit validation
+is recorded separately.
+
+Verification provenance
+  verification/independent_replication_statistics.py imports no production module.
+  qa/statistical_result.json reports 372,115 checks with no failures.
+  results/main/statistical_summary.csv and rule_frequency_summary.csv are
+  independently reconstructed exports. Main summary.json, summary.csv,
+  rule_counts.json, all raw records and all detail records were checked.

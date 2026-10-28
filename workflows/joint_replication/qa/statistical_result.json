@@ -1,0 +1,534 @@
+{
+  "batch_difference": {
+    "P0": {
+      "lower": -0.007549999999999946,
+      "normal95_envelope": [
+        -0.029533381020629763,
+        0.014433381020629871
+      ],
+      "se_lower": 0.011216216825427368,
+      "se_upper": 0.011216216825427368,
+      "upper": -0.007549999999999946
+    },
+    "direction": "replication minus original",
+    "m2": {
+      "lower": 0.08179999999999998,
+      "normal95_envelope": [
+        0.02390792143591844,
+        0.13969207856408153
+      ],
+      "se_lower": 0.02953731753273371,
+      "se_upper": 0.02953731753273371,
+      "standardized_difference": 2.7693780895759397,
+      "upper": 0.08179999999999998
+    },
+    "mean": {
+      "lower": 0.028000000000000025,
+      "normal95_envelope": [
+        -0.0013103621555449127,
+        0.05731036215554496
+      ],
+      "se_lower": 0.014954541199094137,
+      "se_upper": 0.014954541199094137,
+      "standardized_difference": 1.8723409583234896,
+      "upper": 0.028000000000000025
+    },
+    "method": "Independent prespecified RNG streams; approximate pointwise normal uncertainty for finite-size population differences. The contrast is exploratory because J1 was selected after examining the original sample. No equality to the asymptotic benchmark is assumed."
+  },
+  "checks": {
+    "certificate_accounting": 22000,
+    "certificate_cost": 22000,
+    "complete_unique_ordered_draws": 2,
+    "cost_interval": 22000,
+    "declared_J1_rule_law": 4,
+    "detail_accounting": 1,
+    "detail_cost_accounting": 20000,
+    "detail_extended_accounting": 100000,
+    "detail_identity": 20000,
+    "exact_rational_parameters": 4,
+    "exact_reason": 22000,
+    "fresh_original_baseline": 1,
+    "impossible_rule_categories": 40000,
+    "no_refit_mutation_check": 1,
+    "nonoverlapping_seed_tuples": 1,
+    "prespecified_scope": 1,
+    "prespecified_seed_namespace": 1,
+    "production_cell_scope": 1,
+    "production_rule_counts_export": 1,
+    "production_summary_csv_coverage": 1,
+    "production_summary_csv_value": 37,
+    "production_summary_exact": 13,
+    "production_summary_float": 26,
+    "production_summary_type": 11,
+    "row_identity": 22000,
+    "rule_count_accounting": 40000,
+    "seed_entropy": 20000,
+    "unchanged_original_rule_law": 4,
+    "unchanged_reference": 4,
+    "unchanged_solver_caps": 1,
+    "witness_cardinality": 22000
+  },
+  "failure_count": 0,
+  "failures": [],
+  "fixed_reference": {
+    "lambda": 0.3625,
+    "lambda_rational": [
+      29,
+      80
+    ],
+    "mu": 0.4502010019495558,
+    "reference_m2": 0.6528819441059398,
+    "reference_p0": 0.6375,
+    "refitted": false,
+    "rho": 0.475,
+    "rho_rational": [
+      19,
+      40
+    ]
+  },
+  "method": {
+    "moment_intervals": "Pointwise approximate normal envelopes for finite-n endpoint moments; exact integer sums precede division. Computational bounds and Monte Carlo uncertainty are distinct.",
+    "normal_quantile": 1.9599639845400536,
+    "proportion_intervals": "Pointwise equal-tailed 95% Clopper-Pearson intervals; outer envelopes if exact cost is unresolved.",
+    "reference": "Fixed limiting Poisson reference, never fitted. Coverage is not a finite-size approximation-error bound."
+  },
+  "no_refit_mutation_check": {
+    "cost_summary_unchanged": true,
+    "diagnostics_changed": true,
+    "fixed_reference_unchanged": true,
+    "input_files_modified": false
+  },
+  "original": {
+    "G_failures": 0,
+    "G_failures_cp95": [
+      0.0,
+      0.0018427397934059364
+    ],
+    "G_prime_failures": 0,
+    "G_prime_failures_cp95": [
+      0.0,
+      0.0018427397934059364
+    ],
+    "P0": {
+      "cp95_envelope": [
+        0.6250958574731245,
+        0.6674737662823103
+      ],
+      "definite_zero_count": 1293,
+      "lower": 0.6465,
+      "possible_zero_count": 1293,
+      "upper": 0.6465
+    },
+    "draws": 2000,
+    "exact_reason_counts": {
+      "original_G": 2000
+    },
+    "family": "J1",
+    "histogram_lower": {
+      "0": 1293,
+      "1": 580,
+      "2": 115,
+      "3": 10,
+      "4": 2
+    },
+    "histogram_upper": {
+      "0": 1293,
+      "1": 580,
+      "2": 115,
+      "3": 10,
+      "4": 2
+    },
+    "label": "original joint-rule study",
+    "m2": {
+      "integer_sums_lower": {
+        "sum": 1162,
+        "sum_of_squared_variables": 3742
+      },
+      "integer_sums_upper": {
+        "sum": 1162,
+        "sum_of_squared_variables": 3742
+      },
+      "lower": 0.581,
+      "normal95_envelope": [
+        0.5267156119711659,
+        0.635284388028834
+      ],
+      "se_lower": 0.027696625273230725,
+      "se_upper": 0.027696625273230725,
+      "upper": 0.581
+    },
+    "max_complex": 0,
+    "max_residual": 12,
+    "mean": {
+      "integer_sums_lower": {
+        "sum": 848,
+        "sum_of_squared_variables": 1162
+      },
+      "integer_sums_upper": {
+        "sum": 848,
+        "sum_of_squared_variables": 1162
+      },
+      "lower": 0.424,
+      "normal95_envelope": [
+        0.3962326045322464,
+        0.4517673954677536
+      ],
+      "se_lower": 0.014167298831396514,
+      "se_upper": 0.014167298831396514,
+      "upper": 0.424
+    },
+    "n": 25600,
+    "stop_reason_counts": {},
+    "total_solver_work": 0,
+    "unresolved": 0
+  },
+  "replication": {
+    "G_failures": 1,
+    "G_failures_cp95": [
+      1.2658895979755804e-06,
+      0.0002785503321745113
+    ],
+    "G_prime_failures": 0,
+    "G_prime_failures_cp95": [
+      0.0,
+      0.0001844269639618992
+    ],
+    "P0": {
+      "cp95_envelope": [
+        0.6322486161698435,
+        0.6456109702889903
+      ],
+      "definite_zero_count": 12779,
+      "lower": 0.63895,
+      "possible_zero_count": 12779,
+      "upper": 0.63895
+    },
+    "draws": 20000,
+    "exact_reason_counts": {
+      "original_G": 19999,
+      "weaker_G_prime": 1
+    },
+    "family": "J1",
+    "histogram_lower": {
+      "0": 12779,
+      "1": 5661,
+      "2": 1329,
+      "3": 205,
+      "4": 24,
+      "5": 2
+    },
+    "histogram_upper": {
+      "0": 12779,
+      "1": 5661,
+      "2": 1329,
+      "3": 205,
+      "4": 24,
+      "5": 2
+    },
+    "label": "replication",
+    "m2": {
+      "integer_sums_lower": {
+        "sum": 13256,
+        "sum_of_squared_variables": 50924
+      },
+      "integer_sums_upper": {
+        "sum": 13256,
+        "sum_of_squared_variables": 50924
+      },
+      "lower": 0.6628,
+      "normal95_envelope": [
+        0.6426828934286073,
+        0.6829171065713926
+      ],
+      "se_lower": 0.010264018487111917,
+      "se_upper": 0.010264018487111917,
+      "upper": 0.6628
+    },
+    "max_complex": 0,
+    "max_residual": 18,
+    "mean": {
+      "integer_sums_lower": {
+        "sum": 9040,
+        "sum_of_squared_variables": 13256
+      },
+      "integer_sums_upper": {
+        "sum": 9040,
+        "sum_of_squared_variables": 13256
+      },
+      "lower": 0.452,
+      "normal95_envelope": [
+        0.4426154872994609,
+        0.46138451270053915
+      ],
+      "se_lower": 0.004788104666495384,
+      "se_upper": 0.004788104666495384,
+      "upper": 0.452
+    },
+    "n": 25600,
+    "stop_reason_counts": {},
+    "total_solver_work": 0,
+    "unresolved": 0
+  },
+  "rule_diagnostics": {
+    "joint_degrees_of_freedom": 6,
+    "joint_diagnostic_p_value": 0.05518518713584164,
+    "joint_pearson_chi_square": 12.320694032118055,
+    "per_degree": [
+      {
+        "all_corner_counts": [
+          76819369,
+          0,
+          0,
+          0,
+          38388232,
+          115190389,
+          25602010,
+          0
+        ],
+        "degree": 1,
+        "degrees_of_freedom": 3,
+        "diagnostic_p_value": 0.02385921511751639,
+        "pearson_chi_square": 9.450924344618056,
+        "trials": 256000000
+      },
+      {
+        "all_corner_counts": [
+          153609855,
+          0,
+          0,
+          0,
+          25599921,
+          25592625,
+          51197599,
+          0
+        ],
+        "degree": 3,
+        "degrees_of_freedom": 3,
+        "diagnostic_p_value": 0.4121429889377973,
+        "pearson_chi_square": 2.8697696875,
+        "trials": 256000000
+      }
+    ],
+    "rows": [
+      {
+        "corner_code": 0,
+        "count": 76819369,
+        "declared_probability": 0.3,
+        "degree": 1,
+        "expected_count": 76800000.0,
+        "impossible_by_design": false,
+        "observed_probability": 0.30007566015625,
+        "pointwise_cp95_lower": 0.3000195208989851,
+        "pointwise_cp95_upper": 0.3001318039343657,
+        "rule": "ZERO",
+        "simultaneous_cp95_lower": 0.29999734139029666,
+        "simultaneous_cp95_upper": 0.30015398722848924,
+        "simultaneous_interval_contains_design_probability": true,
+        "standardized_count_residual": 2.641663947488085,
+        "total": 256000000
+      },
+      {
+        "corner_code": 5,
+        "count": 115190389,
+        "declared_probability": 0.45,
+        "degree": 1,
+        "expected_count": 115200000.0,
+        "impossible_by_design": false,
+        "observed_probability": 0.44996245703125,
+        "pointwise_cp95_lower": 0.4499015142458581,
+        "pointwise_cp95_upper": 0.4500234009481272,
+        "rule": "COPY1",
+        "simultaneous_cp95_lower": 0.44987743605739056,
+        "simultaneous_cp95_upper": 0.45004748008402085,
+        "simultaneous_interval_contains_design_probability": true,
+        "standardized_count_residual": -1.2074273053070357,
+        "total": 256000000
+      },
+      {
+        "corner_code": 6,
+        "count": 25602010,
+        "declared_probability": 0.1,
+        "degree": 1,
+        "expected_count": 25600000.0,
+        "impossible_by_design": false,
+        "observed_probability": 0.1000078515625,
+        "pointwise_cp95_lower": 0.09997110352490038,
+        "pointwise_cp95_upper": 0.10004460864527344,
+        "rule": "COPY2",
+        "simultaneous_cp95_lower": 0.09995658671505873,
+        "simultaneous_cp95_upper": 0.10005913302878308,
+        "simultaneous_interval_contains_design_probability": true,
+        "standardized_count_residual": 0.41875,
+        "total": 256000000
+      },
+      {
+        "corner_code": 4,
+        "count": 38388232,
+        "declared_probability": 0.15,
+        "degree": 1,
+        "expected_count": 38400000.0,
+        "impossible_by_design": false,
+        "observed_probability": 0.14995403125,
+        "pointwise_cp95_lower": 0.14991029832969008,
+        "pointwise_cp95_upper": 0.14999777208594514,
+        "rule": "AND",
+        "simultaneous_cp95_lower": 0.14989302146096914,
+        "simultaneous_cp95_upper": 0.150015055582589,
+        "simultaneous_interval_contains_design_probability": true,
+        "standardized_count_residual": -2.0598120036052023,
+        "total": 256000000
+      },
+      {
+        "corner_code": 7,
+        "count": 0,
+        "declared_probability": 0.0,
+        "degree": 1,
+        "expected_count": 0.0,
+        "impossible_by_design": true,
+        "observed_probability": 0.0,
+        "pointwise_cp95_lower": 0.0,
+        "pointwise_cp95_upper": 0.0,
+        "rule": "OR",
+        "simultaneous_cp95_lower": 0.0,
+        "simultaneous_cp95_upper": 0.0,
+        "simultaneous_interval_contains_design_probability": true,
+        "standardized_count_residual": null,
+        "total": 256000000
+      },
+      {
+        "corner_code": 3,
+        "count": 0,
+        "declared_probability": 0.0,
+        "degree": 1,
+        "expected_count": 0.0,
+        "impossible_by_design": true,
+        "observed_probability": 0.0,
+        "pointwise_cp95_lower": 0.0,
+        "pointwise_cp95_upper": 0.0,
+        "rule": "XOR",
+        "simultaneous_cp95_lower": 0.0,
+        "simultaneous_cp95_upper": 0.0,
+        "simultaneous_interval_contains_design_probability": true,
+        "standardized_count_residual": null,
+        "total": 256000000
+      },
+      {
+        "corner_code": 0,
+        "count": 153609855,
+        "declared_probability": 0.6,
+        "degree": 3,
+        "expected_count": 153600000.0,
+        "impossible_by_design": false,
+        "observed_probability": 0.60003849609375,
+        "pointwise_cp95_lower": 0.5999784825766538,
+        "pointwise_cp95_upper": 0.6000985073487015,
+        "rule": "ZERO",
+        "simultaneous_cp95_lower": 0.5999547708026395,
+        "simultaneous_cp95_upper": 0.6001222172285559,
+        "simultaneous_interval_contains_design_probability": true,
+        "standardized_count_residual": 1.257277157037928,
+        "total": 256000000
+      },
+      {
+        "corner_code": 5,
+        "count": 25592625,
+        "declared_probability": 0.1,
+        "degree": 3,
+        "expected_count": 25600000.0,
+        "impossible_by_design": false,
+        "observed_probability": 0.09997119140625,
+        "pointwise_cp95_lower": 0.0999344493572161,
+        "pointwise_cp95_upper": 0.10000794250128683,
+        "rule": "COPY1",
+        "simultaneous_cp95_lower": 0.09991993491371037,
+        "simultaneous_cp95_upper": 0.10002246451915472,
+        "simultaneous_interval_contains_design_probability": true,
+        "standardized_count_residual": -1.5364583333333333,
+        "total": 256000000
+      },
+      {
+        "corner_code": 6,
+        "count": 51197599,
+        "declared_probability": 0.2,
+        "degree": 3,
+        "expected_count": 51200000.0,
+        "impossible_by_design": false,
+        "observed_probability": 0.19999062109375,
+        "pointwise_cp95_lower": 0.19994162429492582,
+        "pointwise_cp95_upper": 0.20003962467668462,
+        "rule": "COPY2",
+        "simultaneous_cp95_lower": 0.19992226735582755,
+        "simultaneous_cp95_upper": 0.2000589872962724,
+        "simultaneous_interval_contains_design_probability": true,
+        "standardized_count_residual": -0.37515625,
+        "total": 256000000
+      },
+      {
+        "corner_code": 4,
+        "count": 25599921,
+        "declared_probability": 0.1,
+        "degree": 3,
+        "expected_count": 25600000.0,
+        "impossible_by_design": false,
+        "observed_probability": 0.09999969140625,
+        "pointwise_cp95_lower": 0.09996294470150874,
+        "pointwise_cp95_upper": 0.10003644715634963,
+        "rule": "AND",
+        "simultaneous_cp95_lower": 0.0999484284183359,
+        "simultaneous_cp95_upper": 0.10005097101334498,
+        "simultaneous_interval_contains_design_probability": true,
+        "standardized_count_residual": -0.016458333333333332,
+        "total": 256000000
+      },
+      {
+        "corner_code": 7,
+        "count": 0,
+        "declared_probability": 0.0,
+        "degree": 3,
+        "expected_count": 0.0,
+        "impossible_by_design": true,
+        "observed_probability": 0.0,
+        "pointwise_cp95_lower": 0.0,
+        "pointwise_cp95_upper": 0.0,
+        "rule": "OR",
+        "simultaneous_cp95_lower": 0.0,
+        "simultaneous_cp95_upper": 0.0,
+        "simultaneous_interval_contains_design_probability": true,
+        "standardized_count_residual": null,
+        "total": 256000000
+      },
+      {
+        "corner_code": 3,
+        "count": 0,
+        "declared_probability": 0.0,
+        "degree": 3,
+        "expected_count": 0.0,
+        "impossible_by_design": true,
+        "observed_probability": 0.0,
+        "pointwise_cp95_lower": 0.0,
+        "pointwise_cp95_upper": 0.0,
+        "rule": "XOR",
+        "simultaneous_cp95_lower": 0.0,
+        "simultaneous_cp95_upper": 0.0,
+        "simultaneous_interval_contains_design_probability": true,
+        "standardized_count_residual": null,
+        "total": 256000000
+      }
+    ],
+    "scope": "Two independent multinomial samples with fixed class totals and fixed probabilities. Pearson p-values are asymptotic diagnostics, not correctness gates. Eight positive-probability categories share Bonferroni 95% simultaneous Clopper-Pearson coverage. Impossible categories are structural zeros, not estimated probabilities; all eight corner codes are counted."
+  },
+  "schema_version": 1,
+  "scope": "Independent raw/detail accounting, exact-integer aggregation, fixed-law derivation and prespecified sampling diagnostics. Network regeneration and witness dynamics are verified separately.",
+  "source_sha256": {
+    "Protocol_J1_Replication.json": "eb226cfd79559210d8f56a56ba595b2c7aac034f9d280c634f99dca42bf63144",
+    "original/Protocol_JointRules.json": "676f63437dc7aea118782ef427ac604012d7d2f0bc596ab2aaf063a61554fa64",
+    "original/raw/J1_n25600.csv.gz": "f6c48ba06869b5fdcddae7a6c3254b5f72f9d328b4b500c240be8a74141b5622",
+    "results/main/details/J1_n25600.jsonl.gz": "da4683b9e3e4831aeb32ea37785d183463e5e31d7436ff0bc0cb85352a87e580",
+    "results/main/raw/J1_n25600.csv.gz": "6cbb7dc17f68b89ef40ffc216e5012c01414831960f0cf28a421c542ab0b3284",
+    "results/main/rule_counts.json": "9fdf977ef862415033f9427b103756de02a9afda3cada33027e2c8b7d44781c4",
+    "results/main/summary.csv": "37d057af7dfa380586ffb7c314ef7c97099ede7c256778c011300f399e8e9794",
+    "results/main/summary.json": "f5b85bd72ff3c4753e86be8b01e006626d85a76b45a7ed54596be509d256cf27",
+    "verification/independent_replication_statistics.py": "4215da59c858897f789c7567c9039c71060f74a7341b18932f498ddee60d7001"
+  },
+  "status": "PASS"
+}

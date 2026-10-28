@@ -1,0 +1,62 @@
+[
+  {
+    "G_failures": 1,
+    "G_failures_cp95": [
+      1.2658895979755804e-06,
+      0.0002785503321745113
+    ],
+    "G_prime_failures": 0,
+    "G_prime_failures_cp95": [
+      0.0,
+      0.0001844269639618992
+    ],
+    "P0": {
+      "cp95_envelope": [
+        0.6322486161698435,
+        0.6456109702889903
+      ],
+      "definite_zero_count": 12779,
+      "lower": 0.63895,
+      "possible_zero_count": 12779,
+      "upper": 0.63895
+    },
+    "contraction_coefficient": 0.475,
+    "draws": 20000,
+    "exact_reason_counts": {
+      "original_G": 19999,
+      "weaker_G_prime": 1
+    },
+    "family": "J1",
+    "lambda": 0.3625,
+    "m2": {
+      "lower": 0.6628,
+      "normal95_envelope": [
+        0.6426828934286073,
+        0.6829171065713926
+      ],
+      "se_lower": 0.010264018487111917,
+      "se_upper": 0.010264018487111917,
+      "upper": 0.6628
+    },
+    "max_complex": 0,
+    "max_residual": 18,
+    "mean": {
+      "lower": 0.452,
+      "normal95_envelope": [
+        0.4426154872994609,
+        0.46138451270053915
+      ],
+      "se_lower": 0.004788104666495384,
+      "se_upper": 0.004788104666495384,
+      "upper": 0.452
+    },
+    "mu": 0.4502010019495558,
+    "n": 25600,
+    "reference_m2": 0.6528819441059398,
+    "reference_p0": 0.6375,
+    "rho": 0.475,
+    "stop_reason_counts": {},
+    "total_solver_work": 0,
+    "unresolved": 0
+  }
+]

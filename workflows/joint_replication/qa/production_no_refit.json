@@ -1,0 +1,42 @@
+{
+  "altered_rule_vectors_sha256": "4909863a862ee32e1dbe1e275a8e0e76dc57ddb8484cf7ccdf49ad3d05889a6a",
+  "changed_diagnostic_vectors": 40000,
+  "checks": {
+    "all_nondiagnostic_fields_unchanged": true,
+    "cost_summaries_unchanged": true,
+    "declared_protocol_unchanged": true,
+    "entire_production_summary_unchanged": true,
+    "fixed_reference_unchanged": true,
+    "input_files_unchanged": true,
+    "original_memory_inputs_unchanged": true,
+    "original_rule_vectors_unchanged": true,
+    "perturbed_inputs_not_mutated_by_summarizer": true,
+    "recorded_production_summary_reproduced": true
+  },
+  "draws": 20000,
+  "fixed_reference": {
+    "contraction_coefficient": 0.475,
+    "lambda": 0.3625,
+    "mu": 0.4502010019495558,
+    "reference_m2": 0.6528819441059398,
+    "reference_p0": 0.6375,
+    "rho": 0.475
+  },
+  "input_sha256": {
+    "Protocol_J1_Replication.json": "eb226cfd79559210d8f56a56ba595b2c7aac034f9d280c634f99dca42bf63144",
+    "integrity_record.json": "0e3eb2c9ca8fb62a1eaf7a12b551464579764fb3dfa063d6e2a9298d1b0c6efb",
+    "results/main/raw/J1_n25600.csv.gz": "6cbb7dc17f68b89ef40ffc216e5012c01414831960f0cf28a421c542ab0b3284",
+    "results/main/summary.json": "f5b85bd72ff3c4753e86be8b01e006626d85a76b45a7ed54596be509d256cf27",
+    "src/joint_validation.py": "25f9555a5eb9ef33ab704208c55dfb7fc7fe039217352dc5a03fd7448cda8d3b",
+    "src/run_replication.py": "5b6d2796e4d04ead0b54704f79403bc00be7d8ca8831b3fe9c0f164a230b1c40",
+    "vendor/engine.py": "d3f0969c75bad2cfe45c55922a2e20916f91bd90f1885aed5364da16b05d97e3",
+    "vendor/engine_core.cpp": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d",
+    "vendor/scc_control.py": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd"
+  },
+  "original_rule_vectors_sha256": "1b25b6d50171753712fde31fa407ccbf5b33a34fd7309e254e6a6235abc2abf9",
+  "perturbation": "Rotate counts across the four positive-probability corner codes independently in both degree classes of every draw, preserving each vector total and all impossible categories; only deep copies are changed.",
+  "production_summary_sha256": "0264d37be683b40f7be3b935a38a693dcdcc98db149625117c1c53dd1685455b",
+  "scope": "Dependency-separation regression check on the unchanged production summarizer; the separate independent statistics audit establishes the formulas and values.",
+  "status": "PASS",
+  "test_source_sha256": "fc1699b9ec090168f451298b657e0eada23840b8e738192aade8ee19c55ea178"
+}

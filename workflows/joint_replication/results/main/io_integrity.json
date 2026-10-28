@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "streams": [
+    {
+      "path": "raw/J1_n25600.csv.gz",
+      "records": 20000,
+      "sha256": "6cbb7dc17f68b89ef40ffc216e5012c01414831960f0cf28a421c542ab0b3284"
+    },
+    {
+      "path": "details/J1_n25600.jsonl.gz",
+      "records": 20000,
+      "sha256": "da4683b9e3e4831aeb32ea37785d183463e5e31d7436ff0bc0cb85352a87e580"
+    }
+  ]
+}

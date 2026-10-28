@@ -1,0 +1,164 @@
+{
+  "certificate": "G is the conservative nominal-slot residual certificate; G_prime tests internal marked nominal slots in every cyclic residual SCC. Physical dynamics identify duplicate parents.",
+  "component_caps": {
+    "max_component_size": 18,
+    "max_pins": 18,
+    "max_work": 10000000
+  },
+  "control": "Synchronous permanent zero-valued pins; all vertices eligible; convergence from every compatible physical initial state; unit costs.",
+  "corner_code": "c=B1+2*B2+4*B12; B1=g(1,0), B2=g(0,1), B12=g(1,1); g(0,0)=0",
+  "corner_names": [
+    "ZERO",
+    "x1 AND NOT x2",
+    "NOT x1 AND x2",
+    "XOR",
+    "AND",
+    "COPY1",
+    "COPY2",
+    "OR"
+  ],
+  "display_rule_order": [
+    0,
+    5,
+    6,
+    4,
+    7,
+    3
+  ],
+  "families": {
+    "J1": {
+      "description": "Asymmetric COPY/AND degree association, unchanged from original J1",
+      "id": 3101,
+      "parameters_rational": {
+        "contraction_coefficient": [
+          19,
+          40
+        ],
+        "lambda": [
+          29,
+          80
+        ],
+        "rho": [
+          19,
+          40
+        ]
+      },
+      "reference_mu": 0.4502010019495558,
+      "types": [
+        {
+          "degree": 1,
+          "derived_rational": {
+            "nonzero_row_probability": [
+              7,
+              10
+            ],
+            "q1": [
+              9,
+              20
+            ],
+            "q12": [
+              0,
+              1
+            ],
+            "q2": [
+              1,
+              10
+            ]
+          },
+          "fraction": [
+            1,
+            2
+          ],
+          "probability_denominator": 100,
+          "weights": [
+            30,
+            0,
+            0,
+            0,
+            15,
+            45,
+            10,
+            0
+          ]
+        },
+        {
+          "degree": 3,
+          "derived_rational": {
+            "nonzero_row_probability": [
+              2,
+              5
+            ],
+            "q1": [
+              1,
+              10
+            ],
+            "q12": [
+              0,
+              1
+            ],
+            "q2": [
+              1,
+              5
+            ]
+          },
+          "fraction": [
+            1,
+            2
+          ],
+          "probability_denominator": 100,
+          "weights": [
+            60,
+            0,
+            0,
+            0,
+            10,
+            10,
+            20,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "fixed_design": true,
+  "independent_caps": {
+    "compatible_states": 100000000,
+    "component_size": 18,
+    "full_residual_size": 12,
+    "pin_candidates": 100000
+  },
+  "master_seed": 2026101601,
+  "matching": "Uniform permutation of prescribed output source-label multiset into labeled input slots; self-loops and repeated parents are retained without rejection.",
+  "network_hash": "SHA256 of parents converted to little-endian int64 row-major bytes followed by three uint8 rule columns row-major bytes.",
+  "preflight": "Fresh independent exhaustive two-node oracle and edge-case checks, production engine/solver comparison on deterministic small fixtures, and independent protocol/code audit before launch.",
+  "protocol_integrity": "The protocol, seed list and current source identities are checked against integrity_record.json and SHA256_MANIFEST.json before production.",
+  "records": "Every replicate has seed entropy, full-network hash, both degree-class eight-code counts, residual rows, residual/cyclic SCC size lists, G/G_prime, costs or bounds, solver work/stops and a feasible upper witness. All 20000 draws retained.",
+  "replay": "Independently reconstruct and validate all20000 full networks; use structurally certified copy optima and independent physical enumeration of all complex component optima; validate every feasible witness.",
+  "replicates": "0 through 19999 inclusive; exactly one retained record per identity",
+  "replicates_per_cell": 20000,
+  "rng_call_sequence": [
+    "Degree-one vertices 0..12799, degree-three vertices 12800..25599; degrees int64.",
+    "rng.permutation(np.repeat(np.arange(n,dtype=np.int64),degrees)).reshape(n,2), row-major.",
+    "rng.choice(8,size=12800,p=np.asarray(d1_weights,dtype=np.float64)/100).",
+    "rng.choice(8,size=12800,p=np.asarray(d3_weights,dtype=np.float64)/100).",
+    "Expand corner code bits0,1,2 into three uint8 columns; no subsequent stochastic call."
+  ],
+  "seed_scheme": "Generator(PCG64(SeedSequence([2026101601,3101,25600,replicate])))",
+  "shard_size": 1000,
+  "sizes": [
+    25600
+  ],
+  "statistics": {
+    "comparison": "Original2000 and replication20000 observations shown separately; no pooled replacement. Any between-batch contrast is exploratory because J1 was selected after examining the original sample. Intervals describe finite-size quantities; asymptotic references do not define an exact finite-n null.",
+    "fixed_reference": "lambda=29/80,rho=19/40,mu=-log(51/80),m2=mu+mu^2,P0=51/80, derived only from declared probabilities; never refitted to observed rules.",
+    "moments": "All-draw endpoint averages for C and C^2; unbiased endpoint sample variances divided by M for squared SE; pointwise approximate95% normal envelope using z=Phi^-1(.975).",
+    "no_refit_check": "Deliberately changed diagnostic frequency inputs must leave reference references and cost summaries unchanged.",
+    "probabilities": "Definite/possible zero-cost counts and G/G_prime failure counts with pointwise95% Clopper-Pearson intervals/envelopes.",
+    "rule_diagnostics": "Per-degree eight-code aggregate counts; impossible categories must be zero. Report degreewise Pearson chi-square(df3), joint chi-square(df6), and Bonferroni95% Clopper-Pearson bounds for8 positive probabilities. These diagnostics do not authorize exclusion or resampling."
+  },
+  "study": "Independent J1 replication at n=25600",
+  "total_draws": 20000,
+  "unresolved": "Retain every interval and stop reason; never use solved-only averages, imputation, selection, rerolling or outcome-based continuation. A validation failure triggers an audit, not a replacement draw.",
+  "version": 1,
+  "work_unit": "One local-row evaluation constructing successors or one controlled successor-edge traversal; budget per complex SCC, no wall-clock cutoff."
+}

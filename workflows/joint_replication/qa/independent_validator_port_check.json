@@ -1,0 +1,172 @@
+{
+  "complex_component_size_counts": {
+    "1": 2,
+    "3": 1,
+    "5": 1
+  },
+  "component_reason_counts": {
+    "acyclic_singleton": 12,
+    "all_pinned_witness": 1,
+    "exact_search": 3,
+    "marked_slot_cycle": 2
+  },
+  "counts": {
+    "G": 96,
+    "G_false_G_prime_true": 0,
+    "G_prime": 96,
+    "SCC_records_checked": 89,
+    "acyclic_components_symbolically_verified": 35,
+    "chunk_distinct_complex_compatible_states": 65,
+    "chunk_distinct_complex_oracle_problems": 4,
+    "chunk_distinct_complex_pin_candidates": 7,
+    "complex_component_optima_exhaustively_verified": 4,
+    "complex_components_checked": 4,
+    "component_complex_witness_physical_support_capture": 4,
+    "component_complex_witness_states": 0,
+    "component_complex_witnesses_verified": 4,
+    "copy_cycle_components_symbolically_verified": 50,
+    "degree_conditioned_rule_count_vectors_checked": 200,
+    "degree_counts_checked": 100,
+    "draw_optima_known_from_independent_components": 100,
+    "exact_draws": 100,
+    "final_witnesses_verified_by_components": 100,
+    "full_residual_global_compatible_states": 4884,
+    "full_residual_global_optima_enumerated": 4,
+    "full_residual_global_pin_candidates": 23,
+    "full_seeded_networks_reconstructed": 100,
+    "full_source_support_recomputed": 100,
+    "global_complex_witness_physical_support_capture": 4,
+    "global_complex_witness_states": 0,
+    "global_complex_witnesses_verified": 4,
+    "interval_draws": 0,
+    "physical_repeated_parent_rows_full_network": 71,
+    "physical_repeated_parent_rows_residual": 2,
+    "residual_rows_compared": 105,
+    "source_coordinates_reconstructed": 10000
+  },
+  "degree_conditioned_rule_counts": {
+    "1": [
+      1501,
+      0,
+      0,
+      0,
+      745,
+      2253,
+      501,
+      0
+    ],
+    "3": [
+      3009,
+      0,
+      0,
+      0,
+      485,
+      516,
+      990,
+      0
+    ]
+  },
+  "draws": 100,
+  "first_replicate": 0,
+  "independent_optimum_guards": [],
+  "last_replicate": 99,
+  "maximum_SCC_size": 5,
+  "maximum_literal_support_iterations": 12,
+  "noncopy_component_cases": [
+    {
+      "nodes": [
+        60
+      ],
+      "oracle": {
+        "candidates": 2,
+        "complete": true,
+        "cost": 1,
+        "pins": [
+          60
+        ],
+        "states": 3
+      },
+      "production_interval": [
+        1,
+        1
+      ],
+      "replicate": 53
+    },
+    {
+      "nodes": [
+        70,
+        95,
+        96
+      ],
+      "oracle": {
+        "candidates": 2,
+        "complete": true,
+        "cost": 1,
+        "pins": [
+          70
+        ],
+        "states": 12
+      },
+      "production_interval": [
+        1,
+        1
+      ],
+      "replicate": 59
+    },
+    {
+      "nodes": [
+        62
+      ],
+      "oracle": {
+        "candidates": 1,
+        "complete": true,
+        "cost": 0,
+        "pins": [],
+        "states": 2
+      },
+      "production_interval": [
+        0,
+        0
+      ],
+      "replicate": 80
+    },
+    {
+      "nodes": [
+        19,
+        76,
+        78,
+        84,
+        89
+      ],
+      "oracle": {
+        "candidates": 2,
+        "complete": true,
+        "cost": 1,
+        "pins": [
+          19
+        ],
+        "states": 48
+      },
+      "production_interval": [
+        1,
+        1
+      ],
+      "replicate": 88
+    }
+  ],
+  "repeated_parent_residual_cases": [
+    {
+      "replicate": 53,
+      "vertices": [
+        60
+      ]
+    },
+    {
+      "replicate": 88,
+      "vertices": [
+        19
+      ]
+    }
+  ],
+  "test_scope": "Independent validator cross-check on 100 comparison-sample J1 networks with n=100."
+}
