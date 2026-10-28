@@ -1,0 +1,25 @@
+{
+  "component_caps": {
+    "max_component_size": 18,
+    "max_pins": 18,
+    "max_work": 10000000
+  },
+  "engine": {
+    "backend": "cpp",
+    "compiler_error": null,
+    "cpp_sha256": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d"
+  },
+  "original_G_failure_count": 245,
+  "original_protocol_sha256": "3eafdf64a41256575721e816498972f1c21307f3de95a3dbdb3da1ae8ff5f81b",
+  "pilot": true,
+  "source_hashes": {
+    "src/replay_scc.py": "28bea7337220d9ea24710cfce1e41481a914cdc0ab506f0acc66e025e068c262",
+    "vendor/engine.py": "d3f0969c75bad2cfe45c55922a2e20916f91bd90f1885aed5364da16b05d97e3",
+    "vendor/engine_core.cpp": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d",
+    "vendor/scc_control.py": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd"
+  },
+  "status": "completed",
+  "total_draws": 2500,
+  "unresolved_count": 11,
+  "weaker_G_prime_failure_count": 123
+}
