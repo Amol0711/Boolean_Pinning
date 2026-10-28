@@ -1,0 +1,199 @@
+{
+  "status": "PASS",
+  "descriptive_label_representation": true,
+  "portable_source_copy_executed": true,
+  "contexts_reproduced": 11,
+  "all_scientific_certificates_byte_identical": true,
+  "comparison_excludes": "Recorded execution comparison excludes resource metrics and timing columns. Its certificate hashes identify the representations tested in that execution. Current distributed hashes are recorded in MANIFEST.json.",
+  "overwrite_refusal_verified": true,
+  "modified_protocol_refusal_verified": true,
+  "contexts": [
+    {
+      "context_id": "CD4_APC",
+      "scientific_certificate_identical": true,
+      "sha256": "2a6b4416b3ab594c02b0438f6e8cf672f47b4b001f308944f952769864480772",
+      "replay_resources": {
+        "analysis_wall_seconds": 32.09065244800149,
+        "analysis_cpu_seconds": 31.939842128,
+        "peak_worker_rss_bytes": 31412224,
+        "wall_cpu_scope": "From model parsing through target discovery, support reduction, residual search, and certificate object construction; excludes interpreter startup, imports, and file serialization.",
+        "peak_memory_scope": "Peak resident-set size of the isolated context worker process, including interpreter/import overhead. Linux ru_maxrss converted from KiB to bytes; macOS value is already bytes.",
+        "python": "3.12.14",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "processor": "x86_64",
+        "measurement_repeats": 1,
+        "isolated_process_wall_seconds_including_startup_and_export": 32.208048740001686
+      }
+    },
+    {
+      "context_id": "CD4_ECM",
+      "scientific_certificate_identical": true,
+      "sha256": "0635b4ae2b6658f40b8d124afc8125d425a95ea699e8b380bbe26c07a1505460",
+      "replay_resources": {
+        "analysis_wall_seconds": 0.12707998100086115,
+        "analysis_cpu_seconds": 0.126899159,
+        "peak_worker_rss_bytes": 26136576,
+        "wall_cpu_scope": "From model parsing through target discovery, support reduction, residual search, and certificate object construction; excludes interpreter startup, imports, and file serialization.",
+        "peak_memory_scope": "Peak resident-set size of the isolated context worker process, including interpreter/import overhead. Linux ru_maxrss converted from KiB to bytes; macOS value is already bytes.",
+        "python": "3.12.14",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "processor": "x86_64",
+        "measurement_repeats": 1,
+        "isolated_process_wall_seconds_including_startup_and_export": 0.1826802260002296
+      }
+    },
+    {
+      "context_id": "CD4_GALPHAQ",
+      "scientific_certificate_identical": true,
+      "sha256": "00f99ea5718d537397b874d653e98b9af0e41375320931bed2ee7428334d0fc1",
+      "replay_resources": {
+        "analysis_wall_seconds": 0.17691106100028264,
+        "analysis_cpu_seconds": 0.176904135,
+        "peak_worker_rss_bytes": 26136576,
+        "wall_cpu_scope": "From model parsing through target discovery, support reduction, residual search, and certificate object construction; excludes interpreter startup, imports, and file serialization.",
+        "peak_memory_scope": "Peak resident-set size of the isolated context worker process, including interpreter/import overhead. Linux ru_maxrss converted from KiB to bytes; macOS value is already bytes.",
+        "python": "3.12.14",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "processor": "x86_64",
+        "measurement_repeats": 1,
+        "isolated_process_wall_seconds_including_startup_and_export": 0.23157190699930652
+      }
+    },
+    {
+      "context_id": "CD4_IL2",
+      "scientific_certificate_identical": true,
+      "sha256": "8d8e1214fc096d4bc1e00a2175247935330a859989019de68c620edf03c35ab2",
+      "replay_resources": {
+        "analysis_wall_seconds": 16.261756243999116,
+        "analysis_cpu_seconds": 16.247870289,
+        "peak_worker_rss_bytes": 31461376,
+        "wall_cpu_scope": "From model parsing through target discovery, support reduction, residual search, and certificate object construction; excludes interpreter startup, imports, and file serialization.",
+        "peak_memory_scope": "Peak resident-set size of the isolated context worker process, including interpreter/import overhead. Linux ru_maxrss converted from KiB to bytes; macOS value is already bytes.",
+        "python": "3.12.14",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "processor": "x86_64",
+        "measurement_repeats": 1,
+        "isolated_process_wall_seconds_including_startup_and_export": 16.358714620000683
+      }
+    },
+    {
+      "context_id": "CD4_OFF",
+      "scientific_certificate_identical": true,
+      "sha256": "59593d049e91956d247eb9484db2ed4c3d0b3b1cbb73295d3c6e3d8f0e905f3d",
+      "replay_resources": {
+        "analysis_wall_seconds": 0.12252964200160932,
+        "analysis_cpu_seconds": 0.122519622,
+        "peak_worker_rss_bytes": 15466496,
+        "wall_cpu_scope": "From model parsing through target discovery, support reduction, residual search, and certificate object construction; excludes interpreter startup, imports, and file serialization.",
+        "peak_memory_scope": "Peak resident-set size of the isolated context worker process, including interpreter/import overhead. Linux ru_maxrss converted from KiB to bytes; macOS value is already bytes.",
+        "python": "3.12.14",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "processor": "x86_64",
+        "measurement_repeats": 1,
+        "isolated_process_wall_seconds_including_startup_and_export": 0.17744511700220755
+      }
+    },
+    {
+      "context_id": "CD4_ON",
+      "scientific_certificate_identical": true,
+      "sha256": "911950f7fd9b2d6ccb0cd740236aac9278aca02c90b5860960c999ccde4790c1",
+      "replay_resources": {
+        "analysis_wall_seconds": 1.1884459049979341,
+        "analysis_cpu_seconds": 1.18808687,
+        "peak_worker_rss_bytes": 17301504,
+        "wall_cpu_scope": "From model parsing through target discovery, support reduction, residual search, and certificate object construction; excludes interpreter startup, imports, and file serialization.",
+        "peak_memory_scope": "Peak resident-set size of the isolated context worker process, including interpreter/import overhead. Linux ru_maxrss converted from KiB to bytes; macOS value is already bytes.",
+        "python": "3.12.14",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "processor": "x86_64",
+        "measurement_repeats": 1,
+        "isolated_process_wall_seconds_including_startup_and_export": 1.2444687540009909
+      }
+    },
+    {
+      "context_id": "MAC_BACTERIA",
+      "scientific_certificate_identical": true,
+      "sha256": "5cc25dac32cdf28c0eb8da161d5d305bf02a384c8b01833d921000c569fe6620",
+      "replay_resources": {
+        "analysis_wall_seconds": 0.0348805129979155,
+        "analysis_cpu_seconds": 0.034877561999999994,
+        "peak_worker_rss_bytes": 26136576,
+        "wall_cpu_scope": "From model parsing through target discovery, support reduction, residual search, and certificate object construction; excludes interpreter startup, imports, and file serialization.",
+        "peak_memory_scope": "Peak resident-set size of the isolated context worker process, including interpreter/import overhead. Linux ru_maxrss converted from KiB to bytes; macOS value is already bytes.",
+        "python": "3.12.14",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "processor": "x86_64",
+        "measurement_repeats": 1,
+        "isolated_process_wall_seconds_including_startup_and_export": 0.08437020699784625
+      }
+    },
+    {
+      "context_id": "MAC_FASLG",
+      "scientific_certificate_identical": true,
+      "sha256": "be1b08c350de3e3a725a77741cd3b84f9fc7893f9749d1578398c5bf63c3ea46",
+      "replay_resources": {
+        "analysis_wall_seconds": 0.12563124100051937,
+        "analysis_cpu_seconds": 0.125625825,
+        "peak_worker_rss_bytes": 26136576,
+        "wall_cpu_scope": "From model parsing through target discovery, support reduction, residual search, and certificate object construction; excludes interpreter startup, imports, and file serialization.",
+        "peak_memory_scope": "Peak resident-set size of the isolated context worker process, including interpreter/import overhead. Linux ru_maxrss converted from KiB to bytes; macOS value is already bytes.",
+        "python": "3.12.14",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "processor": "x86_64",
+        "measurement_repeats": 1,
+        "isolated_process_wall_seconds_including_startup_and_export": 0.18482829300046433
+      }
+    },
+    {
+      "context_id": "MAC_IFNG",
+      "scientific_certificate_identical": true,
+      "sha256": "d547feb86b70f5c718c18cf5e0d9eaa48476b869df9ca0b5003bb5e7a9c62bf7",
+      "replay_resources": {
+        "analysis_wall_seconds": 0.1183131610014243,
+        "analysis_cpu_seconds": 0.115433652,
+        "peak_worker_rss_bytes": 26136576,
+        "wall_cpu_scope": "From model parsing through target discovery, support reduction, residual search, and certificate object construction; excludes interpreter startup, imports, and file serialization.",
+        "peak_memory_scope": "Peak resident-set size of the isolated context worker process, including interpreter/import overhead. Linux ru_maxrss converted from KiB to bytes; macOS value is already bytes.",
+        "python": "3.12.14",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "processor": "x86_64",
+        "measurement_repeats": 1,
+        "isolated_process_wall_seconds_including_startup_and_export": 0.1717014250025386
+      }
+    },
+    {
+      "context_id": "MAC_OFF",
+      "scientific_certificate_identical": true,
+      "sha256": "d1892745d4bcc2937176ae2223e7ba3428bb15654f5cc9d1ea05011d14042a30",
+      "replay_resources": {
+        "analysis_wall_seconds": 0.09885992400086252,
+        "analysis_cpu_seconds": 0.09885652500000001,
+        "peak_worker_rss_bytes": 26136576,
+        "wall_cpu_scope": "From model parsing through target discovery, support reduction, residual search, and certificate object construction; excludes interpreter startup, imports, and file serialization.",
+        "peak_memory_scope": "Peak resident-set size of the isolated context worker process, including interpreter/import overhead. Linux ru_maxrss converted from KiB to bytes; macOS value is already bytes.",
+        "python": "3.12.14",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "processor": "x86_64",
+        "measurement_repeats": 1,
+        "isolated_process_wall_seconds_including_startup_and_export": 0.15154261800125823
+      }
+    },
+    {
+      "context_id": "MAC_ON",
+      "scientific_certificate_identical": true,
+      "sha256": "a40f470e3eb9a658e1b294ef9fabe7b9654172b28e1b3fccd7f8671fd080fd47",
+      "replay_resources": {
+        "analysis_wall_seconds": 0.11646638800084474,
+        "analysis_cpu_seconds": 0.116401408,
+        "peak_worker_rss_bytes": 26136576,
+        "wall_cpu_scope": "From model parsing through target discovery, support reduction, residual search, and certificate object construction; excludes interpreter startup, imports, and file serialization.",
+        "peak_memory_scope": "Peak resident-set size of the isolated context worker process, including interpreter/import overhead. Linux ru_maxrss converted from KiB to bytes; macOS value is already bytes.",
+        "python": "3.12.14",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+        "processor": "x86_64",
+        "measurement_repeats": 1,
+        "isolated_process_wall_seconds_including_startup_and_export": 0.16594489899944165
+      }
+    }
+  ]
+}

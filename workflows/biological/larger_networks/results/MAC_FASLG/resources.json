@@ -1,0 +1,12 @@
+{
+  "analysis_wall_seconds": 0.1413005360009265,
+  "analysis_cpu_seconds": 0.141303897,
+  "peak_worker_rss_bytes": 25976832,
+  "wall_cpu_scope": "From model parsing through target discovery, support reduction, residual search, and certificate object construction; excludes interpreter startup, imports, and file serialization.",
+  "peak_memory_scope": "Peak resident-set size of the isolated context worker process, including interpreter/import overhead. Linux ru_maxrss converted from KiB to bytes; macOS value is already bytes.",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "measurement_repeats": 1,
+  "isolated_process_wall_seconds_including_startup_and_export": 0.2150080049996177
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "name": "README.md",
+    "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/main/models/%5Bid-050%5D__%5Bvar-154%5D__%5Bin-34%5D__%5BCD4-T-CELL-SIGNALING%5D/README.md",
+    "bytes": 1240,
+    "sha256": "b495eae22661467f2a904399e6fea801c8f73699d5d5ba845931d57a2ecd879b",
+    "immutable_url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-050%5D__%5Bvar-154%5D__%5Bin-34%5D__%5BCD4-T-CELL-SIGNALING%5D/README.md",
+    "commit": "314b2fed94689c38d3aaaf8101ed622b3501c7f7",
+    "immutable_bytes_match": true
+  },
+  {
+    "name": "metadata.json",
+    "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/main/models/%5Bid-050%5D__%5Bvar-154%5D__%5Bin-34%5D__%5BCD4-T-CELL-SIGNALING%5D/metadata.json",
+    "bytes": 5073,
+    "sha256": "edca044595be6935fe91598f95b10627ebd0fd60ca5ef2f5dae1076e75c09f37",
+    "immutable_url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-050%5D__%5Bvar-154%5D__%5Bin-34%5D__%5BCD4-T-CELL-SIGNALING%5D/metadata.json",
+    "commit": "314b2fed94689c38d3aaaf8101ed622b3501c7f7",
+    "immutable_bytes_match": true
+  },
+  {
+    "name": "model.bnet",
+    "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/main/models/%5Bid-050%5D__%5Bvar-154%5D__%5Bin-34%5D__%5BCD4-T-CELL-SIGNALING%5D/model.bnet",
+    "bytes": 5809,
+    "sha256": "24722017d5be15ab31cf9a8c3dfc31139a80313c7a69196f8ab77b0945444209",
+    "immutable_url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-050%5D__%5Bvar-154%5D__%5Bin-34%5D__%5BCD4-T-CELL-SIGNALING%5D/model.bnet",
+    "commit": "314b2fed94689c38d3aaaf8101ed622b3501c7f7",
+    "immutable_bytes_match": true
+  }
+]

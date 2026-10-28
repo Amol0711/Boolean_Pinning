@@ -1,0 +1,121 @@
+INPUT-CONTEXT SELECTION: PRIMARY-SOURCE AND RULE-MAPPING NOTES
+The contexts and budgets are specified in contexts.json. These notes record the original source-based selection.
+Seven focal contexts plus four endpoint contexts observed before focal-context selection. No new target orbit,
+support pass, pinning search or response calculation was performed in selecting them.
+
+PRIMARY SOURCES
+
+Conroy et al. (2014), Frontiers in Immunology5:599.
+https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2014.00599/full
+DOI10.3389/fimmu.2014.00599.
+Exact anchors: Materials and Methods, Model validation; In silico simulations;
+Results, In silico modeling of a CD4+ T-cell, Figure2A–E; Table1.
+Figure2A motivates APC,2B/2D motivate ECM,2C motivates GalphaQ-ligand, and2E
+motivates IL2. These are choices of focal inputs covered in the primary paper.
+The source's environment simulations used activity ranges and stochastic input
+levels; the full binary assignments here are newly specified computational
+conditions, not reconstructed healthy/disease conditions from that study.
+
+Raza et al. (2008), BMC Systems Biology2:36.
+https://link.springer.com/article/10.1186/1752-0509-2-36
+https://pmc.ncbi.nlm.nih.gov/articles/PMC2383880/
+DOI10.1186/1752-0509-2-36.
+Exact anchors: Background, pathogen recognition/TLR discussion; Methods,
+Collection of Molecular Interaction Data and Biological Representation of Pathways,
+Figures1 and3; Results and Discussion, Figure6A–B; Methods, Network Analysis of
+the Transcriptional Response of Mouse Bone Marrow Derived Macrophages to
+Interferon-gamma Treatment. IFNG and FASLG are separately traced in Figure6;
+the pathogen context follows the TLR/pathogen scope of Figure3. The paper
+presents a pathway map; we analyze the explicitly frozen CellCollective/BBM
+Boolean encoding, not an asserted identical simulation protocol from2008.
+
+MODEL AUTHORITY
+BBM repository: https://github.com/sybila/biodivine-boolean-models
+Immutable commit:314b2fed94689c38d3aaaf8101ed622b3501c7f7.
+Model050 CD4-T-CELL-SIGNALING:154 regulated coordinates +34 external inputs.
+Model001 SIGNALING-IN-MACROPHAGE-ACTIVATION:302 regulated coordinates +19 inputs.
+The complete input lists and BNET SHA256 values are in contexts.json.
+Each context explicitly assigns every input bit. No missing input is silently
+sampled, averaged, or left as an unconstrained parameter.
+
+CD4 CONTEXTS: EXACT DECLARED BACKGROUNDS
+All unlisted external inputs are0 in each new context. The four contexts are
+not required to share identical cofactor backgrounds; comparisons are therefore
+not interpreted as isolated causal effects of changing only one input.
+
+APC: v_APC=1, v_MHC_II=1.
+The released rules contain CD28=(B7 OR APC), TCR=(APC AND CD28),
+CD3=TCR, and CD4=(TCR AND CD3 AND MHC_II). Thus MHC_II=1 is an explicit
+coordinate condition enabling the CD4 branch; B7 remains0. MHC_II is part
+of the environmental assignment, not an optimized internal intervention.
+
+ECM: v_ECM=1.
+The released integrin coordinate has Bintegrin=(TCR OR ECM), and
+FAK_Tyr397 copies Bintegrin. No extra receptor coordinate is introduced.
+
+IL2: v_IL2_e=1, v_CGC=1, v_IL2RB=1.
+Both released IL2R and IL2R_HIGH formulas require CGC and IL2RB together
+with either extracellular or endogenous IL2. IL2RA remains a dynamic
+coordinate selecting the model's receptor branches. This cofactor background
+is explicit, not claimed to be neutral: the released SHP2 formula also has
+an IL2RB term without ligand gating. Table1 of the primary paper lists IL2,
+CGC and IL2RB, but does not prescribe this particular complete Boolean assignment.
+
+GalphaQ ligand: v_Galpha_QL=1.
+The exact released input spelling maps to Galpha_Q=Galpha_QL and
+PLCb=Galpha_Q. Other GPCR ligand inputs remain0.
+
+The artificial CAV1_ACTIVATOR input remains0 in all four new CD4 contexts.
+The source explains its role in artificial control of CAV1 activity; setting
+this auxiliary input0 does not amount to knocking out the CAV1 scaffold,
+which retains its other upstream logical inputs.
+
+MACROPHAGE CONTEXTS AND THE EXTERNAL_ACTIVATOR INPUT
+In every new macrophage context, v_External_Activator=1. Exactly one focal
+input is also1: v_Bacteria, v_IFNG, or v_FASLG. Every other external input is0.
+
+External_Activator is an auxiliary coordinate in this repository encoding,
+not a named biological stimulus or a concentration described by Raza et al.
+It directly supplies many receptor and signalling-component rows. Examples
+checked in the frozen BNET include:
+  IFNGR1 = External_Activator;
+  IFNGR2 = External_Activator;
+  JAK2 = External_Activator;
+  FAS = External_Activator;
+  ProCASP8 = External_Activator;
+  CD40 = External_Activator;
+  TNFRSF1A = External_Activator.
+Fixing this coordinate1 is a declared technical background condition so
+these model components are available. It is not claimed to reproduce a
+physiological resting state, protein concentration, or measured expression
+profile. Fixing it0 would remove those rows' activity by construction;
+that different convention is retained transparently in the zero endpoint.
+
+IFNG maps to the IFNGR rule together with IFNGR1, IFNGR2 and JAK2;
+STAT1 copies IFNGR. FASLG maps into the FASLG_FAS complex through the
+FAS receptor. These connections justify the focal input names, without
+assuming a final transcriptional or apoptotic phenotype in advance.
+
+Bacteria is an aggregate repository input. LPS, Flagellin, Diacyl_Lipopeptides
+and Triacyl_Lipopeptides each copy it; Viral_Bacterial_CpG is Virus OR Bacteria.
+Consequently, the context must be called a Bacteria-input condition, not a
+pure LPS or a specified experimental bacterial infection condition.
+
+Direct caspase activators, Mitochondrial_Activator, IRF activators and
+RELA_NFKB1_Activator remain0 in all three new contexts. No direct downstream
+activation is added after outcomes are observed.
+
+PRESPECIFICATION AND REPORTING
+Both all-zero/all-one endpoints for each model are retained and identified as
+conditions observed before focal-context selection. The seven focal assignments,
+target-discovery rule, eligibility, computational budgets and unresolved statuses
+were specified before their computations. The CD4_APC and MAC_BACTERIA figure
+cases were selected before their computations and retained regardless of outcome.
+
+Do not infer a healthy/disease phenotype from input fractions or target bits.
+Do not claim all model coordinates are genes. Treat input assignments as an
+environmental baseline and report internal/model-node intervention cost separately
+from the cost convention that charges identity-completed external inputs.
+Orbit discovery failure does not establish that no fixed point exists. A noncopy residual
+or an exhausted search budget does not establish intervention failure. Retain every
+prespecified case with its appropriate verified or unresolved status.

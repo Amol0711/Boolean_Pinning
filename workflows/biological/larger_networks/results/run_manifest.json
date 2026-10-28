@@ -1,0 +1,47 @@
+{
+  "schema": "LargerNetworkBenchmarkRun_v1",
+  "protocol_sha256": "2d8f64156c5643cd0559a149b5ccde1cc7bed26d06bf0f517963a7db188aa47d",
+  "protocol_file_name": "contexts.json",
+  "contexts_executed_in_frozen_order": [
+    "CD4_OFF",
+    "CD4_ON",
+    "CD4_APC",
+    "CD4_ECM",
+    "CD4_IL2",
+    "CD4_GALPHAQ",
+    "MAC_OFF",
+    "MAC_ON",
+    "MAC_BACTERIA",
+    "MAC_IFNG",
+    "MAC_FASLG"
+  ],
+  "input_sha256": {
+    "src/benchmark.py": "056876a88f98325c89011923f82c89b74ca90fa16c8e600f621c43471ed0e9ad",
+    "src/boolean_certificates.py": "9a1a204288173f187fdce3348fddf1f7b624ab3f2cb967acd00b9c8a4c325bec",
+    "src/test_runner.py": "681e9fd9c444a787a2597317a5534db25ce0f351f184c1e73b9313b3474159c2",
+    "data/cd4_188/README.md": "b495eae22661467f2a904399e6fea801c8f73699d5d5ba845931d57a2ecd879b",
+    "data/cd4_188/download_manifest.json": "39b61b0c3200414875eb377caa64a63af9223f07a3efb27aa7016f12c586358f",
+    "data/cd4_188/metadata.json": "edca044595be6935fe91598f95b10627ebd0fd60ca5ef2f5dae1076e75c09f37",
+    "data/cd4_188/model.bnet": "24722017d5be15ab31cf9a8c3dfc31139a80313c7a69196f8ab77b0945444209",
+    "data/macrophage_321/README.md": "1cfb7f1081c777116cb6f8fd02b5d0d3d2925049e0e5922a3e883dc003e1ebd7",
+    "data/macrophage_321/download_manifest.json": "ac83f2f6329b596ea9432ee1944b3d485db90dbef15fb717da97808c869c39d8",
+    "data/macrophage_321/immutable_download_manifest.json": "102ff397200f765e7938d9ee0c2c1d24cd9600ae2c6c71cc558b8e9cca4def31",
+    "data/macrophage_321/metadata.json": "6a22faf5f9604b4a72aac2363c489cae53b6c02211fa96a74d89ebc878aa90af",
+    "data/macrophage_321/model.bnet": "ea60f90ecab55c939f44648dc24608d5779916f7d1df54200f1e85681a4951d4"
+  },
+  "scientific_result_sha256": {
+    "CD4_APC/certificate.json": "2a6b4416b3ab594c02b0438f6e8cf672f47b4b001f308944f952769864480772",
+    "CD4_ECM/certificate.json": "0635b4ae2b6658f40b8d124afc8125d425a95ea699e8b380bbe26c07a1505460",
+    "CD4_GALPHAQ/certificate.json": "00f99ea5718d537397b874d653e98b9af0e41375320931bed2ee7428334d0fc1",
+    "CD4_IL2/certificate.json": "8d8e1214fc096d4bc1e00a2175247935330a859989019de68c620edf03c35ab2",
+    "CD4_OFF/certificate.json": "046b1be0e224977504a89f8be4035ab826e1a6113ee32b57a99de035f3ef69a1",
+    "CD4_ON/certificate.json": "a49b55c392b3a6ff4b3f77424dc73a1eb526e532740e08bd942f2e7da3a85769",
+    "MAC_BACTERIA/certificate.json": "5cc25dac32cdf28c0eb8da161d5d305bf02a384c8b01833d921000c569fe6620",
+    "MAC_FASLG/certificate.json": "be1b08c350de3e3a725a77741cd3b84f9fc7893f9749d1578398c5bf63c3ea46",
+    "MAC_IFNG/certificate.json": "d547feb86b70f5c718c18cf5e0d9eaa48476b869df9ca0b5003bb5e7a9c62bf7",
+    "MAC_OFF/certificate.json": "f3c56f75b9ed98b9a1c649f0d82695702e55b8fc653c949a88dab5f510c92758",
+    "MAC_ON/certificate.json": "f4cd5557b7b3a37ee74c54029ae2628c2eef8398adeeec29f371020ffcb4b87c"
+  },
+  "timing_note": "Resource measurements and summary timing columns vary between reruns. Scientific certificate files are deterministic unless a wall-time cutoff changes the reached search point.",
+  "representation_note": "Digests identify the distributed representations of the retained computational inputs and certificates. Numerical results, model rules, target states, search budgets and original resource measurements are unchanged. Updating descriptive metadata does not constitute a rerun of the original benchmark."
+}

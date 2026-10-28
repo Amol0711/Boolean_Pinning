@@ -1,0 +1,20 @@
+[
+  {
+    "name": "README.md",
+    "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/main/models/%5Bid-001%5D__%5Bvar-302%5D__%5Bin-19%5D__%5BSIGNALING-IN-MACROPHAGE-ACTIVATION%5D/README.md",
+    "bytes": 1200,
+    "sha256": "1cfb7f1081c777116cb6f8fd02b5d0d3d2925049e0e5922a3e883dc003e1ebd7"
+  },
+  {
+    "name": "metadata.json",
+    "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/main/models/%5Bid-001%5D__%5Bvar-302%5D__%5Bin-19%5D__%5BSIGNALING-IN-MACROPHAGE-ACTIVATION%5D/metadata.json",
+    "bytes": 9528,
+    "sha256": "6a22faf5f9604b4a72aac2363c489cae53b6c02211fa96a74d89ebc878aa90af"
+  },
+  {
+    "name": "model.bnet",
+    "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/main/models/%5Bid-001%5D__%5Bvar-302%5D__%5Bin-19%5D__%5BSIGNALING-IN-MACROPHAGE-ACTIVATION%5D/model.bnet",
+    "bytes": 14117,
+    "sha256": "ea60f90ecab55c939f44648dc24608d5779916f7d1df54200f1e85681a4951d4"
+  }
+]

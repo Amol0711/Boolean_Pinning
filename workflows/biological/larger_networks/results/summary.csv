@@ -1,0 +1,12 @@
+context_id,model_id,classification,nodes,dynamic_nodes,baseline_inputs,target_status,residual_size,additional_lower,additional_upper,total_lower,total_upper,status,all_optima_complete,minimum_sets_count,successful_candidates_found,candidate_sets_checked,work_reserved,uniform_convergence_bound,analysis_wall_seconds,analysis_cpu_seconds,peak_worker_rss_bytes
+CD4_OFF,cd4_188,endpoint,188,154,34,fixed_target_found,9,3,3,37,37,exact_residual_enumeration,True,2,2,130,13312,16,0.13564407100056997,0.135649142,15204352
+CD4_ON,cd4_188,endpoint,188,154,34,fixed_target_found,14,3,3,37,37,exact_residual_enumeration,True,2,2,470,1265664,9,1.5222782969995023,1.5196731129999999,17170432
+CD4_APC,cd4_188,focal_stimulus,188,154,34,fixed_target_found,17,4,4,38,38,transition_budget_optimum_known_minimum_set_list_incomplete,False,,2,2424,29999104,13,40.23695654899893,40.236227441,31342592
+CD4_ECM,cd4_188,focal_stimulus,188,154,34,fixed_target_found,10,3,3,37,37,exact_residual_enumeration,True,2,2,176,34048,11,0.19461802600017108,0.194620372,25976832
+CD4_IL2,cd4_188,focal_stimulus,188,154,34,fixed_target_found,17,3,3,37,37,exact_residual_enumeration,True,1,1,834,16973824,16,22.107782321998457,22.100009278,31469568
+CD4_GALPHAQ,cd4_188,focal_stimulus,188,154,34,fixed_target_found,10,3,3,37,37,exact_residual_enumeration,True,2,2,176,34048,11,0.14017869400049676,0.139915407,25976832
+MAC_OFF,macrophage_321,endpoint,321,302,19,fixed_target_found,0,0,0,19,19,exact_empty_residual,True,1,0,0,0,8,0.1218607709997741,0.12186513900000001,25976832
+MAC_ON,macrophage_321,endpoint,321,302,19,fixed_target_found,0,0,0,19,19,exact_empty_residual,True,1,0,0,0,11,0.1527115219996631,0.15271795,25976832
+MAC_BACTERIA,macrophage_321,focal_stimulus,321,302,19,target_not_found_by_declared_orbit,,,,,,target_not_found_by_declared_orbit,False,,0,0,0,,0.04213664999952016,0.042136741000000005,25976832
+MAC_IFNG,macrophage_321,focal_stimulus,321,302,19,fixed_target_found,0,0,0,19,19,exact_empty_residual,True,1,0,0,0,11,0.14342924800075707,0.143423852,25976832
+MAC_FASLG,macrophage_321,focal_stimulus,321,302,19,fixed_target_found,0,0,0,19,19,exact_empty_residual,True,1,0,0,0,11,0.1413005360009265,0.141303897,25976832

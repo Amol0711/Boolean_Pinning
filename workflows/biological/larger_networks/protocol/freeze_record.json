@@ -1,0 +1,28 @@
+{
+  "sha256": "2d8f64156c5643cd0559a149b5ccde1cc7bed26d06bf0f517963a7db188aa47d",
+  "case_ids": [
+    "CD4_OFF",
+    "CD4_ON",
+    "CD4_APC",
+    "CD4_ECM",
+    "CD4_IL2",
+    "CD4_GALPHAQ",
+    "MAC_OFF",
+    "MAC_ON",
+    "MAC_BACTERIA",
+    "MAC_IFNG",
+    "MAC_FASLG"
+  ],
+  "new_context_count": 7,
+  "known_endpoint_count": 4,
+  "frozen_before_new_context_runs": true,
+  "budgets": {
+    "max_residual_nodes": 18,
+    "max_transition_evaluations": 30000000,
+    "max_additional_cost": 6,
+    "wall_seconds_per_case": 120,
+    "target_orbit_max_updates": 2000
+  },
+  "original_protocol_sha256": "f2a326e2a2201f011a0482db9c811393793691d46183bcd64bb1f67b1c5df41b",
+  "representation_note": "The current digest identifies the distributed protocol representation. Input assignments, numerical budgets and the fact of selection before focal-context computation are unchanged. The original digest preserves the original protocol commitment."
+}
