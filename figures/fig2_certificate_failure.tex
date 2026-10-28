@@ -1,0 +1,58 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\pdfinfo{/Author () /Title (Complete-sample finite-size control and certification)}
+\pgfplotsset{every axis/.append style={
+font=\fontsize{7.5}{9}\selectfont,
+tick label style={font=\fontsize{7.5}{9}\selectfont},
+label style={font=\fontsize{7.5}{9}\selectfont},
+title style={font=\fontsize{7.8}{9.4}\selectfont\bfseries},
+axis line style={black!60},tick style={black!60},
+grid=major,grid style={black!10},axis background/.style={fill=white},
+major tick length=2pt,minor tick length=1.2pt,
+legend style={draw=none,fill=none,font=\fontsize{7.5}{9}\selectfont,cells={anchor=west}},
+scaled ticks=false,unbounded coords=jump}}
+\definecolor{mixA}{HTML}{0072B2}
+\definecolor{mixB}{HTML}{D55E00}
+\definecolor{mixC}{HTML}{009E73}
+\definecolor{mixD}{HTML}{CC79A7}
+\definecolor{mixE}{HTML}{806400}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=2 by 1,horizontal sep=.8cm},
+width=6.5cm,height=5.25cm,xmode=log,ymode=log,
+xmin=70,xmax=36000,ymin=.0000015,ymax=.7,
+xtick={100,400,1600,6400,25600},xticklabels={$100$,$400$,$1600$,$6400$,$25600$},
+minor x tick num=0,xlabel={Network size $n$},
+ytick={.00001,.001,.1},legend style={column sep=6pt}]
+\nextgroupplot[title={(a) Residual copy condition $G_n$},ylabel={Observed failure frequency},legend to name=bernoullifailurelegend,legend columns=6]
+\addplot+[color=mixA,mark=*,mark size=1.5pt,mark options={draw=mixA,fill=mixA},line width=.6pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.55pt},error mark options={rotate=90,mark size=2.0pt,line width=.55pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/bernoulli_failure_g_A.csv};
+\addlegendentry{A}
+\addplot+[color=mixB,mark=square*,mark size=1.5pt,mark options={draw=mixB,fill=mixB},line width=.6pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.55pt},error mark options={rotate=90,mark size=2.0pt,line width=.55pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/bernoulli_failure_g_B.csv};
+\addlegendentry{B}
+\addplot+[color=mixC,mark=triangle*,mark size=1.5pt,mark options={draw=mixC,fill=mixC},line width=.6pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.55pt},error mark options={rotate=90,mark size=2.0pt,line width=.55pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/bernoulli_failure_g_C.csv};
+\addlegendentry{C}
+\addplot+[color=mixD,mark=diamond*,mark size=1.5pt,mark options={draw=mixD,fill=mixD},line width=.6pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.55pt},error mark options={rotate=90,mark size=2.0pt,line width=.55pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/bernoulli_failure_g_D.csv};
+\addlegendentry{D}
+\addplot+[color=mixE,mark=pentagon*,mark size=1.5pt,mark options={draw=mixE,fill=mixE},line width=.6pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.55pt},error mark options={rotate=90,mark size=2.0pt,line width=.55pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/bernoulli_failure_g_E.csv};
+\addlegendentry{E}
+\addplot[black!55,densely dashed,line width=.65pt,domain=100:25600,samples=2] {1/x};
+\addlegendentry{$n^{-1}$ slope guide}
+\nextgroupplot[title={(b) Componentwise copy condition $G'_n$},ylabel={}]
+\addplot+[color=mixA,mark=*,mark size=1.5pt,mark options={draw=mixA,fill=mixA},line width=.6pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.55pt},error mark options={rotate=90,mark size=2.0pt,line width=.55pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/bernoulli_failure_g_prime_A.csv};
+\addplot+[color=mixB,mark=square*,mark size=1.5pt,mark options={draw=mixB,fill=mixB},line width=.6pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.55pt},error mark options={rotate=90,mark size=2.0pt,line width=.55pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/bernoulli_failure_g_prime_B.csv};
+\addplot+[color=mixC,mark=triangle*,mark size=1.5pt,mark options={draw=mixC,fill=mixC},line width=.6pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.55pt},error mark options={rotate=90,mark size=2.0pt,line width=.55pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/bernoulli_failure_g_prime_C.csv};
+\addplot+[color=mixD,mark=diamond*,mark size=1.5pt,mark options={draw=mixD,fill=mixD},line width=.6pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.55pt},error mark options={rotate=90,mark size=2.0pt,line width=.55pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/bernoulli_failure_g_prime_D.csv};
+\addplot+[color=mixE,mark=pentagon*,mark size=1.5pt,mark options={draw=mixE,fill=mixE},line width=.6pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.55pt},error mark options={rotate=90,mark size=2.0pt,line width=.55pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/bernoulli_failure_g_prime_E.csv};
+\addplot[black!55,densely dashed,line width=.65pt,domain=100:25600,samples=2] {1/x};
+\end{groupplot}
+\node[anchor=north] at ([xshift=.4cm,yshift=-1.0cm]group c1r1.south east)
+{\pgfplotslegendfromname{bernoullifailurelegend}};
+\node[font=\fontsize{7.5}{9}\selectfont,align=center,anchor=north]
+at ([xshift=.4cm,yshift=-1.52cm]group c1r1.south east)
+{Bars give pointwise 95\% exact binomial intervals};
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,95 @@
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,pgfplots}
+\pgfplotsset{compat=1.18}
+\definecolor{curveblue}{RGB}{26,90,137}
+\definecolor{curveorange}{RGB}{190,105,28}
+\pdfinfo{/Author () /Title (Support bounds and exact grouped temporal profiles)}
+\begin{document}
+\begin{tikzpicture}[x=1mm,y=1mm,font=\fontsize{8}{9.5}\selectfont]
+\path[use as bounding box] (0,0) rectangle (127,52);
+\pgfplotsset{every axis/.append style={
+title style={font=\fontsize{8.3}{10}\selectfont\bfseries},
+axis line style={black!50},tick label style={font=\fontsize{8}{9.5}\selectfont},
+label style={font=\fontsize{8}{9.5}\selectfont}}}
+\begin{axis}[name=panelA,at={(12mm,12mm)},anchor=south west,
+width=49mm,height=32mm,scale only axis,
+title={(a) CD4 APC support bound},
+xmin=-0.2,xmax=14.25,ymin=-4,ymax=168,
+xtick={0,2,...,14},ytick={0,40,...,160},
+xlabel={Support-reduction round $k$},
+ylabel={Support-bound cardinality},
+grid=major,grid style={black!10},clip=false,
+legend columns=2,legend style={font=\fontsize{8}{9.5}\selectfont,draw=none,fill=white,
+at={(0.5,-0.23)},anchor=north},legend cell align=left]
+\addplot[curveorange,thick,dashed,mark=square*,mark size=1.8pt]
+table[x=support_round,y=baseline_support,col sep=comma]{data/fig5_cd4_apc.csv};
+\addlegendentry{Inputs clamped}
+\addplot[curveblue,thick,mark=*,mark size=1.8pt]
+table[x=support_round,y=optimal_support,col sep=comma]{data/fig5_cd4_apc.csv};
+\addlegendentry{Inputs + 4 pins}
+\node[anchor=north east,align=right,font=\fontsize{8}{9.5}\selectfont,text=black!80]
+at (axis description cs:0.96,0.98)
+{34 input clamps\\4 additional pins};
+\node[anchor=south east,font=\fontsize{8}{9.5}\selectfont,text=curveorange]
+at (axis cs:14.1,19) {17};
+\node[anchor=south east,align=right,font=\fontsize{8}{9.5}\selectfont,text=curveblue]
+at (axis cs:13.9,80) {First empty\\support at $k=13$};
+\draw[->,curveblue,line width=0.5pt] (axis cs:12.1,78) -- (axis cs:12.1,6) -- (axis cs:12.9,1.5);
+\end{axis}
+
+\begin{axis}[name=panelB,at={(81mm,20mm)},anchor=south west,
+width=42mm,height=24mm,scale only axis,
+title={(b) Macrophage BACTERIA orbit},title style={xshift=-6mm},
+xmin=10.5,xmax=15.5,ymin=-0.5,ymax=3.5,y dir=reverse,
+xtick={11,12,13,14,15},ytick={0,1,2,3},yticklabels={12,3,3,1},
+xlabel={Synchronous update $t$},ylabel={Coordinates per profile},
+axis on top,tick align=outside,clip=false]
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,-0.5) rectangle (axis cs:11.5,0.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=white] at (axis cs:11,0) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,-0.5) rectangle (axis cs:12.5,0.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=white] at (axis cs:12,0) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,-0.5) rectangle (axis cs:13.5,0.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=black!75] at (axis cs:13,0) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,-0.5) rectangle (axis cs:14.5,0.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=black!75] at (axis cs:14,0) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,-0.5) rectangle (axis cs:15.5,0.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=white] at (axis cs:15,0) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:10.5,0.5) rectangle (axis cs:11.5,1.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=black!75] at (axis cs:11,1) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:11.5,0.5) rectangle (axis cs:12.5,1.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=black!75] at (axis cs:12,1) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:12.5,0.5) rectangle (axis cs:13.5,1.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=white] at (axis cs:13,1) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:13.5,0.5) rectangle (axis cs:14.5,1.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=white] at (axis cs:14,1) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:14.5,0.5) rectangle (axis cs:15.5,1.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=black!75] at (axis cs:15,1) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,1.5) rectangle (axis cs:11.5,2.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=white] at (axis cs:11,2) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:11.5,1.5) rectangle (axis cs:12.5,2.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=black!75] at (axis cs:12,2) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,1.5) rectangle (axis cs:13.5,2.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=black!75] at (axis cs:13,2) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:13.5,1.5) rectangle (axis cs:14.5,2.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=white] at (axis cs:14,2) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,1.5) rectangle (axis cs:15.5,2.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=white] at (axis cs:15,2) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:10.5,2.5) rectangle (axis cs:11.5,3.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=black!75] at (axis cs:11,3) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,2.5) rectangle (axis cs:12.5,3.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=white] at (axis cs:12,3) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:12.5,2.5) rectangle (axis cs:13.5,3.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=white] at (axis cs:13,3) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,2.5) rectangle (axis cs:14.5,3.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=black!75] at (axis cs:14,3) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:14.5,2.5) rectangle (axis cs:15.5,3.5);
+\node[font=\fontsize{8}{9.5}\selectfont,text=black!75] at (axis cs:15,3) {0};
+\draw[black,densely dashed,line width=0.6pt]
+(axis cs:14.5,-0.5) -- (axis cs:14.5,3.5);
+\end{axis}
+\node at (98,9.1) {Original states; 19 varying};
+\node at (98,5.7) {302 constant on this cycle; dark/white $1/0$};
+\node at (98,2.3) {Period four, $x(15)=x(11)$};
+\end{tikzpicture}
+\end{document}

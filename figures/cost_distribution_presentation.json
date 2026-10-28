@@ -1,0 +1,60 @@
+{
+  "archived_diagnostic_rendering": "Original fig1_cost_differences source and PDF retained unchanged",
+  "bins": "0 through 7 and the complete >=8 tail",
+  "diagnostic": "fig1_cost_differences",
+  "display_offsets": {
+    "A": -0.18,
+    "B": 0.18,
+    "C": -0.18,
+    "D": 0.18,
+    "E": 0.0
+  },
+  "empirical_abscissa": "x",
+  "figure": "fig1_cost_distribution",
+  "markers": "Lower computational endpoints; not midpoints",
+  "network_size": 25600,
+  "panels": {
+    "a": {
+      "empirical_ordinate": "prob_lower",
+      "mixtures": "AB",
+      "reference_abscissa": "x",
+      "reference_ordinate": "reference",
+      "reference_style": "mixture-colored lines joining specified bin probabilities, solid A and dashed B",
+      "y_limits": [
+        0,
+        0.65
+      ]
+    },
+    "b": {
+      "empirical_ordinate": "lo",
+      "mixtures": "CD",
+      "reference": 0,
+      "y_limits": [
+        -0.02,
+        0.02
+      ]
+    },
+    "c": {
+      "empirical_ordinate": "lo",
+      "mixtures": "E",
+      "reference": 0,
+      "y_limits": [
+        -0.02,
+        0.02
+      ]
+    }
+  },
+  "plot_data_sha256": {
+    "bernoulli_pmf_A.csv": "5e69e28508407c5c78f472ecb1ccf8dcd609cd14e4b9c11b642f2576a6ae3224",
+    "bernoulli_pmf_B.csv": "0cffcb05c1c5b25742f3d75036bbc083df2a7473311fb0b213917d2332b706e0",
+    "bernoulli_pmf_C.csv": "81409d766efa92e4dd3990fe2a37368f8a94d448514271f1a338f8792db342a2",
+    "bernoulli_pmf_D.csv": "38df854dd23255f8a1c4dda71e8937ab1a481cad707b85fb13066682c5bac795",
+    "bernoulli_pmf_E.csv": "be178a0162621755f5d52b68e42690a429da528f4e9af2a5e1eb8da3940523f1"
+  },
+  "probability_error_lengths": "err, outerplus and outerminus are unchanged by translation by the specified Poisson probability",
+  "sample_size_per_mixture": 10000,
+  "sampling_layer_markers": "Zero-size markers suppress PGFPlots default circles; interval caps retain their explicit size",
+  "scope": "Presentation from retained aggregate records; no new observations or imputation",
+  "thick_ranges": "Upper minus lower computational endpoint",
+  "thin_ranges": "Conservative pointwise 95% Clopper-Pearson envelopes"
+}

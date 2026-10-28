@@ -1,0 +1,132 @@
+{
+  "active_figures": [
+    "fig2_certificate_failure",
+    "fig3_residual_and_moments"
+  ],
+  "failure_axes": {
+    "scale": "log-log",
+    "x": [
+      70,
+      36000
+    ],
+    "y": [
+      1.5e-06,
+      0.7
+    ]
+  },
+  "failure_intervals": "Pointwise two-sided 95% Clopper-Pearson, all10000 draws per cell",
+  "failure_reference": "Unit-prefactor1/n slope guide, not a fitted rate or upper bound",
+  "mixture_colors": {
+    "A": "0072B2",
+    "B": "D55E00",
+    "C": "009E73",
+    "D": "CC79A7",
+    "E": "806400"
+  },
+  "mixture_markers": {
+    "A": "*",
+    "B": "square*",
+    "C": "triangle*",
+    "D": "diamond*",
+    "E": "pentagon*"
+  },
+  "moment_axes": {
+    "1": [
+      0.8275195516154046,
+      1.2107929637406762
+    ],
+    "2": [
+      0.5315788186407935,
+      3.289914264413321
+    ]
+  },
+  "moment_computational_line_width_pt": 1.1,
+  "moment_envelope_color_fraction": 0.85,
+  "moment_envelope_line_width_pt": 0.55,
+  "moment_intervals": "Thick complete-sample computational ranges; thin pointwise approximate95% endpoint-standard-error envelopes; markers at lower computational endpoints",
+  "moment_outer_envelope_extrema": {
+    "1": [
+      0.8594590026258438,
+      1.1788535127302369
+    ],
+    "2": [
+      0.7614401057885041,
+      3.0600529772656104
+    ]
+  },
+  "moment_references": "Mean normalized by mu and second raw moment by mu+mu^2; reference1",
+  "network_size_display_offsets": {
+    "A": 0.86,
+    "B": 0.93,
+    "C": 1.0,
+    "D": 1.075268817204301,
+    "E": 1.1627906976744187
+  },
+  "network_sizes": [
+    100,
+    400,
+    1600,
+    6400,
+    25600
+  ],
+  "optional_consolidation": "fig_condition_moment_overview",
+  "purpose": "Optional five-panel condition and moment overview",
+  "retained_plot_hashes": {
+    "bernoulli_failure_g_A.csv": "46b3f549c6777803421b20fd8b6fb1f991873614898bd09774f466e1cc08a200",
+    "bernoulli_failure_g_B.csv": "d19f4fba2199959cad0900681614bffcc5c94cd27b809bd0a8e87ef06af61de7",
+    "bernoulli_failure_g_C.csv": "85d91917f1e5d69d46806a50b79a7872eabbe56472c868a52c0bffdbf6843b21",
+    "bernoulli_failure_g_D.csv": "7fe7c93858d1be174108d75eea1dc61fdc38e5bbbea0aaedf3c799770ec0cf14",
+    "bernoulli_failure_g_E.csv": "71e2f4348efdbf668be8b151389aa1f6640b433f0e8257ea40e7117d4cfdbf3f",
+    "bernoulli_failure_g_prime_A.csv": "554b37e3e42e1794838ea53e5b71b87547a5b7ed3259bde2175432e553449fc6",
+    "bernoulli_failure_g_prime_B.csv": "66809e4213def9e52932a0c94b22c6e7782abcb47c84431e55cc922efdb4d9c3",
+    "bernoulli_failure_g_prime_C.csv": "0fe0e25dd47c6190463fe1e5082552bc5fe17f8fd3757c928172a46ca143a0c1",
+    "bernoulli_failure_g_prime_D.csv": "46254d77ee43fb3a4e7b8ac32aefa88e8789941ede9da18598b40adf99bef1ae",
+    "bernoulli_failure_g_prime_E.csv": "9b24c250301c75bad3b9ad464df53127c60f486f168a31b8641f1ec3177f7f23",
+    "bernoulli_moments_A.csv": "7328c8cb446f30951fb62f51540cbd067f3d54a594059d4fdf75681d9d09a59e",
+    "bernoulli_moments_B.csv": "df15f545b742481a36effc7c4ac728f723f82a1a8954d28e4e5204997aca0c4f",
+    "bernoulli_moments_C.csv": "b942f830511862e6419ce165ed272b2dcd67bb80d01861f3b024076eea5a4dd0",
+    "bernoulli_moments_D.csv": "36b06f0f755a6b15346078ebfdb4f54d60030c7637b195c52268aaf0c583cf71",
+    "bernoulli_moments_E.csv": "73c501c041bace36b6b78c868a8427de5fb98ba36a22c9fd8db7a7f4a1cbb8e2",
+    "bernoulli_pmf_A.csv": "5e69e28508407c5c78f472ecb1ccf8dcd609cd14e4b9c11b642f2576a6ae3224",
+    "bernoulli_pmf_B.csv": "0cffcb05c1c5b25742f3d75036bbc083df2a7473311fb0b213917d2332b706e0",
+    "bernoulli_pmf_C.csv": "81409d766efa92e4dd3990fe2a37368f8a94d448514271f1a338f8792db342a2",
+    "bernoulli_pmf_D.csv": "38df854dd23255f8a1c4dda71e8937ab1a481cad707b85fb13066682c5bac795",
+    "bernoulli_pmf_E.csv": "be178a0162621755f5d52b68e42690a429da528f4e9af2a5e1eb8da3940523f1",
+    "bernoulli_survival_A.csv": "d9fcb246317701c1fb684c9b8697b39856b01af287dcb9fdc457961894924531",
+    "bernoulli_survival_B.csv": "ea34bc096abf6e70dd2dcfa960a06d06e07eb3f3b7be2f202ad64a245e4b1ed5",
+    "bernoulli_survival_C.csv": "6cb16659e53d8d89593afc3beafed3b1f7bddb6ffd42c2547986040e2c8c9669",
+    "bernoulli_survival_D.csv": "7adf824198b878ae2b1b691f3f246daaf1ff3cc900ba0296f4f817cf39b0d69d",
+    "bernoulli_survival_E.csv": "247c115081cd3baab030f2f42877cccad7cbe8ede8062e121ebf7fea3a034e0a",
+    "bernoulli_zero_g_A.csv": "37a9fbce99adf6a8fc8159933fb534fb9edc9fbf7c02e9bdf24fbaf9476e5ffd",
+    "bernoulli_zero_g_B.csv": "37a9fbce99adf6a8fc8159933fb534fb9edc9fbf7c02e9bdf24fbaf9476e5ffd",
+    "bernoulli_zero_g_C.csv": "37a9fbce99adf6a8fc8159933fb534fb9edc9fbf7c02e9bdf24fbaf9476e5ffd",
+    "bernoulli_zero_g_D.csv": "37a9fbce99adf6a8fc8159933fb534fb9edc9fbf7c02e9bdf24fbaf9476e5ffd",
+    "bernoulli_zero_g_E.csv": "37a9fbce99adf6a8fc8159933fb534fb9edc9fbf7c02e9bdf24fbaf9476e5ffd",
+    "bernoulli_zero_g_prime_A.csv": "37a9fbce99adf6a8fc8159933fb534fb9edc9fbf7c02e9bdf24fbaf9476e5ffd",
+    "bernoulli_zero_g_prime_B.csv": "37a9fbce99adf6a8fc8159933fb534fb9edc9fbf7c02e9bdf24fbaf9476e5ffd",
+    "bernoulli_zero_g_prime_C.csv": "37a9fbce99adf6a8fc8159933fb534fb9edc9fbf7c02e9bdf24fbaf9476e5ffd",
+    "bernoulli_zero_g_prime_D.csv": "37a9fbce99adf6a8fc8159933fb534fb9edc9fbf7c02e9bdf24fbaf9476e5ffd",
+    "bernoulli_zero_g_prime_E.csv": "37a9fbce99adf6a8fc8159933fb534fb9edc9fbf7c02e9bdf24fbaf9476e5ffd"
+  },
+  "sampling_layer_markers": "Zero-size markers suppress PGFPlots default circles; interval caps retain their explicit size",
+  "scope": "Reproduction from retained aggregates, not raw simulation replay or re-estimation of endpoint standard errors",
+  "size_locations": "All five ticks in every size-dependent panel; labels at 100,1600,25600 in narrow moment panels",
+  "survival_axes": {
+    "scale": "linear-log",
+    "x": [
+      0,
+      200
+    ],
+    "y": [
+      7e-05,
+      1.2
+    ]
+  },
+  "tex_hashes": {
+    "fig2_certificate_failure": "3b7a27d7dd5bc1a5c8b17518dc26e2b474151edc9ee5c930d4b0ea25b0a00f6f",
+    "fig3_residual_and_moments": "ca6b9c372ddaae66f0ab701b291c56c1c7054f7a79ad34e4ab06aaec099eaa90",
+    "fig_condition_moment_overview": "442d27953cbf3a27044ddb631a06bdc18a2dbc19596718feaa60b48d987a96d2"
+  },
+  "zero_failure_policy": "Zero remains zero in data; on logarithmic axes show only a distinguished open downward triangle at the exact upper confidence endpoint. All50 retained failure counts are positive.",
+  "zero_survival_policy": "Retain zero-frequency rows; omit zeros only from the logarithmic display"
+}

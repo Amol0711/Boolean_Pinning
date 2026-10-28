@@ -1,0 +1,16 @@
+support_round,baseline_support,optimal_support,baseline_stationary_extension,optimal_stationary_extension
+0,154,150,0,0
+1,132,119,0,0
+2,117,102,0,0
+3,94,80,0,0
+4,75,60,0,0
+5,63,47,0,0
+6,49,32,0,0
+7,36,19,0,0
+8,26,9,0,0
+9,22,5,0,0
+10,20,3,0,0
+11,19,2,0,0
+12,18,1,0,0
+13,17,0,0,0
+14,17,0,1,1

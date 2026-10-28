@@ -1,0 +1,7 @@
+context,row,cost2,cost3,cost4,cost5,total
+CD4_OFF,0,2,4,0,0,6
+CD4_ON,1,2,4,0,0,6
+CD4_APC,2,0,3,8,4,15
+CD4_ECM,3,2,4,0,0,6
+CD4_IL2,4,1,6,0,0,7
+CD4_GALPHAQ,5,2,4,0,0,6

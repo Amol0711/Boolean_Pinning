@@ -1,0 +1,10 @@
+component,component_cost,node,parents_little_endian,table
+0,1,v_Dec2,v_GATA3,01
+0,1,v_GATA3,v_Dec2,01
+1,1,v_FOXP3,v_FOXP3;v_SMAD3,0111
+1,1,v_SMAD3,v_TGFBR,01
+1,1,v_TGFB,,0
+1,1,v_TGFBR,v_TGFB,01
+2,0,v_RORGT,,0
+3,1,v_TBET,v_TBET,01
+4,1,v_proliferation,v_proliferation,01

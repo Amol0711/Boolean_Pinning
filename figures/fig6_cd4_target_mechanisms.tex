@@ -1,0 +1,85 @@
+\documentclass[tikz,border=4pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,pgfplots}
+\pgfplotsset{compat=1.18}
+\definecolor{curveblue}{RGB}{20,55,85}
+\definecolor{curveorange}{RGB}{158,80,12}
+\definecolor{costtwo}{RGB}{222,235,244}
+\definecolor{costthree}{RGB}{125,171,196}
+\pdfinfo{/Author () /Title (Target-dependent exact pinning costs and isolated component dynamics in CD4)}
+\begin{document}
+\begin{tikzpicture}[font=\fontsize{8.7}{10.5}\selectfont]
+\begin{axis}[name=panelA,at={(0,0)},anchor=south west,
+width=4.4cm,height=5.6cm,scale only axis,
+title={(a) All fixed targets},
+title style={font=\fontsize{8.9}{10.7}\selectfont\bfseries},
+axis line style={black!50},
+tick label style={font=\fontsize{8.7}{10.5}\selectfont},
+label style={font=\fontsize{8.7}{10.5}\selectfont},
+xbar stacked,bar width=16pt,
+xmin=0,xmax=17.0,ymin=-0.6,ymax=5.6,y dir=reverse,
+xtick={0,3,6,9,12,15},ytick={0,1,2,3,4,5},
+yticklabels={OFF,ON,APC,ECM,IL2,GALPHAQ},
+xlabel={Number of fixed targets},ylabel={CD4 input context},
+xmajorgrids,grid style={black!10},
+tick align=outside,
+legend columns=4,
+legend style={font=\fontsize{8.7}{10.5}\selectfont,draw=none,
+at={(0.5,-0.26)},anchor=north,column sep=5pt},
+legend cell align=left,
+after end axis/.code={\input{data/fig6_bar_labels.tex}}]
+\addplot[fill=costtwo,draw=white,line width=0.4pt]
+table[x=cost2,y=row,col sep=comma]{data/fig6_cd4_cost_distribution.csv};
+\addlegendentry{$2$}
+\addplot[fill=costthree,draw=white,line width=0.4pt]
+table[x=cost3,y=row,col sep=comma]{data/fig6_cd4_cost_distribution.csv};
+\addlegendentry{$3$}
+\addplot[fill=curveblue,draw=white,line width=0.4pt]
+table[x=cost4,y=row,col sep=comma]{data/fig6_cd4_cost_distribution.csv};
+\addlegendentry{$4$}
+\addplot[fill=curveorange,draw=white,line width=0.4pt]
+table[x=cost5,y=row,col sep=comma]{data/fig6_cd4_cost_distribution.csv};
+\addlegendentry{$5$}
+\end{axis}
+\node[anchor=north] at ([yshift=-0.91cm]panelA.south) {Exact additional cost $c_B$};
+\begin{scope}[shift={(5.35cm,0)}]
+\node[anchor=south,font=\fontsize{8.9}{10.7}\selectfont\bfseries]
+at (2.85,5.74) {(b) Selected APC target};
+\tikzset{component/.style={draw=curveblue!65,fill=curveblue!4,
+rounded corners=1.5pt,line width=0.45pt},
+componenttitle/.style={font=\fontsize{8.7}{10.5}\selectfont\bfseries},
+cost/.style={font=\fontsize{8.7}{10.5}\selectfont,text=black!85}}
+\path[component] (0,4.8) rectangle (5.7,5.65);
+\node[componenttitle,anchor=base west] at (0.15,5.37) {Dec2, GATA3};
+\node[cost,anchor=base east] at (5.55,5.37) {$\kappa_B(C)=1$};
+\node[anchor=base] at (2.85,4.97) {$\mathrm{Dec2}^{+}=\mathrm{GATA3},\quad
+\mathrm{GATA3}^{+}=\mathrm{Dec2}$};
+\path[component] (0,3.55) rectangle (2.75,4.7);
+\node[componenttitle,anchor=base] at (1.375,4.44) {TBET};
+\node[cost,anchor=base] at (1.375,3.69) {$\kappa_B(C)=1$};
+\node[anchor=base] at (1.375,4.06) {$\mathrm{TBET}^{+}=\mathrm{TBET}$};
+\path[component] (2.95,3.55) rectangle (5.7,4.7);
+\node[componenttitle,anchor=base] at (4.325,4.44) {proliferation};
+\node[cost,anchor=base] at (4.325,3.69) {$\kappa_B(C)=1$};
+\node[anchor=base] at (4.325,4.06) {$p^{+}=p$};
+\path[component] (0,1.85) rectangle (5.7,3.4);
+\node[componenttitle,anchor=base,font=\fontsize{8.3}{10}\selectfont\bfseries] at (2.85,3.13)
+{FOXP3, SMAD3, TGFB, TGFBR};
+\node[anchor=base] at (2.85,2.75) {$\mathrm{FOXP3}^{+}=\mathrm{FOXP3}\vee\mathrm{SMAD3}$};
+\node[anchor=base] at (2.85,2.37) {$\mathrm{SMAD3}^{+}=\mathrm{TGFBR},\quad \mathrm{TGFB}^{+}=0$};
+\node[anchor=base west] at (0.2,1.99) {$\mathrm{TGFBR}^{+}=\mathrm{TGFB}$};
+\node[cost,anchor=base east] at (5.55,1.99) {$\kappa_B(C)=1$};
+\path[draw=black!40,fill=black!3,rounded corners=1.5pt,line width=0.45pt]
+(0,0.85) rectangle (5.7,1.7);
+\node[componenttitle,anchor=base west] at (0.15,1.41) {RORGT};
+\node[anchor=base east] at (5.55,1.41) {$\kappa_B(C)=0$};
+\node[anchor=base] at (2.85,1.01) {$\mathrm{RORGT}^{+}=0$};
+\node at (2.85,0.54) {Eight acyclic singletons have cost $0$.};
+\node[font=\fontsize{8.9}{10.7}\selectfont] at (2.85,0.13)
+{$c_B=1+1+1+1+0=4$};
+\node[align=center,anchor=north,font=\fontsize{8.7}{10.5}\selectfont]
+at (2.85,-0.28) {External coordinates fixed at the target\\
+$p=\mathrm{proliferation}$, $|R_B|=17$};
+\end{scope}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,12 @@
+{
+  "hashes": {
+    "data/fig6_apc_isolated_rules.csv": "3bd9b43e50e3718e8363c4e9ea278b4d3e5516ec26b5185c01506e051ba0cb06",
+    "data/fig6_bar_labels.tex": "aa478e27d0108e7b2bb7d3bcfa01694fbaecb70150b29399d76122e8e260ae69",
+    "data/fig6_cd4_cost_distribution.csv": "c285d1e2df095f640c3221f9a9d6052c3ab54d156c72d65a0ecbc955d9d1d596",
+    "data/fig6_source_records.json": "1e89a9d147a00c56acfc5e6199214befcce28cbe5a67244473d8f1156d4b0863",
+    "fig6_cd4_target_mechanisms.pdf": "007cfd33ae9bad72760b55d53b8a690f0a7081c1674c34c5928b65a92fafe534",
+    "fig6_cd4_target_mechanisms.tex": "9d914207da42511ea5c7da9430f6572ddf6e52f499084bb71caf1501fbbdf86d"
+  },
+  "latex_passes": 2,
+  "source_date_epoch": 1792022400
+}

@@ -1,0 +1,59 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\pdfinfo{/Author () /Title (Complete-sample finite-size control and certification)}
+\pgfplotsset{every axis/.append style={
+font=\fontsize{7.5}{9}\selectfont,
+tick label style={font=\fontsize{7.5}{9}\selectfont},
+label style={font=\fontsize{7.5}{9}\selectfont},
+title style={font=\fontsize{7.8}{9.4}\selectfont\bfseries},
+axis line style={black!60},tick style={black!60},
+grid=major,grid style={black!10},axis background/.style={fill=white},
+major tick length=2pt,minor tick length=1.2pt,
+legend style={draw=none,fill=none,font=\fontsize{7.5}{9}\selectfont,cells={anchor=west}},
+scaled ticks=false,unbounded coords=jump}}
+\definecolor{mixA}{HTML}{0072B2}
+\definecolor{mixB}{HTML}{D55E00}
+\definecolor{mixC}{HTML}{009E73}
+\definecolor{mixD}{HTML}{CC79A7}
+\definecolor{mixE}{HTML}{806400}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=3 by 1,horizontal sep=1.05cm},
+width=4.25cm,height=4.55cm,xmin=-.3,xmax=8.35,
+ymin=-0.02,ymax=0.02,ytick={-0.02,-0.01,0.0,0.01,0.02},
+xtick={0,2,4,6,8},xticklabels={$0$,$2$,$4$,$6$,$\geq8$},
+xlabel={Minimum pin count},
+yticklabel style={/pgf/number format/fixed,/pgf/number format/precision=2},
+legend style={at={(.98,.98)},anchor=north east,row sep=-2pt}]
+\nextgroupplot[title={(a) Degree--rule association},ylabel={Empirical $-$ Poisson probability}]
+\addplot[black!55,densely dashed,line width=.65pt,domain=-.2:8.2,samples=2,forget plot] {0};
+\addplot[only marks,mark=none,forget plot,color=mixA!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo,y error plus=outerplus,y error minus=outerminus] {data/bernoulli_pmf_A.csv};
+\addplot+[only marks,color=mixA,mark=*,mark size=1.45pt,mark options={draw=mixA,fill=mixA},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo,y error=err] {data/bernoulli_pmf_A.csv};
+\addlegendentry{A}
+\addplot[only marks,mark=none,forget plot,color=mixB!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo,y error plus=outerplus,y error minus=outerminus] {data/bernoulli_pmf_B.csv};
+\addplot+[only marks,color=mixB,mark=square*,mark size=1.45pt,mark options={draw=mixB,fill=mixB},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo,y error=err] {data/bernoulli_pmf_B.csv};
+\addlegendentry{B}
+\nextgroupplot[title={(b) Common $\lambda_*$},ylabel={}]
+\addplot[black!55,densely dashed,line width=.65pt,domain=-.2:8.2,samples=2,forget plot] {0};
+\addplot[only marks,mark=none,forget plot,color=mixC!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo,y error plus=outerplus,y error minus=outerminus] {data/bernoulli_pmf_C.csv};
+\addplot+[only marks,color=mixC,mark=triangle*,mark size=1.45pt,mark options={draw=mixC,fill=mixC},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo,y error=err] {data/bernoulli_pmf_C.csv};
+\addlegendentry{C}
+\addplot[only marks,mark=none,forget plot,color=mixD!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo,y error plus=outerplus,y error minus=outerminus] {data/bernoulli_pmf_D.csv};
+\addplot+[only marks,color=mixD,mark=diamond*,mark size=1.45pt,mark options={draw=mixD,fill=mixD},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo,y error=err] {data/bernoulli_pmf_D.csv};
+\addlegendentry{D}
+\nextgroupplot[title={(c) Zero-output-degree type},ylabel={}]
+\addplot[black!55,densely dashed,line width=.65pt,domain=-.2:8.2,samples=2,forget plot] {0};
+\addplot[only marks,mark=none,forget plot,color=mixE!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo,y error plus=outerplus,y error minus=outerminus] {data/bernoulli_pmf_E.csv};
+\addplot+[only marks,color=mixE,mark=pentagon*,mark size=1.45pt,mark options={draw=mixE,fill=mixE},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo,y error=err] {data/bernoulli_pmf_E.csv};
+\addlegendentry{E}
+\end{groupplot}
+\node[font=\fontsize{7.5}{9}\selectfont,align=center,anchor=north]
+at ([yshift=-1.02cm]group c2r1.south)
+{Markers give lower endpoints; thick bars give computational ranges\\
+Thin bars give pointwise 95\% binomial envelopes; dashed zero is the Poisson reference};
+
+\end{tikzpicture}
+\end{document}

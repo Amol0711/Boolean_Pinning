@@ -1,0 +1,4 @@
+# Exact versions used for the recorded studies and repository verification local validation.
+# Python 3.12 is the tested integration environment.
+numpy==2.3.5
+scipy==1.17.0

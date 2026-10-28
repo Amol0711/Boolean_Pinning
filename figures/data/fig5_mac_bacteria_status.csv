@@ -1,0 +1,2 @@
+context_id,target_discovery_status,cycle_start_update,cycle_length,fixed_target_certificate_applied
+MAC_BACTERIA,target_not_found_by_declared_orbit,11,4,False

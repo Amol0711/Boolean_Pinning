@@ -1,0 +1,85 @@
+{
+  "active_figures": [
+    {
+      "number": 1,
+      "role": "Cost probabilities and specified Poisson comparison",
+      "stem": "fig1_cost_distribution"
+    },
+    {
+      "number": 2,
+      "role": "Residual and componentwise copy-condition failures",
+      "stem": "fig2_certificate_failure"
+    },
+    {
+      "number": 3,
+      "role": "Residual survival and normalized raw moments",
+      "stem": "fig3_residual_and_moments"
+    },
+    {
+      "number": 4,
+      "role": "CD4 support bounds and exact grouped macrophage orbit",
+      "stem": "fig5_larger_network_support_grouped"
+    },
+    {
+      "number": 5,
+      "role": "Complete CD4 target counts and isolated maps",
+      "stem": "fig6_cd4_target_mechanisms"
+    },
+    {
+      "number": 6,
+      "role": "Two exact synchronous control mechanisms",
+      "stem": "fig4_biological_certificates"
+    }
+  ],
+  "companion_stems": [
+    "fig1_cost_differences",
+    "fig5_larger_network_support",
+    "fig_condition_moment_overview"
+  ],
+  "limits": [
+    "Probability and failure intervals are pointwise, not simultaneous; finite-size sampling uncertainty is distinct from asymptotic approximation error.",
+    "Moment envelopes retain their original approximate endpoint standard errors; the current figure checker does not recompute them from raw networks.",
+    "Full-model census and support observations are retained exports; displayed small component and schematic maps are checked exhaustively."
+  ],
+  "schema": 1,
+  "scope": "Computational figure index and finite-state model definitions.",
+  "segment_residual": {
+    "coordinate_order": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "h"
+    ],
+    "node_indices_one_based": [
+      4,
+      5,
+      10,
+      11,
+      13,
+      16,
+      17
+    ],
+    "target": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "update_convention": "synchronous",
+    "update_expressions": {
+      "a": "h & (a | f)",
+      "b": "a",
+      "c": "f & h",
+      "d": "d & (1-c)",
+      "e": "d",
+      "f": "e",
+      "h": "e"
+    }
+  }
+}

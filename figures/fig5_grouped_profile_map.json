@@ -1,0 +1,164 @@
+{
+  "kind": "grouped_display_mapping",
+  "source": "data/fig5_mac_bacteria_cycle.csv",
+  "source_sha256": "885a27757741ca4e5fed84b4b6230e1662ca33cf4f98f887d4e897e83f9fb656",
+  "updates": [
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "ordering": "First occurrence in the retained coordinate list",
+  "varying_coordinates": 19,
+  "constant_coordinates_on_cycle": 302,
+  "groups": [
+    {
+      "row": 0,
+      "multiplicity": 12,
+      "values": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "members": [
+        {
+          "node_index_zero_based": 10,
+          "source_node_name": "v_BAK1gene",
+          "display_label": "BAK1gene"
+        },
+        {
+          "node_index_zero_based": 31,
+          "source_node_name": "v_CASP3gene",
+          "display_label": "CASP3gene"
+        },
+        {
+          "node_index_zero_based": 53,
+          "source_node_name": "v_CXCL11gene",
+          "display_label": "CXCL11gene"
+        },
+        {
+          "node_index_zero_based": 97,
+          "source_node_name": "v_IFIT1gene",
+          "display_label": "IFIT1gene"
+        },
+        {
+          "node_index_zero_based": 178,
+          "source_node_name": "v_OAS1gene",
+          "display_label": "OAS1gene"
+        },
+        {
+          "node_index_zero_based": 186,
+          "source_node_name": "v_PLSCR1gene",
+          "display_label": "PLSCR1gene"
+        },
+        {
+          "node_index_zero_based": 187,
+          "source_node_name": "v_PMAIPgene",
+          "display_label": "PMAIPgene"
+        },
+        {
+          "node_index_zero_based": 191,
+          "source_node_name": "v_PRKRAgene",
+          "display_label": "PRKRAgene"
+        },
+        {
+          "node_index_zero_based": 209,
+          "source_node_name": "v_RIPK1gene",
+          "display_label": "RIPK1gene"
+        },
+        {
+          "node_index_zero_based": 215,
+          "source_node_name": "v_SP100gene",
+          "display_label": "SP100gene"
+        },
+        {
+          "node_index_zero_based": 261,
+          "source_node_name": "v_TLR9_MYD88_TRAF6_IRF5",
+          "display_label": "TLR9_MYD88_TRAF6_IRF5"
+        },
+        {
+          "node_index_zero_based": 273,
+          "source_node_name": "v_TNFSF10gene",
+          "display_label": "TNFSF10gene"
+        }
+      ]
+    },
+    {
+      "row": 1,
+      "multiplicity": 3,
+      "values": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "members": [
+        {
+          "node_index_zero_based": 135,
+          "source_node_name": "v_IRF3_IRF5cytoplasm",
+          "display_label": "IRF3_IRF5cytoplasm"
+        },
+        {
+          "node_index_zero_based": 141,
+          "source_node_name": "v_IRF5_IRF5cytoplasm",
+          "display_label": "IRF5_IRF5cytoplasm"
+        },
+        {
+          "node_index_zero_based": 143,
+          "source_node_name": "v_IRF5_IRF7cytoplasm",
+          "display_label": "IRF5_IRF7cytoplasm"
+        }
+      ]
+    },
+    {
+      "row": 2,
+      "multiplicity": 3,
+      "values": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "members": [
+        {
+          "node_index_zero_based": 136,
+          "source_node_name": "v_IRF3_IRF5nucleus",
+          "display_label": "IRF3_IRF5nucleus"
+        },
+        {
+          "node_index_zero_based": 142,
+          "source_node_name": "v_IRF5_IRF5nucleus",
+          "display_label": "IRF5_IRF5nucleus"
+        },
+        {
+          "node_index_zero_based": 144,
+          "source_node_name": "v_IRF5_IRF7nucleus",
+          "display_label": "IRF5_IRF7nucleus"
+        }
+      ]
+    },
+    {
+      "row": 3,
+      "multiplicity": 1,
+      "values": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "members": [
+        {
+          "node_index_zero_based": 140,
+          "source_node_name": "v_IRF5",
+          "display_label": "IRF5"
+        }
+      ]
+    }
+  ]
+}
