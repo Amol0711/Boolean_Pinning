@@ -1,0 +1,54 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\usepackage{hyperref}
+\hypersetup{pdfauthor={},pdftitle={Baseline finite-size numerical study}}
+\pgfplotsset{every axis/.append style={
+  font=\small,tick label style={font=\footnotesize},
+  label style={font=\small},title style={font=\small},
+  axis line style={black!65},tick style={black!65},
+  grid=major,grid style={black!10},axis background/.style={fill=white},
+  major tick length=2.4pt,minor tick length=1.4pt,
+  legend style={draw=none,fill=none,font=\footnotesize,cells={anchor=west}},
+  scaled ticks=false,unbounded coords=jump
+}}
+\definecolor{mixA}{HTML}{0072B2}
+\definecolor{mixB}{HTML}{D55E00}
+\definecolor{mixC}{HTML}{009E73}
+\definecolor{mixD}{HTML}{CC79A7}
+\definecolor{mixE}{HTML}{806400}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=3 by 1,horizontal sep=1.1cm},
+width=5.2cm,height=5.0cm,xmin=-.3,xmax=8.35,ymin=0,ymax=.66,
+xtick={0,2,4,6,8},xticklabels={$0$,$2$,$4$,$6$,$\geq8$},
+ytick={0,.2,.4,.6},xlabel={Minimum pin count},ylabel={Probability},
+legend style={at={(.98,.97)},anchor=north east,row sep=-2pt}]
+\nextgroupplot[title={(a) Degree--rule association}]
+\addplot[color=mixA,line width=.8pt,dashed,forget plot] table[col sep=comma,x=x,y=reference] {data/pmf_A.csv};
+\addplot+[only marks,color=mixA,mark=*,mark size=1.7pt,mark options={draw=mixA,fill=mixA},error bars/.cd,y dir=plus,y explicit,error bar style={line width=.7pt},error mark options={rotate=90,mark size=2pt,line width=.7pt},/pgfplots/.cd,] table[col sep=comma,x=x,y=lo,y error=err] {data/pmf_A.csv};
+\addlegendentry{A ($\lambda_*=0.4$)}
+\addplot[color=mixB,line width=.8pt,dashed,forget plot] table[col sep=comma,x=x,y=reference] {data/pmf_B.csv};
+\addplot+[only marks,color=mixB,mark=square*,mark size=1.7pt,mark options={draw=mixB,fill=mixB},error bars/.cd,y dir=plus,y explicit,error bar style={line width=.7pt},error mark options={rotate=90,mark size=2pt,line width=.7pt},/pgfplots/.cd,] table[col sep=comma,x=x,y=lo,y error=err] {data/pmf_B.csv};
+\addlegendentry{B ($\lambda_*=0.8$)}
+\nextgroupplot[title={(b) Common $\lambda_*=0.7$}]
+\addplot[color=mixC,line width=.8pt,dashed,forget plot] table[col sep=comma,x=x,y=reference] {data/pmf_C.csv};
+\addplot+[only marks,color=mixC,mark=triangle*,mark size=1.7pt,mark options={draw=mixC,fill=mixC},error bars/.cd,y dir=plus,y explicit,error bar style={line width=.7pt},error mark options={rotate=90,mark size=2pt,line width=.7pt},/pgfplots/.cd,] table[col sep=comma,x=x,y=lo,y error=err] {data/pmf_C.csv};
+\addlegendentry{C ($\lambda_*=0.7$)}
+\addplot[color=mixD,line width=.8pt,dashed,forget plot] table[col sep=comma,x=x,y=reference] {data/pmf_D.csv};
+\addplot+[only marks,color=mixD,mark=diamond*,mark size=1.7pt,mark options={draw=mixD,fill=mixD},error bars/.cd,y dir=plus,y explicit,error bar style={line width=.7pt},error mark options={rotate=90,mark size=2pt,line width=.7pt},/pgfplots/.cd,] table[col sep=comma,x=x,y=lo,y error=err] {data/pmf_D.csv};
+\addlegendentry{D ($\lambda_*=0.7$)}
+\nextgroupplot[title={(c) Zero output degree}]
+\addplot[color=mixE,line width=.8pt,dashed,forget plot] table[col sep=comma,x=x,y=reference] {data/pmf_E.csv};
+\addplot+[only marks,color=mixE,mark=pentagon*,mark size=1.7pt,mark options={draw=mixE,fill=mixE},error bars/.cd,y dir=plus,y explicit,error bar style={line width=.7pt},error mark options={rotate=90,mark size=2pt,line width=.7pt},/pgfplots/.cd,] table[col sep=comma,x=x,y=lo,y error=err] {data/pmf_E.csv};
+\addlegendentry{E ($\lambda_*=0.6$)}
+\end{groupplot}
+\node[font=\footnotesize,anchor=north] at ([yshift=-1.15cm]group c2r1.south)
+{Markers and upward bars: empirical bounds\qquad Dashed curves: Poisson reference};
+
+\end{tikzpicture}
+\end{document}

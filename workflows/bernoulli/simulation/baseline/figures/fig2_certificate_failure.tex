@@ -1,0 +1,46 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\usepackage{hyperref}
+\hypersetup{pdfauthor={},pdftitle={Baseline finite-size numerical study}}
+\pgfplotsset{every axis/.append style={
+  font=\small,tick label style={font=\footnotesize},
+  label style={font=\small},title style={font=\small},
+  axis line style={black!65},tick style={black!65},
+  grid=major,grid style={black!10},axis background/.style={fill=white},
+  major tick length=2.4pt,minor tick length=1.4pt,
+  legend style={draw=none,fill=none,font=\footnotesize,cells={anchor=west}},
+  scaled ticks=false,unbounded coords=jump
+}}
+\definecolor{mixA}{HTML}{0072B2}
+\definecolor{mixB}{HTML}{D55E00}
+\definecolor{mixC}{HTML}{009E73}
+\definecolor{mixD}{HTML}{CC79A7}
+\definecolor{mixE}{HTML}{806400}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[width=16.2cm,height=6.4cm,xmode=log,ymode=log,
+xmin=75,xmax=34500,ymin=.0000015,ymax=.7,
+xtick={100,400,1600,6400,25600},xticklabels={$100$,$400$,$1600$,$6400$,$25600$},
+minor x tick num=0,xlabel={Network size $n$},ylabel={Certificate failure probability},
+legend style={at={(.02,.03)},anchor=south west,legend columns=3,column sep=8pt,row sep=1pt}]
+\addplot+[color=mixA,mark=*,mark size=2pt,mark options={draw=mixA,fill=mixA},line width=.8pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.65pt},error mark options={rotate=90,mark size=2pt,line width=.65pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/failure_A.csv};
+\addlegendentry{A}
+\addplot+[color=mixB,mark=square*,mark size=2pt,mark options={draw=mixB,fill=mixB},line width=.8pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.65pt},error mark options={rotate=90,mark size=2pt,line width=.65pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/failure_B.csv};
+\addlegendentry{B}
+\addplot+[color=mixC,mark=triangle*,mark size=2pt,mark options={draw=mixC,fill=mixC},line width=.8pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.65pt},error mark options={rotate=90,mark size=2pt,line width=.65pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/failure_C.csv};
+\addlegendentry{C}
+\addplot+[color=mixD,mark=diamond*,mark size=2pt,mark options={draw=mixD,fill=mixD},line width=.8pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.65pt},error mark options={rotate=90,mark size=2pt,line width=.65pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/failure_D.csv};
+\addlegendentry{D}
+\addplot+[color=mixE,mark=pentagon*,mark size=2pt,mark options={draw=mixE,fill=mixE},line width=.8pt,error bars/.cd,y dir=both,y explicit,error bar style={line width=.65pt},error mark options={rotate=90,mark size=2pt,line width=.65pt}] table[col sep=comma,x=x,y=p,y error plus=plus,y error minus=minus] {data/failure_E.csv};
+\addlegendentry{E}
+\addplot[black!65,densely dashed,line width=.8pt,domain=100:25600,samples=2] {1/x};
+\addlegendentry{$n^{-1}$ reference}
+\end{axis}
+
+\end{tikzpicture}
+\end{document}

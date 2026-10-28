@@ -1,0 +1,22 @@
+{
+  "data_source": "results/refined",
+  "input_hashes": {
+    "cell_summary.csv": "c195fd0a7d15b0167f0b26c85bc11d4a03850a5fec67f83e6f469733606d335d",
+    "cost_distribution.csv": "62edf9e2ce9cfe9c6d1c93a49035eedd74ebea86ea1b0c1ab09e5c4e866698c4",
+    "residual_survival.csv": "5061cc330b8b01ac143b1a141c6657a10542a49cfb2eff73e4be1c8cb01ffb65"
+  },
+  "largest_n": 25600,
+  "pmf_bins": "0 through 7, then a single >=8 tail bin",
+  "moment_normalization": "mu=-log(1-lambda); first divided by mu, second by mu+mu^2",
+  "moment_x_offsets": {
+    "A": 0.88,
+    "B": 0.94,
+    "C": 1.0,
+    "D": 1.0638297872340425,
+    "E": 1.1363636363636365
+  },
+  "intervals": "computational identification bounds, not confidence intervals",
+  "failure_intervals": "pointwise two-sided 95% Clopper-Pearson",
+  "excluded_draws": 0,
+  "cost_bound_stage": "deterministic post-run refinement"
+}
