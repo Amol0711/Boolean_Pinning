@@ -1,0 +1,139 @@
+{
+  "G": "Every residual row has exactly one residual nominal parent slot.",
+  "G_prime": "In every cyclic SCC, each node has exactly one internal nominal parent slot and the corresponding singleton error mark is one; acyclic singleton SCCs impose no condition.",
+  "analysis_protocol": "../verification/Bernoulli_Analysis_Protocol.json; computational cost bounds and sampling intervals are reported separately.",
+  "budget_scope": "Per complex SCC; no global work or wall-time cutoff. Certificate SCCs and acyclic singleton SCCs need no exhaustive search.",
+  "cap_selection": {
+    "candidate_work_caps": [
+      2000000,
+      10000000
+    ],
+    "pilot": "The first 100 original replicates in every cell, 2500 original instances in total; these remain in the full 250000-draw replay.",
+    "pilot_10m_elapsed_seconds": 2.3876851229997555,
+    "pilot_10m_remaining_stop": "component_size_cap only",
+    "pilot_10m_summary_sha256": "07c8e53bf6448381af48a8fad0483b57fcf93ca48aa15a0b832f23a6baba6136",
+    "pilot_10m_unresolved": 11,
+    "reason": "The 2M cap precluded size-17/18 successor tables; the 10M pilot resolved both such cases, with practical elapsed time.",
+    "selected_work_cap": 10000000
+  },
+  "certificate_cost": "On G_prime, exactly one pin per cyclic SCC; this is the original marked-slot cycle count.",
+  "component_caps": {
+    "max_component_size": 18,
+    "max_pins": 18,
+    "max_work": 10000000
+  },
+  "construction_budget": "An s-node component needs s*2**s row evaluations for full successor construction. At s=18 this is 4718592, below the declared cap.",
+  "control": "static permanent zero pins from time zero, all vertices eligible, unit cost, eventual convergence from every compatible initial state",
+  "final_bounds": "Intersect independently valid SCC bounds with the original refined interval. Preserve every original exact cost. Use the pin witness associated with the smallest valid upper bound; ties use the new SCC/certificate witness.",
+  "frozen_before_main_replay": true,
+  "localization": "For every non-G draw, apply the unmodified SCC solver to the residual nominal network with both exterior slots mapped to a constant-zero sentinel. Every complex SCC is solved on its physical coordinates with all exterior errors held at zero; repeated slots share one physical bit.",
+  "master_seed": 2026101301,
+  "mixture_ids": {
+    "A": 1,
+    "B": 2,
+    "C": 3,
+    "D": 4,
+    "E": 5
+  },
+  "mixtures": {
+    "A": {
+      "degrees": [
+        1,
+        3
+      ],
+      "fractions": [
+        0.5,
+        0.5
+      ],
+      "lambda": 0.4,
+      "probabilities": [
+        0.5,
+        0.1
+      ]
+    },
+    "B": {
+      "degrees": [
+        1,
+        3
+      ],
+      "fractions": [
+        0.5,
+        0.5
+      ],
+      "lambda": 0.8,
+      "probabilities": [
+        0.1,
+        0.5
+      ]
+    },
+    "C": {
+      "degrees": [
+        1,
+        3
+      ],
+      "fractions": [
+        0.5,
+        0.5
+      ],
+      "lambda": 0.7,
+      "probabilities": [
+        0.8,
+        0.2
+      ]
+    },
+    "D": {
+      "degrees": [
+        1,
+        3
+      ],
+      "fractions": [
+        0.5,
+        0.5
+      ],
+      "lambda": 0.7,
+      "probabilities": [
+        0.35,
+        0.35
+      ]
+    },
+    "E": {
+      "degrees": [
+        0,
+        4
+      ],
+      "fractions": [
+        0.5,
+        0.5
+      ],
+      "lambda": 0.6,
+      "probabilities": [
+        0.8,
+        0.3
+      ]
+    }
+  },
+  "network_digest": "SHA-256 of parents as little-endian signed 64-bit row-major bytes followed by three-corner rules as uint8 row-major bytes.",
+  "network_generation": "Use unchanged original engine generate_network: PCG64 output-stub permutation, then rng.random((n,3)); retain self-loops and repeated parent slots.",
+  "original_bounds": "baseline/results/refined/raw/*.csv.gz, the final Baseline refined bounds, not the preliminary original/raw bounds",
+  "original_protocol_sha256": "3eafdf64a41256575721e816498972f1c21307f3de95a3dbdb3da1ae8ff5f81b",
+  "protocol_version": 1,
+  "records": "One CSV row and one compressed JSON detail record for every draw; complete original refined record, residual nominal rows, original-to-local mapping, and SCC component results are retained. Scientific file order and gzip headers are deterministic.",
+  "relation_to_original_study": "Post hoc computational refinement of the same frozen instances; the Bernoulli solver and caps were selected after the original Baseline sampling. No additional random sample is drawn.",
+  "replicate_index": "0 through 9999 inclusive in every cell",
+  "replicates_per_cell": 10000,
+  "search": "Pin subsets in increasing cardinality, with every candidate tested directly on all compatible physical states. No monotonicity of success under pin addition is assumed. Return the first successful minimum candidate, completed-cardinality lower-bound evidence, and a feasible all-component fallback when needed.",
+  "seed_scheme": "numpy.random.PCG64(SeedSequence([master_seed, mixture_id, n, replicate]))",
+  "sizes": [
+    100,
+    400,
+    1600,
+    6400,
+    25600
+  ],
+  "study": "Bernoulli SCC computational refinement of the original Baseline configuration-model instances",
+  "support_and_graph": "Original conservative nominal-slot residual R. Retain every nominal parent slot with source in R, including parallel slots; do not deduplicate repeated physical sources for either certificate.",
+  "total_cells": 25,
+  "total_networks": 250000,
+  "unresolved": "Retain every draw, its cost interval, upper-bound pin witness, component search evidence, and precise stopping reason. Never drop, impute, or relabel unresolved costs as exact.",
+  "work_unit": "One isolated local-row evaluation during successor construction or one controlled successor-edge traversal during candidate testing. Allocation, graph preprocessing, and bookkeeping are outside this deterministic search-work count."
+}
