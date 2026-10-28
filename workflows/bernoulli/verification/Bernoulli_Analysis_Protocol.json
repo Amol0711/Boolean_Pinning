@@ -1,0 +1,93 @@
+{
+  "aggregate_accounting": "Report all25cell totals, original G exact, G_prime exact, SCC-resolved beyond G_prime, remaining unresolved with deterministic reasons, and interval nesting. Preserve original records and refined bounds.",
+  "analysis": "Bernoulli complete-sample SCC replay and statistical analysis",
+  "authority": "Original Protocol_Baseline.json plus explicitly post-run Bound_Refinement_Protocol.json; Bernoulli adds SCC localization and statistical displays without changing sampled networks.",
+  "certificate_events": {
+    "events": [
+      "G",
+      "G_prime"
+    ],
+    "failure_intervals": "Pointwise two-sided 95% exact Clopper-Pearson intervals, including zero counts.",
+    "improvement": "Report paired rescued count G^c intersect G_prime, its fraction of all draws, and conditional fraction among original G failures with denominator stated.",
+    "paired_invariant": "Check G implies G_prime on every draw."
+  },
+  "design": {
+    "mixtures": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "new_random_networks": 0,
+    "outcome_exclusions": 0,
+    "replicates_per_cell": 10000,
+    "sizes": [
+      100,
+      400,
+      1600,
+      6400,
+      25600
+    ],
+    "total_networks": 250000,
+    "unresolved_costs": "Retain every certified integer [lower,upper] interval; never impute a midpoint or use resolved-only statistics."
+  },
+  "empirical_cdf_discrepancy": {
+    "cdf_lower": "F_L(k)=mean(upper<=k)",
+    "cdf_upper": "F_U(k)=mean(lower<=k)",
+    "interpretation": "Deterministic complete-sample CDF discrepancy bounds, not total variation and not a population confidence interval.",
+    "lower_discrepancy": "max_k max(F_L(k)-F_Poisson(k),F_Poisson(k)-F_U(k),0)",
+    "upper_discrepancy": "max_k max(abs(F_L(k)-F_Poisson(k)),abs(F_U(k)-F_Poisson(k)))"
+  },
+  "failure_scaling": {
+    "interpretation": "Descriptive finite-size slopes; sampling variability and preasymptotic behavior do not establish an asymptotic rate or prefactor.",
+    "local_slopes": "log(p_hat(n2)/p_hat(n1))/log(n2/n1) for each adjacent size pair and the prespecified spans100to1600 and1600to25600.",
+    "scaled_rates": "n times observed G and G_prime failure rates, with both CP endpoints multiplied by n.",
+    "zero_counts": "Report slope unavailable if either count is zero; do not add pseudocounts."
+  },
+  "frozen_before_final_Bernoulli_replay": true,
+  "largest_size_pmf": {
+    "bins": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8+"
+    ],
+    "computational_bounds": "Definite membership when the whole cost interval lies in a bin; possible membership when it intersects a bin.",
+    "display": "Empirical probability minus fixed reference Poisson probability; distinguish computational range from sampling envelope.",
+    "sampling_envelope": "Same CP outer envelope from definite and possible counts; pointwise, not simultaneous across bins or cells."
+  },
+  "mean_and_second_raw_moment": {
+    "computational_bounds": "For j=1,2, average lower^j and upper^j over all M draws.",
+    "coverage_language": "Approximate pointwise 95% outer envelope from two one-sided endpoint normal bounds; not an exact finite-sample confidence interval. Ordinary cost or cost-squared SE is reported only when every cost in that cell is resolved.",
+    "endpoint_standard_errors": "Sample standard deviation with denominator M-1, divided by sqrt(M), computed separately for lower^j and upper^j.",
+    "sampling_envelope": "[max(0,mean(lower^j)-1.96*SE(lower^j)), mean(upper^j)+1.96*SE(upper^j)]."
+  },
+  "parameter_comparison": {
+    "planned_contrast": "A and B both have lambda_unweighted0.6 and mu_unweighted0.9162907, versus weighted lambda0.4/0.8 and mu0.5108256/1.6094379.",
+    "unweighted": "lambda_unweighted=2*E(q); report mu_unweighted=-log(1-lambda_unweighted) only when lambda_unweighted<1, otherwise outside subcritical domain.",
+    "weighted": "lambda=(d1*q1+d2*q2)/2; mu=-log(1-lambda)"
+  },
+  "pooled_tail_pearson": {
+    "binning": "Singleton bins0,...,K-1 and tailK+, with largest K such that every expected bin count is at least5. Binning depends only on M and fixed reference mu, never observed costs.",
+    "decision_at_0_05": "Reject for every compatible completion only if p_upper<0.05; fail to reject for every completion if p_lower>=0.05; otherwise mark computationally unresolved.",
+    "degrees_of_freedom": "Number of bins minus1; no parameter fitted.",
+    "interpretation": "Approximate pointwise goodness-of-fit diagnostics for all 25 cells. No pooled-across-cell test or multiple-testing population claim.",
+    "null": "Exact finite-n Poisson distribution with mu=-log(1-lambda); mu is not fitted.",
+    "p_value_bounds": "[chi_square_sf(T_upper),chi_square_sf(T_lower)].",
+    "resolved_cells": "Ordinary Pearson statistic and approximate chi-square survival probability.",
+    "unresolved_cells": "For each bin bound its count by definite and possible membership. Lower statistic is the sum of minimum squared standardized deviations over each real count interval; upper statistic is the sum of endpoint maxima. These are conservative outer bounds, potentially loose because cross-bin allocation constraints are ignored."
+  },
+  "schema_version": "1.0",
+  "zero_cost_probability": {
+    "computational_bounds": "[number_definite/M,number_possible/M]",
+    "definite_zero": "upper=0",
+    "possible_zero": "lower=0",
+    "sampling_envelope": "[lower endpoint of two-sided95% Clopper-Pearson interval for definite count, upper endpoint for possible count]. Monotonicity contains the latent complete-sample exact-count CP interval and therefore gives at least95% pointwise coverage."
+  }
+}

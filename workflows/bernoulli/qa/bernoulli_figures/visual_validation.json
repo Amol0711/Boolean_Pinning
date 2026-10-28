@@ -1,0 +1,42 @@
+{
+  "biological_figures456_unchanged": true,
+  "data_mapping_check": "plot_data_validation.json",
+  "descriptive_notes": [
+    "Figure1 shows empirical-minus-Poisson differences.",
+    "Thick computational ranges and thin sampling intervals use different cap widths and line weights.",
+    "Figure2 shows G/G-prime separately; no pseudocounts.",
+    "Figure3 shows full outer envelopes on linear moment axes."
+  ],
+  "figures": [
+    {
+      "name": "fig1_cost_distribution",
+      "ordinary_font_when_printed_at_five_inches_pt": 7.871857816754812,
+      "page_height_pt": 158.227,
+      "page_width_pt": 342.994,
+      "pdf_sha256": "de203b7fb9517bc4ae3201a34645ab827d5d25be4e9ebce8b97121fbebd3c125",
+      "repeat_compile_identical": true,
+      "visual_inspection": "PASS at180dpi original resolution. No overlapping titles, ticks, axes, legends or notes; no clipping."
+    },
+    {
+      "name": "fig2_certificate_failure",
+      "ordinary_font_when_printed_at_five_inches_pt": 7.734550235903781,
+      "page_height_pt": 185.478,
+      "page_width_pt": 349.083,
+      "pdf_sha256": "023200a20a8a27898272a7d5aca3c7763fb058fa8e1f186b49f14fede171b68f",
+      "repeat_compile_identical": true,
+      "visual_inspection": "PASS at180dpi original resolution. No overlapping titles, ticks, axes, legends or notes; no clipping."
+    },
+    {
+      "name": "fig3_residual_and_moments",
+      "ordinary_font_when_printed_at_five_inches_pt": 7.734771809907957,
+      "page_height_pt": 166.779,
+      "page_width_pt": 349.073,
+      "pdf_sha256": "a6102bf9371eb80677a67be8766a6f145e123baee2a5a6a0c2993bd847698d43",
+      "repeat_compile_identical": true,
+      "visual_inspection": "PASS at180dpi original resolution. No overlapping titles, ticks, axes, legends or notes; no clipping."
+    }
+  ],
+  "source_csv_hashes_validated": true,
+  "status": "PASS",
+  "zero_count_cells_current_run": 0
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "networks": 1024,
+  "pin_sets": 4096,
+  "compatible_states": 9216,
+  "scope": "Every two-coordinate ordered two-slot wiring and zero-target Boolean truth assignment; independent literal state-trajectory evaluator compared with physical successor/indegree-peeling oracle."
+}

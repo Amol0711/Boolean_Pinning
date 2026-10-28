@@ -1,0 +1,71 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\pdfinfo{/Author () /Title (Complete-sample finite-size control and certification)}
+\pgfplotsset{every axis/.append style={
+font=\fontsize{7.5}{9}\selectfont,
+tick label style={font=\fontsize{7.5}{9}\selectfont},
+label style={font=\fontsize{7.5}{9}\selectfont},
+title style={font=\fontsize{7.8}{9.4}\selectfont\bfseries},
+axis line style={black!60},tick style={black!60},
+grid=major,grid style={black!10},axis background/.style={fill=white},
+major tick length=2pt,minor tick length=1.2pt,
+legend style={draw=none,fill=none,font=\fontsize{7.5}{9}\selectfont,cells={anchor=west}},
+scaled ticks=false,unbounded coords=jump}}
+\definecolor{mixA}{HTML}{0072B2}
+\definecolor{mixB}{HTML}{D55E00}
+\definecolor{mixC}{HTML}{009E73}
+\definecolor{mixD}{HTML}{CC79A7}
+\definecolor{mixE}{HTML}{806400}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=3 by 1,horizontal sep=1.15cm},
+width=4.25cm,height=4.7cm,legend style={draw=none}]
+\nextgroupplot[title={A. Residual tail},ymode=log,xmin=0,xmax=200,
+ymin=.00007,ymax=1.2,xlabel={Residual threshold $r$},ylabel={Empirical $\Pr(|R|\geq r)$},
+xtick={0,100,200},ytick={1,.01,.0001},
+legend to name=bernoulli_moment_legend,legend columns=5,legend style={column sep=9pt}]
+\addplot[color=mixA,mark=*,mark size=.9pt,mark options={draw=mixA,fill=mixA},mark repeat=15,line width=.65pt,const plot] table[col sep=comma,x=x,y=plot_survival] {data/bernoulli_survival_A.csv};
+\addlegendentry{A}
+\addplot[color=mixB,mark=square*,mark size=.9pt,mark options={draw=mixB,fill=mixB},mark repeat=15,line width=.65pt,const plot] table[col sep=comma,x=x,y=plot_survival] {data/bernoulli_survival_B.csv};
+\addlegendentry{B}
+\addplot[color=mixC,mark=triangle*,mark size=.9pt,mark options={draw=mixC,fill=mixC},mark repeat=15,line width=.65pt,const plot] table[col sep=comma,x=x,y=plot_survival] {data/bernoulli_survival_C.csv};
+\addlegendentry{C}
+\addplot[color=mixD,mark=diamond*,mark size=.9pt,mark options={draw=mixD,fill=mixD},mark repeat=15,line width=.65pt,const plot] table[col sep=comma,x=x,y=plot_survival] {data/bernoulli_survival_D.csv};
+\addlegendentry{D}
+\addplot[color=mixE,mark=pentagon*,mark size=.9pt,mark options={draw=mixE,fill=mixE},mark repeat=15,line width=.65pt,const plot] table[col sep=comma,x=x,y=plot_survival] {data/bernoulli_survival_E.csv};
+\addlegendentry{E}
+\nextgroupplot[title={B. Mean cost},xmode=log,xmin=70,xmax=37000,minor x tick num=0,xtick={100,1600,25600},xticklabels={$100$,$1600$,$25600$},xlabel={Network size $n$},ylabel={$\widehat m_1/\mu$},ymin=0.8275195516154046,ymax=1.2107929637406762]
+\addplot[black!60,densely dashed,domain=80:32000,samples=2] {1};
+\addplot[only marks,mark=none,forget plot,color=mixA!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo1,y error plus=outerplus1,y error minus=outerminus1] {data/bernoulli_moments_A.csv};
+\addplot+[only marks,color=mixA,mark=*,mark size=1.45pt,mark options={draw=mixA,fill=mixA},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo1,y error=err1] {data/bernoulli_moments_A.csv};
+\addplot[only marks,mark=none,forget plot,color=mixB!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo1,y error plus=outerplus1,y error minus=outerminus1] {data/bernoulli_moments_B.csv};
+\addplot+[only marks,color=mixB,mark=square*,mark size=1.45pt,mark options={draw=mixB,fill=mixB},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo1,y error=err1] {data/bernoulli_moments_B.csv};
+\addplot[only marks,mark=none,forget plot,color=mixC!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo1,y error plus=outerplus1,y error minus=outerminus1] {data/bernoulli_moments_C.csv};
+\addplot+[only marks,color=mixC,mark=triangle*,mark size=1.45pt,mark options={draw=mixC,fill=mixC},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo1,y error=err1] {data/bernoulli_moments_C.csv};
+\addplot[only marks,mark=none,forget plot,color=mixD!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo1,y error plus=outerplus1,y error minus=outerminus1] {data/bernoulli_moments_D.csv};
+\addplot+[only marks,color=mixD,mark=diamond*,mark size=1.45pt,mark options={draw=mixD,fill=mixD},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo1,y error=err1] {data/bernoulli_moments_D.csv};
+\addplot[only marks,mark=none,forget plot,color=mixE!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo1,y error plus=outerplus1,y error minus=outerminus1] {data/bernoulli_moments_E.csv};
+\addplot+[only marks,color=mixE,mark=pentagon*,mark size=1.45pt,mark options={draw=mixE,fill=mixE},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo1,y error=err1] {data/bernoulli_moments_E.csv};
+\nextgroupplot[title={C. Second moment},xmode=log,xmin=70,xmax=37000,minor x tick num=0,xtick={100,1600,25600},xticklabels={$100$,$1600$,$25600$},xlabel={Network size $n$},ylabel={$\widehat m_2/(\mu+\mu^2)$},ymin=0.5315788186407935,ymax=3.289914264413321]
+\addplot[black!60,densely dashed,domain=80:32000,samples=2] {1};
+\addplot[only marks,mark=none,forget plot,color=mixA!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo2,y error plus=outerplus2,y error minus=outerminus2] {data/bernoulli_moments_A.csv};
+\addplot+[only marks,color=mixA,mark=*,mark size=1.45pt,mark options={draw=mixA,fill=mixA},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo2,y error=err2] {data/bernoulli_moments_A.csv};
+\addplot[only marks,mark=none,forget plot,color=mixB!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo2,y error plus=outerplus2,y error minus=outerminus2] {data/bernoulli_moments_B.csv};
+\addplot+[only marks,color=mixB,mark=square*,mark size=1.45pt,mark options={draw=mixB,fill=mixB},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo2,y error=err2] {data/bernoulli_moments_B.csv};
+\addplot[only marks,mark=none,forget plot,color=mixC!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo2,y error plus=outerplus2,y error minus=outerminus2] {data/bernoulli_moments_C.csv};
+\addplot+[only marks,color=mixC,mark=triangle*,mark size=1.45pt,mark options={draw=mixC,fill=mixC},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo2,y error=err2] {data/bernoulli_moments_C.csv};
+\addplot[only marks,mark=none,forget plot,color=mixD!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo2,y error plus=outerplus2,y error minus=outerminus2] {data/bernoulli_moments_D.csv};
+\addplot+[only marks,color=mixD,mark=diamond*,mark size=1.45pt,mark options={draw=mixD,fill=mixD},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo2,y error=err2] {data/bernoulli_moments_D.csv};
+\addplot[only marks,mark=none,forget plot,color=mixE!60!white,error bars/.cd,y dir=both,y explicit,error bar style={line width=.4pt},error mark options={rotate=90,mark size=2.6pt,line width=.4pt}] table[col sep=comma,x=x,y=lo2,y error plus=outerplus2,y error minus=outerminus2] {data/bernoulli_moments_E.csv};
+\addplot+[only marks,color=mixE,mark=pentagon*,mark size=1.45pt,mark options={draw=mixE,fill=mixE},error bars/.cd,y dir=plus,y explicit,error bar style={line width=1.1pt},error mark options={rotate=90,mark size=1.5pt,line width=1.1pt}] table[col sep=comma,x=x,y=lo2,y error=err2] {data/bernoulli_moments_E.csv};
+\end{groupplot}
+\node[anchor=north] at ([yshift=-1.0cm]group c2r1.south) {\pgfplotslegendfromname{bernoulli_moment_legend}};
+\node[font=\fontsize{7.5}{9}\selectfont,align=center,anchor=north]
+at ([yshift=-1.49cm]group c2r1.south)
+{Moment bars\quad Thick: computational ranges\quad Thin: approximate 95\% sampling envelopes};
+
+\end{tikzpicture}
+\end{document}

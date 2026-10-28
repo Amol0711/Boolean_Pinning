@@ -1,0 +1,97 @@
+{
+  "combined_full_and_targeted_coverage": {
+    "complex_component_optima_exhaustively_verified": 13697,
+    "production_exact_draws_independently_verified": 249208,
+    "remaining_component_optimum_guards": 793,
+    "remaining_guard_reason": "All remaining guards have more than 18 coordinates and are retained as intervals, never asserted exact."
+  },
+  "components": [
+    {
+      "compatible_state_guard": 100000000,
+      "nodes": [
+        16,
+        51,
+        52,
+        60,
+        61,
+        65,
+        71,
+        75,
+        77,
+        78,
+        79,
+        88,
+        91,
+        92,
+        94,
+        96,
+        99
+      ],
+      "oracle": {
+        "candidates": 1530,
+        "complete": true,
+        "cost": 4,
+        "pins": [
+          51,
+          60,
+          77,
+          88
+        ],
+        "states": 22544384
+      },
+      "production_witness_check": {
+        "checked": true,
+        "method": "physical_support_capture",
+        "states": 0,
+        "success": true
+      }
+    }
+  ],
+  "detail_file_sha256": "4582d350bfe8613fb1969ba37dff3de1461f44fcb14cfad2bfa0f183e021e5b9",
+  "full_audit_sha256": "a4727b7093f054f2c1b8219c6980ec59f0b0b03b61d13fee247fab65ca00c91a",
+  "id": [
+    "B",
+    100,
+    3449
+  ],
+  "independently_verified_draw_optimum": 5,
+  "network_sha256": "8b06006979ce79a7b530348f6d408454914389be8dd1a415b3896637fae3e37c",
+  "original_finite_guard": {
+    "id": [
+      "B",
+      100,
+      3449
+    ],
+    "nodes": [
+      16,
+      51,
+      52,
+      60,
+      61,
+      65,
+      71,
+      75,
+      77,
+      78,
+      79,
+      88,
+      91,
+      92,
+      94,
+      96,
+      99
+    ],
+    "production_interval": [
+      4,
+      4
+    ],
+    "reason": "independent_enumeration_guard"
+  },
+  "protocol_sha256": "3eafdf64a41256575721e816498972f1c21307f3de95a3dbdb3da1ae8ff5f81b",
+  "schema_version": 1,
+  "source_sha256": {
+    "independent_network_oracle.py": "84c014dd530069e8ac9ab83b9abbd9a4c6aab2adbb92f593520c188b7322e166",
+    "targeted_component_check.py": "f0f5f1878f402f5b6426fe1218e10784d8e05f460b140bf414810d555e2c4fde"
+  },
+  "status": "PASS"
+}

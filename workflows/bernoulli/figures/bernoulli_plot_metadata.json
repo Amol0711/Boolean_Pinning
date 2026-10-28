@@ -1,0 +1,59 @@
+{
+  "input_hashes": {
+    "cell_summary.csv": "efc8e4492684c760532aa6351340217dcb75d4212ecfa351425108a58f0af16e",
+    "pmf_intervals.csv": "e740975e0614b09e967b830e4de6b7c660da8e91a1f9d208dbdc912af5eb0b3d",
+    "residual_survival.csv": "7b00dae28b4a0abae996241e8abc813398c0dd4e2da04e60e47fa301328bd72e",
+    "summary.json": "cb205577196a7041884ab3678e321cf0d13da81433d34b2dfbfc0f16851bfef4"
+  },
+  "interval_semantics": {
+    "failure": "Pointwise two-sided95% Clopper-Pearson",
+    "moment_thin": "Approximate95% sampling envelope supplied by independent statistics",
+    "pmf_thin": "Pointwise exact binomial outer interval supplied by independent statistics",
+    "thick": "Deterministic complete-sample computational bounds"
+  },
+  "moment_limits": {
+    "1": [
+      0.8594590026258438,
+      1.1788535127302369
+    ],
+    "2": [
+      0.7614401057885041,
+      3.0600529772656104
+    ]
+  },
+  "moment_y_axes": "Linear; full nonnegative outer envelopes displayed",
+  "network_size_display_offsets": {
+    "A": 0.86,
+    "B": 0.93,
+    "C": 1.0,
+    "D": 1.075268817204301,
+    "E": 1.1627906976744187
+  },
+  "pmf_bin_display_offsets": {
+    "A": -0.18,
+    "B": 0.18,
+    "C": -0.18,
+    "D": 0.18,
+    "E": 0.0
+  },
+  "pmf_bins": "0 through7 and one >=8 tail bin",
+  "pmf_difference_extent": 0.02,
+  "pmf_display": "Empirical bin probability minus the specified Poisson bin probability; differences and CP outer differences are read from independent statistics and verified by subtraction.",
+  "poisson_normalization": "mu=-log(1-lambda_star), second raw moment mu+mu^2",
+  "residual_maxima": {
+    "A": 15,
+    "B": 199,
+    "C": 105,
+    "D": 109,
+    "E": 125
+  },
+  "sample_accounting": {
+    "cells": 25,
+    "draws_per_cell": 10000,
+    "excluded_draws": 0,
+    "total_draws": 250000
+  },
+  "source_directory": "results/bernoulli_statistics",
+  "zero_failure_cells": [],
+  "zero_failure_display": "No point estimate is placed on log axis. An open downward triangle marks the exact CP upper endpoint; count0 and interval lower0 remain in data."
+}

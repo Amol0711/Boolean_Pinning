@@ -1,0 +1,12 @@
+{
+  "comparisons": {
+    "certificate_cell_records": 50,
+    "normalized_moment_cell_records": 25,
+    "pmf_bins": 45,
+    "residual_survival_rows_including_zero": 563
+  },
+  "input_hashes_verified": true,
+  "source_metadata_sha256": "1ca5784cdc3e189d22ee8822def4d9c187a41830643319c4843bcef4c013c5dd",
+  "status": "PASS",
+  "unresolved_draws_imputed": 0
+}
