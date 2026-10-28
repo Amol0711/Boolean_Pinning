@@ -1,0 +1,2 @@
+# Preserve original byte hashes on every checkout, including Windows.
+* -text
