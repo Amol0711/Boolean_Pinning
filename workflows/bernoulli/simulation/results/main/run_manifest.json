@@ -1,0 +1,53 @@
+{
+  "Bernoulli_protocol_sha256": "2b48b73cefc8bdce1a3b863342d27522fa8b780da60a0dd594f42a7adf63f77e",
+  "component_caps": {
+    "max_component_size": 18,
+    "max_pins": 18,
+    "max_work": 10000000
+  },
+  "engine": {
+    "backend": "cpp",
+    "compiler_error": null,
+    "cpp_sha256": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d"
+  },
+  "original_G_failure_count": 23028,
+  "original_protocol_sha256": "3eafdf64a41256575721e816498972f1c21307f3de95a3dbdb3da1ae8ff5f81b",
+  "original_refined_raw_sha256": {
+    "baseline/results/refined/raw/A_n100.csv.gz": "7cc9ebe6a43bb249f1989df8752e039787c6fdeee9f8f54fcfcdd34079ff408f",
+    "baseline/results/refined/raw/A_n1600.csv.gz": "311475bee2de0bc5ea50048097d2e73a3980dc7639b6c856ae49c7d878209d84",
+    "baseline/results/refined/raw/A_n25600.csv.gz": "a8cad51d8099e788218cae1116465af55d0f946a7cd7d70bc360e61ea66b2c9b",
+    "baseline/results/refined/raw/A_n400.csv.gz": "9e5cb4439cac0a30bd5e5822b723688caf78638ce1cd32c2a1db461713ae7ddb",
+    "baseline/results/refined/raw/A_n6400.csv.gz": "0d69e25c6afc161ff829d2c979acb86124771e24d42f9ecad5efe30862abc9a9",
+    "baseline/results/refined/raw/B_n100.csv.gz": "1f33d42fc0f7d1ae579984ff4014b1c7def61f7e28b2e2cd4be17f9531c94a59",
+    "baseline/results/refined/raw/B_n1600.csv.gz": "8cfe571e2d2d71e2c802ef5e22b96e4c0aee5ffffccbc2ecc56c866fb2ef9388",
+    "baseline/results/refined/raw/B_n25600.csv.gz": "e42f82be20ca8c2a52d4f8b8d212df9f6db4088df3b13385653ce3b39d743c83",
+    "baseline/results/refined/raw/B_n400.csv.gz": "af5f29c6b83dc057daf9bd5b93f22c659c150135863d1cac79026ec9e4d04bec",
+    "baseline/results/refined/raw/B_n6400.csv.gz": "5cec0c40bbc8118f2fa2f2103a5f8379ed9c9042216904089b9ecf482d0f74f2",
+    "baseline/results/refined/raw/C_n100.csv.gz": "2aeb44099b09270c71888e1db8278e164f78dc954b8cf63afd4025d1f588f8d3",
+    "baseline/results/refined/raw/C_n1600.csv.gz": "7c456bd3d81de5392a209226e2642786bb481ace3f1f690d92cae0477b45a06d",
+    "baseline/results/refined/raw/C_n25600.csv.gz": "1982db1c0a1fd48ffd276ebfeceb3dadfa589a35752962d867eab49d08ce8f4d",
+    "baseline/results/refined/raw/C_n400.csv.gz": "a9b9d41751a8ae34df84c0c42c6dc374cb435817c8c654f954eda32763167596",
+    "baseline/results/refined/raw/C_n6400.csv.gz": "225bdf65af1c7c99b8c0b1e4b3228daf94365bf7dd6de734fd5ae39015b1db93",
+    "baseline/results/refined/raw/D_n100.csv.gz": "84db873d0d8f8d9e8f1b93b3d0a5c4b950dcc76f8f7517cf2b643094bd74cc00",
+    "baseline/results/refined/raw/D_n1600.csv.gz": "8750105f009943f2fd561e0cf6b5bda860b2afb53025a3af185fa1250ed0879d",
+    "baseline/results/refined/raw/D_n25600.csv.gz": "f265c7aa311fa5f8167266728871bd19452b7236f61a560e3e5e7c2e3b38ba60",
+    "baseline/results/refined/raw/D_n400.csv.gz": "5ff105241bdb7e32d53da3f49fe5c507712d02fca5a3dbcd83e4545fec7d7672",
+    "baseline/results/refined/raw/D_n6400.csv.gz": "47d4745e527e2f6f752d725447c3b37f4da9bee2c877066efb45940a8d931a0f",
+    "baseline/results/refined/raw/E_n100.csv.gz": "3d753cc4765b1c8f153f2bbc8f72e1a70d24b0d2497c0bb5b2aa02c8289d7fb3",
+    "baseline/results/refined/raw/E_n1600.csv.gz": "a9082ffa10d95e8f4cf0607178fbac4118fdb9a08d7f426d8a53f6d3505cec5b",
+    "baseline/results/refined/raw/E_n25600.csv.gz": "1dc676e0c46b2cc79786685629f19b975e7e3ce864f0a82341f5b8830db1d1a9",
+    "baseline/results/refined/raw/E_n400.csv.gz": "5bddefa13f25af151289c71b7c5dcbcad618172d93e4534df230d813cd27b0ba",
+    "baseline/results/refined/raw/E_n6400.csv.gz": "5e4767a7b61027bca771e695272e5ebb1def37b055e4de53db5a2cc6693e8148"
+  },
+  "pilot": false,
+  "source_hashes": {
+    "src/replay_scc.py": "b1b5cef3428163d20e944c1320b542dbed9654a7dc14be40ba641ed275dcf5e6",
+    "vendor/engine.py": "d3f0969c75bad2cfe45c55922a2e20916f91bd90f1885aed5364da16b05d97e3",
+    "vendor/engine_core.cpp": "4ebaee420216b00a5ac99cdd202f267b62e337e8646dfc5d85c4916c6f60d00d",
+    "vendor/scc_control.py": "2c127854db4f0cf82b1001e0b7a643e2adaa405b15960a6cb4cebc9d85a527dd"
+  },
+  "status": "completed",
+  "total_draws": 250000,
+  "unresolved_count": 792,
+  "weaker_G_prime_failure_count": 12230
+}
