@@ -1,0 +1,1024 @@
+{
+  "status": "PASS",
+  "model_id": "tlgl_coded_29",
+  "model_json_sha256": "0c02b4c9651a35604e43d55d4304aadd856f1233d0fc1138a0c4069492958067",
+  "target_is_fixed": true,
+  "claim_scope": "Exact optimum and global convergence for the explicit synchronous coded Boolean implementation; no claim of biological reconstruction fidelity or novelty of these control sets.",
+  "proof_method": "Mandatory physical identity rows, exact support-cube descent, exact pure-copy residual, one pin per residual cycle. Full global state enumeration was not used.",
+  "mandatory_identity_nodes_zero_based": [
+    0,
+    8
+  ],
+  "mandatory_identity_nodes_one_based": [
+    1,
+    9
+  ],
+  "mandatory_lower_bound_explanation": "An unpinned identity coordinate initially different from its target never changes, regardless of any pins on other coordinates.",
+  "baseline": {
+    "pins_zero_based": [
+      0,
+      8
+    ],
+    "pins_one_based": [
+      1,
+      9
+    ],
+    "support_trace_zero_based": [
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      [
+        2,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      [
+        7,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      [
+        14,
+        15,
+        16,
+        17,
+        18,
+        25,
+        26,
+        27
+      ],
+      [
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    ],
+    "support_sizes": [
+      27,
+      21,
+      12,
+      8,
+      5
+    ],
+    "residual_zero_based": [
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "capture_bound_updates": 4
+  },
+  "copy_certificate": {
+    "baseline_pins": [
+      0,
+      8
+    ],
+    "support_trace": [
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      [
+        2,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      [
+        7,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      [
+        14,
+        15,
+        16,
+        17,
+        18,
+        25,
+        26,
+        27
+      ],
+      [
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    ],
+    "residual": [
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "copy_parent": {
+      "14": 15,
+      "15": 14,
+      "16": 14,
+      "17": 16,
+      "18": 17
+    },
+    "cycles": [
+      [
+        14,
+        15
+      ]
+    ],
+    "conditional_optimum": 1,
+    "one_optimal_additional_set": [
+      14
+    ]
+  },
+  "residual_map": {
+    "coordinate_convention": "y_i=x_i XOR target_i; coordinates outside residual are zero.",
+    "rows": [
+      {
+        "row_zero_based": 14,
+        "row_one_based": 15,
+        "parents_zero_based": [
+          15
+        ],
+        "deviation_truth_table": [
+          0,
+          1
+        ]
+      },
+      {
+        "row_zero_based": 15,
+        "row_one_based": 16,
+        "parents_zero_based": [
+          14
+        ],
+        "deviation_truth_table": [
+          0,
+          1
+        ]
+      },
+      {
+        "row_zero_based": 16,
+        "row_one_based": 17,
+        "parents_zero_based": [
+          14
+        ],
+        "deviation_truth_table": [
+          0,
+          1
+        ]
+      },
+      {
+        "row_zero_based": 17,
+        "row_one_based": 18,
+        "parents_zero_based": [
+          16
+        ],
+        "deviation_truth_table": [
+          0,
+          1
+        ]
+      },
+      {
+        "row_zero_based": 18,
+        "row_one_based": 19,
+        "parents_zero_based": [
+          17
+        ],
+        "deviation_truth_table": [
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "baseline_competing_fixed_point_physical": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "baseline_competing_fixed_point_checked": true,
+  "additional_optimum_given_free_baseline": 1,
+  "total_optimum_counting_all_pins": 3,
+  "all_minimum_total_sets_zero_based": [
+    [
+      0,
+      8,
+      14
+    ],
+    [
+      0,
+      8,
+      15
+    ]
+  ],
+  "all_minimum_total_sets_one_based": [
+    [
+      1,
+      9,
+      15
+    ],
+    [
+      1,
+      9,
+      16
+    ]
+  ],
+  "controlled_support_certificates": [
+    {
+      "pins_zero_based": [
+        0,
+        8,
+        14
+      ],
+      "pins_one_based": [
+        1,
+        9,
+        15
+      ],
+      "support_trace_zero_based": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        [
+          2,
+          5,
+          6,
+          7,
+          10,
+          11,
+          12,
+          13,
+          17,
+          18,
+          20,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        [
+          7,
+          13,
+          18,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        [
+          25,
+          26,
+          27
+        ],
+        []
+      ],
+      "support_sizes": [
+        26,
+        18,
+        8,
+        3,
+        0
+      ],
+      "residual_zero_based": [],
+      "capture_bound_updates": 4,
+      "four_update_witness_physical_trajectory": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "all_state_maximum_transient": 4
+    },
+    {
+      "pins_zero_based": [
+        0,
+        8,
+        15
+      ],
+      "pins_one_based": [
+        1,
+        9,
+        16
+      ],
+      "support_trace_zero_based": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        [
+          2,
+          5,
+          6,
+          7,
+          10,
+          11,
+          12,
+          13,
+          16,
+          17,
+          18,
+          20,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        [
+          7,
+          13,
+          17,
+          18,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        [
+          18,
+          25,
+          26,
+          27
+        ],
+        []
+      ],
+      "support_sizes": [
+        26,
+        19,
+        9,
+        4,
+        0
+      ],
+      "residual_zero_based": [],
+      "capture_bound_updates": 4,
+      "four_update_witness_physical_trajectory": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "all_state_maximum_transient": 4
+    }
+  ],
+  "residual_oracle_unpinned": {
+    "globally_convergent": false,
+    "compatible_states_enumerated": 32,
+    "maximum_convergent_transient": 3,
+    "all_state_maximum_transient": null,
+    "longest_convergent_trajectory": [
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "failure_cycle": [
+      [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    ],
+    "target": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pins": []
+  },
+  "residual_oracle_one_pin": [
+    {
+      "original_pin_zero_based": 14,
+      "oracle": {
+        "globally_convergent": true,
+        "compatible_states_enumerated": 16,
+        "maximum_convergent_transient": 3,
+        "all_state_maximum_transient": 3,
+        "longest_convergent_trajectory": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "failure_cycle": null,
+        "target": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pins": [
+          0
+        ]
+      }
+    },
+    {
+      "original_pin_zero_based": 15,
+      "oracle": {
+        "globally_convergent": true,
+        "compatible_states_enumerated": 16,
+        "maximum_convergent_transient": 4,
+        "all_state_maximum_transient": 4,
+        "longest_convergent_trajectory": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "failure_cycle": null,
+        "target": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pins": [
+          1
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "method": "Original preserved frozen source expressions parsed directly; exact Fraction AST interpreter independent of package imports; physical JSON table lookup and independent BNET parser compared on every union-scope corner; no prior registry used",
+  "models": [
+    {
+      "model_id": "drosophila_coded_17",
+      "n": 17,
+      "source_sha256": "be2aca286b7989cccd390809bf4880c301f983f4ccd7ac50917bb7ba888cd3f4",
+      "json_sha256": "6191f0cd5368e529c13fc094760d0ddea2f481be6384ebd4ff3033e3ed27988c",
+      "bnet_sha256": "4b13f39c1bec8aeb16c2454f4172428a0e1f56115b2d7069fd1a44af72d915b2",
+      "source_local_corner_count": 80,
+      "union_corners_checked": 80,
+      "all_original_source_JSON_BNET_corners_identical": true,
+      "target_equals_original_source_literal": true,
+      "source_target_fixed": true,
+      "control_node_primary_labels": {
+        "1": "SLP",
+        "2": "nWG",
+        "3": "nhhnHH (source alias nHH)"
+      }
+    },
+    {
+      "model_id": "tlgl_coded_29",
+      "n": 29,
+      "source_sha256": "22d2e8cc8d058d6e2c391838d521331bad218a777bc65b1c1670836be6dc7b25",
+      "json_sha256": "0c02b4c9651a35604e43d55d4304aadd856f1233d0fc1138a0c4069492958067",
+      "bnet_sha256": "d4af71be8590896599b4abf3364712fd441a01afa2ba0d8b70b8437e2af867f4",
+      "source_local_corner_count": 88,
+      "union_corners_checked": 88,
+      "all_original_source_JSON_BNET_corners_identical": true,
+      "target_equals_original_source_literal": true,
+      "source_target_fixed": true,
+      "control_node_primary_labels": {
+        "1": "IL15",
+        "9": "PDGF",
+        "15": "SPHK",
+        "16": "S1P"
+      }
+    }
+  ]
+}

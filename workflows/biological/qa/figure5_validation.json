@@ -1,0 +1,18 @@
+{
+  "current_build_status": "PASS",
+  "figure_pdf_sha256": "908af526bb96b4618308c265ed40793d71531c1a1599baae98988611dd287cc4",
+  "figure_tex_sha256": "ff3357315b6325ccdfe5245a037331f48b443de1fc11ada5a61db555cc69bfdb",
+  "page_count": 1,
+  "page_size_points": [
+    0.0,
+    0.0,
+    479.5150146484375,
+    268.0719909667969
+  ],
+  "panel_a_csv_matches_archived_support_trace": true,
+  "panel_a_csv_sha256": "cb2a376cfed7d2ebd6200a7ebe5f41b8404ffe8e4cfea8d667ec9bfc12d489fb",
+  "panel_b_full_native_source_replay": "PASS; see figure5_build.json",
+  "source_unchanged": true,
+  "status": "PASS",
+  "warnings": []
+}

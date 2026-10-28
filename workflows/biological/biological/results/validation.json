@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "Finite exhaustive validation and deterministic seeded implementation checks.",
+  "seed": 2026101401,
+  "exhaustive_two_node_target_map_pairs": 256,
+  "seeded_three_four_five_node_models": 72,
+  "repeated_reference_models": 1,
+  "counts": {
+    "networks": 329,
+    "support_cubes": 2052,
+    "baseline_additional_pairs": 7713,
+    "pure_copy_certificates": 1680
+  },
+  "invalid_inputs_rejected": 5,
+  "input_models_unchanged": true,
+  "nonmonotone_feasibility_counterexample_confirmed": true,
+  "exported_bnet_local_corners_checked": {
+    "drosophila_coded_17": 80,
+    "tlgl_coded_29": 82
+  },
+  "original_source_polynomial_corners_checked": {
+    "drosophila_coded_17": 80,
+    "tlgl_coded_29": 88
+  }
+}

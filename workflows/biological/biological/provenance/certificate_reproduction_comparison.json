@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "byte_identical_to_distributed": true,
+      "filename": "convergence_curves.csv",
+      "sha256": "73a3560b0ab23fdccfcf152a3a307259e32130e0784d1f6c757408c2a7c3e258"
+    },
+    {
+      "byte_identical_to_distributed": true,
+      "filename": "drosophila_coded_17_certificate.json",
+      "sha256": "0d90b276652814062735010e333fd6cac7c837b6ca06f44aa3edf0498c20e4da"
+    },
+    {
+      "byte_identical_to_distributed": true,
+      "filename": "run_manifest.json",
+      "sha256": "ce1e7519234e462c0ef6b230cdabb1bf473df43e07da39d801c914a06f6f260c"
+    },
+    {
+      "byte_identical_to_distributed": true,
+      "filename": "tlgl_coded_29_certificate.json",
+      "sha256": "47a97a0a0faa0e7b4397bfb657e0f673d32b2ad7339f301a3443069700e835fb"
+    },
+    {
+      "byte_identical_to_distributed": true,
+      "filename": "validation.json",
+      "sha256": "b2231d81eb1db4bcb50f10a59962928bb9a6327fabf65454352b0bb46bd850be"
+    }
+  ],
+  "scope": "Fresh execution of the distributed small-model reproducer; complete output-byte comparison.",
+  "status": "PASS"
+}

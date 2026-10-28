@@ -1,0 +1,36 @@
+{
+  "source_self_description": "T-LGL Boolean/IBMF rule templates inferred from the released 29-node QL script.",
+  "frozen_QL_sha256": "22d2e8cc8d058d6e2c391838d521331bad218a777bc65b1c1670836be6dc7b25",
+  "method": "independent template Boolean implementation versus exact arithmetic AST of frozen QL source at all union-scope corners",
+  "all_29_rules_identical_on_boolean_corners": true,
+  "local_corner_comparisons": 88,
+  "target_identical": true,
+  "archive_selected_nodes_zero_based": [
+    0,
+    8,
+    14
+  ],
+  "archive_selected_nodes_one_based": [
+    1,
+    9,
+    15
+  ],
+  "selected_primary_names": [
+    "IL15",
+    "PDGF",
+    "SPHK"
+  ],
+  "alternative_documented_nodes_zero_based": [
+    0,
+    8,
+    15
+  ],
+  "alternative_primary_names": [
+    "IL15",
+    "PDGF",
+    "S1P"
+  ],
+  "not_established": "The word inferred is not primary biological provenance; exact source-code fidelity is verified, biological published-model equality is not.",
+  "source_path": "source_files/tlgl_topology_rewiring_test.py",
+  "source_file_sha256": "1f6ae48680cff8ebab3953e3fb9c5c64cf337b7fc90154f7375b9988520629f5"
+}

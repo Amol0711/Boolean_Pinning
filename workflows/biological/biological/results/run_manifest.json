@@ -1,0 +1,23 @@
+{
+  "schema": "ExactBooleanCertificateRun_v1",
+  "random_data_generated": false,
+  "engine_tests_seed": 2026101401,
+  "dependencies": "Python 3.10+ standard library only",
+  "source_sha256": {
+    "models/drosophila_coded_17.bnet": "4b13f39c1bec8aeb16c2454f4172428a0e1f56115b2d7069fd1a44af72d915b2",
+    "models/drosophila_coded_17.json": "6191f0cd5368e529c13fc094760d0ddea2f481be6384ebd4ff3033e3ed27988c",
+    "models/tlgl_coded_29.bnet": "d4af71be8590896599b4abf3364712fd441a01afa2ba0d8b70b8437e2af867f4",
+    "models/tlgl_coded_29.json": "0c02b4c9651a35604e43d55d4304aadd856f1233d0fc1138a0c4069492958067",
+    "src/boolean_certificates.py": "9a1a204288173f187fdce3348fddf1f7b624ab3f2cb967acd00b9c8a4c325bec",
+    "src/extract_models.py": "67b2bb985947e3ce5ee203051452277d4dc4909ca0a9aaf6e528725e9c740715",
+    "src/reproduce.py": "4a26c4c48d9ac45902af27400c4d486ede893f0fb6aac6491762de32ec69d885",
+    "tests/independent_oracle.py": "e692f72f3028619dff659b2fa1df3c93c30157cb71cabb2acd397a5144a3743f",
+    "tests/validate_engine.py": "c9a2cd9c5f82e5d4f5e662457a75524ba2149b85f5a626308ff8baf1f4d0caee"
+  },
+  "result_sha256": {
+    "convergence_curves.csv": "73a3560b0ab23fdccfcf152a3a307259e32130e0784d1f6c757408c2a7c3e258",
+    "drosophila_coded_17_certificate.json": "0d90b276652814062735010e333fd6cac7c837b6ca06f44aa3edf0498c20e4da",
+    "tlgl_coded_29_certificate.json": "47a97a0a0faa0e7b4397bfb657e0f673d32b2ad7339f301a3443069700e835fb",
+    "validation.json": "b2231d81eb1db4bcb50f10a59962928bb9a6327fabf65454352b0bb46bd850be"
+  }
+}

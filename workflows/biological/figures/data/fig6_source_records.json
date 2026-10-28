@@ -1,0 +1,633 @@
+{
+  "context_order": [
+    "CD4_OFF",
+    "CD4_ON",
+    "CD4_APC",
+    "CD4_ECM",
+    "CD4_IL2",
+    "CD4_GALPHAQ"
+  ],
+  "independent_parser_sha256": "b2f6ff5aef1a587fdd58fc24100e61660d7ea885122e647389362712442c55a1",
+  "independent_validation_sha256": "fdcced9d46eee0d959abb7aeebf3699c17e66aee05a169d2fad1549ef07f3f3c",
+  "independent_validation_status": "PASS",
+  "interpretation": {
+    "admissible_interventions": "All regulated coordinates, including the modeled proliferation output.",
+    "cost": "Additional permanent target-valued pins; environmental input clamps are excluded.",
+    "displayed_rules": "Component isolation fixes all coordinates outside that component at the selected target.",
+    "scc_partition": "Functional dependencies on the baseline residual coordinate cube.",
+    "scope": "Exact synchronous Boolean-model statements; no intervention-feasibility or clinical claim."
+  },
+  "model_bnet_sha256": "24722017d5be15ab31cf9a8c3dfc31139a80313c7a69196f8ab77b0945444209",
+  "panel_a": [
+    {
+      "context": "CD4_OFF",
+      "cost2": 2,
+      "cost3": 4,
+      "cost4": 0,
+      "cost5": 0,
+      "row": 0,
+      "target_costs": [
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_OFF_FP01"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_OFF_FP02"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_OFF_FP03"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_OFF_FP04"
+        },
+        {
+          "exact_cost": 2,
+          "target_id": "CD4_OFF_FP05"
+        },
+        {
+          "exact_cost": 2,
+          "target_id": "CD4_OFF_FP06"
+        }
+      ],
+      "total": 6
+    },
+    {
+      "context": "CD4_ON",
+      "cost2": 2,
+      "cost3": 4,
+      "cost4": 0,
+      "cost5": 0,
+      "row": 1,
+      "target_costs": [
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_ON_FP01"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_ON_FP02"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_ON_FP03"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_ON_FP04"
+        },
+        {
+          "exact_cost": 2,
+          "target_id": "CD4_ON_FP05"
+        },
+        {
+          "exact_cost": 2,
+          "target_id": "CD4_ON_FP06"
+        }
+      ],
+      "total": 6
+    },
+    {
+      "context": "CD4_APC",
+      "cost2": 0,
+      "cost3": 3,
+      "cost4": 8,
+      "cost5": 4,
+      "row": 2,
+      "target_costs": [
+        {
+          "exact_cost": 4,
+          "target_id": "CD4_APC_FP01"
+        },
+        {
+          "exact_cost": 4,
+          "target_id": "CD4_APC_FP02"
+        },
+        {
+          "exact_cost": 4,
+          "target_id": "CD4_APC_FP03"
+        },
+        {
+          "exact_cost": 4,
+          "target_id": "CD4_APC_FP04"
+        },
+        {
+          "exact_cost": 4,
+          "target_id": "CD4_APC_FP05"
+        },
+        {
+          "exact_cost": 5,
+          "target_id": "CD4_APC_FP06"
+        },
+        {
+          "exact_cost": 5,
+          "target_id": "CD4_APC_FP07"
+        },
+        {
+          "exact_cost": 4,
+          "target_id": "CD4_APC_FP08"
+        },
+        {
+          "exact_cost": 5,
+          "target_id": "CD4_APC_FP09"
+        },
+        {
+          "exact_cost": 5,
+          "target_id": "CD4_APC_FP10"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_APC_FP11"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_APC_FP12"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_APC_FP13"
+        },
+        {
+          "exact_cost": 4,
+          "target_id": "CD4_APC_FP14"
+        },
+        {
+          "exact_cost": 4,
+          "target_id": "CD4_APC_FP15"
+        }
+      ],
+      "total": 15
+    },
+    {
+      "context": "CD4_ECM",
+      "cost2": 2,
+      "cost3": 4,
+      "cost4": 0,
+      "cost5": 0,
+      "row": 3,
+      "target_costs": [
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_ECM_FP01"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_ECM_FP02"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_ECM_FP03"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_ECM_FP04"
+        },
+        {
+          "exact_cost": 2,
+          "target_id": "CD4_ECM_FP05"
+        },
+        {
+          "exact_cost": 2,
+          "target_id": "CD4_ECM_FP06"
+        }
+      ],
+      "total": 6
+    },
+    {
+      "context": "CD4_IL2",
+      "cost2": 1,
+      "cost3": 6,
+      "cost4": 0,
+      "cost5": 0,
+      "row": 4,
+      "target_costs": [
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_IL2_FP01"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_IL2_FP02"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_IL2_FP03"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_IL2_FP04"
+        },
+        {
+          "exact_cost": 2,
+          "target_id": "CD4_IL2_FP05"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_IL2_FP06"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_IL2_FP07"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "context": "CD4_GALPHAQ",
+      "cost2": 2,
+      "cost3": 4,
+      "cost4": 0,
+      "cost5": 0,
+      "row": 5,
+      "target_costs": [
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_GALPHAQ_FP01"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_GALPHAQ_FP02"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_GALPHAQ_FP03"
+        },
+        {
+          "exact_cost": 3,
+          "target_id": "CD4_GALPHAQ_FP04"
+        },
+        {
+          "exact_cost": 2,
+          "target_id": "CD4_GALPHAQ_FP05"
+        },
+        {
+          "exact_cost": 2,
+          "target_id": "CD4_GALPHAQ_FP06"
+        }
+      ],
+      "total": 6
+    }
+  ],
+  "panel_b": {
+    "acyclic_singleton_names": [
+      "v_HLX",
+      "v_IFNG",
+      "v_IL10",
+      "v_IL2",
+      "v_IL4",
+      "v_IRF4",
+      "v_NFKB",
+      "v_RUNX3"
+    ],
+    "cyclic_components": [
+      {
+        "cost": 1,
+        "isolated_target_error_rows": [
+          {
+            "name": "v_Dec2",
+            "parents": [
+              "v_GATA3"
+            ],
+            "table": [
+              0,
+              1
+            ]
+          },
+          {
+            "name": "v_GATA3",
+            "parents": [
+              "v_Dec2"
+            ],
+            "table": [
+              0,
+              1
+            ]
+          }
+        ],
+        "names": [
+          "v_Dec2",
+          "v_GATA3"
+        ]
+      },
+      {
+        "cost": 1,
+        "isolated_target_error_rows": [
+          {
+            "name": "v_FOXP3",
+            "parents": [
+              "v_FOXP3",
+              "v_SMAD3"
+            ],
+            "table": [
+              0,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "v_SMAD3",
+            "parents": [
+              "v_TGFBR"
+            ],
+            "table": [
+              0,
+              1
+            ]
+          },
+          {
+            "name": "v_TGFB",
+            "parents": [],
+            "table": [
+              0
+            ]
+          },
+          {
+            "name": "v_TGFBR",
+            "parents": [
+              "v_TGFB"
+            ],
+            "table": [
+              0,
+              1
+            ]
+          }
+        ],
+        "names": [
+          "v_FOXP3",
+          "v_SMAD3",
+          "v_TGFB",
+          "v_TGFBR"
+        ]
+      },
+      {
+        "cost": 0,
+        "isolated_target_error_rows": [
+          {
+            "name": "v_RORGT",
+            "parents": [],
+            "table": [
+              0
+            ]
+          }
+        ],
+        "names": [
+          "v_RORGT"
+        ]
+      },
+      {
+        "cost": 1,
+        "isolated_target_error_rows": [
+          {
+            "name": "v_TBET",
+            "parents": [
+              "v_TBET"
+            ],
+            "table": [
+              0,
+              1
+            ]
+          }
+        ],
+        "names": [
+          "v_TBET"
+        ]
+      },
+      {
+        "cost": 1,
+        "isolated_target_error_rows": [
+          {
+            "name": "v_proliferation",
+            "parents": [
+              "v_proliferation"
+            ],
+            "table": [
+              0,
+              1
+            ]
+          }
+        ],
+        "names": [
+          "v_proliferation"
+        ]
+      }
+    ],
+    "exact_additional_cost": 4,
+    "independently_checked_source_rule_values": 78,
+    "residual_names": [
+      "v_Dec2",
+      "v_FOXP3",
+      "v_GATA3",
+      "v_HLX",
+      "v_IFNG",
+      "v_IL10",
+      "v_IL2",
+      "v_IL4",
+      "v_IRF4",
+      "v_NFKB",
+      "v_RORGT",
+      "v_RUNX3",
+      "v_SMAD3",
+      "v_TBET",
+      "v_TGFB",
+      "v_TGFBR",
+      "v_proliferation"
+    ],
+    "target_by_name": {
+      "v_AKT": 1,
+      "v_AP1": 1,
+      "v_APC": 1,
+      "v_ATF2": 0,
+      "v_Arp2_3": 1,
+      "v_B7": 0,
+      "v_BCL10_Malt1": 1,
+      "v_BRAF": 1,
+      "v_Bcl10_Carma1_MALTI": 1,
+      "v_Bintegrin": 1,
+      "v_C3G": 1,
+      "v_CARMA1": 1,
+      "v_CAV1_ACTIVATOR": 0,
+      "v_CAV1_scaffold": 1,
+      "v_CD26": 1,
+      "v_CD28": 1,
+      "v_CD3": 1,
+      "v_CD4": 1,
+      "v_CGC": 0,
+      "v_Ca2_": 1,
+      "v_Calcineurin": 1,
+      "v_Cas": 1,
+      "v_Cdc42": 1,
+      "v_Cofilin": 0,
+      "v_Crk": 1,
+      "v_DAG": 1,
+      "v_Dec2": 0,
+      "v_ECM": 0,
+      "v_EPAC": 0,
+      "v_ERK": 1,
+      "v_ERM": 0,
+      "v_FAK_576_577": 1,
+      "v_FAK_Tyr397": 1,
+      "v_FOXP3": 0,
+      "v_FYN": 1,
+      "v_F_Actin": 1,
+      "v_GAB2": 1,
+      "v_GADD45B": 0,
+      "v_GADD45G": 1,
+      "v_GATA3": 0,
+      "v_GFI1": 1,
+      "v_GP130": 0,
+      "v_GSK_3b": 0,
+      "v_G_Actin": 1,
+      "v_Gads": 1,
+      "v_Galpha12_13R": 0,
+      "v_GalphaS_L": 0,
+      "v_GalphaS_R": 0,
+      "v_Galpha_Q": 0,
+      "v_Galpha_QL": 0,
+      "v_Galpha_iL": 0,
+      "v_Galpha_iR": 0,
+      "v_Grb2": 1,
+      "v_HLX": 0,
+      "v_ICOS": 1,
+      "v_IFNBR": 0,
+      "v_IFNB_e": 0,
+      "v_IFNG": 0,
+      "v_IFNGR": 0,
+      "v_IFNGR1": 0,
+      "v_IFNGR2": 0,
+      "v_IFNG_e": 0,
+      "v_IKB": 0,
+      "v_IKKcomplex": 1,
+      "v_IL10": 0,
+      "v_IL10R": 0,
+      "v_IL10RA": 0,
+      "v_IL10RB": 0,
+      "v_IL10_e": 0,
+      "v_IL12RB1": 0,
+      "v_IL12RB2": 0,
+      "v_IL12_e": 0,
+      "v_IL15R": 0,
+      "v_IL15RA": 0,
+      "v_IL15_e": 0,
+      "v_IL17": 0,
+      "v_IL18R1": 0,
+      "v_IL18_e": 0,
+      "v_IL2": 1,
+      "v_IL21": 0,
+      "v_IL21R": 0,
+      "v_IL21_e": 0,
+      "v_IL22": 1,
+      "v_IL22R": 0,
+      "v_IL22_e": 0,
+      "v_IL23": 0,
+      "v_IL23R": 0,
+      "v_IL23_e": 0,
+      "v_IL27R": 0,
+      "v_IL27RA": 0,
+      "v_IL27_e": 0,
+      "v_IL2R": 0,
+      "v_IL2RA": 1,
+      "v_IL2RB": 0,
+      "v_IL2R_HIGH": 0,
+      "v_IL2_e": 0,
+      "v_IL4": 0,
+      "v_IL4R": 0,
+      "v_IL4RA": 1,
+      "v_IL4RA_HIGH": 0,
+      "v_IL4R_HIGH": 0,
+      "v_IL4_e": 0,
+      "v_IL6R": 0,
+      "v_IL6RA": 0,
+      "v_IL6_e": 0,
+      "v_IL9R": 0,
+      "v_IL9_e": 0,
+      "v_IP3": 1,
+      "v_IRAK1": 0,
+      "v_IRF1": 0,
+      "v_IRF4": 0,
+      "v_IRSp53": 1,
+      "v_ITAMS": 1,
+      "v_ITK": 1,
+      "v_JAK1": 0,
+      "v_JAK2": 0,
+      "v_JAK3": 0,
+      "v_JNK": 1,
+      "v_LAT": 1,
+      "v_LIMK": 1,
+      "v_Lck": 1,
+      "v_MEK1_2": 1,
+      "v_MEK3": 0,
+      "v_MEK4": 0,
+      "v_MEK6": 0,
+      "v_MEKK4": 0,
+      "v_MHC_II": 1,
+      "v_MKK7": 0,
+      "v_MLC": 1,
+      "v_NFAT": 1,
+      "v_NFKB": 1,
+      "v_NIK": 0,
+      "v_NOS2A": 1,
+      "v_N_WASP": 1,
+      "v_Nck": 1,
+      "v_P38": 0,
+      "v_PAK": 1,
+      "v_PDK1": 1,
+      "v_PI3K": 1,
+      "v_PIP3_345": 1,
+      "v_PKA": 0,
+      "v_PKC": 1,
+      "v_PLCb": 0,
+      "v_PLCg": 1,
+      "v_Paxillin": 1,
+      "v_Profilin": 1,
+      "v_RAF1": 1,
+      "v_RASgrp": 1,
+      "v_RIAM": 1,
+      "v_ROCK": 1,
+      "v_RORGT": 0,
+      "v_RUNX3": 0,
+      "v_Rap1": 1,
+      "v_Ras": 1,
+      "v_RhoA": 1,
+      "v_RhoGEF": 1,
+      "v_SHP2": 1,
+      "v_SLP_76": 1,
+      "v_SMAD3": 0,
+      "v_SOCS1": 0,
+      "v_SOCS3": 0,
+      "v_STAT1": 0,
+      "v_STAT3": 0,
+      "v_STAT4": 0,
+      "v_STAT5": 1,
+      "v_STAT5_HIGH": 0,
+      "v_STAT6": 0,
+      "v_SYK": 0,
+      "v_Shc1": 1,
+      "v_Sos": 1,
+      "v_Src": 1,
+      "v_TAK1": 0,
+      "v_TBET": 0,
+      "v_TCR": 1,
+      "v_TGFB": 0,
+      "v_TGFBR": 0,
+      "v_TGFB_e": 0,
+      "v_TRAF6": 0,
+      "v_Tyk2": 0,
+      "v_Vav": 1,
+      "v_WAVE_2": 1,
+      "v_ZAP_70": 1,
+      "v_adenyl_cyclase": 0,
+      "v_alpha_13L": 0,
+      "v_cAMP": 0,
+      "v_proliferation": 0,
+      "v_rac1": 1,
+      "v_was": 1
+    },
+    "target_id": "CD4_APC_FP01"
+  },
+  "schema": "CD4TargetMechanismsFigure_v1",
+  "source_json": "results/all_targets.json",
+  "source_json_sha256": "3c8ca8eb1a83e778fd6d3733608e125248d5c7ccf9cfa75abf71a47ca0bfdf10"
+}

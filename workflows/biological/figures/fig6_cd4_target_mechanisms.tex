@@ -1,0 +1,85 @@
+\documentclass[tikz,border=4pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,pgfplots}
+\pgfplotsset{compat=1.18}
+\definecolor{curveblue}{RGB}{26,90,137}
+\definecolor{curveorange}{RGB}{190,105,28}
+\definecolor{costtwo}{RGB}{191,218,235}
+\definecolor{costthree}{RGB}{86,149,190}
+\pdfinfo{/Author () /Title (Target-dependent exact pinning costs and isolated component dynamics in CD4)}
+\begin{document}
+\begin{tikzpicture}[font=\fontsize{7.3}{8.7}\selectfont]
+\begin{axis}[name=panelA,at={(0,0)},anchor=south west,
+width=4.4cm,height=5.6cm,scale only axis,
+title={A. All fixed targets},
+title style={font=\fontsize{8}{9.6}\selectfont\bfseries},
+axis line style={black!50},
+tick label style={font=\fontsize{7.3}{8.7}\selectfont},
+label style={font=\fontsize{7.3}{8.7}\selectfont},
+xbar stacked,bar width=16pt,
+xmin=0,xmax=17.0,ymin=-0.6,ymax=5.6,y dir=reverse,
+xtick={0,3,6,9,12,15},ytick={0,1,2,3,4,5},
+yticklabels={OFF,ON,APC,ECM,IL2,GALPHAQ},
+xlabel={Number of fixed targets},ylabel={CD4 input context},
+xmajorgrids,grid style={black!10},
+tick align=outside,
+legend columns=2,
+legend style={font=\fontsize{7.3}{8.7}\selectfont,draw=none,
+at={(0.5,-0.19)},anchor=north,column sep=5pt},
+legend cell align=left,
+after end axis/.code={\input{data/fig6_bar_labels.tex}}]
+\addplot[fill=costtwo,draw=white,line width=0.4pt]
+table[x=cost2,y=row,col sep=comma]{data/fig6_cd4_cost_distribution.csv};
+\addlegendentry{$c_B=2$}
+\addplot[fill=costthree,draw=white,line width=0.4pt]
+table[x=cost3,y=row,col sep=comma]{data/fig6_cd4_cost_distribution.csv};
+\addlegendentry{$c_B=3$}
+\addplot[fill=curveblue,draw=white,line width=0.4pt]
+table[x=cost4,y=row,col sep=comma]{data/fig6_cd4_cost_distribution.csv};
+\addlegendentry{$c_B=4$}
+\addplot[fill=curveorange,draw=white,line width=0.4pt]
+table[x=cost5,y=row,col sep=comma]{data/fig6_cd4_cost_distribution.csv};
+\addlegendentry{$c_B=5$}
+\end{axis}
+\begin{scope}[shift={(5.2cm,0)}]
+\node[anchor=south,font=\fontsize{8}{9.6}\selectfont\bfseries]
+at (2.65,5.74) {B. APC target, $|R_B|=17$};
+\tikzset{component/.style={draw=curveblue!65,fill=curveblue!4,
+rounded corners=1.5pt,line width=0.45pt},
+componenttitle/.style={font=\fontsize{7.4}{9}\selectfont\bfseries},
+cost/.style={font=\fontsize{7.4}{9}\selectfont,text=curveorange}}
+\path[component] (0,4.65) rectangle (5.3,5.55);
+\node[componenttitle,anchor=north west] at (0.15,5.42) {Dec2, GATA3};
+\node[cost,anchor=north east] at (5.15,5.42) {$\kappa=1$};
+\node at (2.65,4.94) {$\mathrm{Dec2}^{+}=\mathrm{GATA3},\qquad
+\mathrm{GATA3}^{+}=\mathrm{Dec2}$};
+\path[component] (0,3.6) rectangle (2.55,4.5);
+\node[componenttitle,anchor=north west] at (0.15,4.37) {TBET};
+\node[cost,anchor=north east] at (2.4,4.37) {$\kappa=1$};
+\node at (1.275,3.89) {$\mathrm{TBET}^{+}=\mathrm{TBET}$};
+\path[component] (2.75,3.6) rectangle (5.3,4.5);
+\node[componenttitle,anchor=north west] at (2.9,4.37) {proliferation};
+\node[cost,anchor=east] at (5.15,3.89) {$\kappa=1$};
+\node[anchor=west] at (3.0,3.89) {$p^{+}=p$};
+\path[component] (0,1.85) rectangle (5.3,3.45);
+\node[componenttitle,anchor=north] at (2.65,3.32)
+{FOXP3, SMAD3, TGFB, TGFBR};
+\node at (2.65,2.88) {$\mathrm{FOXP3}^{+}=\mathrm{FOXP3}\vee\mathrm{SMAD3}$};
+\node at (2.65,2.48) {$\mathrm{SMAD3}^{+}=\mathrm{TGFBR},\quad \mathrm{TGFB}^{+}=0$};
+\node[anchor=west] at (0.7,2.09) {$\mathrm{TGFBR}^{+}=\mathrm{TGFB}$};
+\node[cost,anchor=east] at (5.15,2.09) {$\kappa=1$};
+\path[draw=black!40,fill=black!3,rounded corners=1.5pt,line width=0.45pt]
+(0,0.85) rectangle (5.3,1.7);
+\node[componenttitle,anchor=north west] at (0.15,1.57) {RORGT};
+\node[anchor=north east] at (5.15,1.57) {$\kappa=0$};
+\node at (2.65,1.12) {$\mathrm{RORGT}^{+}=0$};
+\node at (2.65,0.54) {Eight acyclic singletons have cost $0$.};
+\node[font=\fontsize{8}{9.6}\selectfont] at (2.65,0.13)
+{$c_B=1+1+1+1+0=4$};
+\node[align=center,anchor=north,font=\fontsize{7.3}{8.7}\selectfont]
+at (2.65,-0.38) {Isolated component dynamics\\
+External coordinates fixed at the target\\
+$p=\mathrm{proliferation}$};
+\end{scope}
+\end{tikzpicture}
+\end{document}

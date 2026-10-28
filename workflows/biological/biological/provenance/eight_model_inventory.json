@@ -1,0 +1,403 @@
+{
+  "schema": "EightModelProvenance_v1",
+  "date": "2026-10-14",
+  "scope": "Source-availability inventory of supplied model files and original biological publications; no alternative model is substituted.",
+  "models": [
+    {
+      "model": "Cyclin mutant yeast",
+      "nodes": 9,
+      "reported_intervention_size": 3,
+      "reported_target_names": "YOX1; SFF; YHP1",
+      "listed_target_count": 3,
+      "count_consistent": true,
+      "original_source": {
+        "cited_reference_key": "orlando2008global",
+        "cited_model_reference_as_listed": "Orlando et al. (2008), Global Control of Cell-cycle Transcription by Coupled CDK and Network Oscillators",
+        "publication_citation_is_not_unique_model_version": true
+      },
+      "reported_update_schedule": "synchronous discrete-time Boolean update; IBMF training surrogate separately used",
+      "certificate_control_convention": "static permanent target-value pins from initial time; all nodes eligible with unit costs; identity-source clamps count as interventions; must succeed from every compatible initial Boolean state",
+      "archive_contains_complete_rules": false,
+      "available_source_code": null,
+      "status": "UNAVAILABLE_MODEL_DEFINITION",
+      "exact_missing_fields": [
+        "The exact versioned model file used in the source comparison, with all 9 Boolean rules (e.g. .bnet, SBML-qual, CellCollective export, or complete truth-table JSON)",
+        "Ordered node names / index-to-name mapping",
+        "Full target state, or phenotype predicate if a full fixed point was not intended",
+        "Update schedule and the handling/fixed values of external inputs",
+        "Eligible pin nodes, their target values, and whether external clamps count in the cost",
+        "The actual reported pin set as named indices plus full optimization/verification record"
+      ],
+      "current_certifiable_statement": "None about physical residual or optimum; The reported counts are comparison values without computational certificates."
+    },
+    {
+      "model": "Cardiac development",
+      "nodes": 14,
+      "reported_intervention_size": 3,
+      "reported_target_names": "exogen_CanWnt_I; Tpx5; NKx2",
+      "listed_target_count": 3,
+      "count_consistent": true,
+      "original_source": {
+        "cited_reference_key": "herrmann2012boolean",
+        "cited_model_reference_as_listed": "Herrmann et al. (2012), A Boolean Model of the Cardiac Gene Regulatory Network Determining First and Second Heart Field Identity",
+        "publication_citation_is_not_unique_model_version": true
+      },
+      "reported_update_schedule": "synchronous discrete-time Boolean update; IBMF training surrogate separately used",
+      "certificate_control_convention": "static permanent target-value pins from initial time; all nodes eligible with unit costs; identity-source clamps count as interventions; must succeed from every compatible initial Boolean state",
+      "archive_contains_complete_rules": false,
+      "available_source_code": null,
+      "status": "UNAVAILABLE_MODEL_DEFINITION",
+      "exact_missing_fields": [
+        "The exact versioned model file used in the source comparison, with all 14 Boolean rules (e.g. .bnet, SBML-qual, CellCollective export, or complete truth-table JSON)",
+        "Ordered node names / index-to-name mapping",
+        "Full target state, or phenotype predicate if a full fixed point was not intended",
+        "Update schedule and the handling/fixed values of external inputs",
+        "Eligible pin nodes, their target values, and whether external clamps count in the cost",
+        "The actual reported pin set as named indices plus full optimization/verification record"
+      ],
+      "current_certifiable_statement": "None about physical residual or optimum; The reported counts are comparison values without computational certificates.",
+      "naming_caution": "Preserve the supplied spelling Tpx5 and NKx2 until authoritative ordered names supplied; do not silently normalize a possibly erroneous symbol."
+    },
+    {
+      "model": "Drosophila segment polarity",
+      "nodes": 17,
+      "reported_intervention_size": 3,
+      "reported_target_names": "SLP; nWG; nHH",
+      "listed_target_count": 3,
+      "count_consistent": true,
+      "original_source": {
+        "cited_reference_key": "26",
+        "cited_model_reference_as_listed": "Albert and Othmer (2003), The Topology of the Regulatory Interactions Predicts the Expression Pattern of the Segment Polarity Genes in Drosophila Melanogaster",
+        "publication_citation_is_not_unique_model_version": true
+      },
+      "reported_update_schedule": "synchronous discrete-time Boolean update; IBMF training surrogate separately used",
+      "certificate_control_convention": "static permanent target-value pins from initial time; all nodes eligible with unit costs; identity-source clamps count as interventions; must succeed from every compatible initial Boolean state",
+      "archive_contains_complete_rules": false,
+      "available_source_code": {
+        "path": "source_files/17nodeQL.py",
+        "preserved_source_file": "source_files/17nodeQL.py",
+        "sha256": "be2aca286b7989cccd390809bf4880c301f983f4ccd7ac50917bb7ba888cd3f4",
+        "frozen_commit": "29b4f8c5e8e15c71735ab643813cfdb6de7d8d77",
+        "complete_rules": true,
+        "target_bits_node1_first": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "target_line": 56,
+        "local_corners_boolean": true,
+        "target_is_fixed_for_extracted_rule_map": true,
+        "identity_input_nodes_one_based": [
+          1,
+          2,
+          3
+        ],
+        "legacy_wrapper_caution": "calculate_H freezes every coordinate initially equal to0 or1. Such source wrapper must not be used as an oracle of unconstrained physical Boolean dynamics; use bare rules plus explicit chosen permanent mask."
+      },
+      "status": "VALID_SOURCE_CODED_BENCHMARK_BIOLOGICAL_IDENTITY_UNRESOLVED",
+      "exact_missing_fields": [
+        "Documented exact biological model version and reconciliation of documented rule differences",
+        "Documentation of target phenotype, source input treatment and allowable intervention cost conventions"
+      ],
+      "current_certifiable_statement": "Bare synchronous Boolean rules and target are exactly available; source-faithful computational certificate can be established without asserting biological model identity."
+    },
+    {
+      "model": "Mammalian cell cycle",
+      "nodes": 20,
+      "reported_intervention_size": 4,
+      "reported_target_names": "Akt1; IGF1R; CDK4; p27",
+      "listed_target_count": 4,
+      "count_consistent": true,
+      "original_source": {
+        "cited_reference_key": "sahin2009modeling",
+        "cited_model_reference_as_listed": "Sahin et al. (2009), Modeling ERBB Receptor-regulated G1/S Transition to Find Novel Targets for De Novo Trastuzumab Resistance",
+        "publication_citation_is_not_unique_model_version": true
+      },
+      "reported_update_schedule": "synchronous discrete-time Boolean update; IBMF training surrogate separately used",
+      "certificate_control_convention": "static permanent target-value pins from initial time; all nodes eligible with unit costs; identity-source clamps count as interventions; must succeed from every compatible initial Boolean state",
+      "archive_contains_complete_rules": false,
+      "available_source_code": null,
+      "status": "UNAVAILABLE_MODEL_DEFINITION",
+      "exact_missing_fields": [
+        "The exact versioned model file used in the source comparison, with all 20 Boolean rules (e.g. .bnet, SBML-qual, CellCollective export, or complete truth-table JSON)",
+        "Ordered node names / index-to-name mapping",
+        "Full target state, or phenotype predicate if a full fixed point was not intended",
+        "Update schedule and the handling/fixed values of external inputs",
+        "Eligible pin nodes, their target values, and whether external clamps count in the cost",
+        "The actual reported pin set as named indices plus full optimization/verification record"
+      ],
+      "current_certifiable_statement": "None about physical residual or optimum; The reported counts are comparison values without computational certificates."
+    },
+    {
+      "model": "Aurora kinase A",
+      "nodes": 23,
+      "reported_intervention_size": 5,
+      "reported_target_names": "CDK1CCNBComplex; Cytokinesis; CentrosomeMat; PP2A; AURKAActive",
+      "listed_target_count": 5,
+      "count_consistent": true,
+      "original_source": {
+        "cited_reference_key": "dahlhaus2016boolean",
+        "cited_model_reference_as_listed": "Dahlhaus et al. (2016), Boolean Modeling Identifies Greatwall/MASTL as an Important Regulator in the AURKA Network of Neuroblastoma",
+        "publication_citation_is_not_unique_model_version": true
+      },
+      "reported_update_schedule": "synchronous discrete-time Boolean update; IBMF training surrogate separately used",
+      "certificate_control_convention": "static permanent target-value pins from initial time; all nodes eligible with unit costs; identity-source clamps count as interventions; must succeed from every compatible initial Boolean state",
+      "archive_contains_complete_rules": false,
+      "available_source_code": null,
+      "status": "UNAVAILABLE_MODEL_DEFINITION",
+      "exact_missing_fields": [
+        "The exact versioned model file used in the source comparison, with all 23 Boolean rules (e.g. .bnet, SBML-qual, CellCollective export, or complete truth-table JSON)",
+        "Ordered node names / index-to-name mapping",
+        "Full target state, or phenotype predicate if a full fixed point was not intended",
+        "Update schedule and the handling/fixed values of external inputs",
+        "Eligible pin nodes, their target values, and whether external clamps count in the cost",
+        "The actual reported pin set as named indices plus full optimization/verification record"
+      ],
+      "current_certifiable_statement": "None about physical residual or optimum; The reported counts are comparison values without computational certificates."
+    },
+    {
+      "model": "T-LGL survival",
+      "nodes": 29,
+      "reported_intervention_size": 3,
+      "reported_target_names": "IL15; PDGF; S1P",
+      "listed_target_count": 3,
+      "count_consistent": true,
+      "original_source": {
+        "cited_reference_key": "27",
+        "cited_model_reference_as_listed": "Zhang et al. (2008), Network Model of Survival Signaling in Large Granular Lymphocyte Leukemia",
+        "publication_citation_is_not_unique_model_version": true
+      },
+      "reported_update_schedule": "synchronous discrete-time Boolean update; IBMF training surrogate separately used",
+      "certificate_control_convention": "static permanent target-value pins from initial time; all nodes eligible with unit costs; identity-source clamps count as interventions; must succeed from every compatible initial Boolean state",
+      "archive_contains_complete_rules": true,
+      "available_source_code": {
+        "path": "source_files/29nodeQL.py",
+        "preserved_source_file": "source_files/29nodeQL.py",
+        "sha256": "22d2e8cc8d058d6e2c391838d521331bad218a777bc65b1c1670836be6dc7b25",
+        "frozen_commit": "29b4f8c5e8e15c71735ab643813cfdb6de7d8d77",
+        "complete_rules": true,
+        "target_bits_node1_first": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "target_line": 80,
+        "local_corners_boolean": true,
+        "target_is_fixed_for_extracted_rule_map": true,
+        "identity_input_nodes_one_based": [
+          1,
+          9
+        ],
+        "legacy_wrapper_caution": "calculate_H freezes every coordinate initially equal to0 or1. Such source wrapper must not be used as an oracle of unconstrained physical Boolean dynamics; use bare rules plus explicit chosen permanent mask."
+      },
+      "status": "VALID_SOURCE_CODED_BENCHMARK_BIOLOGICAL_IDENTITY_UNRESOLVED",
+      "exact_missing_fields": [
+        "Documented exact biological model version and reconciliation of documented rule differences",
+        "Documentation of target phenotype, source input treatment and allowable intervention cost conventions"
+      ],
+      "current_certifiable_statement": "Bare synchronous Boolean rules and target are exactly available; source-faithful computational certificate can be established without asserting biological model identity."
+    },
+    {
+      "model": "Cholesterol regulatory",
+      "nodes": 34,
+      "reported_intervention_size": 4,
+      "reported_target_names": "Statins; Acetyl_CoA; mSREBP",
+      "listed_target_count": 3,
+      "count_consistent": false,
+      "original_source": {
+        "cited_reference_key": "kervizic2008dynamical",
+        "cited_model_reference_as_listed": "Kervizic and Corcos (2008), Dynamical Modeling of the Cholesterol Regulatory Pathway with Boolean Networks",
+        "publication_citation_is_not_unique_model_version": true
+      },
+      "reported_update_schedule": "synchronous discrete-time Boolean update; IBMF training surrogate separately used",
+      "certificate_control_convention": "static permanent target-value pins from initial time; all nodes eligible with unit costs; identity-source clamps count as interventions; must succeed from every compatible initial Boolean state",
+      "archive_contains_complete_rules": false,
+      "available_source_code": null,
+      "status": "UNAVAILABLE_MODEL_DEFINITION",
+      "exact_missing_fields": [
+        "The exact versioned model file used in the source comparison, with all 34 Boolean rules (e.g. .bnet, SBML-qual, CellCollective export, or complete truth-table JSON)",
+        "Ordered node names / index-to-name mapping",
+        "Full target state, or phenotype predicate if a full fixed point was not intended",
+        "Update schedule and the handling/fixed values of external inputs",
+        "Eligible pin nodes, their target values, and whether external clamps count in the cost",
+        "The actual reported pin set as named indices plus full optimization/verification record"
+      ],
+      "current_certifiable_statement": "None about physical residual or optimum; The reported counts are comparison values without computational certificates.",
+      "additional_conflict": "The supplied comparison reports size4 but lists only Statins, Acetyl_CoA, mSREBP (3 names); missing fourth intervention must be supplied, not inferred."
+    },
+    {
+      "model": "Guard cell ABA signaling",
+      "nodes": 44,
+      "reported_intervention_size": 6,
+      "reported_target_names": "ERA1; ABH1; GCR1; ABA; AGB1; Ca2_c",
+      "listed_target_count": 6,
+      "count_consistent": true,
+      "original_source": {
+        "cited_reference_key": "28",
+        "cited_model_reference_as_listed": "Li, Assmann, and Albert (2006), Predicting Essential Components of Signal Transduction Networks: A Dynamic Model of Guard Cell Abscisic Acid Signaling",
+        "publication_citation_is_not_unique_model_version": true
+      },
+      "reported_update_schedule": "synchronous discrete-time Boolean update; IBMF training surrogate separately used",
+      "certificate_control_convention": "static permanent target-value pins from initial time; all nodes eligible with unit costs; identity-source clamps count as interventions; must succeed from every compatible initial Boolean state",
+      "archive_contains_complete_rules": false,
+      "available_source_code": {
+        "path": "source_files/44nodeQL.py",
+        "preserved_source_file": "source_files/44nodeQL.py",
+        "sha256": "d161697c5b440a7f201eb232e2cf92d12d0a5e2aabd334c1d1472f5dfd2c7898",
+        "frozen_commit": "29b4f8c5e8e15c71735ab643813cfdb6de7d8d77",
+        "complete_rules": true,
+        "target_bits_node1_first": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "target_line": 110,
+        "local_corners_boolean": false,
+        "target_is_fixed_for_extracted_rule_map": true,
+        "identity_input_nodes_one_based": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "legacy_wrapper_caution": "calculate_H freezes every coordinate initially equal to0 or1. Such source wrapper must not be used as an oracle of unconstrained physical Boolean dynamics; use bare rules plus explicit chosen permanent mask."
+      },
+      "status": "REJECTED_NON_BOOLEAN_RULE",
+      "invalid_source_rule": [
+        {
+          "node_one_based": 16,
+          "input_nodes_one_based": [
+            13,
+            15,
+            22,
+            23
+          ],
+          "input_values": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "output": "2"
+        }
+      ],
+      "exact_missing_fields": [
+        "An explicit 44-index-to-node map and intended source/model version.",
+        "An authoritative corrected truth table for every coded rule, especially nodes 16 and 18.",
+        "The intended target interpretation, update schedule and treatment of the four identity inputs.",
+        "Whether desired stomatal closure is a phenotype predicate or full fixed target; which synchronous/adapted source version was used"
+      ],
+      "current_certifiable_statement": "44-node source has a local corner output2 at node16; no valid Boolean model silently repaired or certified."
+    }
+  ],
+  "summary": {
+    "models_reported": 8,
+    "source_coded_models_with_valid_boolean_rules_and_fixed_target": 2,
+    "non_boolean_model_source": 1,
+    "models_missing_complete_rules_and_target": 5
+  },
+  "requested_concrete_files": {
+    "9": [
+      "9node_model_rules.bnet or the actual original equivalent",
+      "9node_ordered_nodes_and_target.json"
+    ],
+    "14": [
+      "14node_model_rules.bnet or the actual original equivalent",
+      "14node_ordered_nodes_and_target.json"
+    ],
+    "20": [
+      "20node_model_rules.bnet or the actual original equivalent",
+      "20node_ordered_nodes_and_target.json"
+    ],
+    "23": [
+      "23node_model_rules.bnet or the actual original equivalent",
+      "23node_ordered_nodes_and_target.json"
+    ],
+    "34": [
+      "34node_model_rules.bnet or the actual original equivalent",
+      "34node_ordered_nodes_and_target.json"
+    ]
+  },
+  "update_schedule_limit": "A generic synchronous convention in the supplied comparison does not establish original biological-source agreement; ABA primary model is asynchronous with40dynamic nodes, versus44node code variant."
+}

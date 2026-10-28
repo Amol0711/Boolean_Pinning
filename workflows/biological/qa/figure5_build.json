@@ -1,0 +1,329 @@
+{
+  "status": "PASS",
+  "panels_prespecified_before_results": true,
+  "prespecified_context_ids": [
+    "CD4_APC",
+    "MAC_BACTERIA"
+  ],
+  "protocol_sha256": "2d8f64156c5643cd0559a149b5ccde1cc7bed26d06bf0f517963a7db188aa47d",
+  "selection_basis": "Scientific input identities frozen before outcome execution; no ranking or replacement based on favorable outcomes.",
+  "description": "Panel B displays the independently verified native-source cycle; panel A displays the support reduction.",
+  "panels": [
+    {
+      "context_id": "CD4_APC",
+      "source_certificate": "larger_networks/results/CD4_APC/certificate.json",
+      "source_certificate_sha256": "2a6b4416b3ab594c02b0438f6e8cf672f47b4b001f308944f952769864480772",
+      "node_count": 188,
+      "input_count": 34,
+      "input_assignment": {
+        "v_APC": 1,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 0,
+        "v_ECM": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 0,
+        "v_IFNGR2": 0,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 0,
+        "v_IL10RB": 0,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 0,
+        "v_IL2_e": 0,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0
+      },
+      "target_discovery_status": "fixed_target_found",
+      "ordinate_semantics": "Exact coordinate-cube support cardinality; an outer bound on possible deviations, not an individual state trajectory or exact reachable-support statistic.",
+      "plotted": true,
+      "csv_file": "figures/data/fig5_cd4_apc.csv",
+      "csv_sha256": "cb2a376cfed7d2ebd6200a7ebe5f41b8404ffe8e4cfea8d667ec9bfc12d489fb",
+      "exact_additional_cost": 4,
+      "additional_cost_bounds": [
+        4,
+        4
+      ],
+      "search_status": "transition_budget_optimum_known_minimum_set_list_incomplete",
+      "selected_additional_pin_values": {
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_TBET": 0,
+        "v_proliferation": 0
+      },
+      "baseline_original_sizes": [
+        154,
+        132,
+        117,
+        94,
+        75,
+        63,
+        49,
+        36,
+        26,
+        22,
+        20,
+        19,
+        18,
+        17
+      ],
+      "optimal_original_sizes": [
+        150,
+        119,
+        102,
+        80,
+        60,
+        47,
+        32,
+        19,
+        9,
+        5,
+        3,
+        2,
+        1,
+        0
+      ],
+      "baseline_equals_optimal": false,
+      "baseline_residual_size": 17,
+      "optimal_support_limit": 0,
+      "display_last_round": 14,
+      "stationary_extension_note": "A support is repeated only after its exact support-map trace has reached a fixed point."
+    },
+    {
+      "context_id": "MAC_BACTERIA",
+      "source_certificate": "larger_networks/results/MAC_BACTERIA/certificate.json",
+      "source_certificate_sha256": "5cc25dac32cdf28c0eb8da161d5d305bf02a384c8b01833d921000c569fe6620",
+      "node_count": 321,
+      "input_count": 19,
+      "input_assignment": {
+        "v_Bacteria": 1,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 0,
+        "v_CD40LG": 0,
+        "v_External_Activator": 1,
+        "v_FASLG": 0,
+        "v_IFNA": 0,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 0,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 0,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TNF": 0,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0
+      },
+      "target_discovery_status": "target_not_found_by_declared_orbit",
+      "ordinate_semantics": "Named coordinates; binary states of one native-source orbit, not target-relative support or a control certificate.",
+      "plotted": true,
+      "panel_kind": "verified_binary_cycle_raster",
+      "abscissa_semantics": "Actual synchronous update number from the declared zero-regulated initial state with frozen input values.",
+      "native_source_sha256": "ea60f90ecab55c939f44648dc24608d5779916f7d1df54200f1e85681a4951d4",
+      "independent_parser_sha256": "b2f6ff5aef1a587fdd58fc24100e61660d7ea885122e647389362712442c55a1",
+      "independent_replay": "PASS; all 15 transitions from update 0 through update 15 checked, including all four cycle edges",
+      "declared_orbit_cycle_start_update": 11,
+      "declared_orbit_cycle_length": 4,
+      "displayed_updates": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "repeated_first_phase_update": 15,
+      "varying_coordinate_count": 19,
+      "varying_coordinate_names": [
+        "v_BAK1gene",
+        "v_CASP3gene",
+        "v_CXCL11gene",
+        "v_IFIT1gene",
+        "v_IRF3_IRF5cytoplasm",
+        "v_IRF3_IRF5nucleus",
+        "v_IRF5",
+        "v_IRF5_IRF5cytoplasm",
+        "v_IRF5_IRF5nucleus",
+        "v_IRF5_IRF7cytoplasm",
+        "v_IRF5_IRF7nucleus",
+        "v_OAS1gene",
+        "v_PLSCR1gene",
+        "v_PMAIPgene",
+        "v_PRKRAgene",
+        "v_RIPK1gene",
+        "v_SP100gene",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_TNFSF10gene"
+      ],
+      "constant_coordinate_count": 302,
+      "constant_regulated_coordinate_count": 283,
+      "constant_input_count": 19,
+      "constant_zero_count": 171,
+      "constant_one_count": 131,
+      "label_transformation": "Only the common source prefix v_ is omitted.",
+      "fixed_target_certificate_applied": false,
+      "csv_files": {
+        "figures/data/fig5_mac_bacteria_full_orbit.csv": "cb0b060e4e2690c3c0c1c157d2d4822fe9cb2c2e98bec917b247a44d0b1073ee",
+        "figures/data/fig5_mac_bacteria_cycle.csv": "885a27757741ca4e5fed84b4b6230e1662ca33cf4f98f887d4e897e83f9fb656",
+        "figures/data/fig5_mac_bacteria_constant_coordinates.csv": "03d74f07d872d7013571f7501455db9057c33686e90053076fbad1edc1dd7bb1",
+        "figures/data/fig5_mac_bacteria_status.csv": "d4612a77c4c19a11646b1ad738e5e2e0ad518df6aa8dc77cbd3d4590527af2b3"
+      },
+      "cycle_values_by_name": {
+        "v_BAK1gene": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "v_CASP3gene": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "v_CXCL11gene": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "v_IFIT1gene": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "v_IRF3_IRF5cytoplasm": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "v_IRF3_IRF5nucleus": [
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "v_IRF5": [
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "v_IRF5_IRF5cytoplasm": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "v_IRF5_IRF5nucleus": [
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "v_IRF5_IRF7cytoplasm": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "v_IRF5_IRF7nucleus": [
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "v_OAS1gene": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "v_PLSCR1gene": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "v_PMAIPgene": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "v_PRKRAgene": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "v_RIPK1gene": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "v_SP100gene": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "v_TLR9_MYD88_TRAF6_IRF5": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "v_TNFSF10gene": [
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "tex_sha256": "ff3357315b6325ccdfe5245a037331f48b443de1fc11ada5a61db555cc69bfdb",
+  "pdf_sha256": "908af526bb96b4618308c265ed40793d71531c1a1599baae98988611dd287cc4",
+  "warnings": []
+}

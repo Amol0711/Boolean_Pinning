@@ -1,0 +1,424 @@
+{
+  "schema": "BooleanPhysicalTruthTables_v1",
+  "model_id": "drosophila_coded_17",
+  "n": 17,
+  "semantics": "Synchronous deterministic Boolean updates; static permanent target-value pins from time zero; every compatible initial state; unit costs; all nodes eligible.",
+  "index_convention": "JSON parents and engine use zero-based source indices. BNET labels n01,... are one-based. Truth-table index bit j is the value of parents_zero_based[j].",
+  "provenance": {
+    "source_file_name": "17nodeQL.py",
+    "source_file_sha256": "be2aca286b7989cccd390809bf4880c301f983f4ccd7ac50917bb7ba888cd3f4",
+    "source_path": "provenance/source_files/17nodeQL.py",
+    "authority": "Boolean corners of the 17-node coded polynomial assignments before the automatic deterministic-coordinate freezing loop; target copied from its attractor literal. No biological rule correction is inferred.",
+    "source_extraction": "AST parsing and an integer arithmetic whitelist; the source script was not imported or executed.",
+    "update_semantics_change": "The original learning/IBMF automatic-freezing procedure is not run. These certificates concern the explicit synchronous Boolean map with only the specified permanent pins.",
+    "biological_gene_labels": "Not asserted; nodes retain neutral source-order indices."
+  },
+  "target": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1
+  ],
+  "target_node_order": [
+    "n01",
+    "n02",
+    "n03",
+    "n04",
+    "n05",
+    "n06",
+    "n07",
+    "n08",
+    "n09",
+    "n10",
+    "n11",
+    "n12",
+    "n13",
+    "n14",
+    "n15",
+    "n16",
+    "n17"
+  ],
+  "target_integer_lsb_node1": 91139,
+  "rules": [
+    {
+      "node_zero_based": 0,
+      "node_one_based": 1,
+      "node_label": "n01",
+      "source_expression": "S[0]",
+      "source_lines": [
+        109,
+        109
+      ],
+      "parents_zero_based": [
+        0
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "(n01)"
+    },
+    {
+      "node_zero_based": 1,
+      "node_one_based": 2,
+      "node_label": "n02",
+      "source_expression": "S[1]",
+      "source_lines": [
+        110,
+        110
+      ],
+      "parents_zero_based": [
+        1
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "(n02)"
+    },
+    {
+      "node_zero_based": 2,
+      "node_one_based": 3,
+      "node_label": "n03",
+      "source_expression": "S[2]",
+      "source_lines": [
+        111,
+        111
+      ],
+      "parents_zero_based": [
+        2
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "(n03)"
+    },
+    {
+      "node_zero_based": 3,
+      "node_one_based": 4,
+      "node_label": "n04",
+      "source_expression": "(1 - S[16]) * (\r\n                    S[0] * (1 - S[3]) * S[15] + S[0] * S[3] * S[15] + S[0] * S[3] * (1 - S[15]) + (1 - S[0]) * S[3] * S[\r\n                15])",
+      "source_lines": [
+        112,
+        114
+      ],
+      "parents_zero_based": [
+        0,
+        3,
+        15,
+        16
+      ],
+      "physical_truth_table": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bnet_formula": "(n01 & n04 & !n16 & !n17) | (n01 & !n04 & n16 & !n17) | (!n01 & n04 & n16 & !n17) | (n01 & n04 & n16 & !n17)"
+    },
+    {
+      "node_zero_based": 4,
+      "node_one_based": 5,
+      "node_label": "n05",
+      "source_expression": "S[3]",
+      "source_lines": [
+        115,
+        115
+      ],
+      "parents_zero_based": [
+        3
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "(n04)"
+    },
+    {
+      "node_zero_based": 5,
+      "node_one_based": 6,
+      "node_label": "n06",
+      "source_expression": "S[1] * (1 - S[0])",
+      "source_lines": [
+        116,
+        116
+      ],
+      "parents_zero_based": [
+        0,
+        1
+      ],
+      "physical_truth_table": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "bnet_formula": "(!n01 & n02)"
+    },
+    {
+      "node_zero_based": 6,
+      "node_one_based": 7,
+      "node_label": "n07",
+      "source_expression": "S[5]",
+      "source_lines": [
+        117,
+        117
+      ],
+      "parents_zero_based": [
+        5
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "(n06)"
+    },
+    {
+      "node_zero_based": 7,
+      "node_one_based": 8,
+      "node_label": "n08",
+      "source_expression": "S[6] * (1 - S[16])",
+      "source_lines": [
+        118,
+        118
+      ],
+      "parents_zero_based": [
+        6,
+        16
+      ],
+      "physical_truth_table": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "bnet_formula": "(n07 & !n17)"
+    },
+    {
+      "node_zero_based": 8,
+      "node_one_based": 9,
+      "node_label": "n09",
+      "source_expression": "S[7]",
+      "source_lines": [
+        119,
+        119
+      ],
+      "parents_zero_based": [
+        7
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "(n08)"
+    },
+    {
+      "node_zero_based": 9,
+      "node_one_based": 10,
+      "node_label": "n10",
+      "source_expression": "S[15] * (1 - S[6]) * (1 - S[16])",
+      "source_lines": [
+        120,
+        120
+      ],
+      "parents_zero_based": [
+        6,
+        15,
+        16
+      ],
+      "physical_truth_table": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bnet_formula": "(!n07 & n16 & !n17)"
+    },
+    {
+      "node_zero_based": 10,
+      "node_one_based": 11,
+      "node_label": "n11",
+      "source_expression": "S[10] * (1 - S[9]) * (1 - S[2]) + S[9] * (\r\n                    (1 - S[10]) * (1 - S[2]) + (1 - S[10]) * S[2] + S[10] * (1 - S[2]) + S[10] * S[2])",
+      "source_lines": [
+        121,
+        122
+      ],
+      "parents_zero_based": [
+        2,
+        9,
+        10
+      ],
+      "physical_truth_table": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "bnet_formula": "(!n03 & n10 & !n11) | (n03 & n10 & !n11) | (!n03 & !n10 & n11) | (!n03 & n10 & n11) | (n03 & n10 & n11)"
+    },
+    {
+      "node_zero_based": 11,
+      "node_one_based": 12,
+      "node_label": "n12",
+      "source_expression": "S[10] * S[2]",
+      "source_lines": [
+        123,
+        123
+      ],
+      "parents_zero_based": [
+        2,
+        10
+      ],
+      "physical_truth_table": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "bnet_formula": "(n03 & n11)"
+    },
+    {
+      "node_zero_based": 12,
+      "node_one_based": 13,
+      "node_label": "n13",
+      "source_expression": "S[2] * (1 - S[10]) + S[2] * S[10] + (1 - S[10]) * (1 - S[2])",
+      "source_lines": [
+        124,
+        124
+      ],
+      "parents_zero_based": [
+        2,
+        10
+      ],
+      "physical_truth_table": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "bnet_formula": "(!n03 & !n11) | (n03 & !n11) | (n03 & n11)"
+    },
+    {
+      "node_zero_based": 13,
+      "node_one_based": 14,
+      "node_label": "n14",
+      "source_expression": "1 - S[6]",
+      "source_lines": [
+        125,
+        125
+      ],
+      "parents_zero_based": [
+        6
+      ],
+      "physical_truth_table": [
+        1,
+        0
+      ],
+      "bnet_formula": "(!n07)"
+    },
+    {
+      "node_zero_based": 14,
+      "node_one_based": 15,
+      "node_label": "n15",
+      "source_expression": "S[13]",
+      "source_lines": [
+        126,
+        126
+      ],
+      "parents_zero_based": [
+        13
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "(n14)"
+    },
+    {
+      "node_zero_based": 15,
+      "node_one_based": 16,
+      "node_label": "n16",
+      "source_expression": "S[14] * (S[12] * S[2] + S[12] * (1 - S[2]) + (1 - S[12]) * S[2])",
+      "source_lines": [
+        127,
+        127
+      ],
+      "parents_zero_based": [
+        2,
+        12,
+        14
+      ],
+      "physical_truth_table": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "bnet_formula": "(n03 & !n13 & n15) | (!n03 & n13 & n15) | (n03 & n13 & n15)"
+    },
+    {
+      "node_zero_based": 16,
+      "node_one_based": 17,
+      "node_label": "n17",
+      "source_expression": "S[14] * (1 - S[12]) * (1 - S[2])",
+      "source_lines": [
+        128,
+        128
+      ],
+      "parents_zero_based": [
+        2,
+        12,
+        14
+      ],
+      "physical_truth_table": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "bnet_formula": "(!n03 & !n13 & n15)"
+    }
+  ]
+}

@@ -1,0 +1,751 @@
+{
+  "status": "PASS",
+  "model_id": "drosophila_coded_17",
+  "model_json_sha256": "6191f0cd5368e529c13fc094760d0ddea2f481be6384ebd4ff3033e3ed27988c",
+  "target_is_fixed": true,
+  "claim_scope": "Exact optimum for the coded synchronous Boolean map before automatic freezing, at its supplied fixed-point target. This is not an assertion that the coded map exactly reproduces a published biological model.",
+  "proof_method": "Three mandatory identity coordinates give the cost lower bound. Exact physical-state enumeration proves that pinning just those three coordinates globally converges. Exact residual enumeration independently agrees.",
+  "mandatory_identity_nodes_zero_based": [
+    0,
+    1,
+    2
+  ],
+  "mandatory_identity_nodes_one_based": [
+    1,
+    2,
+    3
+  ],
+  "baseline": {
+    "pins_zero_based": [
+      0,
+      1,
+      2
+    ],
+    "pins_one_based": [
+      1,
+      2,
+      3
+    ],
+    "support_trace_zero_based": [
+      [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      [
+        3,
+        4,
+        8,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16
+      ],
+      [
+        3,
+        4,
+        9,
+        10,
+        12,
+        15,
+        16
+      ]
+    ],
+    "support_sizes": [
+      14,
+      12,
+      11,
+      9,
+      7
+    ],
+    "residual_zero_based": [
+      3,
+      4,
+      9,
+      10,
+      12,
+      15,
+      16
+    ],
+    "capture_bound_updates": 4
+  },
+  "pure_copy_certificate_available": false,
+  "residual_map": {
+    "coordinate_convention": "y_i=x_i XOR target_i; coordinates outside residual are zero.",
+    "rows": [
+      {
+        "row_zero_based": 3,
+        "row_one_based": 4,
+        "parents_zero_based": [
+          3,
+          15,
+          16
+        ],
+        "deviation_truth_table": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "row_zero_based": 4,
+        "row_one_based": 5,
+        "parents_zero_based": [
+          3
+        ],
+        "deviation_truth_table": [
+          0,
+          1
+        ]
+      },
+      {
+        "row_zero_based": 9,
+        "row_one_based": 10,
+        "parents_zero_based": [
+          15,
+          16
+        ],
+        "deviation_truth_table": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "row_zero_based": 10,
+        "row_one_based": 11,
+        "parents_zero_based": [
+          9,
+          10
+        ],
+        "deviation_truth_table": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "row_zero_based": 12,
+        "row_one_based": 13,
+        "parents_zero_based": [
+          10
+        ],
+        "deviation_truth_table": [
+          0,
+          1
+        ]
+      },
+      {
+        "row_zero_based": 15,
+        "row_one_based": 16,
+        "parents_zero_based": [
+          12
+        ],
+        "deviation_truth_table": [
+          0,
+          1
+        ]
+      },
+      {
+        "row_zero_based": 16,
+        "row_one_based": 17,
+        "parents_zero_based": [
+          12
+        ],
+        "deviation_truth_table": [
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "additional_optimum_given_free_baseline": 0,
+  "total_optimum_counting_all_pins": 3,
+  "unique_minimum_total_set_zero_based": [
+    0,
+    1,
+    2
+  ],
+  "unique_minimum_total_set_one_based": [
+    1,
+    2,
+    3
+  ],
+  "residual_all_state_oracle": {
+    "globally_convergent": true,
+    "compatible_states_enumerated": 128,
+    "maximum_convergent_transient": 8,
+    "all_state_maximum_transient": 8,
+    "longest_convergent_trajectory": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "failure_cycle": null,
+    "target": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pins": []
+  },
+  "original_all_compatible_state_oracle": {
+    "globally_convergent": true,
+    "compatible_states_enumerated": 16384,
+    "maximum_convergent_transient": 11,
+    "all_state_maximum_transient": 11,
+    "longest_convergent_trajectory": [
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    ],
+    "failure_cycle": null,
+    "target": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "pins": [
+      0,
+      1,
+      2
+    ]
+  },
+  "exact_reachable_set_images": [
+    {
+      "update": 0,
+      "distinct_reachable_states": 16384,
+      "exact_reachable_union_support_size": 14,
+      "exact_reachable_union_support_zero_based": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "update": 1,
+      "distinct_reachable_states": 720,
+      "exact_reachable_union_support_size": 12,
+      "exact_reachable_union_support_zero_based": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "update": 2,
+      "distinct_reachable_states": 135,
+      "exact_reachable_union_support_size": 11,
+      "exact_reachable_union_support_zero_based": [
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "update": 3,
+      "distinct_reachable_states": 56,
+      "exact_reachable_union_support_size": 9,
+      "exact_reachable_union_support_zero_based": [
+        3,
+        4,
+        8,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "update": 4,
+      "distinct_reachable_states": 24,
+      "exact_reachable_union_support_size": 7,
+      "exact_reachable_union_support_zero_based": [
+        3,
+        4,
+        9,
+        10,
+        12,
+        15,
+        16
+      ]
+    },
+    {
+      "update": 5,
+      "distinct_reachable_states": 12,
+      "exact_reachable_union_support_size": 7,
+      "exact_reachable_union_support_zero_based": [
+        3,
+        4,
+        9,
+        10,
+        12,
+        15,
+        16
+      ]
+    },
+    {
+      "update": 6,
+      "distinct_reachable_states": 7,
+      "exact_reachable_union_support_size": 7,
+      "exact_reachable_union_support_zero_based": [
+        3,
+        4,
+        9,
+        10,
+        12,
+        15,
+        16
+      ]
+    },
+    {
+      "update": 7,
+      "distinct_reachable_states": 5,
+      "exact_reachable_union_support_size": 6,
+      "exact_reachable_union_support_zero_based": [
+        3,
+        4,
+        9,
+        12,
+        15,
+        16
+      ]
+    },
+    {
+      "update": 8,
+      "distinct_reachable_states": 4,
+      "exact_reachable_union_support_size": 5,
+      "exact_reachable_union_support_zero_based": [
+        3,
+        4,
+        9,
+        15,
+        16
+      ]
+    },
+    {
+      "update": 9,
+      "distinct_reachable_states": 3,
+      "exact_reachable_union_support_size": 3,
+      "exact_reachable_union_support_zero_based": [
+        3,
+        4,
+        9
+      ]
+    },
+    {
+      "update": 10,
+      "distinct_reachable_states": 2,
+      "exact_reachable_union_support_size": 1,
+      "exact_reachable_union_support_zero_based": [
+        4
+      ]
+    },
+    {
+      "update": 11,
+      "distinct_reachable_states": 1,
+      "exact_reachable_union_support_size": 0,
+      "exact_reachable_union_support_zero_based": []
+    }
+  ],
+  "support_capture_plus_residual_transient_upper_bound": 12,
+  "interpretation": "A nonempty invariant cube support need not imply recurrent nonzero dynamics. Here the seven-node nonlinear residual is globally transient, so adding a pin merely to force empty cube support would overestimate the optimum."
+}

@@ -1,0 +1,9 @@
+model,nodes,reported_intervention_size,listed_target_count,count_consistent,status
+Cyclin mutant yeast,9,3,3,True,UNAVAILABLE_MODEL_DEFINITION
+Cardiac development,14,3,3,True,UNAVAILABLE_MODEL_DEFINITION
+Drosophila segment polarity,17,3,3,True,VALID_SOURCE_CODED_BENCHMARK_BIOLOGICAL_IDENTITY_UNRESOLVED
+Mammalian cell cycle,20,4,4,True,UNAVAILABLE_MODEL_DEFINITION
+Aurora kinase A,23,5,5,True,UNAVAILABLE_MODEL_DEFINITION
+T-LGL survival,29,3,3,True,VALID_SOURCE_CODED_BENCHMARK_BIOLOGICAL_IDENTITY_UNRESOLVED
+Cholesterol regulatory,34,4,3,False,UNAVAILABLE_MODEL_DEFINITION
+Guard cell ABA signaling,44,6,6,True,REJECTED_NON_BOOLEAN_RULE

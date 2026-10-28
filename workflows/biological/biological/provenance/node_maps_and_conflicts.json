@@ -1,0 +1,233 @@
+{
+  "17": {
+    "labels_in_order": [
+      "SLP",
+      "nWG",
+      "nhhnHH",
+      "wg",
+      "WG",
+      "en",
+      "EN",
+      "hh",
+      "HH",
+      "ptc",
+      "PTC",
+      "PH",
+      "SMO",
+      "ci",
+      "CI",
+      "CIA",
+      "CIR"
+    ],
+    "source": "source_files/drosophila_single_cell.txt",
+    "sha256": "bc5bba3c57b0ca749da041f89ca85235ecbc727c0a5444189ad807c86686e642",
+    "mapping_status": "primary-comparator row ordering; released QL code contains no named list",
+    "reported_aliases": {
+      "nHH": "nhhnHH"
+    },
+    "differences_from_comparator": {
+      "comparison_source": "Primary author-comparator drosophila_single_cell.txt from supplied archive",
+      "full_local_rule_comparison": "All17rules compared exhaustively over union of their input scopes; fifteen agree, two differ.",
+      "differences": [
+        {
+          "one_based_node": 16,
+          "name": "CIA",
+          "primary_expression": "CI and (not PTC or nhhnHH)",
+          "mismatching_corners": 2,
+          "witness": {
+            "input_state_integer_lsb_node1": 16384,
+            "code_value": 0,
+            "comparator_value": 1
+          }
+        },
+        {
+          "one_based_node": 17,
+          "name": "CIR",
+          "primary_expression": "CI and PTC and not nhhnHH",
+          "mismatching_corners": 2,
+          "witness": {
+            "input_state_integer_lsb_node1": 16384,
+            "code_value": 1,
+            "comparator_value": 0
+          }
+        }
+      ],
+      "explanation": "Public CIA/CIR updates use dynamic SMO as an input, whereas the primary comparator substitutes its formula involving PTC and nhhnHH. Substitution can preserve some steady behavior without preserving synchronous transients. No replacement was made."
+    },
+    "target_by_primary_comparator_order": {
+      "SLP": 1,
+      "nWG": 1,
+      "nhhnHH": 0,
+      "wg": 0,
+      "WG": 0,
+      "en": 0,
+      "EN": 0,
+      "hh": 0,
+      "HH": 0,
+      "ptc": 0,
+      "PTC": 1,
+      "PH": 0,
+      "SMO": 0,
+      "ci": 1,
+      "CI": 1,
+      "CIA": 0,
+      "CIR": 1
+    },
+    "fresh_exhaustive_comparison": {
+      "all_union_scope_corners_checked": 96,
+      "matching_rules": 15,
+      "differing_rules": [
+        {
+          "node_one_based": 16,
+          "name": "CIA",
+          "mismatch_count": 2,
+          "witnesses": [
+            {
+              "state_integer_lsb_node1": 16384,
+              "source_code_output": 0,
+              "primary_comparator_output": 1
+            },
+            {
+              "state_integer_lsb_node1": 21504,
+              "source_code_output": 1,
+              "primary_comparator_output": 0
+            }
+          ]
+        },
+        {
+          "node_one_based": 17,
+          "name": "CIR",
+          "mismatch_count": 2,
+          "witnesses": [
+            {
+              "state_integer_lsb_node1": 16384,
+              "source_code_output": 1,
+              "primary_comparator_output": 0
+            },
+            {
+              "state_integer_lsb_node1": 21504,
+              "source_code_output": 0,
+              "primary_comparator_output": 1
+            }
+          ]
+        }
+      ],
+      "method": "independent exact integer arithmetic AST versus safe Boolean AST for the named primary-comparator rules"
+    }
+  },
+  "29": {
+    "labels_in_order": [
+      "IL15",
+      "RAS",
+      "ERK",
+      "JAK",
+      "IL2RBT",
+      "STAT3",
+      "IFNGT",
+      "FasL",
+      "PDGF",
+      "PDGFR",
+      "PI3K",
+      "IL2",
+      "BclxL",
+      "TPL2",
+      "SPHK",
+      "S1P",
+      "sFas",
+      "Fas",
+      "DISC",
+      "Caspase",
+      "Apoptosis",
+      "LCK",
+      "MEK",
+      "GZMB",
+      "IL2RAT",
+      "FasT",
+      "RANTES",
+      "A20",
+      "FLIP"
+    ],
+    "source": "Zhu et al. (2024), DOI 10.1109/TAC.2023.3269321, Example 6.2, Eq. (17), p. 184",
+    "sha256": "cf72d75f9f842dcdd63039e39d60afb22b907e937250033d475214c67582f345",
+    "primary_reference": {
+      "authors": "S. Zhu, J. Cao, L. Lin, J. Lam, and S.-I. Azuma",
+      "title": "Toward Stabilizable Large-Scale Boolean Networks by Controlling the Minimal Set of Nodes",
+      "journal": "IEEE Transactions on Automatic Control",
+      "volume": 69,
+      "issue": 1,
+      "pages": "174\u2013188",
+      "year": 2024,
+      "doi": "10.1109/TAC.2023.3269321",
+      "anchor": "Example 6.2, Eq. (17), printed p.184 / PDF p.11",
+      "fresh_visual_review": "2026-10-14; exact x15 SPHK, x16 S1P, x20 Caspase, x21 Apoptosis confirmed"
+    },
+    "mapping_status": "explicit primary-published numeric labels; QL source is a different dynamical variant",
+    "differences_from_primary": {
+      "label_source": "Zhu2024Eq17p184PDF11; visually inspected",
+      "one_based_node": 18,
+      "name": "Fas",
+      "coded_rule": "NOT x17",
+      "primary_published_rule": "(NOT x17) OR ((NOT x1) AND (NOT x11))",
+      "separating_state": "x17=1,x1=0,x11=0: code0, published1",
+      "policy": "Keep the exact coded rule. Do not call all29rules a validated transcription of the cited paper."
+    },
+    "target_by_primary_map": {
+      "IL15": 1,
+      "RAS": 1,
+      "ERK": 1,
+      "JAK": 1,
+      "IL2RBT": 1,
+      "STAT3": 1,
+      "IFNGT": 1,
+      "FasL": 1,
+      "PDGF": 0,
+      "PDGFR": 0,
+      "PI3K": 0,
+      "IL2": 0,
+      "BclxL": 0,
+      "TPL2": 0,
+      "SPHK": 1,
+      "S1P": 1,
+      "sFas": 1,
+      "Fas": 0,
+      "DISC": 0,
+      "Caspase": 0,
+      "Apoptosis": 0,
+      "LCK": 1,
+      "MEK": 1,
+      "GZMB": 1,
+      "IL2RAT": 0,
+      "FasT": 0,
+      "RANTES": 0,
+      "A20": 0,
+      "FLIP": 0
+    },
+    "target_conflict": "The supplied target has x20=Caspase=0 and x21=Apoptosis=0. It is retained as a full Boolean target without an apoptotic phenotype label.",
+    "prior_control_result": "Same primary page identifies elementary cycles {1},{15,16},{9} and minimum structural controller set {1,9,15}. The three-node cardinality and cycle locations must not be presented as a new biological discovery."
+  },
+  "44": {
+    "status": "BLOCKED_AFTER_BOUNDED_PRIMARY_SOURCE_CHECK",
+    "primary_paper": {
+      "title": "Predicting Essential Components of Signal Transduction Networks: A Dynamic Model of Guard Cell Abscisic Acid Signaling",
+      "authors": [
+        "Song Li",
+        "Sarah M. Assmann",
+        "Reka Albert"
+      ],
+      "year": 2006,
+      "doi": "10.1371/journal.pbio.0040312",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0040312",
+      "table_anchor": "Table 1, printed p. 1737 / PDF p. 6; DOI 10.1371/journal.pbio.0040312.t001",
+      "supplement_url": "https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.0040312.sd001&type=supplementary"
+    },
+    "primary_facts": "Table 1 and Text S1 both give CIS=(cGMP AND cADPR) OR (InsP3 AND InsP6). The paper describes 40 dynamic nodes and asynchronous updates. Table 1 and Text S1 give different ROS expressions (ABA AND PA AND pHc versus Atrboh).",
+    "mapping_limit": "No source-declared numerical index mapping from the 44-node public code to this primary model was recovered. Natural matching suggests node 16=CIS, but this remains inferred.",
+    "own_code_deductions_under_candidate_mapping": "Inferred Depolar=node 18 uses regulators four positions lower than the corresponding Table 1 names. Inferred Closure=node 17 is 0 in the supplied target. These additional mismatches prevent a single OR replacement from certifying the whole model.",
+    "required_model_documentation": [
+      "An explicit 44-index-to-node map and intended source/model version.",
+      "An authoritative corrected truth table for every coded rule, especially nodes 16 and 18.",
+      "The intended target interpretation, update schedule and treatment of the four identity inputs."
+    ],
+    "no_correction_applied": true
+  }
+}

@@ -1,0 +1,775 @@
+{
+  "schema": "BooleanPhysicalTruthTables_v1",
+  "model_id": "tlgl_coded_29",
+  "n": 29,
+  "semantics": "Synchronous deterministic Boolean updates; static permanent target-value pins from time zero; every compatible initial state; unit costs; all nodes eligible.",
+  "index_convention": "JSON parents and engine use zero-based source indices. BNET labels n01,... are one-based. Truth-table index bit j is the value of parents_zero_based[j].",
+  "provenance": {
+    "authority": "Rule templates explicitly described in the supplied source as inferred from the released 29-node QL script. This artifact certifies that coded Boolean implementation, not fidelity to a published biological reconstruction.",
+    "source_extraction": "AST literal extraction only; the source script was not imported or executed.",
+    "biological_gene_labels": "Not asserted; nodes retain neutral source-order indices.",
+    "original_polynomial_crosscheck": {
+      "source_file_name": "29nodeQL.py",
+      "source_file_sha256": "22d2e8cc8d058d6e2c391838d521331bad218a777bc65b1c1670836be6dc7b25",
+      "source_path": "provenance/source_files/29nodeQL.py",
+      "all_source_local_corners_checked": 88,
+      "status": "PASS",
+      "corner_count_note": "The original polynomial at one-based node 18 lists three source variables but simplifies to NOT n17. Its eight source corners reduce to two physical truth-table corners, explaining 88 source corners versus 82 exported template corners."
+    },
+    "source_path": "provenance/source_files/tlgl_topology_rewiring_test.py",
+    "source_file_sha256": "1f6ae48680cff8ebab3953e3fb9c5c64cf337b7fc90154f7375b9988520629f5"
+  },
+  "target": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "target_node_order": [
+    "n01",
+    "n02",
+    "n03",
+    "n04",
+    "n05",
+    "n06",
+    "n07",
+    "n08",
+    "n09",
+    "n10",
+    "n11",
+    "n12",
+    "n13",
+    "n14",
+    "n15",
+    "n16",
+    "n17",
+    "n18",
+    "n19",
+    "n20",
+    "n21",
+    "n22",
+    "n23",
+    "n24",
+    "n25",
+    "n26",
+    "n27",
+    "n28",
+    "n29"
+  ],
+  "target_integer_lsb_node1": 14795007,
+  "rules": [
+    {
+      "node_zero_based": 0,
+      "node_one_based": 1,
+      "node_label": "n01",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        0
+      ],
+      "source_line": 20,
+      "parents_zero_based": [
+        0
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n01",
+      "source_polynomial_expression": "S[0]",
+      "source_polynomial_references_zero_based": [
+        0
+      ]
+    },
+    {
+      "node_zero_based": 1,
+      "node_one_based": 2,
+      "node_label": "n02",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        0
+      ],
+      "source_line": 21,
+      "parents_zero_based": [
+        0
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n01",
+      "source_polynomial_expression": "S[0]",
+      "source_polynomial_references_zero_based": [
+        0
+      ]
+    },
+    {
+      "node_zero_based": 2,
+      "node_one_based": 3,
+      "node_label": "n03",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        1
+      ],
+      "source_line": 22,
+      "parents_zero_based": [
+        1
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n02",
+      "source_polynomial_expression": "S[1]",
+      "source_polynomial_references_zero_based": [
+        1
+      ]
+    },
+    {
+      "node_zero_based": 3,
+      "node_one_based": 4,
+      "node_label": "n04",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        0
+      ],
+      "source_line": 23,
+      "parents_zero_based": [
+        0
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n01",
+      "source_polynomial_expression": "S[0]",
+      "source_polynomial_references_zero_based": [
+        0
+      ]
+    },
+    {
+      "node_zero_based": 4,
+      "node_one_based": 5,
+      "node_label": "n05",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        0
+      ],
+      "source_line": 24,
+      "parents_zero_based": [
+        0
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n01",
+      "source_polynomial_expression": "S[0]",
+      "source_polynomial_references_zero_based": [
+        0
+      ]
+    },
+    {
+      "node_zero_based": 5,
+      "node_one_based": 6,
+      "node_label": "n06",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        3
+      ],
+      "source_line": 25,
+      "parents_zero_based": [
+        3
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n04",
+      "source_polynomial_expression": "S[3]",
+      "source_polynomial_references_zero_based": [
+        3
+      ]
+    },
+    {
+      "node_zero_based": 6,
+      "node_one_based": 7,
+      "node_label": "n07",
+      "source_template": "or_not",
+      "source_references_zero_based": [
+        4,
+        5
+      ],
+      "source_line": 26,
+      "parents_zero_based": [
+        4,
+        5
+      ],
+      "physical_truth_table": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "bnet_formula": "(n05 | !n06)",
+      "source_polynomial_expression": "S[4] * (1 - S[5]) + S[4] * S[5] + (1 - S[4]) * (1 - S[5])",
+      "source_polynomial_references_zero_based": [
+        4,
+        5
+      ]
+    },
+    {
+      "node_zero_based": 7,
+      "node_one_based": 8,
+      "node_label": "n08",
+      "source_template": "or_and_or",
+      "source_references_zero_based": [
+        13,
+        5,
+        2,
+        4
+      ],
+      "source_line": 27,
+      "parents_zero_based": [
+        13,
+        5,
+        2,
+        4
+      ],
+      "physical_truth_table": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "bnet_formula": "(n14 | (n06 & (n03 | n05)))",
+      "source_polynomial_expression": "S[13] * (S[5] * S[2] * S[4] + S[5] * S[2] * (1 - S[4]) + S[5] * (1 - S[2]) * S[4] + S[5] * (1 - S[2]) * (1 - S[4]) + (1 - S[5]) * S[2] * S[4] + (1 - S[5]) * (1 - S[2]) * (1 - S[4]) + (1 - S[5]) * S[2] * (1 - S[4]) + (1 - S[5]) * (1 - S[2]) * S[4])+(1 - S[13]) * S[5] * (S[2] * S[4] + (1 - S[2]) * S[4] + S[2] * (1 - S[4]))",
+      "source_polynomial_references_zero_based": [
+        2,
+        4,
+        5,
+        13
+      ]
+    },
+    {
+      "node_zero_based": 8,
+      "node_one_based": 9,
+      "node_label": "n09",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        8
+      ],
+      "source_line": 28,
+      "parents_zero_based": [
+        8
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n09",
+      "source_polynomial_expression": "S[8]",
+      "source_polynomial_references_zero_based": [
+        8
+      ]
+    },
+    {
+      "node_zero_based": 9,
+      "node_one_based": 10,
+      "node_label": "n10",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        8
+      ],
+      "source_line": 29,
+      "parents_zero_based": [
+        8
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n09",
+      "source_polynomial_expression": "S[8]",
+      "source_polynomial_references_zero_based": [
+        8
+      ]
+    },
+    {
+      "node_zero_based": 10,
+      "node_one_based": 11,
+      "node_label": "n11",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        9
+      ],
+      "source_line": 30,
+      "parents_zero_based": [
+        9
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n10",
+      "source_polynomial_expression": "S[9]",
+      "source_polynomial_references_zero_based": [
+        9
+      ]
+    },
+    {
+      "node_zero_based": 11,
+      "node_one_based": 12,
+      "node_label": "n12",
+      "source_template": "notandnot",
+      "source_references_zero_based": [
+        3,
+        10
+      ],
+      "source_line": 31,
+      "parents_zero_based": [
+        3,
+        10
+      ],
+      "physical_truth_table": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "bnet_formula": "(!n04 & !n11)",
+      "source_polynomial_expression": "(1 - S[3]) * (1 - S[10])",
+      "source_polynomial_references_zero_based": [
+        3,
+        10
+      ]
+    },
+    {
+      "node_zero_based": 12,
+      "node_one_based": 13,
+      "node_label": "n13",
+      "source_template": "notandnot",
+      "source_references_zero_based": [
+        3,
+        10
+      ],
+      "source_line": 32,
+      "parents_zero_based": [
+        3,
+        10
+      ],
+      "physical_truth_table": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "bnet_formula": "(!n04 & !n11)",
+      "source_polynomial_expression": "(1 - S[3]) * (1 - S[10])",
+      "source_polynomial_references_zero_based": [
+        3,
+        10
+      ]
+    },
+    {
+      "node_zero_based": 13,
+      "node_one_based": 14,
+      "node_label": "n14",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        10
+      ],
+      "source_line": 33,
+      "parents_zero_based": [
+        10
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n11",
+      "source_polynomial_expression": "S[10]",
+      "source_polynomial_references_zero_based": [
+        10
+      ]
+    },
+    {
+      "node_zero_based": 14,
+      "node_one_based": 15,
+      "node_label": "n15",
+      "source_template": "or",
+      "source_references_zero_based": [
+        10,
+        15
+      ],
+      "source_line": 34,
+      "parents_zero_based": [
+        10,
+        15
+      ],
+      "physical_truth_table": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "bnet_formula": "(n11 | n16)",
+      "source_polynomial_expression": "S[10] * S[15] + S[10] * (1 - S[15]) + (1 - S[10]) * S[15]",
+      "source_polynomial_references_zero_based": [
+        10,
+        15
+      ]
+    },
+    {
+      "node_zero_based": 15,
+      "node_one_based": 16,
+      "node_label": "n16",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        14
+      ],
+      "source_line": 35,
+      "parents_zero_based": [
+        14
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n15",
+      "source_polynomial_expression": "S[14]",
+      "source_polynomial_references_zero_based": [
+        14
+      ]
+    },
+    {
+      "node_zero_based": 16,
+      "node_one_based": 17,
+      "node_label": "n17",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        14
+      ],
+      "source_line": 36,
+      "parents_zero_based": [
+        14
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n15",
+      "source_polynomial_expression": "S[14]",
+      "source_polynomial_references_zero_based": [
+        14
+      ]
+    },
+    {
+      "node_zero_based": 17,
+      "node_one_based": 18,
+      "node_label": "n18",
+      "source_template": "not",
+      "source_references_zero_based": [
+        16
+      ],
+      "source_line": 37,
+      "parents_zero_based": [
+        16
+      ],
+      "physical_truth_table": [
+        1,
+        0
+      ],
+      "bnet_formula": "!n17",
+      "source_polynomial_expression": "(1 - S[16]) * (S[0] * S[10] + S[0] * (1 - S[10]) + (1 - S[0]) * S[10] + (1 - S[0]) * (1 - S[10]))",
+      "source_polynomial_references_zero_based": [
+        0,
+        10,
+        16
+      ]
+    },
+    {
+      "node_zero_based": 18,
+      "node_one_based": 19,
+      "node_label": "n19",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        17
+      ],
+      "source_line": 38,
+      "parents_zero_based": [
+        17
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n18",
+      "source_polynomial_expression": "S[17]",
+      "source_polynomial_references_zero_based": [
+        17
+      ]
+    },
+    {
+      "node_zero_based": 19,
+      "node_one_based": 20,
+      "node_label": "n20",
+      "source_template": "notand",
+      "source_references_zero_based": [
+        0,
+        18
+      ],
+      "source_line": 39,
+      "parents_zero_based": [
+        0,
+        18
+      ],
+      "physical_truth_table": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "bnet_formula": "(!n01 & n19)",
+      "source_polynomial_expression": "(1 - S[0]) * S[18]",
+      "source_polynomial_references_zero_based": [
+        0,
+        18
+      ]
+    },
+    {
+      "node_zero_based": 20,
+      "node_one_based": 21,
+      "node_label": "n21",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        19
+      ],
+      "source_line": 40,
+      "parents_zero_based": [
+        19
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n20",
+      "source_polynomial_expression": "S[19]",
+      "source_polynomial_references_zero_based": [
+        19
+      ]
+    },
+    {
+      "node_zero_based": 21,
+      "node_one_based": 22,
+      "node_label": "n22",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        0
+      ],
+      "source_line": 41,
+      "parents_zero_based": [
+        0
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n01",
+      "source_polynomial_expression": "S[0]",
+      "source_polynomial_references_zero_based": [
+        0
+      ]
+    },
+    {
+      "node_zero_based": 22,
+      "node_one_based": 23,
+      "node_label": "n23",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        1
+      ],
+      "source_line": 42,
+      "parents_zero_based": [
+        1
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n02",
+      "source_polynomial_expression": "S[1]",
+      "source_polynomial_references_zero_based": [
+        1
+      ]
+    },
+    {
+      "node_zero_based": 23,
+      "node_one_based": 24,
+      "node_label": "n24",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        3
+      ],
+      "source_line": 43,
+      "parents_zero_based": [
+        3
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n04",
+      "source_polynomial_expression": "S[3]",
+      "source_polynomial_references_zero_based": [
+        3
+      ]
+    },
+    {
+      "node_zero_based": 24,
+      "node_one_based": 25,
+      "node_label": "n25",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        11
+      ],
+      "source_line": 44,
+      "parents_zero_based": [
+        11
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n12",
+      "source_polynomial_expression": "S[11]",
+      "source_polynomial_references_zero_based": [
+        11
+      ]
+    },
+    {
+      "node_zero_based": 25,
+      "node_one_based": 26,
+      "node_label": "n26",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        13
+      ],
+      "source_line": 45,
+      "parents_zero_based": [
+        13
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n14",
+      "source_polynomial_expression": "S[13]",
+      "source_polynomial_references_zero_based": [
+        13
+      ]
+    },
+    {
+      "node_zero_based": 26,
+      "node_one_based": 27,
+      "node_label": "n27",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        13
+      ],
+      "source_line": 46,
+      "parents_zero_based": [
+        13
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n14",
+      "source_polynomial_expression": "S[13]",
+      "source_polynomial_references_zero_based": [
+        13
+      ]
+    },
+    {
+      "node_zero_based": 27,
+      "node_one_based": 28,
+      "node_label": "n28",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        13
+      ],
+      "source_line": 47,
+      "parents_zero_based": [
+        13
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n14",
+      "source_polynomial_expression": "S[13]",
+      "source_polynomial_references_zero_based": [
+        13
+      ]
+    },
+    {
+      "node_zero_based": 28,
+      "node_one_based": 29,
+      "node_label": "n29",
+      "source_template": "copy",
+      "source_references_zero_based": [
+        10
+      ],
+      "source_line": 48,
+      "parents_zero_based": [
+        10
+      ],
+      "physical_truth_table": [
+        0,
+        1
+      ],
+      "bnet_formula": "n11",
+      "source_polynomial_expression": "S[10]",
+      "source_polynomial_references_zero_based": [
+        10
+      ]
+    }
+  ]
+}

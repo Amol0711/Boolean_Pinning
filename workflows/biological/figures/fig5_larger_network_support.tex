@@ -1,0 +1,242 @@
+\documentclass[tikz,border=4pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,pgfplots}
+\pgfplotsset{compat=1.18}
+\definecolor{curveblue}{RGB}{26,90,137}
+\definecolor{curveorange}{RGB}{190,105,28}
+\pdfinfo{/Author () /Title (Support reduction and verified cycle in larger Boolean networks)}
+\begin{document}
+\begin{tikzpicture}
+\pgfplotsset{every axis/.append style={
+title style={font=\small\bfseries},
+axis line style={black!50},tick label style={font=\footnotesize},
+label style={font=\footnotesize}}}
+\begin{axis}[name=panelA,at={(0,0)},anchor=south west,
+width=6.2cm,height=6.4cm,scale only axis,
+title={A. CD4 (188 nodes)},
+xmin=-0.2,xmax=14.25,ymin=-4,ymax=168,
+xtick={0,2,...,14},ytick={0,40,...,160},
+xlabel={Support-reduction round $k$},
+ylabel={Potentially non-target coordinates},
+grid=major,grid style={black!10},
+legend style={font=\scriptsize,draw=none,fill=white,
+at={(0.97,0.97)},anchor=north east},legend cell align=left]
+\addplot[curveorange,thick,dashed,mark=square*,mark size=1.8pt]
+table[x=support_round,y=baseline_support,col sep=comma]{data/fig5_cd4_apc.csv};
+\addlegendentry{Inputs clamped}
+\addplot[curveblue,thick,mark=*,mark size=1.8pt]
+table[x=support_round,y=optimal_support,col sep=comma]{data/fig5_cd4_apc.csv};
+\addlegendentry{Inputs + minimum pins}
+\node[anchor=north east,align=right,font=\footnotesize,text=black!80]
+at (axis description cs:0.96,0.81)
+{$|B|=34$, $c_B=4$\\Baseline residual $|R_B|=17$};
+\end{axis}
+\begin{axis}[name=panelB,at={(10.6cm,0)},anchor=south west,
+width=4.5cm,height=6.4cm,scale only axis,
+title={B. Macrophage (321 nodes)},
+xmin=10.5,xmax=15.5,ymin=-0.5,ymax=18.5,y dir=reverse,
+xtick={11,12,13,14,15},ytick={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18},yticklabels={{BAK1gene},{CASP3gene},{CXCL11gene},{IFIT1gene},{IRF3\_IRF5cytoplasm},{IRF3\_IRF5nucleus},{IRF5},{IRF5\_IRF5cytoplasm},{IRF5\_IRF5nucleus},{IRF5\_IRF7cytoplasm},{IRF5\_IRF7nucleus},{OAS1gene},{PLSCR1gene},{PMAIPgene},{PRKRAgene},{RIPK1gene},{SP100gene},{TLR9\_MYD88\_TRAF6\_IRF5},{TNFSF10gene}},
+yticklabel style={font=\scriptsize},
+xticklabel style={font=\footnotesize},
+xlabel={Synchronous update $t$},
+axis on top,tick align=outside,clip=false]
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,-0.5) rectangle (axis cs:11.5,0.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,0) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,-0.5) rectangle (axis cs:12.5,0.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,0) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,-0.5) rectangle (axis cs:13.5,0.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,0) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,-0.5) rectangle (axis cs:14.5,0.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,0) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,-0.5) rectangle (axis cs:15.5,0.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,0) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,0.5) rectangle (axis cs:11.5,1.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,1) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,0.5) rectangle (axis cs:12.5,1.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,1) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,0.5) rectangle (axis cs:13.5,1.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,1) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,0.5) rectangle (axis cs:14.5,1.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,1) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,0.5) rectangle (axis cs:15.5,1.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,1) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,1.5) rectangle (axis cs:11.5,2.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,2) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,1.5) rectangle (axis cs:12.5,2.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,2) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,1.5) rectangle (axis cs:13.5,2.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,2) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,1.5) rectangle (axis cs:14.5,2.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,2) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,1.5) rectangle (axis cs:15.5,2.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,2) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,2.5) rectangle (axis cs:11.5,3.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,3) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,2.5) rectangle (axis cs:12.5,3.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,3) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,2.5) rectangle (axis cs:13.5,3.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,3) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,2.5) rectangle (axis cs:14.5,3.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,3) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,2.5) rectangle (axis cs:15.5,3.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,3) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:10.5,3.5) rectangle (axis cs:11.5,4.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:11,4) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:11.5,3.5) rectangle (axis cs:12.5,4.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:12,4) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:12.5,3.5) rectangle (axis cs:13.5,4.5);
+\node[font=\scriptsize,text=white] at (axis cs:13,4) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:13.5,3.5) rectangle (axis cs:14.5,4.5);
+\node[font=\scriptsize,text=white] at (axis cs:14,4) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:14.5,3.5) rectangle (axis cs:15.5,4.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:15,4) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,4.5) rectangle (axis cs:11.5,5.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,5) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:11.5,4.5) rectangle (axis cs:12.5,5.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:12,5) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,4.5) rectangle (axis cs:13.5,5.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,5) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:13.5,4.5) rectangle (axis cs:14.5,5.5);
+\node[font=\scriptsize,text=white] at (axis cs:14,5) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,4.5) rectangle (axis cs:15.5,5.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,5) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:10.5,5.5) rectangle (axis cs:11.5,6.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:11,6) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,5.5) rectangle (axis cs:12.5,6.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,6) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:12.5,5.5) rectangle (axis cs:13.5,6.5);
+\node[font=\scriptsize,text=white] at (axis cs:13,6) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,5.5) rectangle (axis cs:14.5,6.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,6) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:14.5,5.5) rectangle (axis cs:15.5,6.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:15,6) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:10.5,6.5) rectangle (axis cs:11.5,7.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:11,7) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:11.5,6.5) rectangle (axis cs:12.5,7.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:12,7) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:12.5,6.5) rectangle (axis cs:13.5,7.5);
+\node[font=\scriptsize,text=white] at (axis cs:13,7) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:13.5,6.5) rectangle (axis cs:14.5,7.5);
+\node[font=\scriptsize,text=white] at (axis cs:14,7) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:14.5,6.5) rectangle (axis cs:15.5,7.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:15,7) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,7.5) rectangle (axis cs:11.5,8.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,8) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:11.5,7.5) rectangle (axis cs:12.5,8.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:12,8) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,7.5) rectangle (axis cs:13.5,8.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,8) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:13.5,7.5) rectangle (axis cs:14.5,8.5);
+\node[font=\scriptsize,text=white] at (axis cs:14,8) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,7.5) rectangle (axis cs:15.5,8.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,8) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:10.5,8.5) rectangle (axis cs:11.5,9.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:11,9) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:11.5,8.5) rectangle (axis cs:12.5,9.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:12,9) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:12.5,8.5) rectangle (axis cs:13.5,9.5);
+\node[font=\scriptsize,text=white] at (axis cs:13,9) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:13.5,8.5) rectangle (axis cs:14.5,9.5);
+\node[font=\scriptsize,text=white] at (axis cs:14,9) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:14.5,8.5) rectangle (axis cs:15.5,9.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:15,9) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,9.5) rectangle (axis cs:11.5,10.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,10) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:11.5,9.5) rectangle (axis cs:12.5,10.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:12,10) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,9.5) rectangle (axis cs:13.5,10.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,10) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:13.5,9.5) rectangle (axis cs:14.5,10.5);
+\node[font=\scriptsize,text=white] at (axis cs:14,10) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,9.5) rectangle (axis cs:15.5,10.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,10) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,10.5) rectangle (axis cs:11.5,11.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,11) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,10.5) rectangle (axis cs:12.5,11.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,11) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,10.5) rectangle (axis cs:13.5,11.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,11) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,10.5) rectangle (axis cs:14.5,11.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,11) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,10.5) rectangle (axis cs:15.5,11.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,11) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,11.5) rectangle (axis cs:11.5,12.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,12) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,11.5) rectangle (axis cs:12.5,12.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,12) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,11.5) rectangle (axis cs:13.5,12.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,12) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,11.5) rectangle (axis cs:14.5,12.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,12) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,11.5) rectangle (axis cs:15.5,12.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,12) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,12.5) rectangle (axis cs:11.5,13.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,13) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,12.5) rectangle (axis cs:12.5,13.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,13) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,12.5) rectangle (axis cs:13.5,13.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,13) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,12.5) rectangle (axis cs:14.5,13.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,13) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,12.5) rectangle (axis cs:15.5,13.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,13) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,13.5) rectangle (axis cs:11.5,14.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,14) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,13.5) rectangle (axis cs:12.5,14.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,14) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,13.5) rectangle (axis cs:13.5,14.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,14) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,13.5) rectangle (axis cs:14.5,14.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,14) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,13.5) rectangle (axis cs:15.5,14.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,14) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,14.5) rectangle (axis cs:11.5,15.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,15) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,14.5) rectangle (axis cs:12.5,15.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,15) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,14.5) rectangle (axis cs:13.5,15.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,15) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,14.5) rectangle (axis cs:14.5,15.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,15) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,14.5) rectangle (axis cs:15.5,15.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,15) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,15.5) rectangle (axis cs:11.5,16.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,16) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,15.5) rectangle (axis cs:12.5,16.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,16) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,15.5) rectangle (axis cs:13.5,16.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,16) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,15.5) rectangle (axis cs:14.5,16.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,16) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,15.5) rectangle (axis cs:15.5,16.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,16) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,16.5) rectangle (axis cs:11.5,17.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,17) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,16.5) rectangle (axis cs:12.5,17.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,17) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,16.5) rectangle (axis cs:13.5,17.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,17) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,16.5) rectangle (axis cs:14.5,17.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,17) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,16.5) rectangle (axis cs:15.5,17.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,17) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:10.5,17.5) rectangle (axis cs:11.5,18.5);
+\node[font=\scriptsize,text=white] at (axis cs:11,18) {1};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:11.5,17.5) rectangle (axis cs:12.5,18.5);
+\node[font=\scriptsize,text=white] at (axis cs:12,18) {1};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:12.5,17.5) rectangle (axis cs:13.5,18.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:13,18) {0};
+\path[fill=white,draw=black!20,line width=0.2pt] (axis cs:13.5,17.5) rectangle (axis cs:14.5,18.5);
+\node[font=\scriptsize,text=black!75] at (axis cs:14,18) {0};
+\path[fill=curveblue,draw=black!20,line width=0.2pt] (axis cs:14.5,17.5) rectangle (axis cs:15.5,18.5);
+\node[font=\scriptsize,text=white] at (axis cs:15,18) {1};
+\draw[black,densely dashed,line width=0.6pt]
+(axis cs:14.5,-0.5) -- (axis cs:14.5,18.5);
+\end{axis}
+\node[anchor=north,font=\scriptsize] at ([yshift=-1.13cm]panelB.south)
+{19 varying coordinates; 302 constant};
+\node[anchor=north,font=\scriptsize] at ([yshift=-1.52cm]panelB.south)
+{$x(15)=x(11)$; no fixed-target certificate};
+
+\end{tikzpicture}
+\end{document}
